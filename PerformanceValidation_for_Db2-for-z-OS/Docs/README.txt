@@ -1,8 +1,6 @@
 The IBM DB2 Workload Generator V2.2 (GLW)
 =========================================
 
-PROPERTY OF IBM;(C) COPYRIGHT 2005 IBM CORP. ALL RIGHTS RESERVED.
-
 Authors: Mike Bracey, IBM UK Ltd, mike_bracey@uk.ibm.com
          Steve Speller, Rocket Software, steve.speller@rs.com
 Date   : January 2011
