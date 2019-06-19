@@ -7,7 +7,7 @@ This workload was first created by Mike Bracey and Steve Speller. It was designe
 Since there are customers requested to enhance this workload to work on the latest Db2 version, we removed the code specific for V10 and below, and enhance it to work on Db2 V11 and above. The enhancements include using SYSPROC.DSNUTILU to replace SYSPROC.DSNUTILS, and UTS tablespaces to replace non-UTS tablespaces. 
 
 To install this workload onto your LPAR, you need to get the XMIT files and TRS files to your working LPAR, unpack the datasets, and customize the scripts/JCLs for your environment.
-You can use provided JCLs to define datasets for XMIT/TRS, then FTP files to zOS, and use JCL to unpack the XMIT/TRS datasets. You also can customize the provided sample  Windows batch scripts to perform those above tasks.
+You can use provided JCLs to define datasets for XMIT/TRS, then FTP files to your zOS LPAR, and use JCL to unpack the XMIT/TRS datasets. You also can customize the provided sample  Windows batch scripts to perform those above tasks.
 
 Here are steps to install this workload onto your lpar:
 
@@ -23,7 +23,7 @@ It is better to clone this repository using Git because we found that if you dow
 	
 	You also need to update the [HLQ] for dataset name in GLWDEFDS.JCL, UPLOAD.TXT, and  UNPAK.JCL. These JCLs are for defining datasets for XMIT/TRS files, FTPing files to zOS LPAR, and unpacking the XMIT/TRS datasets into PDS datasets.
 	
-	To execute the helper batch scripts, you just run the following command at Windows command prompt: ftp -s:windowbatchscript. Here are example commands
+	To execute the helper batch scripts, you just run the following command at Windows command prompt: ftp -s:windowbatchscript. Here are steps:
 	
 		* ftp -s:define.txt   : to submit JCL to define datasets for XMIT/TRS files.
 		
