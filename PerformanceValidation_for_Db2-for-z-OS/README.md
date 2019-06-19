@@ -1,8 +1,9 @@
-# IBM Db2 Workload Generator
+# IBM Db2 Performance Validation Workload.
 
-This is the repository for the IBM Db2 Workload Generator created by Mike Bracey and Steve Speller.
+This is the repository for the IBM Db2 Performance Validation Workload.
 
-This workload was designed for Db2 v7 and modified to work up to Db2V10 by the original authors. 
+This workload was first created by Mike Bracey and Steve Speller. It was designed for Db2 v7 and modified to work up to Db2V10 by the original authors. 
+
 Since there are customers requested to enhance this workload to work on the latest Db2 version, we removed the code specific for V10 and below, and enhance it to work on Db2 V11 and above. The enhancements include using SYSPROC.DSNUTILU to replace SYSPROC.DSNUTILS, and UTS tablespaces to replace non-UTS tablespaces. 
 
 To install this workload onto your LPAR, you need to get the XMIT files and TRS files to your working LPAR, unpack the datasets, and customize the scripts/JCLs for your environment.
