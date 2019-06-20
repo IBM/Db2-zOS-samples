@@ -1,6 +1,6 @@
 # Db2 zOS Samples
 
-This is the repository for the IBM Db2 zOS samples 
+This repository contains sample programs to work on Db2 for zOS. 
 
 ## Performance Validation for Db2 for zOS
 	
