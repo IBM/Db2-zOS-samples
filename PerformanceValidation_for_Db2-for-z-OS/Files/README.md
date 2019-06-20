@@ -21,7 +21,13 @@ This folder contains datasets for the GLW workload. You need to define PDS datas
 	
 	* ftp -s:windowsbatchfile is the command on Windows command prompt to run a Windows batch script.
 	
-### 2. SGLWCFG  
+### 1. .TRS files	
+	The .TRS files are data files  to be used to load into GLW tables.
+	
+### 1. .XMIT files
+	The .XMIT files  contains REXX scripts, object binary files, and source code to create database objects. After unpacking these XMIT datasets, you should have appropriate PDS datasets. 
+	
+#### a. SGLWCFG  
     Sample JCLs to set up and run the workload. These JCLs are from the SGLWSAMP and customized for the test environment. This set up uses the default values
 
 	* CRTSG : sample JCL to create store group GLW01.   
@@ -56,10 +62,10 @@ This folder contains datasets for the GLW workload. You need to define PDS datas
 	
 	* STREPLAC  : sample JCL to replace a string by another string for all members in a PDS dataset. 
 	
-### 3. SGLWDBRM  
+#### b. SGLWDBRM  
      DBRM  for the GLW workload.
 
-### 4. SGLWEXEC  
+#### c. SGLWEXEC  
      REXX modules for the GLW workload. 
 
 	* CRTSPCAT  : REXX module to creare stored procedure code.
@@ -78,26 +84,24 @@ This folder contains datasets for the GLW workload. You need to define PDS datas
 	
 	* STRREPL   : REXX module to replace a string by another string for all members in a PDS dataset. 
 	
-### 5. SGLWLOAD  
+#### d. SGLWLOAD  
 	LOAD modules for the GLW workload.
 
-### 6. SGLWMLIB  
+#### e. SGLWMLIB  
 	Library for the GLW workload to display error messages.
 
-### 7. SGLWSAMP  
+#### f. SGLWSAMP  
 	Sample JCL to run the workload. These JCLs are copied to SGLWCFG  then customized for the running environment. For description, please see SGLWCFG section above.
 
-### 8. SGLWSLIB 
+#### g. SGLWSLIB 
 	Library for the GLW workload.
 
-### 9. SGLWSRCC
+#### h. SGLWSRCC
 	DDL to create stored procedures ( in C language )used by the GLW workload, and the source code of stored procedures in C language.
 
-### 10. SGLWSRCN 
+#### i. SGLWSRCN 
 	DDL to create stored procedures ( Native stored procedure ) used by the GLW workload, and ther source code od stored procedures in Native SQLPL.
 
-### 11. SGLWTABD
+#### j. SGLWTABD
 	DDL to load data into tables of the GLW workload.
-
-### 12. .TRS files	
-	The .TRS files are data files  to be used to load into GLW tables.
+	
