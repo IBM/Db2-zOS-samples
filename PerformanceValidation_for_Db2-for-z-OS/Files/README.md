@@ -3,7 +3,8 @@
 This folder contains datasets for the GLW workload. You need to define PDS datasets to receive XMIT and TRS datasets, ftp files to zOS LPAR, then unpack the XMIT/TRS datasets. We provide several helper files to assist you to perform those tasks.
 
 ### 1. Helper files 
-	To define datasets, upload files to zOS LPAR, and unpack XMIT/TRS datasets, you can use sample helper files below.
+
+To define datasets, upload files to zOS LPAR, and unpack XMIT/TRS datasets, you can use sample helper files below.
 	
 	* GLWDEFDS.JCL: JCL to define datasets for XMIT and TRS datasets.
 	
@@ -15,20 +16,23 @@ This folder contains datasets for the GLW workload. You need to define PDS datas
 	
 	* UNPAK.TXT : Sample Windows batch script to submit UNPAK.JCL to zOS LPAR.
 	
-	Notes:
+Notes:
 	
-	* You need to customize those above JCLs and batch scripts for your environment( Hostname, userID, password for FTP, [HLQ] for MVS datasets ).
+* You need to customize those above JCLs and batch scripts for your environment( Hostname, userID, password for FTP, [HLQ] for MVS datasets ).
+
+* ftp -s:windowsbatchfile is the command on Windows command prompt to run a Windows batch script.
 	
-	* ftp -s:windowsbatchfile is the command on Windows command prompt to run a Windows batch script.
+### 2. .TRS files	
+
+The .TRS files are data files  to be used to load into GLW tables.
 	
-### 1. .TRS files	
-	The .TRS files are data files  to be used to load into GLW tables.
-	
-### 1. .XMIT files
-	The .XMIT files  contains REXX scripts, object binary files, and source code to create database objects. After unpacking these XMIT datasets, you should have appropriate PDS datasets. 
+### 3. .XMIT files
+
+The .XMIT files  contains REXX scripts, object binary files, and source code to create database objects. After unpacking these XMIT datasets, you should have appropriate PDS datasets. 
 	
 #### a. SGLWCFG  
-    Sample JCLs to set up and run the workload. These JCLs are from the SGLWSAMP and customized for the test environment. This set up uses the default values
+
+Sample JCLs to set up and run the workload. These JCLs are from the SGLWSAMP and customized for the test environment. This set up uses the default values
 
 	* CRTSG : sample JCL to create store group GLW01.   
 	
@@ -63,10 +67,12 @@ This folder contains datasets for the GLW workload. You need to define PDS datas
 	* STREPLAC  : sample JCL to replace a string by another string for all members in a PDS dataset. 
 	
 #### b. SGLWDBRM  
-     DBRM  for the GLW workload.
+
+DBRM  for the GLW workload.
 
 #### c. SGLWEXEC  
-     REXX modules for the GLW workload. 
+
+REXX modules for the GLW workload. 
 
 	* CRTSPCAT  : REXX module to creare stored procedure code.
 	
@@ -85,23 +91,28 @@ This folder contains datasets for the GLW workload. You need to define PDS datas
 	* STRREPL   : REXX module to replace a string by another string for all members in a PDS dataset. 
 	
 #### d. SGLWLOAD  
-	LOAD modules for the GLW workload.
+
+LOAD modules for the GLW workload.
 
 #### e. SGLWMLIB  
-	Library for the GLW workload to display error messages.
+
+Library for the GLW workload to display error messages.
 
 #### f. SGLWSAMP  
-	Sample JCL to run the workload. These JCLs are copied to SGLWCFG  then customized for the running environment. For description, please see SGLWCFG section above.
+
+Sample JCL to run the workload. These JCLs are copied to SGLWCFG  then customized for the running environment. For description, please see SGLWCFG section above.
 
 #### g. SGLWSLIB 
-	Library for the GLW workload.
+
+Library for the GLW workload.
 
 #### h. SGLWSRCC
-	DDL to create stored procedures ( in C language )used by the GLW workload, and the source code of stored procedures in C language.
+
+DDL to create stored procedures ( in C language )used by the GLW workload, and the source code of stored procedures in C language.
 
 #### i. SGLWSRCN 
-	DDL to create stored procedures ( Native stored procedure ) used by the GLW workload, and ther source code od stored procedures in Native SQLPL.
+
+DDL to create stored procedures ( Native stored procedure ) used by the GLW workload, and ther source code od stored procedures in Native SQLPL.
 
 #### j. SGLWTABD
-	DDL to load data into tables of the GLW workload.
-	
+DDL to load data into tables of the GLW workload.
