@@ -85,15 +85,14 @@ It is better to clone this repository using Git because we found that if you dow
 
 	1. #### Build database
 	
-		After customizing the common parameters in SGLWCFG(GLWPARM0) and SGLWCFG(GLWDDL), you can customize SGLWCFG(GLWSETUP) to build database for the GLW workload on your environment. The original authors documented the parameters very well in the SGLWSAMP(README).
+		After customizing the common parameters in SGLWCFG(GLWPARM0) and SGLWCFG(GLWDDL), you can customize JCL SGLWCFG(CRTST) to create a storage group, and SGLWCFG(GLWSETUP) to build database for the GLW workload on your environment. The original authors documented the parameters very well in the SGLWSAMP/SGLWCFG(README).
 		
 		The original README file and SGLWEXEC(GLWRUN) are good source to understand all parameters and variables to customize the GLW workload.
 		You need to correct STEPLIB, SYSEXEC, GLWPARM, DB2SSID, SCHEMA, DBASENME , and SQLID before submitting GLWBUILD job. You should see message "Database was successfully built" if there is no error.
 
-		You could modify and use sample JCL SGLWCFG(GLWTBSEL) to get the row count of major tables of the GLW to validate the BUILD procedures. If row count is 0, then tables have not been loaded. This could be the SYSPROC.DSNUTILU has not been set up correctly or your environment does not have SYSPROC.DSNUTILU set up.
-		In this case, you could customize JCL SGLWCFG(GLWLDALL) and SGLWCFG(GLWRSTAT) to load data then perform RUNSTATS.
+		You could modify and use sample JCL SGLWCFG(GLWTBSEL) to get the row count of major tables of the GLW to validate the BUILD procedures. If row count is 0, then tables have not been loaded. This could be the SYSPROC.DSNUTILU has not been set up correctly or your environment does not have SYSPROC.DSNUTILU set up. In this case, you could customize JCL SGLWCFG(GLWLDALL) and SGLWCFG(GLWRSTAT) to load data then perform RUNSTATS.
 		
-		If you need to remove all objects created for the GLW workload, please customize and use SGLWCFG(GLWDROP).
+		If you need to remove all objects created for the GLW workload, please customize and use SGLWCFG(GLWDROP) to drop all database objects and use SGLWCFG(CRTSG) to drop the created storage group.
 		
 	1. #### Run the workload
 		
