@@ -85,7 +85,7 @@ It is better to clone this repository using Git because we found that if you dow
 
 	1. #### Build database
 	
-		After customizing the common parameters in SGLWCFG(GLWPARM0) and SGLWCFG(GLWDDL), you can customize SGLWCFG(GLWBUILD) to build database for the GLW workload on your environment. The original authors documented the parameters very well in the SGLWSAMP(README).
+		After customizing the common parameters in SGLWCFG(GLWPARM0) and SGLWCFG(GLWDDL), you can customize SGLWCFG(GLWSETUP) to build database for the GLW workload on your environment. The original authors documented the parameters very well in the SGLWSAMP(README).
 		
 		The original README file and SGLWEXEC(GLWRUN) are good source to understand all parameters and variables to customize the GLW workload.
 		You need to correct STEPLIB, SYSEXEC, GLWPARM, DB2SSID, SCHEMA, DBASENME , and SQLID before submitting GLWBUILD job. You should see message "Database was successfully built" if there is no error.
