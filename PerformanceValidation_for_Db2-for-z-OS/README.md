@@ -9,11 +9,11 @@ Since there are customers requested to enhance this workload to work on the late
 To install this workload onto your LPAR, you need to get the XMIT files and TRS files to your working LPAR, unpack the datasets, and customize the scripts/JCLs for your environment.
 You can use provided JCLs to define datasets for XMIT/TRS, then FTP files to your zOS LPAR, and use JCL to unpack the XMIT/TRS datasets. You also can customize the provided sample  Windows batch scripts to perform those above tasks.
 
-Here are steps to install this workload onto your lpar:
+Here are steps to install this workload onto your LPAR:
 
 1. ### Clone or download all files onto your work station.
 
-It is better to clone this repository using Git because we found that if you download ZIP file and unzip the files, some JCLs might get conversion during zip/unzip process and become unusable. 
+It is better to clone this repository using Git because we found that if you download ZIP file and unzip the files, some JCLs might become unusable.
 
 1. ### Get files onto your LPAR.
 
