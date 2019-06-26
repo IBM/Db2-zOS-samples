@@ -8,4 +8,4 @@ Sample Native SQLPL workload written in REXX for Db2zOS V11 and above.
 
 ## OMPECmp
 
-Java application compres 2 sets of OMPE accounting/statistics reports and produces the percent different.
+Java application compares 2 sets of OMPE accounting/statistics reports and produces the percent differences.
