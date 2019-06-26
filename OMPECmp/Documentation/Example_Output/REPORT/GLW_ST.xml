@@ -1,0 +1,2708 @@
+<?xml version="1.0" encoding="UTF-8"?><root>
+   <transaction id="Statistics Report">
+      <section id="SQL DML">
+         <row id="SELECT">
+            <col id="Run A">6335.8K</col>
+            <col id="Run B">6355.9K</col>
+            <col id="DELTA (%)" warning="normal">0.32</col>
+         </row>
+         <row id="INSERT">
+            <col id="Run A">2264.6K</col>
+            <col id="Run B">2273.4K</col>
+            <col id="DELTA (%)" warning="normal">0.39</col>
+         </row>
+         <row id="NUMBER OF ROWS">
+            <col id="Run A">3494.9K</col>
+            <col id="Run B">3509.5K</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="UPDATE">
+            <col id="Run A">639.0K</col>
+            <col id="Run B">640.7K</col>
+            <col id="DELTA (%)" warning="normal">0.27</col>
+         </row>
+         <row id="NUMBER OF ROWS(UPDATE)">
+            <col id="Run A">579.7K</col>
+            <col id="Run B">581.9K</col>
+            <col id="DELTA (%)" warning="normal">0.38</col>
+         </row>
+         <row id="DELETE">
+            <col id="Run A">5311.00</col>
+            <col id="Run B">5441.00</col>
+            <col id="DELTA (%)" warning="normal">2.45</col>
+         </row>
+         <row id="NUMBER OF ROWS(DELETE)">
+            <col id="Run A">5310.00</col>
+            <col id="Run B">5440.00</col>
+            <col id="DELTA (%)" warning="normal">2.45</col>
+         </row>
+         <row id="PREPARE">
+            <col id="Run A">64446.00</col>
+            <col id="Run B">64551.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="DESCRIBE">
+            <col id="Run A">47.00</col>
+            <col id="Run B">47.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="OPEN">
+            <col id="Run A">72576.00</col>
+            <col id="Run B">72922.00</col>
+            <col id="DELTA (%)" warning="normal">0.48</col>
+         </row>
+         <row id="CLOSE">
+            <col id="Run A">45708.00</col>
+            <col id="Run B">45941.00</col>
+            <col id="DELTA (%)" warning="normal">0.51</col>
+         </row>
+         <row id="FETCH">
+            <col id="Run A">55008.8K</col>
+            <col id="Run B">55571.5K</col>
+            <col id="DELTA (%)" warning="normal">1.02</col>
+         </row>
+         <row id="NUMBER OF ROWS(FETCH)">
+            <col id="Run A">54949.9K</col>
+            <col id="Run B">55512.0K</col>
+            <col id="DELTA (%)" warning="normal">1.02</col>
+         </row>
+         <row id="TOTAL DML">
+            <col id="Run A">64436.2K</col>
+            <col id="Run B">65030.5K</col>
+            <col id="DELTA (%)" warning="normal">0.92</col>
+         </row>
+         <row id="SELECT /C">
+            <col id="Run A">16.87</col>
+            <col id="Run B">16.90</col>
+            <col id="DELTA (%)" warning="normal">0.18</col>
+         </row>
+         <row id="INSERT /C">
+            <col id="Run A">6.03</col>
+            <col id="Run B">6.04</col>
+            <col id="DELTA (%)" warning="normal">0.17</col>
+         </row>
+         <row id="NUMBER OF ROWS /C">
+            <col id="Run A">9.31</col>
+            <col id="Run B">9.33</col>
+            <col id="DELTA (%)" warning="normal">0.21</col>
+         </row>
+         <row id="UPDATE /C">
+            <col id="Run A">1.70</col>
+            <col id="Run B">1.70</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="NUMBER OF ROWS /C(UPDATE /C)">
+            <col id="Run A">1.54</col>
+            <col id="Run B">1.55</col>
+            <col id="DELTA (%)" warning="normal">0.65</col>
+         </row>
+         <row id="DELETE /C">
+            <col id="Run A">0.01</col>
+            <col id="Run B">0.01</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="NUMBER OF ROWS /C(DELETE /C)">
+            <col id="Run A">0.01</col>
+            <col id="Run B">0.01</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PREPARE /C">
+            <col id="Run A">0.17</col>
+            <col id="Run B">0.17</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="OPEN /C">
+            <col id="Run A">0.19</col>
+            <col id="Run B">0.19</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="CLOSE /C">
+            <col id="Run A">0.12</col>
+            <col id="Run B">0.12</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="FETCH /C">
+            <col id="Run A">146.51</col>
+            <col id="Run B">147.76</col>
+            <col id="DELTA (%)" warning="normal">0.85</col>
+         </row>
+         <row id="NUMBER OF ROWS /C(FETCH /C)">
+            <col id="Run A">146.35</col>
+            <col id="Run B">147.60</col>
+            <col id="DELTA (%)" warning="normal">0.85</col>
+         </row>
+         <row id="TOTAL DML /C">
+            <col id="Run A">171.62</col>
+            <col id="Run B">172.91</col>
+            <col id="DELTA (%)" warning="normal">0.75</col>
+         </row>
+      </section>
+      <section id="SQL DCL">
+         <row id="SET HOST VARIABLE">
+            <col id="Run A">523.2K</col>
+            <col id="Run B">524.4K</col>
+            <col id="DELTA (%)" warning="normal">0.23</col>
+         </row>
+         <row id="TOTAL">
+            <col id="Run A">523.2K</col>
+            <col id="Run B">524.4K</col>
+            <col id="DELTA (%)" warning="normal">0.23</col>
+         </row>
+         <row id="SET HOST VARIABLE /C">
+            <col id="Run A">1.39</col>
+            <col id="Run B">1.39</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TOTAL /C">
+            <col id="Run A">1.39</col>
+            <col id="Run B">1.39</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="STORED PROCEDURES">
+         <row id="CALL STATEMENT EXECUTED">
+            <col id="Run A">2802.5K</col>
+            <col id="Run B">2811.0K</col>
+            <col id="DELTA (%)" warning="normal">0.3</col>
+         </row>
+         <row id="CALL STATEMENT EXECUTED /C">
+            <col id="Run A">7.46</col>
+            <col id="Run B">7.47</col>
+            <col id="DELTA (%)" warning="normal">0.13</col>
+         </row>
+      </section>
+      <section id="TRIGGERS">
+         <row id="ROW TRIGGER ACTIVATED">
+            <col id="Run A">252.7K</col>
+            <col id="Run B">253.3K</col>
+            <col id="DELTA (%)" warning="normal">0.24</col>
+         </row>
+         <row id="ROW TRIGGER ACTIVATED /C">
+            <col id="Run A">0.67</col>
+            <col id="Run B">0.67</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="EDM POOL">
+         <row id="HELD BY DBD">
+            <col id="Run A">151.00</col>
+            <col id="Run B">151.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="STEALABLE PAGES">
+            <col id="Run A">9.52</col>
+            <col id="Run B">5.84</col>
+            <col id="DELTA (%)" warning="best">-38.66</col>
+         </row>
+         <row id="% PAGES IN USE">
+            <col id="Run A">99.84</col>
+            <col id="Run B">99.90</col>
+            <col id="DELTA (%)" warning="normal">0.06</col>
+         </row>
+         <row id="HELD BY STATEMENTS">
+            <col id="Run A">165.00</col>
+            <col id="Run B">137.06</col>
+            <col id="DELTA (%)" warning="best">-16.93</col>
+         </row>
+         <row id="HELD BY SKCT">
+            <col id="Run A">2.00</col>
+            <col id="Run B">2.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="HELD BY SKPT">
+            <col id="Run A">869.44</col>
+            <col id="Run B">826.93</col>
+            <col id="DELTA (%)" warning="normal">-4.89</col>
+         </row>
+         <row id="STEALABLE PAGES(HELD BY SKPT)">
+            <col id="Run A">870.16</col>
+            <col id="Run B">820.25</col>
+            <col id="DELTA (%)" warning="good">-5.74</col>
+         </row>
+         <row id="% PAGES IN USE(HELD BY SKPT)">
+            <col id="Run A">93.20</col>
+            <col id="Run B">93.59</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="DBD REQUESTS">
+            <col id="Run A">2394.0K</col>
+            <col id="Run B">2401.0K</col>
+            <col id="DELTA (%)" warning="normal">0.29</col>
+         </row>
+         <row id="DBD HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="CT REQUESTS">
+            <col id="Run A">1.00</col>
+            <col id="Run B">1.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="CT HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PT REQUESTS">
+            <col id="Run A">2084.4K</col>
+            <col id="Run B">2088.2K</col>
+            <col id="DELTA (%)" warning="normal">0.18</col>
+         </row>
+         <row id="PT NOT FOUND">
+            <col id="Run A">30.00</col>
+            <col id="Run B">30.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PT HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="STATEMENTS IN GLOBAL CACHE">
+            <col id="Run A">47.00</col>
+            <col id="Run B">38.04</col>
+            <col id="DELTA (%)" warning="best">-19.06</col>
+         </row>
+         <row id="DBD REQUESTS /C">
+            <col id="Run A">6.38</col>
+            <col id="Run B">6.38</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PT REQUESTS /C">
+            <col id="Run A">5.55</col>
+            <col id="Run B">5.55</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="DYNAMIC SQL STMT">
+         <row id="PREPARE REQUESTS">
+            <col id="Run A">64447.00</col>
+            <col id="Run B">64552.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="FULL PREPARES">
+            <col id="Run A">49.00</col>
+            <col id="Run B">49.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SHORT PREPARES">
+            <col id="Run A">64398.00</col>
+            <col id="Run B">64503.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="SHORT PREPARES(SHORT PREPARES)">
+            <col id="Run A">64398.00</col>
+            <col id="Run B">64503.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="BASED ON CACHE">
+            <col id="Run A">64398.00</col>
+            <col id="Run B">64503.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="LOOK-UP IN CATALOG">
+            <col id="Run A">49.00</col>
+            <col id="Run B">49.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="CACHE HIT RATIO         (%)">
+            <col id="Run A">99.92</col>
+            <col id="Run B">99.92</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="CACHE+CATALOG HIT RATIO (%)">
+            <col id="Run A">99.92</col>
+            <col id="Run B">99.92</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TOTAL PREPARES">
+            <col id="Run A">64446.00</col>
+            <col id="Run B">64551.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="EXPLICIT PREPARES">
+            <col id="Run A">64446.00</col>
+            <col id="Run B">64551.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="PREPARE REQUESTS /C">
+            <col id="Run A">0.17</col>
+            <col id="Run B">0.17</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SHORT PREPARES /C">
+            <col id="Run A">0.17</col>
+            <col id="Run B">0.17</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SHORT PREPARES /C(SHORT PREPARES /C)">
+            <col id="Run A">0.17</col>
+            <col id="Run B">0.17</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BASED ON CACHE /C">
+            <col id="Run A">0.17</col>
+            <col id="Run B">0.17</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TOTAL PREPARES /C">
+            <col id="Run A">0.17</col>
+            <col id="Run B">0.17</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="EXPLICIT PREPARES /C">
+            <col id="Run A">0.17</col>
+            <col id="Run B">0.17</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="SUBSYSTEM SERVICES">
+         <row id="IDENTIFY">
+            <col id="Run A">2.00</col>
+            <col id="Run B">2.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="CREATE THREAD">
+            <col id="Run A">2.00</col>
+            <col id="Run B">2.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TERMINATE">
+            <col id="Run A">4.00</col>
+            <col id="Run B">4.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="ROLLBACK">
+            <col id="Run A">53685.00</col>
+            <col id="Run B">53638.00</col>
+            <col id="DELTA (%)" warning="normal">-0.09</col>
+         </row>
+         <row id="SYNCHS(SINGLE PHASE COMMIT)">
+            <col id="Run A">321.8K</col>
+            <col id="Run B">322.5K</col>
+            <col id="DELTA (%)" warning="normal">0.22</col>
+         </row>
+         <row id="SYSTEM EVENT CHECKPOINT">
+            <col id="Run A">13.00</col>
+            <col id="Run B">10.00</col>
+            <col id="DELTA (%)" warning="best">-23.08</col>
+         </row>
+         <row id="HIGH WATER MARK IDBACK">
+            <col id="Run A">2.00</col>
+            <col id="Run B">2.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="HIGH WATER MARK CTHREAD">
+            <col id="Run A">2.00</col>
+            <col id="Run B">2.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="ROLLBACK /C">
+            <col id="Run A">0.14</col>
+            <col id="Run B">0.14</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SYNCHS(SINGLE PHASE COMMIT) /C">
+            <col id="Run A">0.86</col>
+            <col id="Run B">0.86</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="OPEN/CLOSE ACTIVITY">
+         <row id="OPEN DATASETS - HWM">
+            <col id="Run A">299.00</col>
+            <col id="Run B">299.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="OPEN DATASETS">
+            <col id="Run A">299.00</col>
+            <col id="Run B">298.76</col>
+            <col id="DELTA (%)" warning="normal">-0.08</col>
+         </row>
+         <row id="DS NOT IN USE,NOT CLOSE-HWM">
+            <col id="Run A">293.00</col>
+            <col id="Run B">293.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="DS NOT IN USE,NOT CLOSED">
+            <col id="Run A">290.08</col>
+            <col id="Run B">284.34</col>
+            <col id="DELTA (%)" warning="normal">-1.98</col>
+         </row>
+         <row id="IN USE DATA SETS">
+            <col id="Run A">8.92</col>
+            <col id="Run B">14.42</col>
+            <col id="DELTA (%)" warning="high">61.66</col>
+         </row>
+         <row id="DSETS CONVERTED R/W -&gt; R/O">
+            <col id="Run A">229.00</col>
+            <col id="Run B">191.00</col>
+            <col id="DELTA (%)" warning="best">-16.59</col>
+         </row>
+      </section>
+      <section id="LOG ACTIVITY">
+         <row id="READS SATISFIED-OUTPUT BUFF">
+            <col id="Run A">24022.00</col>
+            <col id="Run B">24006.00</col>
+            <col id="DELTA (%)" warning="normal">-0.07</col>
+         </row>
+         <row id="READS SATISFIED-OUTP.BUF(%)">
+            <col id="Run A">97.62</col>
+            <col id="Run B">97.95</col>
+            <col id="DELTA (%)" warning="normal">0.34</col>
+         </row>
+         <row id="READS SATISFIED-ACTIVE LOG">
+            <col id="Run A">585.00</col>
+            <col id="Run B">502.00</col>
+            <col id="DELTA (%)" warning="best">-14.19</col>
+         </row>
+         <row id="READS SATISFIED-ACTV.LOG(%)">
+            <col id="Run A">2.38</col>
+            <col id="Run B">2.05</col>
+            <col id="DELTA (%)" warning="best">-13.87</col>
+         </row>
+         <row id="LOG RECORDS CREATED">
+            <col id="Run A">23335.0K</col>
+            <col id="Run B">23423.2K</col>
+            <col id="DELTA (%)" warning="normal">0.38</col>
+         </row>
+         <row id="LOG CI CREATED">
+            <col id="Run A">1006.8K</col>
+            <col id="Run B">1010.4K</col>
+            <col id="DELTA (%)" warning="normal">0.36</col>
+         </row>
+         <row id="LOG WRITE I/O REQ (LOG1&amp;2)">
+            <col id="Run A">1216.5K</col>
+            <col id="Run B">1218.3K</col>
+            <col id="DELTA (%)" warning="normal">0.15</col>
+         </row>
+         <row id="LOG CI WRITTEN (LOG1&amp;2)">
+            <col id="Run A">2729.9K</col>
+            <col id="Run B">2738.3K</col>
+            <col id="DELTA (%)" warning="normal">0.31</col>
+         </row>
+         <row id="READS SATISFIED-OUTPUT BUFF /C">
+            <col id="Run A">0.06</col>
+            <col id="Run B">0.06</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="LOG RECORDS CREATED /C">
+            <col id="Run A">62.15</col>
+            <col id="Run B">62.28</col>
+            <col id="DELTA (%)" warning="normal">0.21</col>
+         </row>
+         <row id="LOG CI CREATED /C">
+            <col id="Run A">2.68</col>
+            <col id="Run B">2.69</col>
+            <col id="DELTA (%)" warning="normal">0.37</col>
+         </row>
+         <row id="LOG WRITE I/O REQ (LOG1&amp;2) /C">
+            <col id="Run A">3.24</col>
+            <col id="Run B">3.24</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="LOG CI WRITTEN (LOG1&amp;2) /C">
+            <col id="Run A">7.27</col>
+            <col id="Run B">7.28</col>
+            <col id="DELTA (%)" warning="normal">0.14</col>
+         </row>
+      </section>
+      <section id="PLAN/PACKAGE PROCESSING">
+         <row id="INCREMENTAL BINDS">
+            <col id="Run A">107.5K</col>
+            <col id="Run B">107.9K</col>
+            <col id="DELTA (%)" warning="normal">0.37</col>
+         </row>
+         <row id="PLAN ALLOCATION ATTEMPTS">
+            <col id="Run A">1.00</col>
+            <col id="Run B">1.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PLAN ALLOCATION SUCCESSFUL">
+            <col id="Run A">1.00</col>
+            <col id="Run B">1.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PACKAGE ALLOCATION ATTEMPT">
+            <col id="Run A">2084.4K</col>
+            <col id="Run B">2088.2K</col>
+            <col id="DELTA (%)" warning="normal">0.18</col>
+         </row>
+         <row id="PACKAGE ALLOCATION SUCCESS">
+            <col id="Run A">2084.4K</col>
+            <col id="Run B">2088.2K</col>
+            <col id="DELTA (%)" warning="normal">0.18</col>
+         </row>
+         <row id="INCREMENTAL BINDS /C">
+            <col id="Run A">0.29</col>
+            <col id="Run B">0.29</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PACKAGE ALLOCATION ATTEMPT /C">
+            <col id="Run A">5.55</col>
+            <col id="Run B">5.55</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PACKAGE ALLOCATION SUCCESS /C">
+            <col id="Run A">5.55</col>
+            <col id="Run B">5.55</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="RID LIST PROCESSING">
+         <row id="SUCCESSFUL">
+            <col id="Run A">146.4K</col>
+            <col id="Run B">146.8K</col>
+            <col id="DELTA (%)" warning="normal">0.27</col>
+         </row>
+         <row id="NOT USED-MAX LIMIT" warning="high">
+            <col id="Run A">6840.00</col>
+            <col id="Run B">6788.00</col>
+            <col id="DELTA (%)" warning="normal">-0.76</col>
+         </row>
+         <row id="MAX RID BLOCKS ALLOCATED">
+            <col id="Run A">5.00</col>
+            <col id="Run B">5.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="RDS LIMIT EXCEEDED">
+            <col id="Run A">46523.00</col>
+            <col id="Run B">46565.00</col>
+            <col id="DELTA (%)" warning="normal">0.09</col>
+         </row>
+         <row id="SKIPPED-INDEX KNOWN">
+            <col id="Run A">103.00</col>
+            <col id="Run B">92.00</col>
+            <col id="DELTA (%)" warning="best">-10.68</col>
+         </row>
+         <row id="SUCCESSFUL /C">
+            <col id="Run A">0.39</col>
+            <col id="Run B">0.39</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="NOT USED-MAX LIMIT /C">
+            <col id="Run A">0.02</col>
+            <col id="Run B">0.02</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="RDS LIMIT EXCEEDED /C">
+            <col id="Run A">0.12</col>
+            <col id="Run B">0.12</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="AUTHORIZATION MANAGEMENT">
+         <row id="TOTAL AUTH ATTEMPTS">
+            <col id="Run A">2275.9K</col>
+            <col id="Run B">2280.3K</col>
+            <col id="DELTA (%)" warning="normal">0.19</col>
+         </row>
+         <row id="TOTAL AUTH SUCC">
+            <col id="Run A">2275.9K</col>
+            <col id="Run B">2280.3K</col>
+            <col id="DELTA (%)" warning="normal">0.19</col>
+         </row>
+         <row id="PLAN-AUTH SUCC-W/O CATALOG">
+            <col id="Run A">1.00</col>
+            <col id="Run B">1.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PKG-AUTH UNSUCC-CACHE">
+            <col id="Run A">1927.1K</col>
+            <col id="Run B">1930.8K</col>
+            <col id="DELTA (%)" warning="normal">0.19</col>
+         </row>
+         <row id="TOTAL AUTH ATTEMPTS /C">
+            <col id="Run A">6.06</col>
+            <col id="Run B">6.06</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TOTAL AUTH SUCC /C">
+            <col id="Run A">6.06</col>
+            <col id="Run B">6.06</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PKG-AUTH UNSUCC-CACHE /C">
+            <col id="Run A">5.13</col>
+            <col id="Run B">5.13</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="LOCKING ACTIVITY">
+         <row id="SUSPENSIONS (ALL)">
+            <col id="Run A">251.00</col>
+            <col id="Run B">194.00</col>
+            <col id="DELTA (%)" warning="best">-22.71</col>
+         </row>
+         <row id="SUSPENSIONS (IRLM LATCH)">
+            <col id="Run A">251.00</col>
+            <col id="Run B">194.00</col>
+            <col id="DELTA (%)" warning="best">-22.71</col>
+         </row>
+         <row id="LOCK REQUESTS">
+            <col id="Run A">8225.6K</col>
+            <col id="Run B">8242.9K</col>
+            <col id="DELTA (%)" warning="normal">0.21</col>
+         </row>
+         <row id="UNLOCK REQUESTS">
+            <col id="Run A">1140.7K</col>
+            <col id="Run B">1143.0K</col>
+            <col id="DELTA (%)" warning="normal">0.2</col>
+         </row>
+         <row id="CHANGE REQUESTS">
+            <col id="Run A">1005.4K</col>
+            <col id="Run B">1008.4K</col>
+            <col id="DELTA (%)" warning="normal">0.3</col>
+         </row>
+         <row id="DRAIN REQUESTS">
+            <col id="Run A">229.00</col>
+            <col id="Run B">191.00</col>
+            <col id="DELTA (%)" warning="best">-16.59</col>
+         </row>
+         <row id="CLAIM REQUESTS">
+            <col id="Run A">19191.1K</col>
+            <col id="Run B">19253.2K</col>
+            <col id="DELTA (%)" warning="normal">0.32</col>
+         </row>
+         <row id="CLAIM REQUESTS FAILED">
+            <col id="Run A">53685.00</col>
+            <col id="Run B">53638.00</col>
+            <col id="DELTA (%)" warning="normal">-0.09</col>
+         </row>
+         <row id="LOCK REQUESTS /C">
+            <col id="Run A">21.91</col>
+            <col id="Run B">21.92</col>
+            <col id="DELTA (%)" warning="normal">0.05</col>
+         </row>
+         <row id="UNLOCK REQUESTS /C">
+            <col id="Run A">3.04</col>
+            <col id="Run B">3.04</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="CHANGE REQUESTS /C">
+            <col id="Run A">2.68</col>
+            <col id="Run B">2.68</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="CLAIM REQUESTS /C">
+            <col id="Run A">51.11</col>
+            <col id="Run B">51.19</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="CLAIM REQUESTS FAILED /C">
+            <col id="Run A">0.14</col>
+            <col id="Run B">0.14</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="DATA SHARING LOCKING"/>
+      <section id="GLOBAL DDF ACTIVITY"/>
+      <section id="QUERY PARALLELISM"/>
+      <section id="CPU TIMES"/>
+      <section id="TCB TIME">
+         <row id="SYSTEM SERVICES ADDRESS SPACE">
+            <col id="Run A">0.213747</col>
+            <col id="Run B">0.150414</col>
+            <col id="DELTA (%)" warning="best">-29.63</col>
+         </row>
+         <row id="DATABASE SERVICES ADDRESS SPACE">
+            <col id="Run A">0.752945</col>
+            <col id="Run B">0.745502</col>
+            <col id="DELTA (%)" warning="normal">-0.99</col>
+         </row>
+         <row id="IRLM">
+            <col id="Run A">0.000037</col>
+            <col id="Run B">0.000011</col>
+            <col id="DELTA (%)" warning="best">-70.27</col>
+         </row>
+         <row id="DDF ADDRESS SPACE">
+            <col id="Run A">0.007529</col>
+            <col id="Run B">0.005146</col>
+            <col id="DELTA (%)" warning="best">-31.65</col>
+         </row>
+         <row id="TOTAL">
+            <col id="Run A">0.974258</col>
+            <col id="Run B">0.901073</col>
+            <col id="DELTA (%)" warning="good">-7.51</col>
+         </row>
+      </section>
+      <section id="PREEMPT SRB">
+         <row id="SYSTEM SERVICES ADDRESS SPACE">
+            <col id="Run A">12.000471</col>
+            <col id="Run B">11.988100</col>
+            <col id="DELTA (%)" warning="normal">-0.1</col>
+         </row>
+         <row id="DATABASE SERVICES ADDRESS SPACE">
+            <col id="Run A">0.016725</col>
+            <col id="Run B">0.012037</col>
+            <col id="DELTA (%)" warning="best">-28.03</col>
+         </row>
+         <row id="DDF ADDRESS SPACE">
+            <col id="Run A">0.000009</col>
+            <col id="Run B">0.000009</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TOTAL">
+            <col id="Run A">12.017206</col>
+            <col id="Run B">12.000146</col>
+            <col id="DELTA (%)" warning="normal">-0.14</col>
+         </row>
+      </section>
+      <section id="NONPREEMPT SRB">
+         <row id="SYSTEM SERVICES ADDRESS SPACE">
+            <col id="Run A">0.015830</col>
+            <col id="Run B">0.012978</col>
+            <col id="DELTA (%)" warning="best">-18.02</col>
+         </row>
+         <row id="DATABASE SERVICES ADDRESS SPACE">
+            <col id="Run A">0.020748</col>
+            <col id="Run B">0.018658</col>
+            <col id="DELTA (%)" warning="best">-10.07</col>
+         </row>
+         <row id="IRLM">
+            <col id="Run A">0.121245</col>
+            <col id="Run B">0.067619</col>
+            <col id="DELTA (%)" warning="best">-44.23</col>
+         </row>
+         <row id="DDF ADDRESS SPACE">
+            <col id="Run A">0.001360</col>
+            <col id="Run B">0.000847</col>
+            <col id="DELTA (%)" warning="best">-37.72</col>
+         </row>
+         <row id="TOTAL">
+            <col id="Run A">0.159183</col>
+            <col id="Run B">0.100103</col>
+            <col id="DELTA (%)" warning="best">-37.11</col>
+         </row>
+      </section>
+      <section id="TOTAL TIME">
+         <row id="SYSTEM SERVICES ADDRESS SPACE">
+            <col id="Run A">12.230048</col>
+            <col id="Run B">12.151492</col>
+            <col id="DELTA (%)" warning="normal">-0.64</col>
+         </row>
+         <row id="DATABASE SERVICES ADDRESS SPACE">
+            <col id="Run A">0.790419</col>
+            <col id="Run B">0.776197</col>
+            <col id="DELTA (%)" warning="normal">-1.8</col>
+         </row>
+         <row id="IRLM">
+            <col id="Run A">0.121282</col>
+            <col id="Run B">0.067630</col>
+            <col id="DELTA (%)" warning="best">-44.24</col>
+         </row>
+         <row id="DDF ADDRESS SPACE">
+            <col id="Run A">0.008898</col>
+            <col id="Run B">0.006002</col>
+            <col id="DELTA (%)" warning="best">-32.55</col>
+         </row>
+         <row id="TOTAL">
+            <col id="Run A">13.150647</col>
+            <col id="Run B">13.001322</col>
+            <col id="DELTA (%)" warning="normal">-1.14</col>
+         </row>
+      </section>
+      <section id="PREEMPT IIP SRB">
+         <row id="SYSTEM SERVICES ADDRESS SPACE">
+            <col id="Run A">4.825670</col>
+            <col id="Run B">4.828920</col>
+            <col id="DELTA (%)" warning="normal">0.07</col>
+         </row>
+         <row id="DATABASE SERVICES ADDRESS SPACE">
+            <col id="Run A">1.411127</col>
+            <col id="Run B">1.383540</col>
+            <col id="DELTA (%)" warning="normal">-1.95</col>
+         </row>
+         <row id="TOTAL">
+            <col id="Run A">6.236797</col>
+            <col id="Run B">6.212461</col>
+            <col id="DELTA (%)" warning="normal">-0.39</col>
+         </row>
+      </section>
+      <section id="COMMIT">
+         <row id="SYSTEM SERVICES ADDRESS SPACE">
+            <col id="Run A">0.000033</col>
+            <col id="Run B">0.000032</col>
+            <col id="DELTA (%)" warning="normal">-3.03</col>
+         </row>
+         <row id="DATABASE SERVICES ADDRESS SPACE">
+            <col id="Run A">0.000002</col>
+            <col id="Run B">0.000002</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TOTAL">
+            <col id="Run A">0.000035</col>
+            <col id="Run B">0.000035</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="DATA CAPTURE"/>
+      <section id="IFC DEST. WRITTEN">
+         <row id="SMF">
+            <col id="Run A">1056.00</col>
+            <col id="Run B">931.00</col>
+            <col id="DELTA (%)" warning="best">-11.84</col>
+         </row>
+         <row id="TOTAL">
+            <col id="Run A">1056.00</col>
+            <col id="Run B">931.00</col>
+            <col id="DELTA (%)" warning="best">-11.84</col>
+         </row>
+      </section>
+      <section id="IFC DEST. NOT WRTN"/>
+      <section id="IFC RECORD COUNTS WRITTEN">
+         <row id="SYSTEM RELATED">
+            <col id="Run A">27.00</col>
+            <col id="Run B">15.00</col>
+            <col id="DELTA (%)" warning="best">-44.44</col>
+         </row>
+         <row id="DATABASE RELATED">
+            <col id="Run A">27.00</col>
+            <col id="Run B">15.00</col>
+            <col id="DELTA (%)" warning="best">-44.44</col>
+         </row>
+         <row id="ACCOUNTING">
+            <col id="Run A">2.00</col>
+            <col id="Run B">2.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="START TRACE">
+            <col id="Run A">3.00</col>
+            <col id="Run B">3.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SYSTEM PARAMETERS">
+            <col id="Run A">28.00</col>
+            <col id="Run B">16.00</col>
+            <col id="DELTA (%)" warning="best">-42.86</col>
+         </row>
+         <row id="SYS.PARMS-BPOOLS">
+            <col id="Run A">27.00</col>
+            <col id="Run B">15.00</col>
+            <col id="DELTA (%)" warning="best">-44.44</col>
+         </row>
+         <row id="TOTAL">
+            <col id="Run A">114.00</col>
+            <col id="Run B">66.00</col>
+            <col id="DELTA (%)" warning="best">-42.11</col>
+         </row>
+      </section>
+      <section id="IFC RECORD COUNTS NOT WRTN"/>
+      <section id="LATCH CNT">
+         <row id="LC6">
+            <col id="Run A">0.01</col>
+            <col id="Run B">0.00</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="LC14">
+            <col id="Run A">0.04</col>
+            <col id="Run B">0.07</col>
+            <col id="DELTA (%)" warning="high">75</col>
+         </row>
+         <row id="LC21">
+            <col id="Run A">0.02</col>
+            <col id="Run B">0.04</col>
+            <col id="DELTA (%)" warning="high">100</col>
+         </row>
+         <row id="LC23">
+            <col id="Run A">1.63</col>
+            <col id="Run B">1.76</col>
+            <col id="DELTA (%)" warning="medium">7.98</col>
+         </row>
+         <row id="LC24">
+            <col id="Run A">6.00</col>
+            <col id="Run B">13.15</col>
+            <col id="DELTA (%)" warning="high">119.17</col>
+         </row>
+      </section>
+      <section id="DBM1 AND MVS STORAGE BELOW 2GB">
+         <row id="TOTAL DBM1 STORAGE BELOW 2 GB           (MB)">
+            <col id="Run A">14.46</col>
+            <col id="Run B">15.26</col>
+            <col id="DELTA (%)" warning="medium">5.53</col>
+         </row>
+         <row id="TOTAL GETMAINED STORAGE                (MB)">
+            <col id="Run A">0.36</col>
+            <col id="Run B">0.40</col>
+            <col id="DELTA (%)" warning="high">11.11</col>
+         </row>
+         <row id="TOTAL VARIABLE STORAGE                 (MB)">
+            <col id="Run A">4.89</col>
+            <col id="Run B">5.25</col>
+            <col id="DELTA (%)" warning="medium">7.36</col>
+         </row>
+         <row id="TOTAL AGENT LOCAL STORAGE             (MB)">
+            <col id="Run A">3.31</col>
+            <col id="Run B">3.66</col>
+            <col id="DELTA (%)" warning="high">10.57</col>
+         </row>
+         <row id="TOTAL AGENT SYSTEM STORAGE           (MB)">
+            <col id="Run A">3.19</col>
+            <col id="Run B">3.28</col>
+            <col id="DELTA (%)" warning="normal">2.82</col>
+         </row>
+         <row id="NUMBER OF PREFETCH ENGINES">
+            <col id="Run A">31.00</col>
+            <col id="Run B">31.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="NUMBER OF DEFERRED WRITE ENGINES">
+            <col id="Run A">184.00</col>
+            <col id="Run B">184.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TOTAL AGENT NON-SYSTEM STORAGE       (MB)">
+            <col id="Run A">0.13</col>
+            <col id="Run B">0.39</col>
+            <col id="DELTA (%)" warning="high">200</col>
+         </row>
+         <row id="TOTAL NUMBER OF ACTIVE USER THREADS">
+            <col id="Run A">0.38</col>
+            <col id="Run B">0.71</col>
+            <col id="DELTA (%)" warning="high">86.84</col>
+         </row>
+         <row id="NUMBER OF ALLIED THREADS">
+            <col id="Run A">0.38</col>
+            <col id="Run B">0.71</col>
+            <col id="DELTA (%)" warning="high">86.84</col>
+         </row>
+         <row id="BUFFER MANAGER STORAGE CNTL BLKS      (MB)">
+            <col id="Run A">0.47</col>
+            <col id="Run B">0.48</col>
+            <col id="DELTA (%)" warning="normal">2.13</col>
+         </row>
+         <row id="TOTAL FIXED STORAGE                    (MB)">
+            <col id="Run A">0.11</col>
+            <col id="Run B">0.11</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TOTAL GETMAINED STACK STORAGE          (MB)">
+            <col id="Run A">9.10</col>
+            <col id="Run B">9.50</col>
+            <col id="DELTA (%)" warning="normal">4.4</col>
+         </row>
+         <row id="TOTAL STACK STORAGE IN USE           (MB)">
+            <col id="Run A">8.15</col>
+            <col id="Run B">8.34</col>
+            <col id="DELTA (%)" warning="normal">2.33</col>
+         </row>
+         <row id="SYSTEM AGENT STACK STORAGE IN USE  (MB)">
+            <col id="Run A">7.13</col>
+            <col id="Run B">7.19</col>
+            <col id="DELTA (%)" warning="normal">0.84</col>
+         </row>
+         <row id="STORAGE CUSHION                         (MB)">
+            <col id="Run A">150.14</col>
+            <col id="Run B">150.14</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="24 BIT LOW PRIVATE                      (MB)">
+            <col id="Run A">0.16</col>
+            <col id="Run B">0.16</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="24 BIT HIGH PRIVATE                     (MB)">
+            <col id="Run A">0.46</col>
+            <col id="Run B">0.46</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="24 BIT PRIVATE CURRENT HIGH ADDRESS">
+            <col id="Run A">0000000000030000</col>
+            <col id="Run B">0000000000030000</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="31 BIT EXTENDED LOW PRIVATE             (MB)">
+            <col id="Run A">87.66</col>
+            <col id="Run B">87.66</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="31 BIT EXTENDED HIGH PRIVATE            (MB)">
+            <col id="Run A">35.08</col>
+            <col id="Run B">35.89</col>
+            <col id="DELTA (%)" warning="normal">2.31</col>
+         </row>
+         <row id="31 BIT PRIVATE CURRENT HIGH ADDRESS">
+            <col id="Run A">0000000027B00000</col>
+            <col id="Run B">0000000027B00000</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="EXTENDED REGION SIZE (MAX)              (MB)">
+            <col id="Run A">1501.00</col>
+            <col id="Run B">1501.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="EXTENDED CSA SIZE                       (MB)">
+            <col id="Run A">376.24</col>
+            <col id="Run B">376.24</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="AVERAGE THREAD FOOTPRINT                (MB)">
+            <col id="Run A">9.79</col>
+            <col id="Run B">6.04</col>
+            <col id="DELTA (%)" warning="best">-38.3</col>
+         </row>
+         <row id="MAX NUMBER OF POSSIBLE THREADS">
+            <col id="Run A">116</col>
+            <col id="Run B">189</col>
+            <col id="DELTA (%)" warning="high">62.93</col>
+         </row>
+      </section>
+      <section id="DBM1 STORAGE ABOVE 2GB">
+         <row id="GETMAINED STORAGE                       (MB)">
+            <col id="Run A">112.23</col>
+            <col id="Run B">112.23</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="IN USE EDM DBD POOL                   (MB)">
+            <col id="Run A">0.59</col>
+            <col id="Run B">0.59</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="IN USE EDM STATEMENT POOL             (MB)">
+            <col id="Run A">0.64</col>
+            <col id="Run B">0.52</col>
+            <col id="DELTA (%)" warning="best">-18.75</col>
+         </row>
+         <row id="IN USE EDM SKELETON POOL              (MB)">
+            <col id="Run A">3.40</col>
+            <col id="Run B">3.23</col>
+            <col id="DELTA (%)" warning="normal">-5</col>
+         </row>
+         <row id="FIXED STORAGE POOL                      (MB)">
+            <col id="Run A">6.24</col>
+            <col id="Run B">6.27</col>
+            <col id="DELTA (%)" warning="normal">0.48</col>
+         </row>
+         <row id="VARIABLE STORAGE POOL                   (MB)">
+            <col id="Run A">61.73</col>
+            <col id="Run B">63.39</col>
+            <col id="DELTA (%)" warning="normal">2.69</col>
+         </row>
+         <row id="STORAGE MANAGER CONTROL BLOCKS          (MB)">
+            <col id="Run A">1.34</col>
+            <col id="Run B">1.34</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="VIRTUAL BUFFER POOLS                    (MB)">
+            <col id="Run A">1671.87</col>
+            <col id="Run B">1671.87</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="VIRTUAL POOL CONTROL BLOCKS             (MB)">
+            <col id="Run A">58.86</col>
+            <col id="Run B">58.86</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SHARED GETMAINED STORAGE                (MB)">
+            <col id="Run A">4.94</col>
+            <col id="Run B">4.94</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="STORAGE FOR STMT DEPENDENCIES         (MB)">
+            <col id="Run A">0.03</col>
+            <col id="Run B">0.03</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SHARED FIXED STORAGE                    (MB)">
+            <col id="Run A">2.96</col>
+            <col id="Run B">2.96</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="RID POOL                              (MB)">
+            <col id="Run A">1.00</col>
+            <col id="Run B">1.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SHARED VARIABLE STORAGE                 (MB)">
+            <col id="Run A">35.46</col>
+            <col id="Run B">39.69</col>
+            <col id="DELTA (%)" warning="high">11.93</col>
+         </row>
+         <row id="TOTAL AGENT LOCAL STORAGE             (MB)">
+            <col id="Run A">33.33</col>
+            <col id="Run B">37.44</col>
+            <col id="DELTA (%)" warning="high">12.33</col>
+         </row>
+         <row id="TOTAL AGENT SYSTEM STORAGE          (MB)">
+            <col id="Run A">28.56</col>
+            <col id="Run B">28.97</col>
+            <col id="DELTA (%)" warning="normal">1.44</col>
+         </row>
+         <row id="TOTAL AGENT NON-SYSTEM STORAGE      (MB)">
+            <col id="Run A">4.77</col>
+            <col id="Run B">8.47</col>
+            <col id="DELTA (%)" warning="high">77.57</col>
+         </row>
+         <row id="STATEMENTS COUNT">
+            <col id="Run A">0.21</col>
+            <col id="Run B">0.00</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="HWM FOR ALLOCATED STATEMENTS    (MB)">
+            <col id="Run A">0.03</col>
+            <col id="Run B">0.03</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="STATEMENT COUNT AT HWM">
+            <col id="Run A">1.00</col>
+            <col id="Run B">1.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="DATE AT HWM">
+            <col id="Run A">06/11/19</col>
+            <col id="Run B">06/11/19</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TIME AT HWM">
+            <col id="Run A">17:46:32.21</col>
+            <col id="Run B">18:14:16.66</col>
+            <col id="DELTA (%)" warning="normal">2.6</col>
+         </row>
+         <row id="DYNAMIC STMT CACHE CNTL BLKS          (MB)">
+            <col id="Run A">0.90</col>
+            <col id="Run B">0.90</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SYSTEM COPIES OF CACHED SQL STMTS     (MB)">
+            <col id="Run A">0.57</col>
+            <col id="Run B">0.70</col>
+            <col id="DELTA (%)" warning="high">22.81</col>
+         </row>
+         <row id="IN USE STORAGE                      (MB)">
+            <col id="Run A">0.09</col>
+            <col id="Run B">0.08</col>
+            <col id="DELTA (%)" warning="best">-11.11</col>
+         </row>
+         <row id="HWM FOR ALLOCATED STATEMENTS        (MB)">
+            <col id="Run A">0.10</col>
+            <col id="Run B">0.10</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SYSTEM COPIES OF STATIC SQL           (MB)">
+            <col id="Run A">2.29</col>
+            <col id="Run B">2.76</col>
+            <col id="DELTA (%)" warning="high">20.52</col>
+         </row>
+         <row id="IN USE STORAGE                      (MB)(SYSTEM COPIES OF STATIC SQL           (MB))">
+            <col id="Run A">0.40</col>
+            <col id="Run B">0.38</col>
+            <col id="DELTA (%)" warning="good">-5</col>
+         </row>
+         <row id="THREAD PLAN AND PACKAGE STORAGE       (MB)">
+            <col id="Run A">0.08</col>
+            <col id="Run B">0.22</col>
+            <col id="DELTA (%)" warning="high">175</col>
+         </row>
+         <row id="SHARED STORAGE MANAGER CNTL BLKS        (MB)">
+            <col id="Run A">7.59</col>
+            <col id="Run B">7.59</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SHARED SYSTEM AGENT STACK STORAGE       (MB)">
+            <col id="Run A">128.00</col>
+            <col id="Run B">128.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="STACK STORAGE IN USE                  (MB)">
+            <col id="Run A">81.00</col>
+            <col id="Run B">82.10</col>
+            <col id="DELTA (%)" warning="normal">1.36</col>
+         </row>
+         <row id="SHARED NON-SYSTEM AGENT STACK STORAGE   (MB)">
+            <col id="Run A">384.00</col>
+            <col id="Run B">384.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="STACK STORAGE IN USE                  (MB)(SHARED NON-SYSTEM AGENT STACK STORAGE   (MB))">
+            <col id="Run A">0.73</col>
+            <col id="Run B">1.01</col>
+            <col id="DELTA (%)" warning="high">38.36</col>
+         </row>
+      </section>
+      <section id="DIST AND MVS STORAGE BELOW 2GB">
+         <row id="TOTAL DIST STORAGE BELOW 2 GB           (MB)">
+            <col id="Run A">1.30</col>
+            <col id="Run B">1.30</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TOTAL VARIABLE STORAGE                 (MB)">
+            <col id="Run A">0.26</col>
+            <col id="Run B">0.26</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TOTAL FIXED STORAGE                    (MB)">
+            <col id="Run A">0.08</col>
+            <col id="Run B">0.08</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TOTAL GETMAINED STACK STORAGE          (MB)">
+            <col id="Run A">0.95</col>
+            <col id="Run B">0.95</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="TOTAL STACK STORAGE IN USE           (MB)">
+            <col id="Run A">0.87</col>
+            <col id="Run B">0.87</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SYSTEM AGENT STACK STORAGE IN USE  (MB)">
+            <col id="Run A">0.78</col>
+            <col id="Run B">0.78</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="STORAGE CUSHION                         (MB)">
+            <col id="Run A">150.14</col>
+            <col id="Run B">150.14</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="24 BIT LOW PRIVATE                      (MB)">
+            <col id="Run A">0.24</col>
+            <col id="Run B">0.24</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="24 BIT HIGH PRIVATE                     (MB)">
+            <col id="Run A">0.23</col>
+            <col id="Run B">0.23</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="24 BIT PRIVATE CURRENT HIGH ADDRESS">
+            <col id="Run A">0000000000044000</col>
+            <col id="Run B">0000000000044000</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="31 BIT EXTENDED LOW PRIVATE             (MB)">
+            <col id="Run A">7.69</col>
+            <col id="Run B">7.69</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="31 BIT EXTENDED HIGH PRIVATE            (MB)">
+            <col id="Run A">13.10</col>
+            <col id="Run B">13.10</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="31 BIT PRIVATE CURRENT HIGH ADDRESS">
+            <col id="Run A">0000000022AB0000</col>
+            <col id="Run B">0000000022AB0000</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="EXTENDED REGION SIZE (MAX)              (MB)">
+            <col id="Run A">1501.00</col>
+            <col id="Run B">1501.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="DIST STORAGE ABOVE 2GB">
+         <row id="VARIABLE STORAGE                        (MB)">
+            <col id="Run A">0.06</col>
+            <col id="Run B">0.06</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="STORAGE MANAGER CONTROL BLOCKS          (MB)">
+            <col id="Run A">1.34</col>
+            <col id="Run B">1.34</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="REAL AND AUXILIARY STORAGE FOR DBM1">
+         <row id="REAL STORAGE IN USE                     (MB)">
+            <col id="Run A">760.51</col>
+            <col id="Run B">716.41</col>
+            <col id="DELTA (%)" warning="good">-5.8</col>
+         </row>
+         <row id="31 BIT IN USE                         (MB)">
+            <col id="Run A">40.01</col>
+            <col id="Run B">40.79</col>
+            <col id="DELTA (%)" warning="normal">1.95</col>
+         </row>
+         <row id="64 BIT IN USE                         (MB)">
+            <col id="Run A">720.50</col>
+            <col id="Run B">675.62</col>
+            <col id="DELTA (%)" warning="good">-6.23</col>
+         </row>
+         <row id="64 BIT THREAD AND SYSTEM ONLY       (MB)">
+            <col id="Run A">171.66</col>
+            <col id="Run B">173.11</col>
+            <col id="DELTA (%)" warning="normal">0.84</col>
+         </row>
+         <row id="HWM 64 BIT REAL STORAGE IN USE          (MB)">
+            <col id="Run A">757.57</col>
+            <col id="Run B">768.22</col>
+            <col id="DELTA (%)" warning="normal">1.41</col>
+         </row>
+         <row id="AVERAGE THREAD FOOTPRINT                (MB)">
+            <col id="Run A">564.41</col>
+            <col id="Run B">301.64</col>
+            <col id="DELTA (%)" warning="best">-46.56</col>
+         </row>
+      </section>
+      <section id="REAL AND AUXILIARY STORAGE FOR DIST">
+         <row id="REAL STORAGE IN USE                     (MB)">
+            <col id="Run A">11.57</col>
+            <col id="Run B">11.57</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="31 BIT IN USE                         (MB)">
+            <col id="Run A">4.37</col>
+            <col id="Run B">4.37</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="64 BIT IN USE                         (MB)">
+            <col id="Run A">7.20</col>
+            <col id="Run B">7.20</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="64 BIT THREAD AND SYSTEM ONLY       (MB)">
+            <col id="Run A">1.17</col>
+            <col id="Run B">1.17</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="HWM 64 BIT REAL STORAGE IN USE          (MB)">
+            <col id="Run A">7.20</col>
+            <col id="Run B">7.20</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="COMMON STORAGE BELOW AND ABOVE 2GB">
+         <row id="EXTENDED CSA SIZE                       (MB)">
+            <col id="Run A">376.24</col>
+            <col id="Run B">376.24</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="FIXED POOL BELOW                        (MB)">
+            <col id="Run A">1.27</col>
+            <col id="Run B">1.33</col>
+            <col id="DELTA (%)" warning="normal">4.72</col>
+         </row>
+         <row id="VARIABLE POOL BELOW                     (MB)">
+            <col id="Run A">0.67</col>
+            <col id="Run B">0.68</col>
+            <col id="DELTA (%)" warning="normal">1.49</col>
+         </row>
+         <row id="GETMAINED BELOW                         (MB)">
+            <col id="Run A">0.10</col>
+            <col id="Run B">0.10</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="FIXED POOL ABOVE                        (MB)">
+            <col id="Run A">2.37</col>
+            <col id="Run B">2.40</col>
+            <col id="DELTA (%)" warning="normal">1.27</col>
+         </row>
+         <row id="VARIABLE POOL ABOVE                     (MB)">
+            <col id="Run A">0.02</col>
+            <col id="Run B">0.02</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETMAINED ABOVE                         (MB)">
+            <col id="Run A">0.18</col>
+            <col id="Run B">0.18</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="STORAGE MANAGER CONTROL BLOCKS ABOVE    (MB)">
+            <col id="Run A">1.34</col>
+            <col id="Run B">1.34</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="REAL LOG MANAGER WRITE BUFFERS ABOVE    (MB)">
+            <col id="Run A">5.05</col>
+            <col id="Run B">5.05</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="REAL STORAGE IN USE                     (MB)">
+            <col id="Run A">4.07</col>
+            <col id="Run B">4.11</col>
+            <col id="DELTA (%)" warning="normal">0.98</col>
+         </row>
+         <row id="AVERAGE THREAD FOOTPRINT                (MB)">
+            <col id="Run A">10.86</col>
+            <col id="Run B">5.79</col>
+            <col id="DELTA (%)" warning="best">-46.69</col>
+         </row>
+      </section>
+      <section id="SUBSYSTEM SHARED STORAGE ABOVE 2GB">
+         <row id="REAL STORAGE IN USE                     (MB)">
+            <col id="Run A">86.53</col>
+            <col id="Run B">89.15</col>
+            <col id="DELTA (%)" warning="normal">3.03</col>
+         </row>
+         <row id="SHARED THREAD AND SYSTEM              (MB)">
+            <col id="Run A">65.97</col>
+            <col id="Run B">67.19</col>
+            <col id="DELTA (%)" warning="normal">1.85</col>
+         </row>
+         <row id="SHARED STACK STORAGE                  (MB)">
+            <col id="Run A">20.56</col>
+            <col id="Run B">21.96</col>
+            <col id="DELTA (%)" warning="medium">6.81</col>
+         </row>
+         <row id="AVERAGE THREAD FOOTPRINT                (MB)">
+            <col id="Run A">230.73</col>
+            <col id="Run B">125.71</col>
+            <col id="DELTA (%)" warning="best">-45.52</col>
+         </row>
+      </section>
+      <section id="CPU AND STORAGE METRICS"/>
+      <section id="BP0    GENERAL">
+         <row id="CURRENT ACTIVE BUFFERS">
+            <col id="Run A">170.52</col>
+            <col id="Run B">172.47</col>
+            <col id="DELTA (%)" warning="normal">1.14</col>
+         </row>
+         <row id="BUFFERS ALLOCATED - VPOOL">
+            <col id="Run A">20000.00</col>
+            <col id="Run B">20000.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="MIN BUFFERS ON SLRU">
+            <col id="Run A">1417.92</col>
+            <col id="Run B">1428.24</col>
+            <col id="DELTA (%)" warning="normal">0.73</col>
+         </row>
+         <row id="MAX BUFFERS ON SLRU">
+            <col id="Run A">1418.44</col>
+            <col id="Run B">1429.12</col>
+            <col id="DELTA (%)" warning="normal">0.75</col>
+         </row>
+      </section>
+      <section id="BP0    READ OPERATIONS">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) SEQU">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) RANDOM">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGE REQUEST">
+            <col id="Run A">4533.7K</col>
+            <col id="Run B">4550.9K</col>
+            <col id="DELTA (%)" warning="normal">0.38</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL">
+            <col id="Run A">1620.0K</col>
+            <col id="Run B">1626.4K</col>
+            <col id="DELTA (%)" warning="normal">0.4</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM">
+            <col id="Run A">2913.7K</col>
+            <col id="Run B">2924.5K</col>
+            <col id="DELTA (%)" warning="normal">0.37</col>
+         </row>
+         <row id="LIST PREFETCH REQUESTS">
+            <col id="Run A">21.00</col>
+            <col id="Run B">21.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED">
+            <col id="Run A">26892.00</col>
+            <col id="Run B">26995.00</col>
+            <col id="DELTA (%)" warning="normal">0.38</col>
+         </row>
+         <row id="DYNAMIC PREFETCH READS">
+            <col id="Run A">1.00</col>
+            <col id="Run B">0.00</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="PAGES READ VIA DYN.PREFETCH">
+            <col id="Run A">1.00</col>
+            <col id="Run B">0.00</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="PAGE-INS REQUIRED FOR READ" warning="high">
+            <col id="Run A">1.00</col>
+            <col id="Run B">0.00</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="READ I/O - DASD CACHE HIT">
+            <col id="Run A">37314.00</col>
+            <col id="Run B">20730.00</col>
+            <col id="DELTA (%)" warning="best">-44.44</col>
+         </row>
+         <row id="GETPAGE REQUEST /C">
+            <col id="Run A">12.07</col>
+            <col id="Run B">12.10</col>
+            <col id="DELTA (%)" warning="normal">0.25</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL /C">
+            <col id="Run A">4.31</col>
+            <col id="Run B">4.32</col>
+            <col id="DELTA (%)" warning="normal">0.23</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM /C">
+            <col id="Run A">7.76</col>
+            <col id="Run B">7.78</col>
+            <col id="DELTA (%)" warning="normal">0.26</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED /C">
+            <col id="Run A">0.07</col>
+            <col id="Run B">0.07</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="READ I/O - DASD CACHE HIT /C">
+            <col id="Run A">0.10</col>
+            <col id="Run B">0.06</col>
+            <col id="DELTA (%)" warning="best">-40</col>
+         </row>
+      </section>
+      <section id="BP0    WRITE OPERATIONS">
+         <row id="BUFFER UPDATES">
+            <col id="Run A">1366.9K</col>
+            <col id="Run B">1372.3K</col>
+            <col id="DELTA (%)" warning="normal">0.4</col>
+         </row>
+         <row id="PAGES WRITTEN">
+            <col id="Run A">2349.00</col>
+            <col id="Run B">2268.00</col>
+            <col id="DELTA (%)" warning="normal">-3.45</col>
+         </row>
+         <row id="BUFF.UPDATES/PAGES WRITTEN">
+            <col id="Run A">581.92</col>
+            <col id="Run B">605.08</col>
+            <col id="DELTA (%)" warning="normal">3.98</col>
+         </row>
+         <row id="SYNCHRONOUS WRITES">
+            <col id="Run A">462.00</col>
+            <col id="Run B">452.00</col>
+            <col id="DELTA (%)" warning="normal">-2.16</col>
+         </row>
+         <row id="ASYNCHRONOUS WRITES">
+            <col id="Run A">252.00</col>
+            <col id="Run B">235.00</col>
+            <col id="DELTA (%)" warning="good">-6.75</col>
+         </row>
+         <row id="PAGES WRITTEN PER WRITE I/O">
+            <col id="Run A">3.29</col>
+            <col id="Run B">3.30</col>
+            <col id="DELTA (%)" warning="normal">0.3</col>
+         </row>
+         <row id="BUFFER UPDATES /C">
+            <col id="Run A">3.64</col>
+            <col id="Run B">3.65</col>
+            <col id="DELTA (%)" warning="normal">0.27</col>
+         </row>
+         <row id="PAGES WRITTEN /C">
+            <col id="Run A">0.01</col>
+            <col id="Run B">0.01</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="BP0    SORT/MERGE"/>
+      <section id="BP15   GENERAL">
+         <row id="CURRENT ACTIVE BUFFERS">
+            <col id="Run A">4754.66</col>
+            <col id="Run B">6877.55</col>
+            <col id="DELTA (%)" warning="high">44.65</col>
+         </row>
+         <row id="BUFFERS ALLOCATED - VPOOL">
+            <col id="Run A">200.0K</col>
+            <col id="Run B">200.0K</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="MIN BUFFERS ON SLRU">
+            <col id="Run A">20486.88</col>
+            <col id="Run B">20557.99</col>
+            <col id="DELTA (%)" warning="normal">0.35</col>
+         </row>
+         <row id="MAX BUFFERS ON SLRU">
+            <col id="Run A">20544.17</col>
+            <col id="Run B">20655.37</col>
+            <col id="DELTA (%)" warning="normal">0.54</col>
+         </row>
+         <row id="GETPAGE REQU RANDOM ON SLRU">
+            <col id="Run A">13229.00</col>
+            <col id="Run B">13261.00</col>
+            <col id="DELTA (%)" warning="normal">0.24</col>
+         </row>
+         <row id="GETPAGE REQU RANDOM ON SLRU /C">
+            <col id="Run A">0.04</col>
+            <col id="Run B">0.04</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="BP15   READ OPERATIONS">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) SEQU">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) RANDOM">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGE REQUEST">
+            <col id="Run A">35909.0K</col>
+            <col id="Run B">36251.7K</col>
+            <col id="DELTA (%)" warning="normal">0.95</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL">
+            <col id="Run A">33211.4K</col>
+            <col id="Run B">33549.5K</col>
+            <col id="DELTA (%)" warning="normal">1.02</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM">
+            <col id="Run A">2697.6K</col>
+            <col id="Run B">2702.1K</col>
+            <col id="DELTA (%)" warning="normal">0.17</col>
+         </row>
+         <row id="SYNCHRONOUS READS">
+            <col id="Run A">15.00</col>
+            <col id="Run B">15.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SYNC READS-RANDOM">
+            <col id="Run A">15.00</col>
+            <col id="Run B">15.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGE PER SYN.READ-RANDOM">
+            <col id="Run A">179.8K</col>
+            <col id="Run B">180.1K</col>
+            <col id="DELTA (%)" warning="normal">0.17</col>
+         </row>
+         <row id="LIST PREFETCH REQUESTS">
+            <col id="Run A">379.6K</col>
+            <col id="Run B">391.6K</col>
+            <col id="DELTA (%)" warning="normal">3.16</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED">
+            <col id="Run A">5348.00</col>
+            <col id="Run B">5293.00</col>
+            <col id="DELTA (%)" warning="normal">-1.03</col>
+         </row>
+         <row id="DYNAMIC PREFETCH READS">
+            <col id="Run A">26.00</col>
+            <col id="Run B">34.00</col>
+            <col id="DELTA (%)" warning="high">30.77</col>
+         </row>
+         <row id="PAGES READ VIA DYN.PREFETCH">
+            <col id="Run A">177.00</col>
+            <col id="Run B">202.00</col>
+            <col id="DELTA (%)" warning="high">14.12</col>
+         </row>
+         <row id="D.PRF.PAGES READ/D.PRF.READ">
+            <col id="Run A">6.81</col>
+            <col id="Run B">5.94</col>
+            <col id="DELTA (%)" warning="best">-12.78</col>
+         </row>
+         <row id="READ I/O - DASD CACHE HIT">
+            <col id="Run A">347.8K</col>
+            <col id="Run B">195.0K</col>
+            <col id="DELTA (%)" warning="best">-43.93</col>
+         </row>
+         <row id="GETPAGE REQUEST /C">
+            <col id="Run A">95.64</col>
+            <col id="Run B">96.39</col>
+            <col id="DELTA (%)" warning="normal">0.78</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL /C">
+            <col id="Run A">88.45</col>
+            <col id="Run B">89.20</col>
+            <col id="DELTA (%)" warning="normal">0.85</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM /C">
+            <col id="Run A">7.18</col>
+            <col id="Run B">7.18</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="LIST PREFETCH REQUESTS /C">
+            <col id="Run A">1.01</col>
+            <col id="Run B">1.04</col>
+            <col id="DELTA (%)" warning="normal">2.97</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED /C">
+            <col id="Run A">0.01</col>
+            <col id="Run B">0.01</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="READ I/O - DASD CACHE HIT /C">
+            <col id="Run A">0.93</col>
+            <col id="Run B">0.52</col>
+            <col id="DELTA (%)" warning="best">-44.09</col>
+         </row>
+      </section>
+      <section id="BP15   WRITE OPERATIONS">
+         <row id="BUFFER UPDATES">
+            <col id="Run A">2967.3K</col>
+            <col id="Run B">2978.9K</col>
+            <col id="DELTA (%)" warning="normal">0.39</col>
+         </row>
+         <row id="PAGES WRITTEN">
+            <col id="Run A">98596.00</col>
+            <col id="Run B">88612.00</col>
+            <col id="DELTA (%)" warning="best">-10.13</col>
+         </row>
+         <row id="BUFF.UPDATES/PAGES WRITTEN">
+            <col id="Run A">30.10</col>
+            <col id="Run B">33.62</col>
+            <col id="DELTA (%)" warning="high">11.69</col>
+         </row>
+         <row id="SYNCHRONOUS WRITES">
+            <col id="Run A">78.00</col>
+            <col id="Run B">64.00</col>
+            <col id="DELTA (%)" warning="best">-17.95</col>
+         </row>
+         <row id="ASYNCHRONOUS WRITES">
+            <col id="Run A">5454.00</col>
+            <col id="Run B">4727.00</col>
+            <col id="DELTA (%)" warning="best">-13.33</col>
+         </row>
+         <row id="PAGES WRITTEN PER WRITE I/O">
+            <col id="Run A">17.82</col>
+            <col id="Run B">18.50</col>
+            <col id="DELTA (%)" warning="normal">3.82</col>
+         </row>
+         <row id="BUFFER UPDATES /C">
+            <col id="Run A">7.90</col>
+            <col id="Run B">7.92</col>
+            <col id="DELTA (%)" warning="normal">0.25</col>
+         </row>
+         <row id="PAGES WRITTEN /C">
+            <col id="Run A">0.26</col>
+            <col id="Run B">0.24</col>
+            <col id="DELTA (%)" warning="good">-7.69</col>
+         </row>
+         <row id="ASYNCHRONOUS WRITES /C">
+            <col id="Run A">0.01</col>
+            <col id="Run B">0.01</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="BP15   SORT/MERGE"/>
+      <section id="BP16   GENERAL">
+         <row id="CURRENT ACTIVE BUFFERS">
+            <col id="Run A">5434.50</col>
+            <col id="Run B">8330.02</col>
+            <col id="DELTA (%)" warning="high">53.28</col>
+         </row>
+         <row id="NUMBER OF DATASET OPENS">
+            <col id="Run A">5.00</col>
+            <col id="Run B">5.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BUFFERS ALLOCATED - VPOOL">
+            <col id="Run A">200.0K</col>
+            <col id="Run B">200.0K</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="MIN BUFFERS ON SLRU">
+            <col id="Run A">4643.83</col>
+            <col id="Run B">4682.56</col>
+            <col id="DELTA (%)" warning="normal">0.83</col>
+         </row>
+         <row id="MAX BUFFERS ON SLRU">
+            <col id="Run A">4714.40</col>
+            <col id="Run B">4805.19</col>
+            <col id="DELTA (%)" warning="normal">1.93</col>
+         </row>
+         <row id="GETPAGE REQU RANDOM ON SLRU">
+            <col id="Run A">2764.00</col>
+            <col id="Run B">2843.00</col>
+            <col id="DELTA (%)" warning="normal">2.86</col>
+         </row>
+         <row id="GETPAGE REQU RANDOM ON SLRU /C">
+            <col id="Run A">0.01</col>
+            <col id="Run B">0.01</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="BP16   READ OPERATIONS">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">99.99</col>
+            <col id="Run B">99.99</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) SEQU">
+            <col id="Run A">99.81</col>
+            <col id="Run B">99.78</col>
+            <col id="DELTA (%)" warning="normal">-0.03</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) RANDOM">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGE REQUEST">
+            <col id="Run A">22436.4K</col>
+            <col id="Run B">22502.1K</col>
+            <col id="DELTA (%)" warning="normal">0.29</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL">
+            <col id="Run A">394.3K</col>
+            <col id="Run B">363.0K</col>
+            <col id="DELTA (%)" warning="good">-7.94</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM">
+            <col id="Run A">22042.1K</col>
+            <col id="Run B">22139.0K</col>
+            <col id="DELTA (%)" warning="normal">0.44</col>
+         </row>
+         <row id="SYNCHRONOUS READS">
+            <col id="Run A">784.00</col>
+            <col id="Run B">786.00</col>
+            <col id="DELTA (%)" warning="normal">0.26</col>
+         </row>
+         <row id="SYNC READS-SEQUENTIAL">
+            <col id="Run A">10.00</col>
+            <col id="Run B">17.00</col>
+            <col id="DELTA (%)" warning="high">70</col>
+         </row>
+         <row id="SYNC READS-RANDOM">
+            <col id="Run A">774.00</col>
+            <col id="Run B">769.00</col>
+            <col id="DELTA (%)" warning="normal">-0.65</col>
+         </row>
+         <row id="GETPAGE PER SYN.READ-RANDOM">
+            <col id="Run A">28478.19</col>
+            <col id="Run B">28789.40</col>
+            <col id="DELTA (%)" warning="normal">1.09</col>
+         </row>
+         <row id="LIST PREFETCH REQUESTS">
+            <col id="Run A">81784.00</col>
+            <col id="Run B">81934.00</col>
+            <col id="DELTA (%)" warning="normal">0.18</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED">
+            <col id="Run A">140.8K</col>
+            <col id="Run B">129.5K</col>
+            <col id="DELTA (%)" warning="good">-8.03</col>
+         </row>
+         <row id="DYNAMIC PREFETCH READS">
+            <col id="Run A">124.00</col>
+            <col id="Run B">128.00</col>
+            <col id="DELTA (%)" warning="normal">3.23</col>
+         </row>
+         <row id="PAGES READ VIA DYN.PREFETCH">
+            <col id="Run A">764.00</col>
+            <col id="Run B">794.00</col>
+            <col id="DELTA (%)" warning="normal">3.93</col>
+         </row>
+         <row id="D.PRF.PAGES READ/D.PRF.READ">
+            <col id="Run A">6.16</col>
+            <col id="Run B">6.20</col>
+            <col id="DELTA (%)" warning="normal">0.65</col>
+         </row>
+         <row id="READ I/O - DASD CACHE HIT">
+            <col id="Run A">137.2K</col>
+            <col id="Run B">91043.00</col>
+            <col id="DELTA (%)" warning="best">-33.64</col>
+         </row>
+         <row id="GETPAGE REQUEST /C">
+            <col id="Run A">59.76</col>
+            <col id="Run B">59.83</col>
+            <col id="DELTA (%)" warning="normal">0.12</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL /C">
+            <col id="Run A">1.05</col>
+            <col id="Run B">0.97</col>
+            <col id="DELTA (%)" warning="good">-7.62</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM /C">
+            <col id="Run A">58.71</col>
+            <col id="Run B">58.86</col>
+            <col id="DELTA (%)" warning="normal">0.26</col>
+         </row>
+         <row id="LIST PREFETCH REQUESTS /C">
+            <col id="Run A">0.22</col>
+            <col id="Run B">0.22</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED /C">
+            <col id="Run A">0.38</col>
+            <col id="Run B">0.34</col>
+            <col id="DELTA (%)" warning="best">-10.53</col>
+         </row>
+         <row id="READ I/O - DASD CACHE HIT /C">
+            <col id="Run A">0.37</col>
+            <col id="Run B">0.24</col>
+            <col id="DELTA (%)" warning="best">-35.14</col>
+         </row>
+      </section>
+      <section id="BP16   WRITE OPERATIONS">
+         <row id="BUFFER UPDATES">
+            <col id="Run A">6958.8K</col>
+            <col id="Run B">6987.2K</col>
+            <col id="DELTA (%)" warning="normal">0.41</col>
+         </row>
+         <row id="PAGES WRITTEN">
+            <col id="Run A">95711.00</col>
+            <col id="Run B">82880.00</col>
+            <col id="DELTA (%)" warning="best">-13.41</col>
+         </row>
+         <row id="BUFF.UPDATES/PAGES WRITTEN">
+            <col id="Run A">72.71</col>
+            <col id="Run B">84.31</col>
+            <col id="DELTA (%)" warning="high">15.95</col>
+         </row>
+         <row id="SYNCHRONOUS WRITES">
+            <col id="Run A">97.00</col>
+            <col id="Run B">61.00</col>
+            <col id="DELTA (%)" warning="best">-37.11</col>
+         </row>
+         <row id="ASYNCHRONOUS WRITES">
+            <col id="Run A">6394.00</col>
+            <col id="Run B">5245.00</col>
+            <col id="DELTA (%)" warning="best">-17.97</col>
+         </row>
+         <row id="PAGES WRITTEN PER WRITE I/O">
+            <col id="Run A">14.75</col>
+            <col id="Run B">15.62</col>
+            <col id="DELTA (%)" warning="medium">5.9</col>
+         </row>
+         <row id="BUFFER UPDATES /C">
+            <col id="Run A">18.53</col>
+            <col id="Run B">18.58</col>
+            <col id="DELTA (%)" warning="normal">0.27</col>
+         </row>
+         <row id="PAGES WRITTEN /C">
+            <col id="Run A">0.25</col>
+            <col id="Run B">0.22</col>
+            <col id="DELTA (%)" warning="best">-12</col>
+         </row>
+         <row id="ASYNCHRONOUS WRITES /C">
+            <col id="Run A">0.02</col>
+            <col id="Run B">0.01</col>
+            <col id="DELTA (%)" warning="best">-50</col>
+         </row>
+      </section>
+      <section id="BP16   SORT/MERGE"/>
+      <section id="TOTAL  GENERAL">
+         <row id="CURRENT ACTIVE BUFFERS">
+            <col id="Run A">10363.68</col>
+            <col id="Run B">15383.92</col>
+            <col id="DELTA (%)" warning="high">48.44</col>
+         </row>
+         <row id="NUMBER OF DATASET OPENS">
+            <col id="Run A">5.00</col>
+            <col id="Run B">5.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BUFFERS ALLOCATED - VPOOL">
+            <col id="Run A">422.7K</col>
+            <col id="Run B">422.7K</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="TOTAL  READ OPERATIONS">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) SEQU">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) RANDOM">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGE REQUEST">
+            <col id="Run A">64679.6K</col>
+            <col id="Run B">65112.6K</col>
+            <col id="DELTA (%)" warning="normal">0.67</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL">
+            <col id="Run A">36058.7K</col>
+            <col id="Run B">36375.4K</col>
+            <col id="DELTA (%)" warning="normal">0.88</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM">
+            <col id="Run A">28620.9K</col>
+            <col id="Run B">28737.3K</col>
+            <col id="DELTA (%)" warning="normal">0.41</col>
+         </row>
+         <row id="SYNCHRONOUS READS">
+            <col id="Run A">850.00</col>
+            <col id="Run B">854.00</col>
+            <col id="DELTA (%)" warning="normal">0.47</col>
+         </row>
+         <row id="SYNC READS-SEQUENTIAL">
+            <col id="Run A">10.00</col>
+            <col id="Run B">17.00</col>
+            <col id="DELTA (%)" warning="high">70</col>
+         </row>
+         <row id="SYNC READS-RANDOM">
+            <col id="Run A">840.00</col>
+            <col id="Run B">837.00</col>
+            <col id="DELTA (%)" warning="normal">-0.36</col>
+         </row>
+         <row id="GETPAGE PER SYN.READ-RANDOM">
+            <col id="Run A">34072.51</col>
+            <col id="Run B">34333.64</col>
+            <col id="DELTA (%)" warning="normal">0.77</col>
+         </row>
+         <row id="LIST PREFETCH REQUESTS">
+            <col id="Run A">461.4K</col>
+            <col id="Run B">473.6K</col>
+            <col id="DELTA (%)" warning="normal">2.64</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED">
+            <col id="Run A">199.9K</col>
+            <col id="Run B">188.8K</col>
+            <col id="DELTA (%)" warning="good">-5.55</col>
+         </row>
+         <row id="DYNAMIC PREFETCH READS">
+            <col id="Run A">155.00</col>
+            <col id="Run B">166.00</col>
+            <col id="DELTA (%)" warning="medium">7.1</col>
+         </row>
+         <row id="PAGES READ VIA DYN.PREFETCH">
+            <col id="Run A">946.00</col>
+            <col id="Run B">1000.00</col>
+            <col id="DELTA (%)" warning="medium">5.71</col>
+         </row>
+         <row id="D.PRF.PAGES READ/D.PRF.READ">
+            <col id="Run A">6.10</col>
+            <col id="Run B">6.02</col>
+            <col id="DELTA (%)" warning="normal">-1.31</col>
+         </row>
+         <row id="PAGE-INS REQUIRED FOR READ" warning="high">
+            <col id="Run A">2.00</col>
+            <col id="Run B">0.00</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="GETPAGE REQUEST /C">
+            <col id="Run A">172.26</col>
+            <col id="Run B">173.12</col>
+            <col id="DELTA (%)" warning="normal">0.5</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL /C">
+            <col id="Run A">96.04</col>
+            <col id="Run B">96.72</col>
+            <col id="DELTA (%)" warning="normal">0.71</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM /C">
+            <col id="Run A">76.23</col>
+            <col id="Run B">76.41</col>
+            <col id="DELTA (%)" warning="normal">0.24</col>
+         </row>
+         <row id="LIST PREFETCH REQUESTS /C">
+            <col id="Run A">1.23</col>
+            <col id="Run B">1.26</col>
+            <col id="DELTA (%)" warning="normal">2.44</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED /C">
+            <col id="Run A">0.53</col>
+            <col id="Run B">0.50</col>
+            <col id="DELTA (%)" warning="good">-5.66</col>
+         </row>
+      </section>
+      <section id="TOTAL  WRITE OPERATIONS">
+         <row id="BUFFER UPDATES">
+            <col id="Run A">19756.5K</col>
+            <col id="Run B">19837.5K</col>
+            <col id="DELTA (%)" warning="normal">0.41</col>
+         </row>
+         <row id="PAGES WRITTEN">
+            <col id="Run A">196.8K</col>
+            <col id="Run B">173.9K</col>
+            <col id="DELTA (%)" warning="best">-11.64</col>
+         </row>
+         <row id="BUFF.UPDATES/PAGES WRITTEN">
+            <col id="Run A">100.41</col>
+            <col id="Run B">114.10</col>
+            <col id="DELTA (%)" warning="high">13.63</col>
+         </row>
+         <row id="SYNCHRONOUS WRITES">
+            <col id="Run A">669.00</col>
+            <col id="Run B">609.00</col>
+            <col id="DELTA (%)" warning="good">-8.97</col>
+         </row>
+         <row id="ASYNCHRONOUS WRITES">
+            <col id="Run A">12117.00</col>
+            <col id="Run B">10222.00</col>
+            <col id="DELTA (%)" warning="best">-15.64</col>
+         </row>
+         <row id="PAGES WRITTEN PER WRITE I/O">
+            <col id="Run A">15.39</col>
+            <col id="Run B">16.05</col>
+            <col id="DELTA (%)" warning="normal">4.29</col>
+         </row>
+         <row id="BUFFER UPDATES /C">
+            <col id="Run A">52.62</col>
+            <col id="Run B">52.74</col>
+            <col id="DELTA (%)" warning="normal">0.23</col>
+         </row>
+         <row id="PAGES WRITTEN /C">
+            <col id="Run A">0.52</col>
+            <col id="Run B">0.46</col>
+            <col id="DELTA (%)" warning="best">-11.54</col>
+         </row>
+         <row id="ASYNCHRONOUS WRITES /C">
+            <col id="Run A">0.03</col>
+            <col id="Run B">0.03</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="TOTAL  SORT/MERGE"/>
+      <section id="BP8K   GENERAL">
+         <row id="BUFFERS ALLOCATED - VPOOL">
+            <col id="Run A">2000.00</col>
+            <col id="Run B">2000.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="MIN BUFFERS ON SLRU">
+            <col id="Run A">78.96</col>
+            <col id="Run B">78.93</col>
+            <col id="DELTA (%)" warning="normal">-0.04</col>
+         </row>
+         <row id="MAX BUFFERS ON SLRU">
+            <col id="Run A">79.00</col>
+            <col id="Run B">79.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="BP8K   READ OPERATIONS">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) SEQU">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) RANDOM">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGE REQUEST">
+            <col id="Run A">26949.00</col>
+            <col id="Run B">27047.00</col>
+            <col id="DELTA (%)" warning="normal">0.36</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL">
+            <col id="Run A">53.00</col>
+            <col id="Run B">41.00</col>
+            <col id="DELTA (%)" warning="best">-22.64</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM">
+            <col id="Run A">26896.00</col>
+            <col id="Run B">27006.00</col>
+            <col id="DELTA (%)" warning="normal">0.41</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED">
+            <col id="Run A">5.00</col>
+            <col id="Run B">4.00</col>
+            <col id="DELTA (%)" warning="best">-20</col>
+         </row>
+         <row id="READ I/O - DASD CACHE HIT">
+            <col id="Run A">864.00</col>
+            <col id="Run B">480.00</col>
+            <col id="DELTA (%)" warning="best">-44.44</col>
+         </row>
+         <row id="GETPAGE REQUEST /C">
+            <col id="Run A">0.07</col>
+            <col id="Run B">0.07</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM /C">
+            <col id="Run A">0.07</col>
+            <col id="Run B">0.07</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="BP8K   WRITE OPERATIONS">
+         <row id="BUFFER UPDATES">
+            <col id="Run A">12.00</col>
+            <col id="Run B">11.00</col>
+            <col id="DELTA (%)" warning="good">-8.33</col>
+         </row>
+         <row id="PAGES WRITTEN">
+            <col id="Run A">57.00</col>
+            <col id="Run B">58.00</col>
+            <col id="DELTA (%)" warning="normal">1.75</col>
+         </row>
+         <row id="BUFF.UPDATES/PAGES WRITTEN">
+            <col id="Run A">0.21</col>
+            <col id="Run B">0.19</col>
+            <col id="DELTA (%)" warning="good">-9.52</col>
+         </row>
+         <row id="SYNCHRONOUS WRITES">
+            <col id="Run A">12.00</col>
+            <col id="Run B">11.00</col>
+            <col id="DELTA (%)" warning="good">-8.33</col>
+         </row>
+         <row id="ASYNCHRONOUS WRITES">
+            <col id="Run A">7.00</col>
+            <col id="Run B">7.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PAGES WRITTEN PER WRITE I/O">
+            <col id="Run A">3.00</col>
+            <col id="Run B">3.22</col>
+            <col id="DELTA (%)" warning="medium">7.33</col>
+         </row>
+      </section>
+      <section id="BP8K   SORT/MERGE"/>
+      <section id="BP16K  GENERAL">
+         <row id="BUFFERS ALLOCATED - VPOOL">
+            <col id="Run A">500.00</col>
+            <col id="Run B">500.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="MIN BUFFERS ON SLRU">
+            <col id="Run A">0.40</col>
+            <col id="Run B">1.00</col>
+            <col id="DELTA (%)" warning="high">150</col>
+         </row>
+         <row id="MAX BUFFERS ON SLRU">
+            <col id="Run A">0.44</col>
+            <col id="Run B">1.00</col>
+            <col id="DELTA (%)" warning="high">127.27</col>
+         </row>
+      </section>
+      <section id="BP16K  READ OPERATIONS">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) SEQU">
+            <col id="Run A">92.31</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="medium">8.33</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) RANDOM">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGE REQUEST">
+            <col id="Run A">26914.00</col>
+            <col id="Run B">27019.00</col>
+            <col id="DELTA (%)" warning="normal">0.39</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL">
+            <col id="Run A">13.00</col>
+            <col id="Run B">6.00</col>
+            <col id="DELTA (%)" warning="best">-53.85</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM">
+            <col id="Run A">26901.00</col>
+            <col id="Run B">27013.00</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED">
+            <col id="Run A">1.00</col>
+            <col id="Run B">0.00</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="DYNAMIC PREFETCH READS">
+            <col id="Run A">1.00</col>
+            <col id="Run B">0.00</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="PAGES READ VIA DYN.PREFETCH">
+            <col id="Run A">1.00</col>
+            <col id="Run B">0.00</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="PAGE-INS REQUIRED FOR READ" warning="high">
+            <col id="Run A">1.00</col>
+            <col id="Run B">0.00</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="READ I/O - DASD CACHE HIT">
+            <col id="Run A">972.00</col>
+            <col id="Run B">660.00</col>
+            <col id="DELTA (%)" warning="best">-32.1</col>
+         </row>
+         <row id="GETPAGE REQUEST /C">
+            <col id="Run A">0.07</col>
+            <col id="Run B">0.07</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM /C">
+            <col id="Run A">0.07</col>
+            <col id="Run B">0.07</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="BP16K  WRITE OPERATIONS">
+         <row id="BUFFER UPDATES">
+            <col id="Run A">9.00</col>
+            <col id="Run B">9.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PAGES WRITTEN">
+            <col id="Run A">24.00</col>
+            <col id="Run B">23.00</col>
+            <col id="DELTA (%)" warning="normal">-4.17</col>
+         </row>
+         <row id="BUFF.UPDATES/PAGES WRITTEN">
+            <col id="Run A">0.38</col>
+            <col id="Run B">0.39</col>
+            <col id="DELTA (%)" warning="normal">2.63</col>
+         </row>
+         <row id="SYNCHRONOUS WRITES">
+            <col id="Run A">9.00</col>
+            <col id="Run B">9.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="ASYNCHRONOUS WRITES">
+            <col id="Run A">5.00</col>
+            <col id="Run B">5.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PAGES WRITTEN PER WRITE I/O">
+            <col id="Run A">1.71</col>
+            <col id="Run B">1.64</col>
+            <col id="DELTA (%)" warning="normal">-4.09</col>
+         </row>
+      </section>
+      <section id="BP16K  SORT/MERGE"/>
+      <section id="BP32K  GENERAL">
+         <row id="CURRENT ACTIVE BUFFERS">
+            <col id="Run A">4.00</col>
+            <col id="Run B">3.88</col>
+            <col id="DELTA (%)" warning="normal">-3</col>
+         </row>
+         <row id="BUFFERS ALLOCATED - VPOOL">
+            <col id="Run A">250.00</col>
+            <col id="Run B">250.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="MIN BUFFERS ON SLRU">
+            <col id="Run A">21.56</col>
+            <col id="Run B">21.72</col>
+            <col id="DELTA (%)" warning="normal">0.74</col>
+         </row>
+         <row id="MAX BUFFERS ON SLRU">
+            <col id="Run A">22.48</col>
+            <col id="Run B">23.27</col>
+            <col id="DELTA (%)" warning="normal">3.51</col>
+         </row>
+         <row id="GETPAGE REQU RANDOM ON SLRU">
+            <col id="Run A">12.00</col>
+            <col id="Run B">12.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="BP32K  READ OPERATIONS">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) SEQU">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) RANDOM">
+            <col id="Run A">99.99</col>
+            <col id="Run B">99.99</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGE REQUEST">
+            <col id="Run A">1746.6K</col>
+            <col id="Run B">1754.0K</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL">
+            <col id="Run A">832.9K</col>
+            <col id="Run B">836.4K</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM">
+            <col id="Run A">913.7K</col>
+            <col id="Run B">917.5K</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="SYNCHRONOUS READS">
+            <col id="Run A">51.00</col>
+            <col id="Run B">53.00</col>
+            <col id="DELTA (%)" warning="normal">3.92</col>
+         </row>
+         <row id="SYNC READS-RANDOM">
+            <col id="Run A">51.00</col>
+            <col id="Run B">53.00</col>
+            <col id="DELTA (%)" warning="normal">3.92</col>
+         </row>
+         <row id="GETPAGE PER SYN.READ-RANDOM">
+            <col id="Run A">17915.55</col>
+            <col id="Run B">17311.98</col>
+            <col id="DELTA (%)" warning="normal">-3.37</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED">
+            <col id="Run A">26870.00</col>
+            <col id="Run B">26984.00</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="DYNAMIC PREFETCH READS">
+            <col id="Run A">3.00</col>
+            <col id="Run B">4.00</col>
+            <col id="DELTA (%)" warning="high">33.33</col>
+         </row>
+         <row id="PAGES READ VIA DYN.PREFETCH">
+            <col id="Run A">3.00</col>
+            <col id="Run B">4.00</col>
+            <col id="DELTA (%)" warning="high">33.33</col>
+         </row>
+         <row id="D.PRF.PAGES READ/D.PRF.READ">
+            <col id="Run A">1.00</col>
+            <col id="Run B">1.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="READ I/O - DASD CACHE HIT">
+            <col id="Run A">41515.00</col>
+            <col id="Run B">31538.00</col>
+            <col id="DELTA (%)" warning="best">-24.03</col>
+         </row>
+         <row id="GETPAGE REQUEST /C">
+            <col id="Run A">4.65</col>
+            <col id="Run B">4.66</col>
+            <col id="DELTA (%)" warning="normal">0.22</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL /C">
+            <col id="Run A">2.22</col>
+            <col id="Run B">2.22</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM /C">
+            <col id="Run A">2.43</col>
+            <col id="Run B">2.44</col>
+            <col id="DELTA (%)" warning="normal">0.41</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED /C">
+            <col id="Run A">0.07</col>
+            <col id="Run B">0.07</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="READ I/O - DASD CACHE HIT /C">
+            <col id="Run A">0.11</col>
+            <col id="Run B">0.08</col>
+            <col id="DELTA (%)" warning="best">-27.27</col>
+         </row>
+      </section>
+      <section id="BP32K  WRITE OPERATIONS">
+         <row id="BUFFER UPDATES">
+            <col id="Run A">8463.4K</col>
+            <col id="Run B">8499.0K</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="PAGES WRITTEN">
+            <col id="Run A">23.00</col>
+            <col id="Run B">18.00</col>
+            <col id="DELTA (%)" warning="best">-21.74</col>
+         </row>
+         <row id="BUFF.UPDATES/PAGES WRITTEN">
+            <col id="Run A">368.0K</col>
+            <col id="Run B">472.2K</col>
+            <col id="DELTA (%)" warning="high">28.32</col>
+         </row>
+         <row id="SYNCHRONOUS WRITES">
+            <col id="Run A">11.00</col>
+            <col id="Run B">12.00</col>
+            <col id="DELTA (%)" warning="medium">9.09</col>
+         </row>
+         <row id="ASYNCHRONOUS WRITES">
+            <col id="Run A">5.00</col>
+            <col id="Run B">3.00</col>
+            <col id="DELTA (%)" warning="best">-40</col>
+         </row>
+         <row id="PAGES WRITTEN PER WRITE I/O">
+            <col id="Run A">1.44</col>
+            <col id="Run B">1.20</col>
+            <col id="DELTA (%)" warning="best">-16.67</col>
+         </row>
+         <row id="BUFFER UPDATES /C">
+            <col id="Run A">22.54</col>
+            <col id="Run B">22.60</col>
+            <col id="DELTA (%)" warning="normal">0.27</col>
+         </row>
+      </section>
+      <section id="BP32K  SORT/MERGE"/>
+      <section id="TOT4K  GENERAL">
+         <row id="CURRENT ACTIVE BUFFERS">
+            <col id="Run A">10359.68</col>
+            <col id="Run B">15380.04</col>
+            <col id="DELTA (%)" warning="high">48.46</col>
+         </row>
+         <row id="NUMBER OF DATASET OPENS">
+            <col id="Run A">5.00</col>
+            <col id="Run B">5.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BUFFERS ALLOCATED - VPOOL">
+            <col id="Run A">420.0K</col>
+            <col id="Run B">420.0K</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="TOT4K  READ OPERATIONS">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) SEQU">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="BPOOL HIT RATIO (%) RANDOM">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGE REQUEST">
+            <col id="Run A">62879.1K</col>
+            <col id="Run B">63304.6K</col>
+            <col id="DELTA (%)" warning="normal">0.68</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL">
+            <col id="Run A">35225.7K</col>
+            <col id="Run B">35538.9K</col>
+            <col id="DELTA (%)" warning="normal">0.89</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM">
+            <col id="Run A">27653.4K</col>
+            <col id="Run B">27765.7K</col>
+            <col id="DELTA (%)" warning="normal">0.41</col>
+         </row>
+         <row id="SYNCHRONOUS READS">
+            <col id="Run A">799.00</col>
+            <col id="Run B">801.00</col>
+            <col id="DELTA (%)" warning="normal">0.25</col>
+         </row>
+         <row id="SYNC READS-SEQUENTIAL">
+            <col id="Run A">10.00</col>
+            <col id="Run B">17.00</col>
+            <col id="DELTA (%)" warning="high">70</col>
+         </row>
+         <row id="SYNC READS-RANDOM">
+            <col id="Run A">789.00</col>
+            <col id="Run B">784.00</col>
+            <col id="DELTA (%)" warning="normal">-0.63</col>
+         </row>
+         <row id="GETPAGE PER SYN.READ-RANDOM">
+            <col id="Run A">35048.69</col>
+            <col id="Run B">35415.44</col>
+            <col id="DELTA (%)" warning="normal">1.05</col>
+         </row>
+         <row id="LIST PREFETCH REQUESTS">
+            <col id="Run A">461.4K</col>
+            <col id="Run B">473.6K</col>
+            <col id="DELTA (%)" warning="normal">2.64</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED">
+            <col id="Run A">173.1K</col>
+            <col id="Run B">161.8K</col>
+            <col id="DELTA (%)" warning="good">-6.53</col>
+         </row>
+         <row id="DYNAMIC PREFETCH READS">
+            <col id="Run A">151.00</col>
+            <col id="Run B">162.00</col>
+            <col id="DELTA (%)" warning="medium">7.28</col>
+         </row>
+         <row id="PAGES READ VIA DYN.PREFETCH">
+            <col id="Run A">942.00</col>
+            <col id="Run B">996.00</col>
+            <col id="DELTA (%)" warning="medium">5.73</col>
+         </row>
+         <row id="D.PRF.PAGES READ/D.PRF.READ">
+            <col id="Run A">6.24</col>
+            <col id="Run B">6.15</col>
+            <col id="DELTA (%)" warning="normal">-1.44</col>
+         </row>
+         <row id="PAGE-INS REQUIRED FOR READ" warning="high">
+            <col id="Run A">1.00</col>
+            <col id="Run B">0.00</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="GETPAGE REQUEST /C">
+            <col id="Run A">167.47</col>
+            <col id="Run B">168.32</col>
+            <col id="DELTA (%)" warning="normal">0.51</col>
+         </row>
+         <row id="GETPAGE REQS-SEQUENTIAL /C">
+            <col id="Run A">93.82</col>
+            <col id="Run B">94.49</col>
+            <col id="DELTA (%)" warning="normal">0.71</col>
+         </row>
+         <row id="GETPAGE REQS-RANDOM /C">
+            <col id="Run A">73.65</col>
+            <col id="Run B">73.82</col>
+            <col id="DELTA (%)" warning="normal">0.23</col>
+         </row>
+         <row id="LIST PREFETCH REQUESTS /C">
+            <col id="Run A">1.23</col>
+            <col id="Run B">1.26</col>
+            <col id="DELTA (%)" warning="normal">2.44</col>
+         </row>
+         <row id="DYNAMIC PREFETCH REQUESTED /C">
+            <col id="Run A">0.46</col>
+            <col id="Run B">0.43</col>
+            <col id="DELTA (%)" warning="good">-6.52</col>
+         </row>
+      </section>
+      <section id="TOT4K  WRITE OPERATIONS">
+         <row id="BUFFER UPDATES">
+            <col id="Run A">11293.0K</col>
+            <col id="Run B">11338.4K</col>
+            <col id="DELTA (%)" warning="normal">0.4</col>
+         </row>
+         <row id="PAGES WRITTEN">
+            <col id="Run A">196.7K</col>
+            <col id="Run B">173.8K</col>
+            <col id="DELTA (%)" warning="best">-11.64</col>
+         </row>
+         <row id="BUFF.UPDATES/PAGES WRITTEN">
+            <col id="Run A">57.43</col>
+            <col id="Run B">65.25</col>
+            <col id="DELTA (%)" warning="high">13.62</col>
+         </row>
+         <row id="SYNCHRONOUS WRITES">
+            <col id="Run A">637.00</col>
+            <col id="Run B">577.00</col>
+            <col id="DELTA (%)" warning="good">-9.42</col>
+         </row>
+         <row id="ASYNCHRONOUS WRITES">
+            <col id="Run A">12100.00</col>
+            <col id="Run B">10207.00</col>
+            <col id="DELTA (%)" warning="best">-15.64</col>
+         </row>
+         <row id="PAGES WRITTEN PER WRITE I/O">
+            <col id="Run A">15.44</col>
+            <col id="Run B">16.11</col>
+            <col id="DELTA (%)" warning="normal">4.34</col>
+         </row>
+         <row id="BUFFER UPDATES /C">
+            <col id="Run A">30.08</col>
+            <col id="Run B">30.15</col>
+            <col id="DELTA (%)" warning="normal">0.23</col>
+         </row>
+         <row id="PAGES WRITTEN /C">
+            <col id="Run A">0.52</col>
+            <col id="Run B">0.46</col>
+            <col id="DELTA (%)" warning="best">-11.54</col>
+         </row>
+         <row id="ASYNCHRONOUS WRITES /C">
+            <col id="Run A">0.03</col>
+            <col id="Run B">0.03</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="TOT4K  SORT/MERGE"/>
+   </transaction>
+</root>

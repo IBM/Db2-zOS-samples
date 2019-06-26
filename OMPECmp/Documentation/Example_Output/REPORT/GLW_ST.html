@@ -1,0 +1,1791 @@
+<html>
+   <head>
+      <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <style type="text/css">
+	td {
+		text-align: right;
+	}
+	span.high{
+		width: 100%;
+		background-color: red;
+	}
+	span.med{
+		width: 100%;
+		background-color: yellow;
+	}
+	span.good{
+		width: 100%;
+		background-color: lime;
+	}
+	span.best{
+		width: 100%;
+		background-color: green;
+	}
+	</style>
+   </head>
+   <body>
+      <table border="1">
+         <tr>
+            <th>Statistics Report</th>
+         </tr>
+         <tr>
+            <th>SQL DML</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SELECT</td><td>6335.8K</td><td>6355.9K</td><td>0.32</td>
+         </tr>
+         <tr>
+            <td>INSERT</td><td>2264.6K</td><td>2273.4K</td><td>0.39</td>
+         </tr>
+         <tr>
+            <td>NUMBER OF ROWS</td><td>3494.9K</td><td>3509.5K</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>UPDATE</td><td>639.0K</td><td>640.7K</td><td>0.27</td>
+         </tr>
+         <tr>
+            <td>NUMBER OF ROWS(UPDATE)</td><td>579.7K</td><td>581.9K</td><td>0.38</td>
+         </tr>
+         <tr>
+            <td>DELETE</td><td>5311.00</td><td>5441.00</td><td>2.45</td>
+         </tr>
+         <tr>
+            <td>NUMBER OF ROWS(DELETE)</td><td>5310.00</td><td>5440.00</td><td>2.45</td>
+         </tr>
+         <tr>
+            <td>PREPARE</td><td>64446.00</td><td>64551.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>DESCRIBE</td><td>47.00</td><td>47.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>OPEN</td><td>72576.00</td><td>72922.00</td><td>0.48</td>
+         </tr>
+         <tr>
+            <td>CLOSE</td><td>45708.00</td><td>45941.00</td><td>0.51</td>
+         </tr>
+         <tr>
+            <td>FETCH</td><td>55008.8K</td><td>55571.5K</td><td>1.02</td>
+         </tr>
+         <tr>
+            <td>NUMBER OF ROWS(FETCH)</td><td>54949.9K</td><td>55512.0K</td><td>1.02</td>
+         </tr>
+         <tr>
+            <td>TOTAL DML</td><td>64436.2K</td><td>65030.5K</td><td>0.92</td>
+         </tr>
+         <tr>
+            <td>SELECT /C</td><td>16.87</td><td>16.90</td><td>0.18</td>
+         </tr>
+         <tr>
+            <td>INSERT /C</td><td>6.03</td><td>6.04</td><td>0.17</td>
+         </tr>
+         <tr>
+            <td>NUMBER OF ROWS /C</td><td>9.31</td><td>9.33</td><td>0.21</td>
+         </tr>
+         <tr>
+            <td>UPDATE /C</td><td>1.70</td><td>1.70</td><td>0</td>
+         </tr>
+         <tr>
+            <td>NUMBER OF ROWS /C(UPDATE /C)</td><td>1.54</td><td>1.55</td><td>0.65</td>
+         </tr>
+         <tr>
+            <td>DELETE /C</td><td>0.01</td><td>0.01</td><td>0</td>
+         </tr>
+         <tr>
+            <td>NUMBER OF ROWS /C(DELETE /C)</td><td>0.01</td><td>0.01</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PREPARE /C</td><td>0.17</td><td>0.17</td><td>0</td>
+         </tr>
+         <tr>
+            <td>OPEN /C</td><td>0.19</td><td>0.19</td><td>0</td>
+         </tr>
+         <tr>
+            <td>CLOSE /C</td><td>0.12</td><td>0.12</td><td>0</td>
+         </tr>
+         <tr>
+            <td>FETCH /C</td><td>146.51</td><td>147.76</td><td>0.85</td>
+         </tr>
+         <tr>
+            <td>NUMBER OF ROWS /C(FETCH /C)</td><td>146.35</td><td>147.60</td><td>0.85</td>
+         </tr>
+         <tr>
+            <td>TOTAL DML /C</td><td>171.62</td><td>172.91</td><td>0.75</td>
+         </tr>
+         <tr>
+            <th>SQL DCL</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SET HOST VARIABLE</td><td>523.2K</td><td>524.4K</td><td>0.23</td>
+         </tr>
+         <tr>
+            <td>TOTAL</td><td>523.2K</td><td>524.4K</td><td>0.23</td>
+         </tr>
+         <tr>
+            <td>SET HOST VARIABLE /C</td><td>1.39</td><td>1.39</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TOTAL /C</td><td>1.39</td><td>1.39</td><td>0</td>
+         </tr>
+         <tr>
+            <th>STORED PROCEDURES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>CALL STATEMENT EXECUTED</td><td>2802.5K</td><td>2811.0K</td><td>0.3</td>
+         </tr>
+         <tr>
+            <td>CALL STATEMENT EXECUTED /C</td><td>7.46</td><td>7.47</td><td>0.13</td>
+         </tr>
+         <tr>
+            <th>TRIGGERS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ROW TRIGGER ACTIVATED</td><td>252.7K</td><td>253.3K</td><td>0.24</td>
+         </tr>
+         <tr>
+            <td>ROW TRIGGER ACTIVATED /C</td><td>0.67</td><td>0.67</td><td>0</td>
+         </tr>
+         <tr>
+            <th>EDM POOL</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>HELD BY DBD</td><td>151.00</td><td>151.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>STEALABLE PAGES</td><td>9.52</td><td>5.84</td><td><span class="best">-38.66</span></td>
+         </tr>
+         <tr>
+            <td>% PAGES IN USE</td><td>99.84</td><td>99.90</td><td>0.06</td>
+         </tr>
+         <tr>
+            <td>HELD BY STATEMENTS</td><td>165.00</td><td>137.06</td><td><span class="best">-16.93</span></td>
+         </tr>
+         <tr>
+            <td>HELD BY SKCT</td><td>2.00</td><td>2.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>HELD BY SKPT</td><td>869.44</td><td>826.93</td><td>-4.89</td>
+         </tr>
+         <tr>
+            <td>STEALABLE PAGES(HELD BY SKPT)</td><td>870.16</td><td>820.25</td><td><span class="good">-5.74</span></td>
+         </tr>
+         <tr>
+            <td>% PAGES IN USE(HELD BY SKPT)</td><td>93.20</td><td>93.59</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>DBD REQUESTS</td><td>2394.0K</td><td>2401.0K</td><td>0.29</td>
+         </tr>
+         <tr>
+            <td>DBD HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>CT REQUESTS</td><td>1.00</td><td>1.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>CT HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PT REQUESTS</td><td>2084.4K</td><td>2088.2K</td><td>0.18</td>
+         </tr>
+         <tr>
+            <td>PT NOT FOUND</td><td>30.00</td><td>30.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PT HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>STATEMENTS IN GLOBAL CACHE</td><td>47.00</td><td>38.04</td><td><span class="best">-19.06</span></td>
+         </tr>
+         <tr>
+            <td>DBD REQUESTS /C</td><td>6.38</td><td>6.38</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PT REQUESTS /C</td><td>5.55</td><td>5.55</td><td>0</td>
+         </tr>
+         <tr>
+            <th>DYNAMIC SQL STMT</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>PREPARE REQUESTS</td><td>64447.00</td><td>64552.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>FULL PREPARES</td><td>49.00</td><td>49.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SHORT PREPARES</td><td>64398.00</td><td>64503.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>SHORT PREPARES(SHORT PREPARES)</td><td>64398.00</td><td>64503.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>BASED ON CACHE</td><td>64398.00</td><td>64503.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>LOOK-UP IN CATALOG</td><td>49.00</td><td>49.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>CACHE HIT RATIO         (%)</td><td>99.92</td><td>99.92</td><td>0</td>
+         </tr>
+         <tr>
+            <td>CACHE+CATALOG HIT RATIO (%)</td><td>99.92</td><td>99.92</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TOTAL PREPARES</td><td>64446.00</td><td>64551.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>EXPLICIT PREPARES</td><td>64446.00</td><td>64551.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>PREPARE REQUESTS /C</td><td>0.17</td><td>0.17</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SHORT PREPARES /C</td><td>0.17</td><td>0.17</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SHORT PREPARES /C(SHORT PREPARES /C)</td><td>0.17</td><td>0.17</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BASED ON CACHE /C</td><td>0.17</td><td>0.17</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TOTAL PREPARES /C</td><td>0.17</td><td>0.17</td><td>0</td>
+         </tr>
+         <tr>
+            <td>EXPLICIT PREPARES /C</td><td>0.17</td><td>0.17</td><td>0</td>
+         </tr>
+         <tr>
+            <th>SUBSYSTEM SERVICES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>IDENTIFY</td><td>2.00</td><td>2.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>CREATE THREAD</td><td>2.00</td><td>2.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TERMINATE</td><td>4.00</td><td>4.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>ROLLBACK</td><td>53685.00</td><td>53638.00</td><td>-0.09</td>
+         </tr>
+         <tr>
+            <td>SYNCHS(SINGLE PHASE COMMIT)</td><td>321.8K</td><td>322.5K</td><td>0.22</td>
+         </tr>
+         <tr>
+            <td>SYSTEM EVENT CHECKPOINT</td><td>13.00</td><td>10.00</td><td><span class="best">-23.08</span></td>
+         </tr>
+         <tr>
+            <td>HIGH WATER MARK IDBACK</td><td>2.00</td><td>2.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>HIGH WATER MARK CTHREAD</td><td>2.00</td><td>2.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>ROLLBACK /C</td><td>0.14</td><td>0.14</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SYNCHS(SINGLE PHASE COMMIT) /C</td><td>0.86</td><td>0.86</td><td>0</td>
+         </tr>
+         <tr>
+            <th>OPEN/CLOSE ACTIVITY</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OPEN DATASETS - HWM</td><td>299.00</td><td>299.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>OPEN DATASETS</td><td>299.00</td><td>298.76</td><td>-0.08</td>
+         </tr>
+         <tr>
+            <td>DS NOT IN USE,NOT CLOSE-HWM</td><td>293.00</td><td>293.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>DS NOT IN USE,NOT CLOSED</td><td>290.08</td><td>284.34</td><td>-1.98</td>
+         </tr>
+         <tr>
+            <td>IN USE DATA SETS</td><td>8.92</td><td>14.42</td><td><span class="high">61.66</span></td>
+         </tr>
+         <tr>
+            <td>DSETS CONVERTED R/W -&gt; R/O</td><td>229.00</td><td>191.00</td><td><span class="best">-16.59</span></td>
+         </tr>
+         <tr>
+            <th>LOG ACTIVITY</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>READS SATISFIED-OUTPUT BUFF</td><td>24022.00</td><td>24006.00</td><td>-0.07</td>
+         </tr>
+         <tr>
+            <td>READS SATISFIED-OUTP.BUF(%)</td><td>97.62</td><td>97.95</td><td>0.34</td>
+         </tr>
+         <tr>
+            <td>READS SATISFIED-ACTIVE LOG</td><td>585.00</td><td>502.00</td><td><span class="best">-14.19</span></td>
+         </tr>
+         <tr>
+            <td>READS SATISFIED-ACTV.LOG(%)</td><td>2.38</td><td>2.05</td><td><span class="best">-13.87</span></td>
+         </tr>
+         <tr>
+            <td>LOG RECORDS CREATED</td><td>23335.0K</td><td>23423.2K</td><td>0.38</td>
+         </tr>
+         <tr>
+            <td>LOG CI CREATED</td><td>1006.8K</td><td>1010.4K</td><td>0.36</td>
+         </tr>
+         <tr>
+            <td>LOG WRITE I/O REQ (LOG1&amp;2)</td><td>1216.5K</td><td>1218.3K</td><td>0.15</td>
+         </tr>
+         <tr>
+            <td>LOG CI WRITTEN (LOG1&amp;2)</td><td>2729.9K</td><td>2738.3K</td><td>0.31</td>
+         </tr>
+         <tr>
+            <td>READS SATISFIED-OUTPUT BUFF /C</td><td>0.06</td><td>0.06</td><td>0</td>
+         </tr>
+         <tr>
+            <td>LOG RECORDS CREATED /C</td><td>62.15</td><td>62.28</td><td>0.21</td>
+         </tr>
+         <tr>
+            <td>LOG CI CREATED /C</td><td>2.68</td><td>2.69</td><td>0.37</td>
+         </tr>
+         <tr>
+            <td>LOG WRITE I/O REQ (LOG1&amp;2) /C</td><td>3.24</td><td>3.24</td><td>0</td>
+         </tr>
+         <tr>
+            <td>LOG CI WRITTEN (LOG1&amp;2) /C</td><td>7.27</td><td>7.28</td><td>0.14</td>
+         </tr>
+         <tr>
+            <th>PLAN/PACKAGE PROCESSING</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>INCREMENTAL BINDS</td><td>107.5K</td><td>107.9K</td><td>0.37</td>
+         </tr>
+         <tr>
+            <td>PLAN ALLOCATION ATTEMPTS</td><td>1.00</td><td>1.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PLAN ALLOCATION SUCCESSFUL</td><td>1.00</td><td>1.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PACKAGE ALLOCATION ATTEMPT</td><td>2084.4K</td><td>2088.2K</td><td>0.18</td>
+         </tr>
+         <tr>
+            <td>PACKAGE ALLOCATION SUCCESS</td><td>2084.4K</td><td>2088.2K</td><td>0.18</td>
+         </tr>
+         <tr>
+            <td>INCREMENTAL BINDS /C</td><td>0.29</td><td>0.29</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PACKAGE ALLOCATION ATTEMPT /C</td><td>5.55</td><td>5.55</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PACKAGE ALLOCATION SUCCESS /C</td><td>5.55</td><td>5.55</td><td>0</td>
+         </tr>
+         <tr>
+            <th>RID LIST PROCESSING</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SUCCESSFUL</td><td>146.4K</td><td>146.8K</td><td>0.27</td>
+         </tr>
+         <tr>
+            <td><span class="high">NOT USED-MAX LIMIT</span></td><td>6840.00</td><td>6788.00</td><td>-0.76</td>
+         </tr>
+         <tr>
+            <td>MAX RID BLOCKS ALLOCATED</td><td>5.00</td><td>5.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>RDS LIMIT EXCEEDED</td><td>46523.00</td><td>46565.00</td><td>0.09</td>
+         </tr>
+         <tr>
+            <td>SKIPPED-INDEX KNOWN</td><td>103.00</td><td>92.00</td><td><span class="best">-10.68</span></td>
+         </tr>
+         <tr>
+            <td>SUCCESSFUL /C</td><td>0.39</td><td>0.39</td><td>0</td>
+         </tr>
+         <tr>
+            <td>NOT USED-MAX LIMIT /C</td><td>0.02</td><td>0.02</td><td>0</td>
+         </tr>
+         <tr>
+            <td>RDS LIMIT EXCEEDED /C</td><td>0.12</td><td>0.12</td><td>0</td>
+         </tr>
+         <tr>
+            <th>AUTHORIZATION MANAGEMENT</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>TOTAL AUTH ATTEMPTS</td><td>2275.9K</td><td>2280.3K</td><td>0.19</td>
+         </tr>
+         <tr>
+            <td>TOTAL AUTH SUCC</td><td>2275.9K</td><td>2280.3K</td><td>0.19</td>
+         </tr>
+         <tr>
+            <td>PLAN-AUTH SUCC-W/O CATALOG</td><td>1.00</td><td>1.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PKG-AUTH UNSUCC-CACHE</td><td>1927.1K</td><td>1930.8K</td><td>0.19</td>
+         </tr>
+         <tr>
+            <td>TOTAL AUTH ATTEMPTS /C</td><td>6.06</td><td>6.06</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TOTAL AUTH SUCC /C</td><td>6.06</td><td>6.06</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PKG-AUTH UNSUCC-CACHE /C</td><td>5.13</td><td>5.13</td><td>0</td>
+         </tr>
+         <tr>
+            <th>LOCKING ACTIVITY</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SUSPENSIONS (ALL)</td><td>251.00</td><td>194.00</td><td><span class="best">-22.71</span></td>
+         </tr>
+         <tr>
+            <td>SUSPENSIONS (IRLM LATCH)</td><td>251.00</td><td>194.00</td><td><span class="best">-22.71</span></td>
+         </tr>
+         <tr>
+            <td>LOCK REQUESTS</td><td>8225.6K</td><td>8242.9K</td><td>0.21</td>
+         </tr>
+         <tr>
+            <td>UNLOCK REQUESTS</td><td>1140.7K</td><td>1143.0K</td><td>0.2</td>
+         </tr>
+         <tr>
+            <td>CHANGE REQUESTS</td><td>1005.4K</td><td>1008.4K</td><td>0.3</td>
+         </tr>
+         <tr>
+            <td>DRAIN REQUESTS</td><td>229.00</td><td>191.00</td><td><span class="best">-16.59</span></td>
+         </tr>
+         <tr>
+            <td>CLAIM REQUESTS</td><td>19191.1K</td><td>19253.2K</td><td>0.32</td>
+         </tr>
+         <tr>
+            <td>CLAIM REQUESTS FAILED</td><td>53685.00</td><td>53638.00</td><td>-0.09</td>
+         </tr>
+         <tr>
+            <td>LOCK REQUESTS /C</td><td>21.91</td><td>21.92</td><td>0.05</td>
+         </tr>
+         <tr>
+            <td>UNLOCK REQUESTS /C</td><td>3.04</td><td>3.04</td><td>0</td>
+         </tr>
+         <tr>
+            <td>CHANGE REQUESTS /C</td><td>2.68</td><td>2.68</td><td>0</td>
+         </tr>
+         <tr>
+            <td>CLAIM REQUESTS /C</td><td>51.11</td><td>51.19</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>CLAIM REQUESTS FAILED /C</td><td>0.14</td><td>0.14</td><td>0</td>
+         </tr>
+         <tr>
+            <th>DATA SHARING LOCKING</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>GLOBAL DDF ACTIVITY</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>QUERY PARALLELISM</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>CPU TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>TCB TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SYSTEM SERVICES ADDRESS SPACE</td><td>0.213747</td><td>0.150414</td><td><span class="best">-29.63</span></td>
+         </tr>
+         <tr>
+            <td>DATABASE SERVICES ADDRESS SPACE</td><td>0.752945</td><td>0.745502</td><td>-0.99</td>
+         </tr>
+         <tr>
+            <td>IRLM</td><td>0.000037</td><td>0.000011</td><td><span class="best">-70.27</span></td>
+         </tr>
+         <tr>
+            <td>DDF ADDRESS SPACE</td><td>0.007529</td><td>0.005146</td><td><span class="best">-31.65</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL</td><td>0.974258</td><td>0.901073</td><td><span class="good">-7.51</span></td>
+         </tr>
+         <tr>
+            <th>PREEMPT SRB</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SYSTEM SERVICES ADDRESS SPACE</td><td>12.000471</td><td>11.988100</td><td>-0.1</td>
+         </tr>
+         <tr>
+            <td>DATABASE SERVICES ADDRESS SPACE</td><td>0.016725</td><td>0.012037</td><td><span class="best">-28.03</span></td>
+         </tr>
+         <tr>
+            <td>DDF ADDRESS SPACE</td><td>0.000009</td><td>0.000009</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TOTAL</td><td>12.017206</td><td>12.000146</td><td>-0.14</td>
+         </tr>
+         <tr>
+            <th>NONPREEMPT SRB</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SYSTEM SERVICES ADDRESS SPACE</td><td>0.015830</td><td>0.012978</td><td><span class="best">-18.02</span></td>
+         </tr>
+         <tr>
+            <td>DATABASE SERVICES ADDRESS SPACE</td><td>0.020748</td><td>0.018658</td><td><span class="best">-10.07</span></td>
+         </tr>
+         <tr>
+            <td>IRLM</td><td>0.121245</td><td>0.067619</td><td><span class="best">-44.23</span></td>
+         </tr>
+         <tr>
+            <td>DDF ADDRESS SPACE</td><td>0.001360</td><td>0.000847</td><td><span class="best">-37.72</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL</td><td>0.159183</td><td>0.100103</td><td><span class="best">-37.11</span></td>
+         </tr>
+         <tr>
+            <th>TOTAL TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SYSTEM SERVICES ADDRESS SPACE</td><td>12.230048</td><td>12.151492</td><td>-0.64</td>
+         </tr>
+         <tr>
+            <td>DATABASE SERVICES ADDRESS SPACE</td><td>0.790419</td><td>0.776197</td><td>-1.8</td>
+         </tr>
+         <tr>
+            <td>IRLM</td><td>0.121282</td><td>0.067630</td><td><span class="best">-44.24</span></td>
+         </tr>
+         <tr>
+            <td>DDF ADDRESS SPACE</td><td>0.008898</td><td>0.006002</td><td><span class="best">-32.55</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL</td><td>13.150647</td><td>13.001322</td><td>-1.14</td>
+         </tr>
+         <tr>
+            <th>PREEMPT IIP SRB</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SYSTEM SERVICES ADDRESS SPACE</td><td>4.825670</td><td>4.828920</td><td>0.07</td>
+         </tr>
+         <tr>
+            <td>DATABASE SERVICES ADDRESS SPACE</td><td>1.411127</td><td>1.383540</td><td>-1.95</td>
+         </tr>
+         <tr>
+            <td>TOTAL</td><td>6.236797</td><td>6.212461</td><td>-0.39</td>
+         </tr>
+         <tr>
+            <th>COMMIT</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SYSTEM SERVICES ADDRESS SPACE</td><td>0.000033</td><td>0.000032</td><td>-3.03</td>
+         </tr>
+         <tr>
+            <td>DATABASE SERVICES ADDRESS SPACE</td><td>0.000002</td><td>0.000002</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TOTAL</td><td>0.000035</td><td>0.000035</td><td>0</td>
+         </tr>
+         <tr>
+            <th>DATA CAPTURE</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>IFC DEST. WRITTEN</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SMF</td><td>1056.00</td><td>931.00</td><td><span class="best">-11.84</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL</td><td>1056.00</td><td>931.00</td><td><span class="best">-11.84</span></td>
+         </tr>
+         <tr>
+            <th>IFC DEST. NOT WRTN</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>IFC RECORD COUNTS WRITTEN</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SYSTEM RELATED</td><td>27.00</td><td>15.00</td><td><span class="best">-44.44</span></td>
+         </tr>
+         <tr>
+            <td>DATABASE RELATED</td><td>27.00</td><td>15.00</td><td><span class="best">-44.44</span></td>
+         </tr>
+         <tr>
+            <td>ACCOUNTING</td><td>2.00</td><td>2.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>START TRACE</td><td>3.00</td><td>3.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SYSTEM PARAMETERS</td><td>28.00</td><td>16.00</td><td><span class="best">-42.86</span></td>
+         </tr>
+         <tr>
+            <td>SYS.PARMS-BPOOLS</td><td>27.00</td><td>15.00</td><td><span class="best">-44.44</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL</td><td>114.00</td><td>66.00</td><td><span class="best">-42.11</span></td>
+         </tr>
+         <tr>
+            <th>IFC RECORD COUNTS NOT WRTN</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>LATCH CNT</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LC6</td><td>0.01</td><td>0.00</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>LC14</td><td>0.04</td><td>0.07</td><td><span class="high">75</span></td>
+         </tr>
+         <tr>
+            <td>LC21</td><td>0.02</td><td>0.04</td><td><span class="high">100</span></td>
+         </tr>
+         <tr>
+            <td>LC23</td><td>1.63</td><td>1.76</td><td><span class="med">7.98</span></td>
+         </tr>
+         <tr>
+            <td>LC24</td><td>6.00</td><td>13.15</td><td><span class="high">119.17</span></td>
+         </tr>
+         <tr>
+            <th>DBM1 AND MVS STORAGE BELOW 2GB</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>TOTAL DBM1 STORAGE BELOW 2 GB           (MB)</td><td>14.46</td><td>15.26</td><td><span class="med">5.53</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL GETMAINED STORAGE                (MB)</td><td>0.36</td><td>0.40</td><td><span class="high">11.11</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL VARIABLE STORAGE                 (MB)</td><td>4.89</td><td>5.25</td><td><span class="med">7.36</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL AGENT LOCAL STORAGE             (MB)</td><td>3.31</td><td>3.66</td><td><span class="high">10.57</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL AGENT SYSTEM STORAGE           (MB)</td><td>3.19</td><td>3.28</td><td>2.82</td>
+         </tr>
+         <tr>
+            <td>NUMBER OF PREFETCH ENGINES</td><td>31.00</td><td>31.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>NUMBER OF DEFERRED WRITE ENGINES</td><td>184.00</td><td>184.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TOTAL AGENT NON-SYSTEM STORAGE       (MB)</td><td>0.13</td><td>0.39</td><td><span class="high">200</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL NUMBER OF ACTIVE USER THREADS</td><td>0.38</td><td>0.71</td><td><span class="high">86.84</span></td>
+         </tr>
+         <tr>
+            <td>NUMBER OF ALLIED THREADS</td><td>0.38</td><td>0.71</td><td><span class="high">86.84</span></td>
+         </tr>
+         <tr>
+            <td>BUFFER MANAGER STORAGE CNTL BLKS      (MB)</td><td>0.47</td><td>0.48</td><td>2.13</td>
+         </tr>
+         <tr>
+            <td>TOTAL FIXED STORAGE                    (MB)</td><td>0.11</td><td>0.11</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TOTAL GETMAINED STACK STORAGE          (MB)</td><td>9.10</td><td>9.50</td><td>4.4</td>
+         </tr>
+         <tr>
+            <td>TOTAL STACK STORAGE IN USE           (MB)</td><td>8.15</td><td>8.34</td><td>2.33</td>
+         </tr>
+         <tr>
+            <td>SYSTEM AGENT STACK STORAGE IN USE  (MB)</td><td>7.13</td><td>7.19</td><td>0.84</td>
+         </tr>
+         <tr>
+            <td>STORAGE CUSHION                         (MB)</td><td>150.14</td><td>150.14</td><td>0</td>
+         </tr>
+         <tr>
+            <td>24 BIT LOW PRIVATE                      (MB)</td><td>0.16</td><td>0.16</td><td>0</td>
+         </tr>
+         <tr>
+            <td>24 BIT HIGH PRIVATE                     (MB)</td><td>0.46</td><td>0.46</td><td>0</td>
+         </tr>
+         <tr>
+            <td>24 BIT PRIVATE CURRENT HIGH ADDRESS</td><td>0000000000030000</td><td>0000000000030000</td><td>0</td>
+         </tr>
+         <tr>
+            <td>31 BIT EXTENDED LOW PRIVATE             (MB)</td><td>87.66</td><td>87.66</td><td>0</td>
+         </tr>
+         <tr>
+            <td>31 BIT EXTENDED HIGH PRIVATE            (MB)</td><td>35.08</td><td>35.89</td><td>2.31</td>
+         </tr>
+         <tr>
+            <td>31 BIT PRIVATE CURRENT HIGH ADDRESS</td><td>0000000027B00000</td><td>0000000027B00000</td><td>0</td>
+         </tr>
+         <tr>
+            <td>EXTENDED REGION SIZE (MAX)              (MB)</td><td>1501.00</td><td>1501.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>EXTENDED CSA SIZE                       (MB)</td><td>376.24</td><td>376.24</td><td>0</td>
+         </tr>
+         <tr>
+            <td>AVERAGE THREAD FOOTPRINT                (MB)</td><td>9.79</td><td>6.04</td><td><span class="best">-38.3</span></td>
+         </tr>
+         <tr>
+            <td>MAX NUMBER OF POSSIBLE THREADS</td><td>116</td><td>189</td><td><span class="high">62.93</span></td>
+         </tr>
+         <tr>
+            <th>DBM1 STORAGE ABOVE 2GB</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>GETMAINED STORAGE                       (MB)</td><td>112.23</td><td>112.23</td><td>0</td>
+         </tr>
+         <tr>
+            <td>IN USE EDM DBD POOL                   (MB)</td><td>0.59</td><td>0.59</td><td>0</td>
+         </tr>
+         <tr>
+            <td>IN USE EDM STATEMENT POOL             (MB)</td><td>0.64</td><td>0.52</td><td><span class="best">-18.75</span></td>
+         </tr>
+         <tr>
+            <td>IN USE EDM SKELETON POOL              (MB)</td><td>3.40</td><td>3.23</td><td>-5</td>
+         </tr>
+         <tr>
+            <td>FIXED STORAGE POOL                      (MB)</td><td>6.24</td><td>6.27</td><td>0.48</td>
+         </tr>
+         <tr>
+            <td>VARIABLE STORAGE POOL                   (MB)</td><td>61.73</td><td>63.39</td><td>2.69</td>
+         </tr>
+         <tr>
+            <td>STORAGE MANAGER CONTROL BLOCKS          (MB)</td><td>1.34</td><td>1.34</td><td>0</td>
+         </tr>
+         <tr>
+            <td>VIRTUAL BUFFER POOLS                    (MB)</td><td>1671.87</td><td>1671.87</td><td>0</td>
+         </tr>
+         <tr>
+            <td>VIRTUAL POOL CONTROL BLOCKS             (MB)</td><td>58.86</td><td>58.86</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SHARED GETMAINED STORAGE                (MB)</td><td>4.94</td><td>4.94</td><td>0</td>
+         </tr>
+         <tr>
+            <td>STORAGE FOR STMT DEPENDENCIES         (MB)</td><td>0.03</td><td>0.03</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SHARED FIXED STORAGE                    (MB)</td><td>2.96</td><td>2.96</td><td>0</td>
+         </tr>
+         <tr>
+            <td>RID POOL                              (MB)</td><td>1.00</td><td>1.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SHARED VARIABLE STORAGE                 (MB)</td><td>35.46</td><td>39.69</td><td><span class="high">11.93</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL AGENT LOCAL STORAGE             (MB)</td><td>33.33</td><td>37.44</td><td><span class="high">12.33</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL AGENT SYSTEM STORAGE          (MB)</td><td>28.56</td><td>28.97</td><td>1.44</td>
+         </tr>
+         <tr>
+            <td>TOTAL AGENT NON-SYSTEM STORAGE      (MB)</td><td>4.77</td><td>8.47</td><td><span class="high">77.57</span></td>
+         </tr>
+         <tr>
+            <td>STATEMENTS COUNT</td><td>0.21</td><td>0.00</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>HWM FOR ALLOCATED STATEMENTS    (MB)</td><td>0.03</td><td>0.03</td><td>0</td>
+         </tr>
+         <tr>
+            <td>STATEMENT COUNT AT HWM</td><td>1.00</td><td>1.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>DATE AT HWM</td><td>06/11/19</td><td>06/11/19</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TIME AT HWM</td><td>17:46:32.21</td><td>18:14:16.66</td><td>2.6</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC STMT CACHE CNTL BLKS          (MB)</td><td>0.90</td><td>0.90</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SYSTEM COPIES OF CACHED SQL STMTS     (MB)</td><td>0.57</td><td>0.70</td><td><span class="high">22.81</span></td>
+         </tr>
+         <tr>
+            <td>IN USE STORAGE                      (MB)</td><td>0.09</td><td>0.08</td><td><span class="best">-11.11</span></td>
+         </tr>
+         <tr>
+            <td>HWM FOR ALLOCATED STATEMENTS        (MB)</td><td>0.10</td><td>0.10</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SYSTEM COPIES OF STATIC SQL           (MB)</td><td>2.29</td><td>2.76</td><td><span class="high">20.52</span></td>
+         </tr>
+         <tr>
+            <td>IN USE STORAGE                      (MB)(SYSTEM COPIES OF STATIC SQL           (MB))</td><td>0.40</td><td>0.38</td><td><span class="good">-5</span></td>
+         </tr>
+         <tr>
+            <td>THREAD PLAN AND PACKAGE STORAGE       (MB)</td><td>0.08</td><td>0.22</td><td><span class="high">175</span></td>
+         </tr>
+         <tr>
+            <td>SHARED STORAGE MANAGER CNTL BLKS        (MB)</td><td>7.59</td><td>7.59</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SHARED SYSTEM AGENT STACK STORAGE       (MB)</td><td>128.00</td><td>128.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>STACK STORAGE IN USE                  (MB)</td><td>81.00</td><td>82.10</td><td>1.36</td>
+         </tr>
+         <tr>
+            <td>SHARED NON-SYSTEM AGENT STACK STORAGE   (MB)</td><td>384.00</td><td>384.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>STACK STORAGE IN USE                  (MB)(SHARED NON-SYSTEM AGENT STACK STORAGE   (MB))</td><td>0.73</td><td>1.01</td><td><span class="high">38.36</span></td>
+         </tr>
+         <tr>
+            <th>DIST AND MVS STORAGE BELOW 2GB</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>TOTAL DIST STORAGE BELOW 2 GB           (MB)</td><td>1.30</td><td>1.30</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TOTAL VARIABLE STORAGE                 (MB)</td><td>0.26</td><td>0.26</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TOTAL FIXED STORAGE                    (MB)</td><td>0.08</td><td>0.08</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TOTAL GETMAINED STACK STORAGE          (MB)</td><td>0.95</td><td>0.95</td><td>0</td>
+         </tr>
+         <tr>
+            <td>TOTAL STACK STORAGE IN USE           (MB)</td><td>0.87</td><td>0.87</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SYSTEM AGENT STACK STORAGE IN USE  (MB)</td><td>0.78</td><td>0.78</td><td>0</td>
+         </tr>
+         <tr>
+            <td>STORAGE CUSHION                         (MB)</td><td>150.14</td><td>150.14</td><td>0</td>
+         </tr>
+         <tr>
+            <td>24 BIT LOW PRIVATE                      (MB)</td><td>0.24</td><td>0.24</td><td>0</td>
+         </tr>
+         <tr>
+            <td>24 BIT HIGH PRIVATE                     (MB)</td><td>0.23</td><td>0.23</td><td>0</td>
+         </tr>
+         <tr>
+            <td>24 BIT PRIVATE CURRENT HIGH ADDRESS</td><td>0000000000044000</td><td>0000000000044000</td><td>0</td>
+         </tr>
+         <tr>
+            <td>31 BIT EXTENDED LOW PRIVATE             (MB)</td><td>7.69</td><td>7.69</td><td>0</td>
+         </tr>
+         <tr>
+            <td>31 BIT EXTENDED HIGH PRIVATE            (MB)</td><td>13.10</td><td>13.10</td><td>0</td>
+         </tr>
+         <tr>
+            <td>31 BIT PRIVATE CURRENT HIGH ADDRESS</td><td>0000000022AB0000</td><td>0000000022AB0000</td><td>0</td>
+         </tr>
+         <tr>
+            <td>EXTENDED REGION SIZE (MAX)              (MB)</td><td>1501.00</td><td>1501.00</td><td>0</td>
+         </tr>
+         <tr>
+            <th>DIST STORAGE ABOVE 2GB</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>VARIABLE STORAGE                        (MB)</td><td>0.06</td><td>0.06</td><td>0</td>
+         </tr>
+         <tr>
+            <td>STORAGE MANAGER CONTROL BLOCKS          (MB)</td><td>1.34</td><td>1.34</td><td>0</td>
+         </tr>
+         <tr>
+            <th>REAL AND AUXILIARY STORAGE FOR DBM1</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>REAL STORAGE IN USE                     (MB)</td><td>760.51</td><td>716.41</td><td><span class="good">-5.8</span></td>
+         </tr>
+         <tr>
+            <td>31 BIT IN USE                         (MB)</td><td>40.01</td><td>40.79</td><td>1.95</td>
+         </tr>
+         <tr>
+            <td>64 BIT IN USE                         (MB)</td><td>720.50</td><td>675.62</td><td><span class="good">-6.23</span></td>
+         </tr>
+         <tr>
+            <td>64 BIT THREAD AND SYSTEM ONLY       (MB)</td><td>171.66</td><td>173.11</td><td>0.84</td>
+         </tr>
+         <tr>
+            <td>HWM 64 BIT REAL STORAGE IN USE          (MB)</td><td>757.57</td><td>768.22</td><td>1.41</td>
+         </tr>
+         <tr>
+            <td>AVERAGE THREAD FOOTPRINT                (MB)</td><td>564.41</td><td>301.64</td><td><span class="best">-46.56</span></td>
+         </tr>
+         <tr>
+            <th>REAL AND AUXILIARY STORAGE FOR DIST</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>REAL STORAGE IN USE                     (MB)</td><td>11.57</td><td>11.57</td><td>0</td>
+         </tr>
+         <tr>
+            <td>31 BIT IN USE                         (MB)</td><td>4.37</td><td>4.37</td><td>0</td>
+         </tr>
+         <tr>
+            <td>64 BIT IN USE                         (MB)</td><td>7.20</td><td>7.20</td><td>0</td>
+         </tr>
+         <tr>
+            <td>64 BIT THREAD AND SYSTEM ONLY       (MB)</td><td>1.17</td><td>1.17</td><td>0</td>
+         </tr>
+         <tr>
+            <td>HWM 64 BIT REAL STORAGE IN USE          (MB)</td><td>7.20</td><td>7.20</td><td>0</td>
+         </tr>
+         <tr>
+            <th>COMMON STORAGE BELOW AND ABOVE 2GB</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>EXTENDED CSA SIZE                       (MB)</td><td>376.24</td><td>376.24</td><td>0</td>
+         </tr>
+         <tr>
+            <td>FIXED POOL BELOW                        (MB)</td><td>1.27</td><td>1.33</td><td>4.72</td>
+         </tr>
+         <tr>
+            <td>VARIABLE POOL BELOW                     (MB)</td><td>0.67</td><td>0.68</td><td>1.49</td>
+         </tr>
+         <tr>
+            <td>GETMAINED BELOW                         (MB)</td><td>0.10</td><td>0.10</td><td>0</td>
+         </tr>
+         <tr>
+            <td>FIXED POOL ABOVE                        (MB)</td><td>2.37</td><td>2.40</td><td>1.27</td>
+         </tr>
+         <tr>
+            <td>VARIABLE POOL ABOVE                     (MB)</td><td>0.02</td><td>0.02</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETMAINED ABOVE                         (MB)</td><td>0.18</td><td>0.18</td><td>0</td>
+         </tr>
+         <tr>
+            <td>STORAGE MANAGER CONTROL BLOCKS ABOVE    (MB)</td><td>1.34</td><td>1.34</td><td>0</td>
+         </tr>
+         <tr>
+            <td>REAL LOG MANAGER WRITE BUFFERS ABOVE    (MB)</td><td>5.05</td><td>5.05</td><td>0</td>
+         </tr>
+         <tr>
+            <td>REAL STORAGE IN USE                     (MB)</td><td>4.07</td><td>4.11</td><td>0.98</td>
+         </tr>
+         <tr>
+            <td>AVERAGE THREAD FOOTPRINT                (MB)</td><td>10.86</td><td>5.79</td><td><span class="best">-46.69</span></td>
+         </tr>
+         <tr>
+            <th>SUBSYSTEM SHARED STORAGE ABOVE 2GB</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>REAL STORAGE IN USE                     (MB)</td><td>86.53</td><td>89.15</td><td>3.03</td>
+         </tr>
+         <tr>
+            <td>SHARED THREAD AND SYSTEM              (MB)</td><td>65.97</td><td>67.19</td><td>1.85</td>
+         </tr>
+         <tr>
+            <td>SHARED STACK STORAGE                  (MB)</td><td>20.56</td><td>21.96</td><td><span class="med">6.81</span></td>
+         </tr>
+         <tr>
+            <td>AVERAGE THREAD FOOTPRINT                (MB)</td><td>230.73</td><td>125.71</td><td><span class="best">-45.52</span></td>
+         </tr>
+         <tr>
+            <th>CPU AND STORAGE METRICS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>BP0    GENERAL</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>CURRENT ACTIVE BUFFERS</td><td>170.52</td><td>172.47</td><td>1.14</td>
+         </tr>
+         <tr>
+            <td>BUFFERS ALLOCATED - VPOOL</td><td>20000.00</td><td>20000.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>MIN BUFFERS ON SLRU</td><td>1417.92</td><td>1428.24</td><td>0.73</td>
+         </tr>
+         <tr>
+            <td>MAX BUFFERS ON SLRU</td><td>1418.44</td><td>1429.12</td><td>0.75</td>
+         </tr>
+         <tr>
+            <th>BP0    READ OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) SEQU</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) RANDOM</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST</td><td>4533.7K</td><td>4550.9K</td><td>0.38</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL</td><td>1620.0K</td><td>1626.4K</td><td>0.4</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM</td><td>2913.7K</td><td>2924.5K</td><td>0.37</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQUESTS</td><td>21.00</td><td>21.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED</td><td>26892.00</td><td>26995.00</td><td>0.38</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH READS</td><td>1.00</td><td>0.00</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>PAGES READ VIA DYN.PREFETCH</td><td>1.00</td><td>0.00</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td><span class="high">PAGE-INS REQUIRED FOR READ</span></td><td>1.00</td><td>0.00</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>READ I/O - DASD CACHE HIT</td><td>37314.00</td><td>20730.00</td><td><span class="best">-44.44</span></td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST /C</td><td>12.07</td><td>12.10</td><td>0.25</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL /C</td><td>4.31</td><td>4.32</td><td>0.23</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM /C</td><td>7.76</td><td>7.78</td><td>0.26</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED /C</td><td>0.07</td><td>0.07</td><td>0</td>
+         </tr>
+         <tr>
+            <td>READ I/O - DASD CACHE HIT /C</td><td>0.10</td><td>0.06</td><td><span class="best">-40</span></td>
+         </tr>
+         <tr>
+            <th>BP0    WRITE OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>1366.9K</td><td>1372.3K</td><td>0.4</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN</td><td>2349.00</td><td>2268.00</td><td>-3.45</td>
+         </tr>
+         <tr>
+            <td>BUFF.UPDATES/PAGES WRITTEN</td><td>581.92</td><td>605.08</td><td>3.98</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS WRITES</td><td>462.00</td><td>452.00</td><td>-2.16</td>
+         </tr>
+         <tr>
+            <td>ASYNCHRONOUS WRITES</td><td>252.00</td><td>235.00</td><td><span class="good">-6.75</span></td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN PER WRITE I/O</td><td>3.29</td><td>3.30</td><td>0.3</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES /C</td><td>3.64</td><td>3.65</td><td>0.27</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN /C</td><td>0.01</td><td>0.01</td><td>0</td>
+         </tr>
+         <tr>
+            <th>BP0    SORT/MERGE</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>BP15   GENERAL</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>CURRENT ACTIVE BUFFERS</td><td>4754.66</td><td>6877.55</td><td><span class="high">44.65</span></td>
+         </tr>
+         <tr>
+            <td>BUFFERS ALLOCATED - VPOOL</td><td>200.0K</td><td>200.0K</td><td>0</td>
+         </tr>
+         <tr>
+            <td>MIN BUFFERS ON SLRU</td><td>20486.88</td><td>20557.99</td><td>0.35</td>
+         </tr>
+         <tr>
+            <td>MAX BUFFERS ON SLRU</td><td>20544.17</td><td>20655.37</td><td>0.54</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQU RANDOM ON SLRU</td><td>13229.00</td><td>13261.00</td><td>0.24</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQU RANDOM ON SLRU /C</td><td>0.04</td><td>0.04</td><td>0</td>
+         </tr>
+         <tr>
+            <th>BP15   READ OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) SEQU</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) RANDOM</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST</td><td>35909.0K</td><td>36251.7K</td><td>0.95</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL</td><td>33211.4K</td><td>33549.5K</td><td>1.02</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM</td><td>2697.6K</td><td>2702.1K</td><td>0.17</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READS</td><td>15.00</td><td>15.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SYNC READS-RANDOM</td><td>15.00</td><td>15.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGE PER SYN.READ-RANDOM</td><td>179.8K</td><td>180.1K</td><td>0.17</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQUESTS</td><td>379.6K</td><td>391.6K</td><td>3.16</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED</td><td>5348.00</td><td>5293.00</td><td>-1.03</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH READS</td><td>26.00</td><td>34.00</td><td><span class="high">30.77</span></td>
+         </tr>
+         <tr>
+            <td>PAGES READ VIA DYN.PREFETCH</td><td>177.00</td><td>202.00</td><td><span class="high">14.12</span></td>
+         </tr>
+         <tr>
+            <td>D.PRF.PAGES READ/D.PRF.READ</td><td>6.81</td><td>5.94</td><td><span class="best">-12.78</span></td>
+         </tr>
+         <tr>
+            <td>READ I/O - DASD CACHE HIT</td><td>347.8K</td><td>195.0K</td><td><span class="best">-43.93</span></td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST /C</td><td>95.64</td><td>96.39</td><td>0.78</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL /C</td><td>88.45</td><td>89.20</td><td>0.85</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM /C</td><td>7.18</td><td>7.18</td><td>0</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQUESTS /C</td><td>1.01</td><td>1.04</td><td>2.97</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED /C</td><td>0.01</td><td>0.01</td><td>0</td>
+         </tr>
+         <tr>
+            <td>READ I/O - DASD CACHE HIT /C</td><td>0.93</td><td>0.52</td><td><span class="best">-44.09</span></td>
+         </tr>
+         <tr>
+            <th>BP15   WRITE OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>2967.3K</td><td>2978.9K</td><td>0.39</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN</td><td>98596.00</td><td>88612.00</td><td><span class="best">-10.13</span></td>
+         </tr>
+         <tr>
+            <td>BUFF.UPDATES/PAGES WRITTEN</td><td>30.10</td><td>33.62</td><td><span class="high">11.69</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS WRITES</td><td>78.00</td><td>64.00</td><td><span class="best">-17.95</span></td>
+         </tr>
+         <tr>
+            <td>ASYNCHRONOUS WRITES</td><td>5454.00</td><td>4727.00</td><td><span class="best">-13.33</span></td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN PER WRITE I/O</td><td>17.82</td><td>18.50</td><td>3.82</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES /C</td><td>7.90</td><td>7.92</td><td>0.25</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN /C</td><td>0.26</td><td>0.24</td><td><span class="good">-7.69</span></td>
+         </tr>
+         <tr>
+            <td>ASYNCHRONOUS WRITES /C</td><td>0.01</td><td>0.01</td><td>0</td>
+         </tr>
+         <tr>
+            <th>BP15   SORT/MERGE</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>BP16   GENERAL</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>CURRENT ACTIVE BUFFERS</td><td>5434.50</td><td>8330.02</td><td><span class="high">53.28</span></td>
+         </tr>
+         <tr>
+            <td>NUMBER OF DATASET OPENS</td><td>5.00</td><td>5.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BUFFERS ALLOCATED - VPOOL</td><td>200.0K</td><td>200.0K</td><td>0</td>
+         </tr>
+         <tr>
+            <td>MIN BUFFERS ON SLRU</td><td>4643.83</td><td>4682.56</td><td>0.83</td>
+         </tr>
+         <tr>
+            <td>MAX BUFFERS ON SLRU</td><td>4714.40</td><td>4805.19</td><td>1.93</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQU RANDOM ON SLRU</td><td>2764.00</td><td>2843.00</td><td>2.86</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQU RANDOM ON SLRU /C</td><td>0.01</td><td>0.01</td><td>0</td>
+         </tr>
+         <tr>
+            <th>BP16   READ OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>99.99</td><td>99.99</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) SEQU</td><td>99.81</td><td>99.78</td><td>-0.03</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) RANDOM</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST</td><td>22436.4K</td><td>22502.1K</td><td>0.29</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL</td><td>394.3K</td><td>363.0K</td><td><span class="good">-7.94</span></td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM</td><td>22042.1K</td><td>22139.0K</td><td>0.44</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READS</td><td>784.00</td><td>786.00</td><td>0.26</td>
+         </tr>
+         <tr>
+            <td>SYNC READS-SEQUENTIAL</td><td>10.00</td><td>17.00</td><td><span class="high">70</span></td>
+         </tr>
+         <tr>
+            <td>SYNC READS-RANDOM</td><td>774.00</td><td>769.00</td><td>-0.65</td>
+         </tr>
+         <tr>
+            <td>GETPAGE PER SYN.READ-RANDOM</td><td>28478.19</td><td>28789.40</td><td>1.09</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQUESTS</td><td>81784.00</td><td>81934.00</td><td>0.18</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED</td><td>140.8K</td><td>129.5K</td><td><span class="good">-8.03</span></td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH READS</td><td>124.00</td><td>128.00</td><td>3.23</td>
+         </tr>
+         <tr>
+            <td>PAGES READ VIA DYN.PREFETCH</td><td>764.00</td><td>794.00</td><td>3.93</td>
+         </tr>
+         <tr>
+            <td>D.PRF.PAGES READ/D.PRF.READ</td><td>6.16</td><td>6.20</td><td>0.65</td>
+         </tr>
+         <tr>
+            <td>READ I/O - DASD CACHE HIT</td><td>137.2K</td><td>91043.00</td><td><span class="best">-33.64</span></td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST /C</td><td>59.76</td><td>59.83</td><td>0.12</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL /C</td><td>1.05</td><td>0.97</td><td><span class="good">-7.62</span></td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM /C</td><td>58.71</td><td>58.86</td><td>0.26</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQUESTS /C</td><td>0.22</td><td>0.22</td><td>0</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED /C</td><td>0.38</td><td>0.34</td><td><span class="best">-10.53</span></td>
+         </tr>
+         <tr>
+            <td>READ I/O - DASD CACHE HIT /C</td><td>0.37</td><td>0.24</td><td><span class="best">-35.14</span></td>
+         </tr>
+         <tr>
+            <th>BP16   WRITE OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>6958.8K</td><td>6987.2K</td><td>0.41</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN</td><td>95711.00</td><td>82880.00</td><td><span class="best">-13.41</span></td>
+         </tr>
+         <tr>
+            <td>BUFF.UPDATES/PAGES WRITTEN</td><td>72.71</td><td>84.31</td><td><span class="high">15.95</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS WRITES</td><td>97.00</td><td>61.00</td><td><span class="best">-37.11</span></td>
+         </tr>
+         <tr>
+            <td>ASYNCHRONOUS WRITES</td><td>6394.00</td><td>5245.00</td><td><span class="best">-17.97</span></td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN PER WRITE I/O</td><td>14.75</td><td>15.62</td><td><span class="med">5.9</span></td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES /C</td><td>18.53</td><td>18.58</td><td>0.27</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN /C</td><td>0.25</td><td>0.22</td><td><span class="best">-12</span></td>
+         </tr>
+         <tr>
+            <td>ASYNCHRONOUS WRITES /C</td><td>0.02</td><td>0.01</td><td><span class="best">-50</span></td>
+         </tr>
+         <tr>
+            <th>BP16   SORT/MERGE</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>TOTAL  GENERAL</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>CURRENT ACTIVE BUFFERS</td><td>10363.68</td><td>15383.92</td><td><span class="high">48.44</span></td>
+         </tr>
+         <tr>
+            <td>NUMBER OF DATASET OPENS</td><td>5.00</td><td>5.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BUFFERS ALLOCATED - VPOOL</td><td>422.7K</td><td>422.7K</td><td>0</td>
+         </tr>
+         <tr>
+            <th>TOTAL  READ OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) SEQU</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) RANDOM</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST</td><td>64679.6K</td><td>65112.6K</td><td>0.67</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL</td><td>36058.7K</td><td>36375.4K</td><td>0.88</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM</td><td>28620.9K</td><td>28737.3K</td><td>0.41</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READS</td><td>850.00</td><td>854.00</td><td>0.47</td>
+         </tr>
+         <tr>
+            <td>SYNC READS-SEQUENTIAL</td><td>10.00</td><td>17.00</td><td><span class="high">70</span></td>
+         </tr>
+         <tr>
+            <td>SYNC READS-RANDOM</td><td>840.00</td><td>837.00</td><td>-0.36</td>
+         </tr>
+         <tr>
+            <td>GETPAGE PER SYN.READ-RANDOM</td><td>34072.51</td><td>34333.64</td><td>0.77</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQUESTS</td><td>461.4K</td><td>473.6K</td><td>2.64</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED</td><td>199.9K</td><td>188.8K</td><td><span class="good">-5.55</span></td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH READS</td><td>155.00</td><td>166.00</td><td><span class="med">7.1</span></td>
+         </tr>
+         <tr>
+            <td>PAGES READ VIA DYN.PREFETCH</td><td>946.00</td><td>1000.00</td><td><span class="med">5.71</span></td>
+         </tr>
+         <tr>
+            <td>D.PRF.PAGES READ/D.PRF.READ</td><td>6.10</td><td>6.02</td><td>-1.31</td>
+         </tr>
+         <tr>
+            <td><span class="high">PAGE-INS REQUIRED FOR READ</span></td><td>2.00</td><td>0.00</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST /C</td><td>172.26</td><td>173.12</td><td>0.5</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL /C</td><td>96.04</td><td>96.72</td><td>0.71</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM /C</td><td>76.23</td><td>76.41</td><td>0.24</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQUESTS /C</td><td>1.23</td><td>1.26</td><td>2.44</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED /C</td><td>0.53</td><td>0.50</td><td><span class="good">-5.66</span></td>
+         </tr>
+         <tr>
+            <th>TOTAL  WRITE OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>19756.5K</td><td>19837.5K</td><td>0.41</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN</td><td>196.8K</td><td>173.9K</td><td><span class="best">-11.64</span></td>
+         </tr>
+         <tr>
+            <td>BUFF.UPDATES/PAGES WRITTEN</td><td>100.41</td><td>114.10</td><td><span class="high">13.63</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS WRITES</td><td>669.00</td><td>609.00</td><td><span class="good">-8.97</span></td>
+         </tr>
+         <tr>
+            <td>ASYNCHRONOUS WRITES</td><td>12117.00</td><td>10222.00</td><td><span class="best">-15.64</span></td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN PER WRITE I/O</td><td>15.39</td><td>16.05</td><td>4.29</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES /C</td><td>52.62</td><td>52.74</td><td>0.23</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN /C</td><td>0.52</td><td>0.46</td><td><span class="best">-11.54</span></td>
+         </tr>
+         <tr>
+            <td>ASYNCHRONOUS WRITES /C</td><td>0.03</td><td>0.03</td><td>0</td>
+         </tr>
+         <tr>
+            <th>TOTAL  SORT/MERGE</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>BP8K   GENERAL</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BUFFERS ALLOCATED - VPOOL</td><td>2000.00</td><td>2000.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>MIN BUFFERS ON SLRU</td><td>78.96</td><td>78.93</td><td>-0.04</td>
+         </tr>
+         <tr>
+            <td>MAX BUFFERS ON SLRU</td><td>79.00</td><td>79.00</td><td>0</td>
+         </tr>
+         <tr>
+            <th>BP8K   READ OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) SEQU</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) RANDOM</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST</td><td>26949.00</td><td>27047.00</td><td>0.36</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL</td><td>53.00</td><td>41.00</td><td><span class="best">-22.64</span></td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM</td><td>26896.00</td><td>27006.00</td><td>0.41</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED</td><td>5.00</td><td>4.00</td><td><span class="best">-20</span></td>
+         </tr>
+         <tr>
+            <td>READ I/O - DASD CACHE HIT</td><td>864.00</td><td>480.00</td><td><span class="best">-44.44</span></td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST /C</td><td>0.07</td><td>0.07</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM /C</td><td>0.07</td><td>0.07</td><td>0</td>
+         </tr>
+         <tr>
+            <th>BP8K   WRITE OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>12.00</td><td>11.00</td><td><span class="good">-8.33</span></td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN</td><td>57.00</td><td>58.00</td><td>1.75</td>
+         </tr>
+         <tr>
+            <td>BUFF.UPDATES/PAGES WRITTEN</td><td>0.21</td><td>0.19</td><td><span class="good">-9.52</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS WRITES</td><td>12.00</td><td>11.00</td><td><span class="good">-8.33</span></td>
+         </tr>
+         <tr>
+            <td>ASYNCHRONOUS WRITES</td><td>7.00</td><td>7.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN PER WRITE I/O</td><td>3.00</td><td>3.22</td><td><span class="med">7.33</span></td>
+         </tr>
+         <tr>
+            <th>BP8K   SORT/MERGE</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>BP16K  GENERAL</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BUFFERS ALLOCATED - VPOOL</td><td>500.00</td><td>500.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>MIN BUFFERS ON SLRU</td><td>0.40</td><td>1.00</td><td><span class="high">150</span></td>
+         </tr>
+         <tr>
+            <td>MAX BUFFERS ON SLRU</td><td>0.44</td><td>1.00</td><td><span class="high">127.27</span></td>
+         </tr>
+         <tr>
+            <th>BP16K  READ OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) SEQU</td><td>92.31</td><td>100.00</td><td><span class="med">8.33</span></td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) RANDOM</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST</td><td>26914.00</td><td>27019.00</td><td>0.39</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL</td><td>13.00</td><td>6.00</td><td><span class="best">-53.85</span></td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM</td><td>26901.00</td><td>27013.00</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED</td><td>1.00</td><td>0.00</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH READS</td><td>1.00</td><td>0.00</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>PAGES READ VIA DYN.PREFETCH</td><td>1.00</td><td>0.00</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td><span class="high">PAGE-INS REQUIRED FOR READ</span></td><td>1.00</td><td>0.00</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>READ I/O - DASD CACHE HIT</td><td>972.00</td><td>660.00</td><td><span class="best">-32.1</span></td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST /C</td><td>0.07</td><td>0.07</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM /C</td><td>0.07</td><td>0.07</td><td>0</td>
+         </tr>
+         <tr>
+            <th>BP16K  WRITE OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>9.00</td><td>9.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN</td><td>24.00</td><td>23.00</td><td>-4.17</td>
+         </tr>
+         <tr>
+            <td>BUFF.UPDATES/PAGES WRITTEN</td><td>0.38</td><td>0.39</td><td>2.63</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS WRITES</td><td>9.00</td><td>9.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>ASYNCHRONOUS WRITES</td><td>5.00</td><td>5.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN PER WRITE I/O</td><td>1.71</td><td>1.64</td><td>-4.09</td>
+         </tr>
+         <tr>
+            <th>BP16K  SORT/MERGE</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>BP32K  GENERAL</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>CURRENT ACTIVE BUFFERS</td><td>4.00</td><td>3.88</td><td>-3</td>
+         </tr>
+         <tr>
+            <td>BUFFERS ALLOCATED - VPOOL</td><td>250.00</td><td>250.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>MIN BUFFERS ON SLRU</td><td>21.56</td><td>21.72</td><td>0.74</td>
+         </tr>
+         <tr>
+            <td>MAX BUFFERS ON SLRU</td><td>22.48</td><td>23.27</td><td>3.51</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQU RANDOM ON SLRU</td><td>12.00</td><td>12.00</td><td>0</td>
+         </tr>
+         <tr>
+            <th>BP32K  READ OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) SEQU</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) RANDOM</td><td>99.99</td><td>99.99</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST</td><td>1746.6K</td><td>1754.0K</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL</td><td>832.9K</td><td>836.4K</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM</td><td>913.7K</td><td>917.5K</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READS</td><td>51.00</td><td>53.00</td><td>3.92</td>
+         </tr>
+         <tr>
+            <td>SYNC READS-RANDOM</td><td>51.00</td><td>53.00</td><td>3.92</td>
+         </tr>
+         <tr>
+            <td>GETPAGE PER SYN.READ-RANDOM</td><td>17915.55</td><td>17311.98</td><td>-3.37</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED</td><td>26870.00</td><td>26984.00</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH READS</td><td>3.00</td><td>4.00</td><td><span class="high">33.33</span></td>
+         </tr>
+         <tr>
+            <td>PAGES READ VIA DYN.PREFETCH</td><td>3.00</td><td>4.00</td><td><span class="high">33.33</span></td>
+         </tr>
+         <tr>
+            <td>D.PRF.PAGES READ/D.PRF.READ</td><td>1.00</td><td>1.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>READ I/O - DASD CACHE HIT</td><td>41515.00</td><td>31538.00</td><td><span class="best">-24.03</span></td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST /C</td><td>4.65</td><td>4.66</td><td>0.22</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL /C</td><td>2.22</td><td>2.22</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM /C</td><td>2.43</td><td>2.44</td><td>0.41</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED /C</td><td>0.07</td><td>0.07</td><td>0</td>
+         </tr>
+         <tr>
+            <td>READ I/O - DASD CACHE HIT /C</td><td>0.11</td><td>0.08</td><td><span class="best">-27.27</span></td>
+         </tr>
+         <tr>
+            <th>BP32K  WRITE OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>8463.4K</td><td>8499.0K</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN</td><td>23.00</td><td>18.00</td><td><span class="best">-21.74</span></td>
+         </tr>
+         <tr>
+            <td>BUFF.UPDATES/PAGES WRITTEN</td><td>368.0K</td><td>472.2K</td><td><span class="high">28.32</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS WRITES</td><td>11.00</td><td>12.00</td><td><span class="med">9.09</span></td>
+         </tr>
+         <tr>
+            <td>ASYNCHRONOUS WRITES</td><td>5.00</td><td>3.00</td><td><span class="best">-40</span></td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN PER WRITE I/O</td><td>1.44</td><td>1.20</td><td><span class="best">-16.67</span></td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES /C</td><td>22.54</td><td>22.60</td><td>0.27</td>
+         </tr>
+         <tr>
+            <th>BP32K  SORT/MERGE</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>TOT4K  GENERAL</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>CURRENT ACTIVE BUFFERS</td><td>10359.68</td><td>15380.04</td><td><span class="high">48.46</span></td>
+         </tr>
+         <tr>
+            <td>NUMBER OF DATASET OPENS</td><td>5.00</td><td>5.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BUFFERS ALLOCATED - VPOOL</td><td>420.0K</td><td>420.0K</td><td>0</td>
+         </tr>
+         <tr>
+            <th>TOT4K  READ OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) SEQU</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%) RANDOM</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST</td><td>62879.1K</td><td>63304.6K</td><td>0.68</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL</td><td>35225.7K</td><td>35538.9K</td><td>0.89</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM</td><td>27653.4K</td><td>27765.7K</td><td>0.41</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READS</td><td>799.00</td><td>801.00</td><td>0.25</td>
+         </tr>
+         <tr>
+            <td>SYNC READS-SEQUENTIAL</td><td>10.00</td><td>17.00</td><td><span class="high">70</span></td>
+         </tr>
+         <tr>
+            <td>SYNC READS-RANDOM</td><td>789.00</td><td>784.00</td><td>-0.63</td>
+         </tr>
+         <tr>
+            <td>GETPAGE PER SYN.READ-RANDOM</td><td>35048.69</td><td>35415.44</td><td>1.05</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQUESTS</td><td>461.4K</td><td>473.6K</td><td>2.64</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED</td><td>173.1K</td><td>161.8K</td><td><span class="good">-6.53</span></td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH READS</td><td>151.00</td><td>162.00</td><td><span class="med">7.28</span></td>
+         </tr>
+         <tr>
+            <td>PAGES READ VIA DYN.PREFETCH</td><td>942.00</td><td>996.00</td><td><span class="med">5.73</span></td>
+         </tr>
+         <tr>
+            <td>D.PRF.PAGES READ/D.PRF.READ</td><td>6.24</td><td>6.15</td><td>-1.44</td>
+         </tr>
+         <tr>
+            <td><span class="high">PAGE-INS REQUIRED FOR READ</span></td><td>1.00</td><td>0.00</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQUEST /C</td><td>167.47</td><td>168.32</td><td>0.51</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-SEQUENTIAL /C</td><td>93.82</td><td>94.49</td><td>0.71</td>
+         </tr>
+         <tr>
+            <td>GETPAGE REQS-RANDOM /C</td><td>73.65</td><td>73.82</td><td>0.23</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQUESTS /C</td><td>1.23</td><td>1.26</td><td>2.44</td>
+         </tr>
+         <tr>
+            <td>DYNAMIC PREFETCH REQUESTED /C</td><td>0.46</td><td>0.43</td><td><span class="good">-6.52</span></td>
+         </tr>
+         <tr>
+            <th>TOT4K  WRITE OPERATIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>11293.0K</td><td>11338.4K</td><td>0.4</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN</td><td>196.7K</td><td>173.8K</td><td><span class="best">-11.64</span></td>
+         </tr>
+         <tr>
+            <td>BUFF.UPDATES/PAGES WRITTEN</td><td>57.43</td><td>65.25</td><td><span class="high">13.62</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS WRITES</td><td>637.00</td><td>577.00</td><td><span class="good">-9.42</span></td>
+         </tr>
+         <tr>
+            <td>ASYNCHRONOUS WRITES</td><td>12100.00</td><td>10207.00</td><td><span class="best">-15.64</span></td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN PER WRITE I/O</td><td>15.44</td><td>16.11</td><td>4.34</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES /C</td><td>30.08</td><td>30.15</td><td>0.23</td>
+         </tr>
+         <tr>
+            <td>PAGES WRITTEN /C</td><td>0.52</td><td>0.46</td><td><span class="best">-11.54</span></td>
+         </tr>
+         <tr>
+            <td>ASYNCHRONOUS WRITES /C</td><td>0.03</td><td>0.03</td><td>0</td>
+         </tr>
+         <tr>
+            <th>TOT4K  SORT/MERGE</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+      </table>
+   </body>
+</html>

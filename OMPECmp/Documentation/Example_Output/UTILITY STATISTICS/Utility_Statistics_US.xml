@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><root>
+   <transaction id="UTILITY STATISTICS">
+      <section id="UTILINIT">
+         <row id="PHASE CPU TIME (SEC)">
+            <col id="SET0">0.002545</col>
+         </row>
+         <row id="PHASE ELAPSED TIME (SEC)">
+            <col id="SET0">0.038</col>
+         </row>
+      </section>
+      <section id="RESET PAGESET">
+         <row id="RELOAD SUBPROCESS CPU TIME (SEC)">
+            <col id="SET0">0.000372</col>
+         </row>
+         <row id="RELOAD SUBPROCESS ELAPSED TIME (SEC)">
+            <col id="SET0">1.637</col>
+         </row>
+      </section>
+      <section id="RELOAD">
+         <row id="PHASE CPU TIME (SEC)">
+            <col id="SET0">181.090617</col>
+         </row>
+         <row id="PHASE ELAPSED TIME (SEC)">
+            <col id="SET0">230.936</col>
+         </row>
+      </section>
+      <section id="Build   subtask 05">
+         <row id="SUBPHASE CPU TIME (SEC)">
+            <col id="SET0">5.467177</col>
+         </row>
+         <row id="SUBPHASE ELAPSED TIME (SEC)">
+            <col id="SET0">255.387</col>
+         </row>
+      </section>
+      <section id="Sort    subtask 05">
+         <row id="SUBPHASE CPU TIME (SEC)">
+            <col id="SET0">31.239044</col>
+         </row>
+         <row id="SUBPHASE ELAPSED TIME (SEC)">
+            <col id="SET0">255.465</col>
+         </row>
+      </section>
+      <section id="Sort    subtask 03">
+         <row id="SUBPHASE CPU TIME (SEC)">
+            <col id="SET0">32.038850</col>
+         </row>
+         <row id="SUBPHASE ELAPSED TIME (SEC)">
+            <col id="SET0">263.130</col>
+         </row>
+      </section>
+      <section id="Build   subtask 03">
+         <row id="SUBPHASE CPU TIME (SEC)">
+            <col id="SET0">5.355200</col>
+         </row>
+         <row id="SUBPHASE ELAPSED TIME (SEC)">
+            <col id="SET0">263.260</col>
+         </row>
+      </section>
+      <section id="Build   subtask 06">
+         <row id="SUBPHASE CPU TIME (SEC)">
+            <col id="SET0">5.422177</col>
+         </row>
+         <row id="SUBPHASE ELAPSED TIME (SEC)">
+            <col id="SET0">264.289</col>
+         </row>
+      </section>
+      <section id="Sort    subtask 06">
+         <row id="SUBPHASE CPU TIME (SEC)">
+            <col id="SET0">32.123432</col>
+         </row>
+         <row id="SUBPHASE ELAPSED TIME (SEC)">
+            <col id="SET0">264.631</col>
+         </row>
+      </section>
+      <section id="Build   subtask 01">
+         <row id="SUBPHASE CPU TIME (SEC)">
+            <col id="SET0">5.070803</col>
+         </row>
+         <row id="SUBPHASE ELAPSED TIME (SEC)">
+            <col id="SET0">286.045</col>
+         </row>
+      </section>
+      <section id="Sort    subtask 01">
+         <row id="SUBPHASE CPU TIME (SEC)">
+            <col id="SET0">16.286674</col>
+         </row>
+         <row id="SUBPHASE ELAPSED TIME (SEC)">
+            <col id="SET0">286.068</col>
+         </row>
+      </section>
+      <section id="Sort    subtask 04">
+         <row id="SUBPHASE CPU TIME (SEC)">
+            <col id="SET0">36.041052</col>
+         </row>
+         <row id="SUBPHASE ELAPSED TIME (SEC)">
+            <col id="SET0">306.008</col>
+         </row>
+      </section>
+      <section id="Build   subtask 04">
+         <row id="SUBPHASE CPU TIME (SEC)">
+            <col id="SET0">5.404930</col>
+         </row>
+         <row id="SUBPHASE ELAPSED TIME (SEC)">
+            <col id="SET0">306.057</col>
+         </row>
+      </section>
+      <section id="Build   subtask 02">
+         <row id="SUBPHASE CPU TIME (SEC)">
+            <col id="SET0">5.822627</col>
+         </row>
+         <row id="SUBPHASE ELAPSED TIME (SEC)">
+            <col id="SET0">317.941</col>
+         </row>
+      </section>
+      <section id="Sort    subtask 02">
+         <row id="SUBPHASE CPU TIME (SEC)">
+            <col id="SET0">35.724954</col>
+         </row>
+         <row id="SUBPHASE ELAPSED TIME (SEC)">
+            <col id="SET0">318.031</col>
+         </row>
+      </section>
+      <section id="SORTBLD">
+         <row id="PHASE CPU TIME (SEC)">
+            <col id="SET0">0.001638</col>
+         </row>
+         <row id="PHASE ELAPSED TIME (SEC)">
+            <col id="SET0">88.957</col>
+         </row>
+      </section>
+      <section id="UTILTERM">
+         <row id="PHASE CPU TIME (SEC)">
+            <col id="SET0">0.000760</col>
+         </row>
+         <row id="PHASE ELAPSED TIME (SEC)">
+            <col id="SET0">0.002</col>
+         </row>
+      </section>
+      <section id="LOAD">
+         <row id="UTILITY CPU TIME (SEC)">
+            <col id="SET0">397.092518</col>
+         </row>
+         <row id="UTILITY ELAPSED TIME (SEC)">
+            <col id="SET0">319.935</col>
+         </row>
+      </section>
+   </transaction>
+</root>

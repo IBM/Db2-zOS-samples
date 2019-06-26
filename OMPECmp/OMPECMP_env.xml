@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Notes:
+	searchString = string used to find the section in the text report. Must be UNIQUE!
+	dataCol = data column number of the data you wish to extract from that section. 
+		The column containing the row name is column 0. For instance, Data1 is column 1
+		in the following table.
+			RowID	Data1	Data2
+			Numbers	0.00	0.01
+			People	5		4
+-->
+<settings>
+	<!-- ACCOUNTING REPORT environment variables 
+		long = LONG mode environment values
+		trace = TRACE mode environment values
+	-->
+	<report type="Accounting">
+		<section name="ELAPSED TIME">
+			<!-- special case, does not take from only one data column -->
+			<long>
+				<searchString>AVERAGE       APPL(CL.1)</searchString>
+			</long>
+			<trace>
+				<searchString>TIMES/EVENTS</searchString>
+			</trace>
+		</section>
+		<section name="CLASS 3 SUSPENSIONS">
+			<long>
+				<searchString>CLASS 3 SUSPENSIONS</searchString>
+				<eventCol>2</eventCol>	<!-- EVENTS column number -->
+				<timeCol>1</timeCol>	<!-- TIME column number-->
+			</long>
+			<trace>
+				<searchString>CLASS 3 SUSPENSIONS</searchString>
+				<eventCol>2</eventCol>	<!-- EVENTS -->
+				<timeCol>1</timeCol>	<!-- TIME -->
+			</trace>
+		</section>
+		<section name="HIGHLIGHTS">
+			<long>
+				<searchString>HIGHLIGHTS</searchString>
+				<!--colWidth: width of the first column in the HIGHLIGHTS section-->
+				<colWidth>17</colWidth>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>HIGHLIGHTS</searchString>
+				<colWidth>15</colWidth>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="GLOBAL CONTENTION LOCKS">
+			<subsection name="GLOBAL CONTENTION L-LOCKS">
+				<long>
+					<searchString>GLOBAL       CONTENTION       L-LOCKS</searchString>
+					<dataCol>2</dataCol>
+				</long>
+				<trace>
+					<searchString>GLOBAL       CONTENTION       L-LOCKS</searchString>
+					<dataCol>2</dataCol>
+				</trace>
+			</subsection>
+			<subsection name="GLOBAL CONTENTION P-LOCKS">
+				<long>
+					<searchString>GLOBAL       CONTENTION       P-LOCKS</searchString>
+					<dataCol>2</dataCol>
+				</long>
+				<trace>
+					<searchString>GLOBAL       CONTENTION       P-LOCKS</searchString>
+					<dataCol>2</dataCol>
+				</trace>
+			</subsection>
+		</section>
+		<section name="SQL DML">
+			<long>
+				<searchString>SQL DML</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>SQL DML</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="SQL DCL">
+			<long>
+				<searchString>SQL DCL</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>SQL DCL</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="SQL DDL">
+			<long>
+				<searchString>SQL DDL</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>SQL DDL</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="LOCKING">
+			<long>
+				<searchString>LOCKING</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>LOCKING</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="DATA CAPTURE">
+			<long>
+				<searchString>DATA CAPTURE</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>DATA CAPTURE</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="DATA SHARING">
+			<long>
+				<searchString>DATA SHARING</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>DATA SHARING</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="QUERY PARALLEL">
+			<long>
+				<searchString>QUERY PARALLEL</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>QUERY PARALLEL</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="STORED PROCEDURES">
+			<long>
+				<searchString>STORED PROCEDURES</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>STORED PROC.</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="UDF">
+			<long>
+				<searchString>UDF         AVERAGE</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>UDF           TOTAL</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="TRIGGERS">
+			<long>
+				<searchString>TRIGGERS</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>TRIGGERS</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="ROWID">
+			<long>
+				<searchString>ROWID</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>ROWID</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="RID LIST">
+			<long>
+				<searchString>RID LIST</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>RID LIST</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="SU">
+			<long>
+				<searchString>AVERAGE SU</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>TOTAL SU             CLASS 1</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="LOGGING">
+			<long>
+				<searchString>LOGGING</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>LOGGING</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="DYNAMIC SQL STMT">
+			<long>
+				<searchString>DYNAMIC SQL STMT</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>DYNAMIC SQL STMT</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="BUFFER POOL">
+			<!-- Note: # used as wild card for BUFFER POOL sections -->
+			<subsection name="BP00-49">
+				<long>
+					<searchString>BP</searchString>
+					<dataCol>1</dataCol>
+				</long>
+				<trace>
+					<searchString>BP</searchString>
+					<dataCol>1</dataCol>
+				</trace>
+			</subsection>
+			<subsection name="BP8K">
+				<long>
+					<searchString>BP8K</searchString>
+					<dataCol>1</dataCol>
+				</long>
+				<trace>
+					<searchString>BP8K</searchString>
+					<dataCol>1</dataCol>
+				</trace>
+			</subsection>
+			<subsection name="BP16K">
+				<long>
+					<searchString>BP16K</searchString>
+					<dataCol>1</dataCol>
+				</long>
+				<trace>
+					<searchString>BP16K</searchString>
+					<dataCol>1</dataCol>
+				</trace>
+			</subsection>
+			<subsection name="BP32K">
+				<long>
+					<searchString>BP32K</searchString>
+					<dataCol>1</dataCol>
+				</long>
+				<trace>
+					<searchString>BP32K</searchString>
+					<dataCol>1</dataCol>
+				</trace>
+			</subsection>
+			<subsection name="TOTK">
+				<long>
+					<searchString>TOT#K</searchString>
+					<dataCol>1</dataCol>
+				</long>
+				<trace>
+					<searchString>TOT#K</searchString>
+					<dataCol>1</dataCol>
+				</trace>
+			</subsection>
+			<subsection name="TOTAL">
+				<long>
+					<searchString>TOTAL  BPOOL ACTIVITY</searchString>
+					<dataCol>1</dataCol>
+				</long>
+				<trace>
+					<searchString>TOTAL  BPOOL ACTIVITY</searchString>
+					<dataCol>1</dataCol>
+				</trace>
+			</subsection>
+		</section>
+		<section name="GROUP BUFFER POOL">
+			<!-- Note: # used as wild card for BUFFER POOL sections -->
+			<subsection name="GROUP BP00-49">
+				<long>
+					<searchString>GROUP BP</searchString>
+					<dataCol>1</dataCol>
+				</long>
+				<trace>
+					<searchString>GROUP BP</searchString>
+					<dataCol>1</dataCol>
+				</trace>
+			</subsection>
+			<subsection name="GROUP BP8K">
+				<long>
+					<searchString>GROUP BP8K</searchString>
+					<dataCol>1</dataCol>
+				</long>
+				<trace>
+					<searchString>GROUP BP8K</searchString>
+					<dataCol>1</dataCol>
+				</trace>
+			</subsection>
+			<subsection name="GROUP BP16K">
+				<long>
+					<searchString>GROUP BP16K</searchString>
+					<dataCol>1</dataCol>
+				</long>
+				<trace>
+					<searchString>GROUP BP16K</searchString>
+					<dataCol>1</dataCol>
+				</trace>
+			</subsection>
+			<subsection name="GROUP BP32K">
+				<long>
+					<searchString>GROUP BP32K</searchString>
+					<dataCol>1</dataCol>
+				</long>
+				<trace>
+					<searchString>GROUP BP32K</searchString>
+					<dataCol>1</dataCol>
+				</trace>
+			</subsection>
+			<subsection name="GROUP TOTK">
+				<long>
+					<searchString>GROUP TOT#K</searchString>
+					<dataCol>1</dataCol>
+				</long>
+				<trace>
+					<searchString>GROUP TOT#K</searchString>
+					<dataCol>1</dataCol>
+				</trace>
+			</subsection>
+			<subsection name="GROUP TOTAL">
+				<long>
+					<searchString>GROUP TOTAL</searchString>
+					<dataCol>1</dataCol>
+				</long>
+				<trace>
+					<searchString>GROUP TOTAL</searchString>
+					<dataCol>1</dataCol>
+				</trace>
+			</subsection>
+		</section>
+		<section name="DISTRIBUTED ACTIVITY">
+			<long>
+				<searchString>DISTRIBUTED ACTIVITY</searchString>
+				<colWidth>40</colWidth>
+			</long>
+			<trace>
+				<searchString>DISTRIBUTED ACTIVITY</searchString>
+				<colWidth>40</colWidth>
+			</trace>
+		</section>
+		<section name="ACCELERATOR">
+			<long>
+				<searchString>ACCELERATOR          TOTAL</searchString>
+				<dataCol>1</dataCol>
+			</long>
+			<trace>
+				<searchString>ACCELERATOR          TOTAL</searchString>
+				<dataCol>1</dataCol>
+			</trace>
+		</section>
+		<section name="PACKAGES">
+			<long>
+				<searchString>PACKAGE               ELAP-CL7 TIME-AVG</searchString>
+			</long>
+			<trace>
+				<searchString>PACKAGE               ELAP-CL7 TIME-AVG</searchString>
+			</trace>
+		</section>
+	</report>
+	<!-- STATISTICS REPORT environment values -->
+	<report type="Statistics">
+		<section name="SQL DML DCL">
+			<subsection name="SQL DML">
+				<searchString>SQL DML</searchString>
+			</subsection>
+			<subsection name="SQL DCL">
+				<searchString>SQL DCL</searchString>
+			</subsection>
+		</section>
+		<section name="STORED PROCEDURES, TRIGGERS, UDF">
+			<subsection name="STORED PROCEDURES">
+				<searchString>STORED PROCEDURES</searchString>
+			</subsection>
+			<subsection name="TRIGGERS">
+				<searchString>TRIGGERS</searchString>
+			</subsection>
+			<subsection name="USER DEFINED FUNCTIONS">
+				<searchString>UDF</searchString>
+			</subsection>
+		</section>
+		<section name="EDM POOL">
+			<searchString>EDM POOL                     QUANTITY</searchString>
+		</section>
+		<section name="DYNAMIC SQL STMT AND SUBSYSTEM SERVICES">
+			<subsection name="DYNAMIC SQL STMT">
+				<searchString>DYNAMIC SQL STMT</searchString>
+			</subsection>
+			<subsection name="SUBSYSTEM SERVICES">
+				<searchString>SUBSYSTEM SERVICES</searchString>
+			</subsection>
+		</section>
+		<section name="OPEN/CLOSE ACTIVITY">
+			<searchString>OPEN/CLOSE ACTIVITY</searchString>
+		</section>
+		<section name="LOG ACTIVITY">
+			<searchString>LOG ACTIVITY</searchString>
+		</section>
+		<section name="PLAN/PACKAGE PROCESSING">
+			<searchString>PLAN/PACKAGE PROCESSING</searchString>
+		</section>
+		<section name="RID LIST PROCESSING">
+			<searchString>RID LIST PROCESSING</searchString>
+		</section>
+		<section name="AUTHORIZATION MANAGEMENT">
+			<searchString>AUTHORIZATION MANAGEMENT</searchString>
+		</section>
+		<section name="LOCKING ACTIVITY">
+			<subsection name="LOCKING ACTIVITY">
+				<searchString>LOCKING ACTIVITY</searchString>
+			</subsection>
+			<subsection name="DATA SHARING LOCKING">
+				<searchString>DATA SHARING LOCKING</searchString>
+			</subsection>
+		</section>
+		<section name="GLOBAL DDF ACTIVITY">
+			<subsection name="GLOBAL DDF ACTIVITY">
+				<searchString>GLOBAL DDF ACTIVITY</searchString>
+			</subsection>
+			<subsection name="QUERY PARALLELISM">
+				<searchString>QUERY PARALLELISM</searchString>
+			</subsection>
+		</section>
+		<section name="CPU TIMES">
+			<!-- Special case -->
+			<subsection name="TCB TIME">
+				<searchString>CPU TIMES</searchString>
+				<dataCol>1</dataCol>
+			</subsection>
+			<subsection name="PREEMPT SRB">
+				<searchString>CPU TIMES</searchString>
+				<dataCol>2</dataCol>
+			</subsection>
+			<subsection name="NONPREEMPT SRB">
+				<searchString>CPU TIMES</searchString>
+				<dataCol>3</dataCol>
+			</subsection>
+			<subsection name="TOTAL TIME">
+				<searchString>CPU TIMES</searchString>
+				<dataCol>4</dataCol>
+			</subsection>
+			<subsection name="PREEMPT IIP SRB">
+				<searchString>CPU TIMES</searchString>
+				<dataCol>5</dataCol>
+			</subsection>
+			<subsection name="COMMIT">
+				<searchString>CPU TIMES</searchString>
+				<dataCol>6</dataCol>
+			</subsection>
+		</section>
+		<section name="DATA CAPTURE">
+			<searchString>DATA CAPTURE</searchString>
+		</section>
+		<section name="IFC RECORDS">
+			<!-- Special case -->
+			<subsection name="IFC DEST. WRITTEN">
+				<searchString>IFC DEST.</searchString>
+				<dataCol>1</dataCol>
+			</subsection>
+			<subsection name="IFC DEST. NOT WRTN">
+				<searchString>IFC DEST.</searchString>
+				<dataCol>2</dataCol>
+			</subsection>
+			<subsection name="IFC RECORD COUNTS WRITTEN">
+				<searchString>IFC RECORD COUNTS</searchString>
+				<dataCol>1</dataCol>
+			</subsection>
+			<subsection name="IFC RECORD COUNTS NOT WRTN">
+			<searchString>IFC RECORD COUNTS</searchString>
+				<dataCol>2</dataCol>
+			</subsection>
+		</section>
+		<section name="LATCH CNT">
+			<!-- Special case -->
+			<searchString>LATCH CNT</searchString>
+		</section>
+		<section name="DBM1 AND MVS STORAGE BELOW 2GB">
+			<searchString>DBM1 AND MVS STORAGE BELOW 2 GB                         QUANTITY</searchString>
+			<searchString>DBM1 AND MVS STORAGE BELOW 2 GB   CONTINUED</searchString>
+		</section>
+		<section name="DBM1 STORAGE ABOVE 2GB">
+			<searchString>DBM1 STORAGE ABOVE 2 GB</searchString>
+		</section>
+		<section name="DIST AND MVS STORAGE">
+			<subsection name="DIST AND MVS STORAGE BELOW 2 GB">
+				<searchString>DIST AND MVS STORAGE BELOW 2 GB</searchString>
+			</subsection>
+			<subsection name="DIST STORAGE ABOVE 2 GB">
+				<searchString>DIST STORAGE ABOVE 2 GB</searchString>
+			</subsection>
+		</section>
+		<section name="REAL AND AUXILIARY STORAGE FOR DBM1">
+			<searchString>REAL AND AUXILIARY STORAGE FOR DBM1</searchString>
+		</section>
+		<section name="REAL AND AUXILIARY STORAGE FOR DIST">
+			<searchString>REAL AND AUXILIARY STORAGE FOR DIST</searchString>
+		</section>
+		<section name="COMMON STORAGE">
+			<subsection name="COMMON STORAGE BELOW AND ABOVE 2 GB">
+				<searchString>COMMON STORAGE BELOW AND ABOVE 2 GB</searchString>
+			</subsection>
+			<subsection name="SUBSYSTEM SHARED STORAGE ABOVE 2 GB">
+				<searchString>SUBSYSTEM SHARED STORAGE ABOVE 2 GB</searchString>
+			</subsection>
+		</section>
+		<section name="WORK FILE DB AND CPU/STORAGE METRICS">
+			<subsection name="WORK FILE DATABASE">
+				<searchString>WORK FILE DATABASE</searchString>
+			</subsection>
+			<subsection name="CPU AND STORAGE METRICS">
+				<searchString>CPU AND STORAGE METRICS</searchString>
+			</subsection>
+		</section>
+		<section name="BUFFER POOL">
+			<!-- Note: # used as wild card for BUFFER POOL sections -->
+			<subsection name="BP00-49">
+				<searchString>BP#    </searchString>
+			</subsection>
+			<subsection name="BP8K">
+				<searchString>BP8K#  </searchString>
+			</subsection>
+			<subsection name="BP16K">
+				<searchString>BP16K# </searchString>
+			</subsection>
+			<subsection name="BP32K">
+				<searchString>BP32K# </searchString>
+			</subsection>
+			<subsection name="TOTK">
+				<searchString>TOT#K  </searchString>
+			</subsection>
+			<subsection name="TOTAL">
+				<searchString>TOTAL  </searchString>
+			</subsection>
+		</section>
+		<section name="GLOBAL BUFFER POOL">
+			<!-- Note: # used as wild card for BUFFER POOL sections -->
+			<subsection name="GBP00-49">
+				<searchString>GROUP BP#    </searchString>
+			</subsection>
+			<subsection name="GBP8K">
+				<searchString>GROUP BP8K#  </searchString>
+			</subsection>
+			<subsection name="GBP16K">
+				<searchString>GROUP BP16K# </searchString>
+			</subsection>
+			<subsection name="GBP32K">
+				<searchString>GROUP BP32K# </searchString>
+			</subsection>
+			<subsection name="GTOTK">
+				<searchString>GROUP TOT#K  </searchString>
+			</subsection>
+			<subsection name="GROUP TOTAL">
+				<searchString>GROUP TOTAL  </searchString>
+			</subsection>
+		</section>
+	</report>
+    <!-- UTILITY report -->
+    <report type="Utility">
+        <section name="INTERVAL">
+            <searchString>INTERVAL = </searchString>
+            <colWidth>23</colWidth>
+            <dataColOffset>21</dataColOffset>
+        </section>
+        <section name="LEVEL">
+            <searchString>LEVEL = </searchString>
+            <colWidth>23</colWidth>
+            <dataColOffset>21</dataColOffset>
+        </section>
+    </report>
+</settings>

@@ -1,0 +1,906 @@
+<html>
+   <head>
+      <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <style type="text/css">
+	td {
+		text-align: right;
+	}
+	span.high{
+		width: 100%;
+		background-color: red;
+	}
+	span.med{
+		width: 100%;
+		background-color: yellow;
+	}
+	span.good{
+		width: 100%;
+		background-color: lime;
+	}
+	span.best{
+		width: 100%;
+		background-color: green;
+	}
+	</style>
+   </head>
+   <body>
+      <table border="1">
+         <tr>
+            <th>DSN2CHC</th>
+         </tr>
+         <tr>
+            <th>TIMES/EVENTS</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>CL1 ET</td><td>3:07.21341</td><td>3:07.21341</td><td>1:56.30370</td><td>3:07.21341</td><td><span class="high">60.97</span></td>
+         </tr>
+         <tr>
+            <td>CL2 ET</td><td>27.040231</td><td>27.040231</td><td>10.449711</td><td>27.040231</td><td><span class="high">158.77</span></td>
+         </tr>
+         <tr>
+            <td>CL1 CP</td><td>4.854987</td><td>4.854987</td><td>4.278176</td><td>4.854987</td><td><span class="med">13.48</span></td>
+         </tr>
+         <tr>
+            <td>CL2 CP</td><td>4.149810</td><td>4.149810</td><td>3.683509</td><td>4.149810</td><td><span class="med">12.66</span></td>
+         </tr>
+         <tr>
+            <th>CLASS 3 SUSPENSIONS (EVENTS)</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH(DB2+IRLM)</td><td>74</td><td>74</td><td>75</td><td>74</td><td>-1.33</td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>8</td><td>8</td><td>2</td><td>8</td><td><span class="high">300.00</span></td>
+         </tr>
+         <tr>
+            <td>DB2 LATCH</td><td>66</td><td>66</td><td>73</td><td>66</td><td>-9.59</td>
+         </tr>
+         <tr>
+            <td>SYNCHRON. I/O</td><td>2609</td><td>2609</td><td>4005</td><td>2609</td><td><span class="best">-34.86</span></td>
+         </tr>
+         <tr>
+            <td>DATABASE I/O</td><td>2609</td><td>2609</td><td>4005</td><td>2609</td><td><span class="best">-34.86</span></td>
+         </tr>
+         <tr>
+            <td>OTHER READ I/O</td><td>721</td><td>721</td><td>788</td><td>721</td><td>-8.50</td>
+         </tr>
+         <tr>
+            <td>OTHER WRTE I/O</td><td>273</td><td>273</td><td>306</td><td>273</td><td><span class="good">-10.78</span></td>
+         </tr>
+         <tr>
+            <td>SER.TASK SWTCH</td><td>11</td><td>11</td><td>62</td><td>11</td><td><span class="best">-82.26</span></td>
+         </tr>
+         <tr>
+            <td>UPDATE COMMIT</td><td>9</td><td>9</td><td>6</td><td>9</td><td><span class="high">50.00</span></td>
+         </tr>
+         <tr>
+            <td>SYSLGRNG REC</td><td>2</td><td>2</td><td>2</td><td>2</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>GLOBAL CONTENTION</td><td>544</td><td>544</td><td>607</td><td>544</td><td><span class="good">-10.38</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL CLASS 3</td><td>4232</td><td>4232</td><td>5879</td><td>4232</td><td><span class="best">-28.01</span></td>
+         </tr>
+         <tr>
+            <td>OPEN/CLOSE</td><td></td><td></td><td>18</td><td>0</td><td><span class="best">-100.00</span></td>
+         </tr>
+         <tr>
+            <td>EXT/DEL/DEF</td><td></td><td></td><td>18</td><td>0</td><td><span class="best">-100.00</span></td>
+         </tr>
+         <tr>
+            <td>OTHER SERVICE</td><td></td><td></td><td>18</td><td>0</td><td><span class="best">-100.00</span></td>
+         </tr>
+         <tr>
+            <td>DRAIN LOCK</td><td></td><td></td><td>36</td><td>0</td><td><span class="best">-100.00</span></td>
+         </tr>
+         <tr>
+            <th>CLASS 3 SUSPENSIONS (TIME)</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH(DB2+IRLM)</td><td>0.042784</td><td>0.042784</td><td>0.003458</td><td>0.042784</td><td><span class="high">1,137.25</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.016940</td><td>0.016940</td><td>0.001606</td><td>0.016940</td><td><span class="high">954.79</span></td>
+         </tr>
+         <tr>
+            <td>DB2 LATCH</td><td>0.025844</td><td>0.025844</td><td>0.001852</td><td>0.025844</td><td><span class="high">1,295.46</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRON. I/O</td><td>2.626483</td><td>2.626483</td><td>2.698356</td><td>2.626483</td><td>-2.66</td>
+         </tr>
+         <tr>
+            <td>DATABASE I/O</td><td>2.626483</td><td>2.626483</td><td>2.698356</td><td>2.626483</td><td>-2.66</td>
+         </tr>
+         <tr>
+            <td>OTHER READ I/O</td><td>0.536830</td><td>0.536830</td><td>0.185925</td><td>0.536830</td><td><span class="high">188.73</span></td>
+         </tr>
+         <tr>
+            <td>OTHER WRTE I/O</td><td>0.508315</td><td>0.508315</td><td>0.269842</td><td>0.508315</td><td><span class="high">88.38</span></td>
+         </tr>
+         <tr>
+            <td>SER.TASK SWTCH</td><td>0.291977</td><td>0.291977</td><td>0.479230</td><td>0.291977</td><td><span class="best">-39.07</span></td>
+         </tr>
+         <tr>
+            <td>UPDATE COMMIT</td><td>0.166081</td><td>0.166081</td><td>0.012833</td><td>0.166081</td><td><span class="high">1,194.17</span></td>
+         </tr>
+         <tr>
+            <td>SYSLGRNG REC</td><td>0.125896</td><td>0.125896</td><td>0.056110</td><td>0.125896</td><td><span class="high">124.37</span></td>
+         </tr>
+         <tr>
+            <td>GLOBAL CONTENTION</td><td>5.773458</td><td>5.773458</td><td>2.701239</td><td>5.773458</td><td><span class="high">113.73</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL CLASS 3</td><td>9.779847</td><td>9.779847</td><td>6.414461</td><td>9.779847</td><td><span class="high">52.47</span></td>
+         </tr>
+         <tr>
+            <td>OPEN/CLOSE</td><td></td><td></td><td>0.309262</td><td>0.000000</td><td><span class="best">-100.00</span></td>
+         </tr>
+         <tr>
+            <td>EXT/DEL/DEF</td><td></td><td></td><td>0.084584</td><td>0.000000</td><td><span class="best">-100.00</span></td>
+         </tr>
+         <tr>
+            <td>OTHER SERVICE</td><td></td><td></td><td>0.016440</td><td>0.000000</td><td><span class="best">-100.00</span></td>
+         </tr>
+         <tr>
+            <td>DRAIN LOCK</td><td></td><td></td><td>0.076410</td><td>0.000000</td><td><span class="best">-100.00</span></td>
+         </tr>
+         <tr>
+            <th>HIGHLIGHTS</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>COMMITS       :</td><td>38</td><td>38</td><td>35</td><td>38</td><td>8.57</td>
+         </tr>
+         <tr>
+            <td>UPDATE/COMMIT :</td><td>530.03</td><td>530.03</td><td>575.37</td><td>530.03</td><td>-7.88</td>
+         </tr>
+         <tr>
+            <td>SYNCH I/O AVG.:</td><td>0.001007</td><td>0.001007</td><td>0.000674</td><td>0.001007</td><td><span class="high">49.41</span></td>
+         </tr>
+         <tr>
+            <td>PROGRAMS      :</td><td>4</td><td>4</td><td>4</td><td>4</td><td>0.00</td>
+         </tr>
+         <tr>
+            <th>GLOBAL CONTENTION L-LOCKS</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>L-LOCKS</td><td>525</td><td>525</td><td>554</td><td>525</td><td>-5.23</td>
+         </tr>
+         <tr>
+            <td>PARENT (DB,TS,TAB,PART)</td><td>504</td><td>504</td><td>497</td><td>504</td><td>1.41</td>
+         </tr>
+         <tr>
+            <td>OTHER</td><td>21</td><td>21</td><td>57</td><td>21</td><td><span class="best">-63.16</span></td>
+         </tr>
+         <tr>
+            <th>GLOBAL CONTENTION P-LOCKS</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>P-LOCKS</td><td>19</td><td>19</td><td>53</td><td>19</td><td><span class="best">-64.15</span></td>
+         </tr>
+         <tr>
+            <td>PAGESET/PARTITION</td><td>19</td><td>19</td><td>36</td><td>19</td><td><span class="best">-47.22</span></td>
+         </tr>
+         <tr>
+            <td>OTHER</td><td></td><td></td><td>17</td><td>0</td><td><span class="best">-100.00</span></td>
+         </tr>
+         <tr>
+            <th>SQL DML</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SELECT</td><td>10680</td><td>10680</td><td>10680</td><td>10680</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>INSERT</td><td>10000</td><td>10000</td><td>10000</td><td>10000</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>ROWS</td><td>9868</td><td>9868</td><td>9868</td><td>9868</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>UPDATE</td><td>273</td><td>273</td><td>270</td><td>273</td><td>1.11</td>
+         </tr>
+         <tr>
+            <td>ROWS(UPDATE)</td><td>273</td><td>273</td><td>270</td><td>273</td><td>1.11</td>
+         </tr>
+         <tr>
+            <td>DELETE</td><td>9868</td><td>9868</td><td>9868</td><td>9868</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>ROWS(DELETE)</td><td>9868</td><td>9868</td><td>9868</td><td>9868</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>OPEN</td><td>83</td><td>83</td><td>83</td><td>83</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>FETCH</td><td>243</td><td>243</td><td>243</td><td>243</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>ROWS(FETCH)</td><td>1194</td><td>1194</td><td>1194</td><td>1194</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>CLOSE</td><td>83</td><td>83</td><td>83</td><td>83</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>DML-ALL</td><td>31230</td><td>31230</td><td>31227</td><td>31230</td><td>0.01</td>
+         </tr>
+         <tr>
+            <th>SQL DCL</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SET H.VAR.</td><td>2</td><td>2</td><td>2</td><td>2</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>DCL-ALL</td><td>2</td><td>2</td><td>2</td><td>2</td><td>0.00</td>
+         </tr>
+         <tr>
+            <th>SQL DDL</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>LOCKING</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>MAX PG/ROW LCK HELD</td><td>10001</td><td>10001</td><td>10002</td><td>10001</td><td>-0.01</td>
+         </tr>
+         <tr>
+            <td>LOCK REQUEST</td><td>31921</td><td>31921</td><td>32005</td><td>31921</td><td>-0.26</td>
+         </tr>
+         <tr>
+            <td>UNLOCK REQST</td><td>373</td><td>373</td><td>466</td><td>373</td><td><span class="good">-19.96</span></td>
+         </tr>
+         <tr>
+            <td>CHANGE REQST</td><td>13</td><td>13</td><td>14</td><td>13</td><td>-7.14</td>
+         </tr>
+         <tr>
+            <td>TOTAL SUSPENSIONS</td><td>8</td><td>8</td><td>2</td><td>8</td><td><span class="high">300.00</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LATCH SUSPENS</td><td>8</td><td>8</td><td>1</td><td>8</td><td><span class="high">700.00</span></td>
+         </tr>
+         <tr>
+            <td>LOCK SUSPENS</td><td></td><td></td><td>1</td><td>0</td><td><span class="best">-100.00</span></td>
+         </tr>
+         <tr>
+            <th>DATA CAPTURE</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>DATA SHARING</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>P/L-LOCKS(%)</td><td>1</td><td>1</td><td>2</td><td>1</td><td><span class="best">-50.00</span></td>
+         </tr>
+         <tr>
+            <td>P-LOCK REQ</td><td>38</td><td>38</td><td>72</td><td>38</td><td><span class="best">-47.22</span></td>
+         </tr>
+         <tr>
+            <td>P-CHANGE REQ</td><td>19</td><td>19</td><td>18</td><td>19</td><td>5.56</td>
+         </tr>
+         <tr>
+            <td>LOCK - XES</td><td>561</td><td>561</td><td>661</td><td>561</td><td><span class="good">-15.13</span></td>
+         </tr>
+         <tr>
+            <td>UNLOCK-XES</td><td>335</td><td>335</td><td>402</td><td>335</td><td><span class="good">-16.67</span></td>
+         </tr>
+         <tr>
+            <td>CHANGE-XES</td><td>22</td><td>22</td><td>21</td><td>22</td><td>4.76</td>
+         </tr>
+         <tr>
+            <td>CONV - XES</td><td>543</td><td>543</td><td>643</td><td>543</td><td><span class="good">-15.55</span></td>
+         </tr>
+         <tr>
+            <td>NOTIFY SENT</td><td></td><td></td><td>2</td><td>0</td><td><span class="best">-100.00</span></td>
+         </tr>
+         <tr>
+            <th>QUERY PARALLELISM</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>STORED PROCEDURES</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>USER DEFINED FUNCTIONS</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>TRIGGERS</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>ROW ID</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>RID LIST</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>TOTAL SU</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>CP CPU</td><td>152015</td><td>152015</td><td>133954</td><td>152015</td><td><span class="med">13.48</span></td>
+         </tr>
+         <tr>
+            <td>AGENT</td><td>152015</td><td>152015</td><td>133954</td><td>152015</td><td><span class="med">13.48</span></td>
+         </tr>
+         <tr>
+            <td>NONNESTED</td><td>152015</td><td>152015</td><td>133954</td><td>152015</td><td><span class="med">13.48</span></td>
+         </tr>
+         <tr>
+            <th>LOGGING</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOG RECS WRITTEN</td><td>394299</td><td>394299</td><td>394338</td><td>394299</td><td>-0.01</td>
+         </tr>
+         <tr>
+            <td>TOT BYTES WRITTEN</td><td>94229817</td><td>94229817</td><td>94280587</td><td>94229817</td><td>-0.05</td>
+         </tr>
+         <tr>
+            <th>DYNAMIC SQL STMT</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>BP0  BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>91</td><td>91</td><td>92</td><td>91</td><td>-1.09</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>1462</td><td>1462</td><td>1475</td><td>1462</td><td>-0.88</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td>80</td><td>80</td><td>65</td><td>80</td><td><span class="high">23.08</span></td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>3</td><td>3</td><td>3</td><td>3</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>PAGES READ ASYNCHR.</td><td>56</td><td>56</td><td>50</td><td>56</td><td><span class="med">12.00</span></td>
+         </tr>
+         <tr>
+            <th>BP1  BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>49</td><td>49</td><td>51</td><td>49</td><td>-3.92</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>29843</td><td>29843</td><td>29840</td><td>29843</td><td>0.01</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>34610</td><td>34610</td><td>34610</td><td>34610</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td>1141</td><td>1141</td><td>1129</td><td>1141</td><td>1.06</td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>1717</td><td>1717</td><td>1704</td><td>1717</td><td>0.76</td>
+         </tr>
+         <tr>
+            <td>PAGES READ ASYNCHR.</td><td>13944</td><td>13944</td><td>13519</td><td>13944</td><td>3.14</td>
+         </tr>
+         <tr>
+            <th>BP2  BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>99</td><td>99</td><td>99</td><td>99</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>652159</td><td>652159</td><td>651465</td><td>652159</td><td>0.11</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>352964</td><td>352964</td><td>352990</td><td>352964</td><td>-0.01</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td>1283</td><td>1283</td><td>2697</td><td>1283</td><td><span class="best">-52.43</span></td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>1073</td><td>1073</td><td>1130</td><td>1073</td><td>-5.04</td>
+         </tr>
+         <tr>
+            <td>PAGES READ ASYNCHR.</td><td>4092</td><td>4092</td><td>3854</td><td>4092</td><td>6.18</td>
+         </tr>
+         <tr>
+            <th>BP7  BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100</td><td>100</td><td>100</td><td>100</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>2080</td><td>2080</td><td>2080</td><td>2080</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>1040</td><td>1040</td><td>1040</td><td>1040</td><td>0.00</td>
+         </tr>
+         <tr>
+            <th>BP20  BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>90</td><td>90</td><td>90</td><td>90</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>663</td><td>663</td><td>660</td><td>663</td><td>0.45</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>9</td><td>9</td><td>6</td><td>9</td><td><span class="high">50.00</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td>49</td><td>49</td><td>49</td><td>49</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>4</td><td>4</td><td>4</td><td>4</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>PAGES READ ASYNCHR.</td><td>14</td><td>14</td><td>14</td><td>14</td><td>0.00</td>
+         </tr>
+         <tr>
+            <th>BP21  BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>85</td><td>85</td><td>83</td><td>85</td><td>2.41</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>236</td><td>236</td><td>230</td><td>236</td><td>2.61</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td>36</td><td>36</td><td>38</td><td>36</td><td>-5.26</td>
+         </tr>
+         <tr>
+            <th>TOTAL  BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>97</td><td>97</td><td>97</td><td>97</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>686480</td><td>686480</td><td>685791</td><td>686480</td><td>0.10</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>388623</td><td>388623</td><td>388646</td><td>388623</td><td>-0.01</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td>2609</td><td>2609</td><td>4005</td><td>2609</td><td><span class="best">-34.86</span></td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>2798</td><td>2798</td><td>2842</td><td>2798</td><td>-1.55</td>
+         </tr>
+         <tr>
+            <td>PAGES READ ASYNCHR.</td><td>18108</td><td>18108</td><td>17437</td><td>18108</td><td>3.85</td>
+         </tr>
+         <tr>
+            <th>BP8K BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>41</td><td>41</td><td>35</td><td>41</td><td><span class="med">17.14</span></td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>37</td><td>37</td><td>37</td><td>37</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td>20</td><td>20</td><td>24</td><td>20</td><td><span class="good">-16.67</span></td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0.00</td>
+         </tr>
+         <tr>
+            <th>TOT4K BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>97</td><td>97</td><td>97</td><td>97</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>686443</td><td>686443</td><td>685750</td><td>686443</td><td>0.10</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>388623</td><td>388623</td><td>388646</td><td>388623</td><td>-0.01</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td>2589</td><td>2589</td><td>3978</td><td>2589</td><td><span class="best">-34.92</span></td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>2797</td><td>2797</td><td>2841</td><td>2797</td><td>-1.55</td>
+         </tr>
+         <tr>
+            <td>PAGES READ ASYNCHR.</td><td>18106</td><td>18106</td><td>17437</td><td>18106</td><td>3.84</td>
+         </tr>
+         <tr>
+            <th>GROUP BP0  BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>GBP-DEPEND GETPAGES</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(XI)-DATA RETUR</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(XI)-NO DATA RT</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(NF)-DATA RETUR</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(NF)-NO DATA RT</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PREFETCH PAGES READ</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>CLEAN PAGES WRITTEN</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>UNREGISTER PAGE</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>ASYNCH GBP REQUESTS</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>EXPLICIT X-INVALID</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>ASYNCH SEC-GBP REQ</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK LOCK REQ</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>SPACE MAP PAGES</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>DATA PAGES</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>INDEX LEAF PAGES</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK UNLOCK REQ</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK LOCK SUSP</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>SPACE MAP PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>DATA PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>INDEX LEAF PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>WRITE AND REGISTER</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>WRITE &amp; REGISTER MULT</td><td></td><td></td><td></td><td>T</td><td></td>
+         </tr>
+         <tr>
+            <td>CHANGED PAGES WRITTEN</td><td></td><td></td><td></td><td>N</td><td></td>
+         </tr>
+         <tr>
+            <td>COMPL CHECKS SUSPEND</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <th>GROUP BP1  BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>GBP-DEPEND GETPAGES</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(XI)-DATA RETUR</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(XI)-NO DATA RT</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(NF)-DATA RETUR</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(NF)-NO DATA RT</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PREFETCH PAGES READ</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>CLEAN PAGES WRITTEN</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>UNREGISTER PAGE</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>ASYNCH GBP REQUESTS</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>EXPLICIT X-INVALID</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>ASYNCH SEC-GBP REQ</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK LOCK REQ</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>SPACE MAP PAGES</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>DATA PAGES</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>INDEX LEAF PAGES</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK UNLOCK REQ</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK LOCK SUSP</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>SPACE MAP PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>DATA PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>INDEX LEAF PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>WRITE AND REGISTER</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>WRITE &amp; REGISTER MULT</td><td></td><td></td><td></td><td>T</td><td></td>
+         </tr>
+         <tr>
+            <td>CHANGED PAGES WRITTEN</td><td></td><td></td><td></td><td>N</td><td></td>
+         </tr>
+         <tr>
+            <td>COMPL CHECKS SUSPEND</td><td></td><td></td><td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <th>GROUP BP2  BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>GROUP TOT4K BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>UNREGISTER PAGE</td><td>438</td><td>438</td><td></td><td>438</td><td>0.00</td>
+         </tr>
+         <tr>
+            <td>GBP-DEPEND GETPAGES</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>READ(XI)-DATA RETUR</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>READ(XI)-NO DATA RT</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>READ(NF)-DATA RETUR</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>READ(NF)-NO DATA RT</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>PREFETCH PAGES READ</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>CLEAN PAGES WRITTEN</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>ASYNCH GBP REQUESTS</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>EXPLICIT X-INVALID</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>ASYNCH SEC-GBP REQ</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK LOCK REQ</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>SPACE MAP PAGES</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>DATA PAGES</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>INDEX LEAF PAGES</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK UNLOCK REQ</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK LOCK SUSP</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>SPACE MAP PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>DATA PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>INDEX LEAF PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>WRITE AND REGISTER</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>WRITE &amp; REGISTER MULT</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>CHANGED PAGES WRITTEN</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <td>COMPL CHECKS SUSPEND</td><td></td><td></td><td></td><td>0</td><td></td>
+         </tr>
+         <tr>
+            <th>BP32K BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td></td><td></td><td>25</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td></td><td></td><td>4</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS WRITE</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td></td><td></td><td>3</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>SEQ. PREFETCH REQS</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQS</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PAGES READ ASYNCHR.</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <th>GROUP TOTAL</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>GBP-DEPEND GETPAGES</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(XI)-DATA RETUR</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(XI)-NO DATA RT</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(NF)-DATA RETUR</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(NF)-NO DATA RT</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PREFETCH PAGES READ</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>CLEAN PAGES WRITTEN</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>UNREGISTER PAGE</td><td></td><td></td><td>56</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>ASYNCH GBP REQUESTS</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>EXPLICIT X-INVALID</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>ASYNCH SEC-GBP REQ</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK LOCK REQ</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>SPACE MAP PAGES</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>DATA PAGES</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>INDEX LEAF PAGES</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK UNLOCK REQ</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK LOCK SUSP</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>SPACE MAP PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>DATA PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>INDEX LEAF PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>WRITE AND REGISTER</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>WRITE &amp; REGISTER MULT</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>CHANGED PAGES WRITTEN</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>COMPL CHECKS SUSPEND</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <th>GROUP BP32K BPOOL ACTIVITY</th><th>HIST1</th><th>HIST11</th><th>HIST32</th><th>HIST43</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>GBP-DEPEND GETPAGES</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(XI)-DATA RETUR</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(XI)-NO DATA RT</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(NF)-DATA RETUR</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>READ(NF)-NO DATA RT</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PREFETCH PAGES READ</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>CLEAN PAGES WRITTEN</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>UNREGISTER PAGE</td><td></td><td></td><td>3</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>ASYNCH GBP REQUESTS</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>EXPLICIT X-INVALID</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>ASYNCH SEC-GBP REQ</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK LOCK REQ</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>SPACE MAP PAGES</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>DATA PAGES</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>INDEX LEAF PAGES</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK UNLOCK REQ</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>PG P-LOCK LOCK SUSP</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>SPACE MAP PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>DATA PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>INDEX LEAF PAGES(PG P-LOCK LOCK SUSP)</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>WRITE AND REGISTER</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>WRITE &amp; REGISTER MULT</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>CHANGED PAGES WRITTEN</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+         <tr>
+            <td>COMPL CHECKS SUSPEND</td><td></td><td></td><td>0</td><td></td><td></td>
+         </tr>
+      </table>
+   </body>
+</html>

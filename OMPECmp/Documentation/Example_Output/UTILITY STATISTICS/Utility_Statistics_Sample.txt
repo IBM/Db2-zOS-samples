@@ -1,0 +1,923 @@
+1                    J E S 2  J O B  L O G  --  S Y S T E M  S Y H 5  --  N O D E  S T L A B H 5         
+0 
+ 23.29.31 JOB00353 ---- THURSDAY,  16 OCT 2014 ----
+ 23.29.31 JOB00353  ICH70001I SYSADM   LAST ACCESS AT 23:28:59 ON THURSDAY, OCTOBER 16, 2014
+ 23.29.31 JOB00353  $HASP373 UTLLOADT STARTED - INIT 1    - CLASS Q - SYS SYH5
+ 23.34.56 JOB00353  IEF450I UTLLOADT LOADUT - ABEND=S0C4 U0000 REASON=00000011
+ 23.34.56 JOB00353  SMF000I  UTLLOADT    LOADUT      DSNUTILB    00C4
+ 23.34.56 JOB00353  $HASP395 UTLLOADT ENDED
+0------ JES2 JOB STATISTICS ------
+-  16 OCT 2014 JOB EXECUTION DATE
+-           63 CARDS READ
+-          923 SYSOUT PRINT RECORDS
+-            0 SYSOUT PUNCH RECORDS
+-           57 SYSOUT SPOOL KBYTES
+-         5.41 MINUTES EXECUTION TIME
+         1 //UTLLOADT JOB STL,MSGLEVEL=(1,1),MSGCLASS=E,PASSWORD=,                 JOB00353
+           // USER=SYSADM,REGION=0M,TIME=1440,CLASS=Q                                      
+         2 //JOBLIB   DD DISP=SHR,DSN=DSNA10.PORB.SDSNEXIT                         00340001
+         3 //         DD DISP=SHR,DSN=DSNA1DD.TESTLIB                              00340001
+         4 //         DD DISP=SHR,DSN=DSNA10.PORB.SDSNLOAD                                 
+           //*        DD DISP=SHR,DSN=CNK100.DB2SORT.SCNKLINK                              
+         5 //LOADUT   EXEC  PGM=DSNUTILB,PARM='DA1R,LOADUT,,STATSLVL(SUBPROCESS)'          
+         6 //UTPRINT  DD SYSOUT=*                                                          
+         7 //SYSPRINT DD SYSOUT=*                                                          
+         8 //SYSUDUMP DD SYSOUT=*                                                          
+         9 //SYSUT1   DD DSN=DSNA1DD.SYSUT1,DISP=(NEW,DELETE,DELETE),                      
+           //  SPACE=(CYL,(2,2)),UNIT=3390,VOL=SER=(RG3036),                               
+           //  DCB=(BUFNO=30)                                                              
+        10 //SW01WK01 DD VOL=SER=RG3097,SPACE=(CYL,(3500,3500)),UNIT=3390                  
+        11 //SW01WK02 DD VOL=SER=RG3098,SPACE=(CYL,(3500,3500)),UNIT=3390                  
+        12 //SW02WK01 DD VOL=SER=RG3099,SPACE=(CYL,(3500,3500)),UNIT=3390                  
+        13 //SW02WK02 DD VOL=SER=RG3100,SPACE=(CYL,(3500,3500)),UNIT=3390                  
+        14 //SW03WK01 DD VOL=SER=RG3101,SPACE=(CYL,(3500,3500)),UNIT=3390                  
+        15 //SW03WK02 DD VOL=SER=RG3102,SPACE=(CYL,(3500,3500)),UNIT=3390                  
+        16 //SW04WK01 DD VOL=SER=RG3103,SPACE=(CYL,(3500,3500)),UNIT=3390                  
+        17 //SW04WK02 DD VOL=SER=RG3104,SPACE=(CYL,(3500,3500)),UNIT=3390                  
+        18 //SW05WK01 DD VOL=SER=RG3105,SPACE=(CYL,(3500,3500)),UNIT=3390                  
+        19 //SW05WK02 DD VOL=SER=RG3106,SPACE=(CYL,(3500,3500)),UNIT=3390                  
+        20 //SW06WK01 DD VOL=SER=RG3107,SPACE=(CYL,(3500,3500)),UNIT=3390                  
+        21 //SW06WK02 DD VOL=SER=RG3108,SPACE=(CYL,(3500,3500)),UNIT=3390                  
+        22 //SORTOUT  DD DSN=DSNA1DD.SORTP1,DISP=(NEW,DELETE,DELETE),                      
+           // SPACE=(CYL,(2,2)),UNIT=3390,VOL=SER=(RG3015),                                
+           // DCB=(BUFNO=30)                                                               
+        23 //INFILE DD DSN=UT.ORDER.DATA100M.PORB,DISP=(SHR,KEEP)                  03750000
+        24 //DFSPARM DD *                                                                  
+        25 //SYSIN DD *                                                                    
+        26 //SYSIN     DD *               GENERATED STATEMENT                              
+ ICH70001I SYSADM   LAST ACCESS AT 23:28:59 ON THURSDAY, OCTOBER 16, 2014
+ IEF236I ALLOC. FOR UTLLOADT LOADUT
+ IEF237I B482 ALLOCATED TO JOBLIB
+ IGD103I SMS ALLOCATED TO DDNAME
+ IEF237I B482 ALLOCATED TO 
+ IEF237I JES2 ALLOCATED TO UTPRINT
+ IEF237I JES2 ALLOCATED TO SYSPRINT
+ IEF237I JES2 ALLOCATED TO SYSUDUMP
+ IGD101I SMS ALLOCATED TO DDNAME (SYSUT1  )
+         DSN (DSNA1DD.SYSUT1                              )
+         STORCLAS (PORBSC2) MGMTCLAS (        ) DATACLAS (        )
+         VOL SER NOS= RG3036                                                                
+ IGD100I B780 ALLOCATED TO DDNAME SW01WK01 DATACLAS (        )
+ IGD100I B781 ALLOCATED TO DDNAME SW01WK02 DATACLAS (        )
+ IGD100I B782 ALLOCATED TO DDNAME SW02WK01 DATACLAS (        )
+ IGD100I B783 ALLOCATED TO DDNAME SW02WK02 DATACLAS (        )
+ IGD100I B784 ALLOCATED TO DDNAME SW03WK01 DATACLAS (        )
+ IGD100I B785 ALLOCATED TO DDNAME SW03WK02 DATACLAS (        )
+ IGD100I B786 ALLOCATED TO DDNAME SW04WK01 DATACLAS (        )
+ IGD100I B787 ALLOCATED TO DDNAME SW04WK02 DATACLAS (        )
+ IGD100I B788 ALLOCATED TO DDNAME SW05WK01 DATACLAS (        )
+ IGD100I B789 ALLOCATED TO DDNAME SW05WK02 DATACLAS (        )
+ IGD100I B78A ALLOCATED TO DDNAME SW06WK01 DATACLAS (        )
+ IGD100I B78B ALLOCATED TO DDNAME SW06WK02 DATACLAS (        )
+ IGD101I SMS ALLOCATED TO DDNAME (SORTOUT )
+         DSN (DSNA1DD.SORTP1                              )
+         STORCLAS (PORBSC2) MGMTCLAS (        ) DATACLAS (        )
+         VOL SER NOS= RG3015                                                                
+ IEF237I B483 ALLOCATED TO INFILE
+ IEF237I JES2 ALLOCATED TO DFSPARM
+ IEF237I JES2 ALLOCATED TO SYSIN
+ IEF237I JES2 ALLOCATED TO SYSIN
+ IEF237I JES2 ALLOCATED TO UTPRIN01
+ IEF237I JES2 ALLOCATED TO UTPRIN02
+ IEF237I JES2 ALLOCATED TO UTPRIN03
+ IEF237I JES2 ALLOCATED TO UTPRIN04
+ IEF237I JES2 ALLOCATED TO UTPRIN05
+ IEF237I JES2 ALLOCATED TO UTPRIN06
+ IEF285I   SYSADM.UTLLOADT.JOB00353.D0000101.?          SYSIN         
+ IGD100I B480 ALLOCATED TO DDNAME DFSPARM  DATACLAS (        )
+ IEF285I   SYS14289.T232933.RA000.UTLLOADT.DFSPARM.H01  DELETED       
+ IEF285I   VOL SER NOS= RG3001.                            
+ IEF472I UTLLOADT LOADUT - COMPLETION CODE - SYSTEM=0C4 USER=0000 REASON=00000011
+ IEF285I   SYSADM.UTLLOADT.JOB00353.D0000104.?          SYSOUT        
+ IEF285I   SYSADM.UTLLOADT.JOB00353.D0000105.?          SYSOUT        
+ IEF285I   SYSADM.UTLLOADT.JOB00353.D0000106.?          SYSOUT        
+ IGD105I DSNA1DD.SYSUT1                               DELETED,   DDNAME=SYSUT1  
+ IEF285I   SYS14289.T232931.RA000.UTLLOADT.R0100139     DELETED       
+ IEF285I   VOL SER NOS= RG3097.                            
+ IEF285I   SYS14289.T232931.RA000.UTLLOADT.R0100140     DELETED       
+ IEF285I   VOL SER NOS= RG3098.                            
+ IEF285I   SYS14289.T232931.RA000.UTLLOADT.R0100141     DELETED       
+ IEF285I   VOL SER NOS= RG3099.                            
+ IEF285I   SYS14289.T232931.RA000.UTLLOADT.R0100142     DELETED       
+ IEF285I   VOL SER NOS= RG3100.                            
+ IEF285I   SYS14289.T232931.RA000.UTLLOADT.R0100143     DELETED       
+ IEF285I   VOL SER NOS= RG3101.                            
+ IEF285I   SYS14289.T232931.RA000.UTLLOADT.R0100144     DELETED       
+ IEF285I   VOL SER NOS= RG3102.                            
+ IEF285I   SYS14289.T232931.RA000.UTLLOADT.R0100145     DELETED       
+ IEF285I   VOL SER NOS= RG3103.                            
+ IEF285I   SYS14289.T232931.RA000.UTLLOADT.R0100146     DELETED       
+ IEF285I   VOL SER NOS= RG3104.                            
+ IEF285I   SYS14289.T232931.RA000.UTLLOADT.R0100147     DELETED       
+ IEF285I   VOL SER NOS= RG3105.                            
+ IEF285I   SYS14289.T232931.RA000.UTLLOADT.R0100148     DELETED       
+ IEF285I   VOL SER NOS= RG3106.                            
+ IEF285I   SYS14289.T232931.RA000.UTLLOADT.R0100149     DELETED       
+ IEF285I   VOL SER NOS= RG3107.                            
+ IEF285I   SYS14289.T232931.RA000.UTLLOADT.R0100150     DELETED       
+ IEF285I   VOL SER NOS= RG3108.                            
+ IGD105I DSNA1DD.SORTP1                               DELETED,   DDNAME=SORTOUT 
+ IEF285I   UT.ORDER.DATA100M.PORB                       KEPT          
+ IEF285I   VOL SER NOS= RG3004.                            
+ IEF285I   SYSADM.UTLLOADT.JOB00353.D0000102.?          SYSIN         
+ IEF285I   SYSADM.UTLLOADT.JOB00353.D0000103.?          SYSIN         
+ IEF285I   SYSADM.UTLLOADT.JOB00353.D0000107.?          SYSOUT        
+ IEF285I   SYSADM.UTLLOADT.JOB00353.D0000108.?          SYSOUT        
+ IEF285I   SYSADM.UTLLOADT.JOB00353.D0000109.?          SYSOUT        
+ IEF285I   SYSADM.UTLLOADT.JOB00353.D0000110.?          SYSOUT        
+ IEF285I   SYSADM.UTLLOADT.JOB00353.D0000111.?          SYSOUT        
+ IEF285I   SYSADM.UTLLOADT.JOB00353.D0000112.?          SYSOUT        
+ IEF373I STEP/LOADUT  /START 2014289.2329
+ IEF032I STEP/LOADUT  /STOP  2014289.2334 
+         CPU:     0 HR  07 MIN  23.27 SEC    SRB:     0 HR  00 MIN  01.02 SEC    
+         VIRT:  6828K  SYS:   456K  EXT:  1575932K  SYS:    13732K
+ IEF285I   DSNA10.PORB.SDSNEXIT                         KEPT          
+ IEF285I   VOL SER NOS= RG3003.                            
+ IGD104I DSNA1DD.TESTLIB                              RETAINED,  DDNAME=        
+ IEF285I   DSNA10.PORB.SDSNLOAD                         KEPT          
+ IEF285I   VOL SER NOS= RG3003.                            
+ IEF375I  JOB/UTLLOADT/START 2014289.2329
+ IEF033I  JOB/UTLLOADT/STOP  2014289.2334 
+         CPU:     0 HR  07 MIN  23.27 SEC    SRB:     0 HR  00 MIN  01.02 SEC    
+1DSNU000I    289 23:29:31.83 DSNUGUTC - OUTPUT START FOR UTILITY, UTILID = LOADUT 
+ DSNU1044I   289 23:29:31.89 DSNUGTIS - PROCESSING SYSIN AS EBCDIC
+0DSNU050I    289 23:29:31.89 DSNUGUTC -  LOAD DATA INDDN(INFILE) LOG NO RESUME(NO) SORTKEYS 300000000 REPLACE
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -  INTO TABLE SYSADM.TABLE4UT
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -   (LABTABLN CHAR POSITION(1:8),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABPARTN CHAR POSITION(9:22),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABOPERS CHAR POSITION(23:27),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABDEPTN CHAR POSITION(28:30),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABEFFBD DECIMAL POSITION(31:33),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABEFFED DECIMAL POSITION(34:36),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABROUTN DECIMAL POSITION(37:40),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABROUTC CHAR POSITION(41),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABWKCEN CHAR POSITION(42:46),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABGRADE CHAR POSITION(47:49),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABSUTIM INTEGER POSITION(50:53),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABSUCDE CHAR POSITION(54),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABMATIM INTEGER POSITION(58:61),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABORTIM INTEGER POSITION(62:65),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABOVRLP CHAR POSITION(66),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABMAXFA INTEGER POSITION(70:73),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABMNSAQ INTEGER POSITION(74:77),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABMNSAH INTEGER POSITION(78:81),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABINSPN CHAR POSITION(82),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABINSSR CHAR POSITION(83:84),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABSHRFR DECIMAL POSITION(85:87),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABTFACN DECIMAL POSITION(88:89),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABHANIN CHAR POSITION(90:97),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABHANDE CHAR POSITION(98:109),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABHANTI CHAR POSITION(110:113),
+ DSNU650I  *DA1R 289 23:29:31.89 DSNURWI -    LABFILL1 CHAR POSITION(114:117))
+ DSNU350I  *DA1R 289 23:29:33.60 DSNURRST - EXISTING RECORDS DELETED FROM TABLESPACE
+ DSNU395I    289 23:29:33.75 DSNURPIB - INDEXES WILL BE BUILT IN PARALLEL, NUMBER OF TASKS = 12 
+ DSNU241I  *DA1R 289 23:29:33.83 DSNURBDC - DICTIONARY WITH 4096 ENTRIES HAS BEEN SUCCESSFULLY BUILT FROM 500 ROWS FOR
+ TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 1 
+ DSNU241I  *DA1R 289 23:29:56.88 DSNURBDC - DICTIONARY WITH 4096 ENTRIES HAS BEEN SUCCESSFULLY BUILT FROM 501 ROWS FOR
+ TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 2 
+ DSNU241I  *DA1R 289 23:30:20.52 DSNURBDC - DICTIONARY WITH 4096 ENTRIES HAS BEEN SUCCESSFULLY BUILT FROM 502 ROWS FOR
+ TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 3 
+ DSNU241I  *DA1R 289 23:30:44.09 DSNURBDC - DICTIONARY WITH 4096 ENTRIES HAS BEEN SUCCESSFULLY BUILT FROM 502 ROWS FOR
+ TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 4 
+ DSNU241I  *DA1R 289 23:31:06.89 DSNURBDC - DICTIONARY WITH 4096 ENTRIES HAS BEEN SUCCESSFULLY BUILT FROM 502 ROWS FOR
+ TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 5 
+ DSNU241I  *DA1R 289 23:31:30.44 DSNURBDC - DICTIONARY WITH 4096 ENTRIES HAS BEEN SUCCESSFULLY BUILT FROM 502 ROWS FOR
+ TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 6 
+ DSNU241I  *DA1R 289 23:31:53.85 DSNURBDC - DICTIONARY WITH 4096 ENTRIES HAS BEEN SUCCESSFULLY BUILT FROM 502 ROWS FOR
+ TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 7 
+ DSNU241I  *DA1R 289 23:32:17.02 DSNURBDC - DICTIONARY WITH 4096 ENTRIES HAS BEEN SUCCESSFULLY BUILT FROM 501 ROWS FOR
+ TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 8 
+ DSNU241I  *DA1R 289 23:32:39.80 DSNURBDC - DICTIONARY WITH 4096 ENTRIES HAS BEEN SUCCESSFULLY BUILT FROM 502 ROWS FOR
+ TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 9 
+ DSNU241I  *DA1R 289 23:33:01.75 DSNURBDC - DICTIONARY WITH 4096 ENTRIES HAS BEEN SUCCESSFULLY BUILT FROM 504 ROWS FOR
+ TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 10
+ DSNU244I  *DA1R 289 23:33:22.81 DSNURWT - COMPRESSION REPORT FOR TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 1
+  
+             1142578 KB WITHOUT COMPRESSION                                                                             
+             1040407 KB WITH COMPRESSION                                                                                
+                   8 PERCENT OF THE BYTES SAVED FROM COMPRESSED DATA ROWS                                               
+                                                                                                                        
+                  93 PERCENT OF THE LOADED ROWS WERE COMPRESSED                                                         
+                                                                                                                        
+                 119 BYTES FOR AVERAGE UNCOMPRESSED ROW LENGTH                                                          
+                 109 BYTES FOR AVERAGE COMPRESSED ROW LENGTH                                                            
+                                                                                                                        
+              292142 PAGES REQUIRED WITHOUT COMPRESSION                                                                 
+              267659 PAGES REQUIRED WITH COMPRESSION                                                                    
+                   8 PERCENT OF THE DB2 DATA PAGES SAVED USING COMPRESSED DATA                                          
+                                                                                                                        
+ DSNU244I  *DA1R 289 23:33:22.81 DSNURWT - COMPRESSION REPORT FOR TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 2
+  
+             1142578 KB WITHOUT COMPRESSION                                                                             
+              999427 KB WITH COMPRESSION                                                                                
+                  12 PERCENT OF THE BYTES SAVED FROM COMPRESSED DATA ROWS                                               
+                                                                                                                        
+                  94 PERCENT OF THE LOADED ROWS WERE COMPRESSED                                                         
+                                                                                                                        
+                 119 BYTES FOR AVERAGE UNCOMPRESSED ROW LENGTH                                                          
+                 105 BYTES FOR AVERAGE COMPRESSED ROW LENGTH                                                            
+                                                                                                                        
+              292142 PAGES REQUIRED WITHOUT COMPRESSION                                                                 
+              257796 PAGES REQUIRED WITH COMPRESSION                                                                    
+                  11 PERCENT OF THE DB2 DATA PAGES SAVED USING COMPRESSED DATA                                          
+                                                                                                                        
+ DSNU244I  *DA1R 289 23:33:22.81 DSNURWT - COMPRESSION REPORT FOR TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 3
+  
+             1142578 KB WITHOUT COMPRESSION                                                                             
+              998117 KB WITH COMPRESSION                                                                                
+                  12 PERCENT OF THE BYTES SAVED FROM COMPRESSED DATA ROWS                                               
+                                                                                                                        
+                  94 PERCENT OF THE LOADED ROWS WERE COMPRESSED                                                         
+                                                                                                                        
+                 119 BYTES FOR AVERAGE UNCOMPRESSED ROW LENGTH                                                          
+                 105 BYTES FOR AVERAGE COMPRESSED ROW LENGTH                                                            
+                                                                                                                        
+              292142 PAGES REQUIRED WITHOUT COMPRESSION                                                                 
+              257796 PAGES REQUIRED WITH COMPRESSION                                                                    
+                  11 PERCENT OF THE DB2 DATA PAGES SAVED USING COMPRESSED DATA                                          
+                                                                                                                        
+ DSNU244I  *DA1R 289 23:33:22.81 DSNURWT - COMPRESSION REPORT FOR TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 4
+  
+             1142578 KB WITHOUT COMPRESSION                                                                             
+              997776 KB WITH COMPRESSION                                                                                
+                  12 PERCENT OF THE BYTES SAVED FROM COMPRESSED DATA ROWS                                               
+                                                                                                                        
+                  95 PERCENT OF THE LOADED ROWS WERE COMPRESSED                                                         
+                                                                                                                        
+                 119 BYTES FOR AVERAGE UNCOMPRESSED ROW LENGTH                                                          
+                 105 BYTES FOR AVERAGE COMPRESSED ROW LENGTH                                                            
+                                                                                                                        
+              292142 PAGES REQUIRED WITHOUT COMPRESSION                                                                 
+              257796 PAGES REQUIRED WITH COMPRESSION                                                                    
+                  11 PERCENT OF THE DB2 DATA PAGES SAVED USING COMPRESSED DATA                                          
+                                                                                                                        
+ DSNU244I  *DA1R 289 23:33:22.81 DSNURWT - COMPRESSION REPORT FOR TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 5
+  
+             1142578 KB WITHOUT COMPRESSION                                                                             
+              999323 KB WITH COMPRESSION                                                                                
+                  12 PERCENT OF THE BYTES SAVED FROM COMPRESSED DATA ROWS                                               
+                                                                                                                        
+                  95 PERCENT OF THE LOADED ROWS WERE COMPRESSED                                                         
+                                                                                                                        
+                 119 BYTES FOR AVERAGE UNCOMPRESSED ROW LENGTH                                                          
+                 105 BYTES FOR AVERAGE COMPRESSED ROW LENGTH                                                            
+                                                                                                                        
+              292142 PAGES REQUIRED WITHOUT COMPRESSION                                                                 
+              257796 PAGES REQUIRED WITH COMPRESSION                                                                    
+                  11 PERCENT OF THE DB2 DATA PAGES SAVED USING COMPRESSED DATA                                          
+                                                                                                                        
+ DSNU244I  *DA1R 289 23:33:22.81 DSNURWT - COMPRESSION REPORT FOR TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 6
+  
+             1142578 KB WITHOUT COMPRESSION                                                                             
+             1000267 KB WITH COMPRESSION                                                                                
+                  12 PERCENT OF THE BYTES SAVED FROM COMPRESSED DATA ROWS                                               
+                                                                                                                        
+                  94 PERCENT OF THE LOADED ROWS WERE COMPRESSED                                                         
+                                                                                                                        
+                 119 BYTES FOR AVERAGE UNCOMPRESSED ROW LENGTH                                                          
+                 105 BYTES FOR AVERAGE COMPRESSED ROW LENGTH                                                            
+                                                                                                                        
+              292142 PAGES REQUIRED WITHOUT COMPRESSION                                                                 
+              257796 PAGES REQUIRED WITH COMPRESSION                                                                    
+                  11 PERCENT OF THE DB2 DATA PAGES SAVED USING COMPRESSED DATA                                          
+                                                                                                                        
+ DSNU244I  *DA1R 289 23:33:22.81 DSNURWT - COMPRESSION REPORT FOR TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 7
+  
+             1142578 KB WITHOUT COMPRESSION                                                                             
+              999392 KB WITH COMPRESSION                                                                                
+                  12 PERCENT OF THE BYTES SAVED FROM COMPRESSED DATA ROWS                                               
+                                                                                                                        
+                  94 PERCENT OF THE LOADED ROWS WERE COMPRESSED                                                         
+                                                                                                                        
+                 119 BYTES FOR AVERAGE UNCOMPRESSED ROW LENGTH                                                          
+                 105 BYTES FOR AVERAGE COMPRESSED ROW LENGTH                                                            
+                                                                                                                        
+              292142 PAGES REQUIRED WITHOUT COMPRESSION                                                                 
+              257796 PAGES REQUIRED WITH COMPRESSION                                                                    
+                  11 PERCENT OF THE DB2 DATA PAGES SAVED USING COMPRESSED DATA                                          
+                                                                                                                        
+ DSNU244I  *DA1R 289 23:33:22.81 DSNURWT - COMPRESSION REPORT FOR TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 8
+  
+             1142578 KB WITHOUT COMPRESSION                                                                             
+              998035 KB WITH COMPRESSION                                                                                
+                  12 PERCENT OF THE BYTES SAVED FROM COMPRESSED DATA ROWS                                               
+                                                                                                                        
+                  95 PERCENT OF THE LOADED ROWS WERE COMPRESSED                                                         
+                                                                                                                        
+                 119 BYTES FOR AVERAGE UNCOMPRESSED ROW LENGTH                                                          
+                 105 BYTES FOR AVERAGE COMPRESSED ROW LENGTH                                                            
+                                                                                                                        
+              292142 PAGES REQUIRED WITHOUT COMPRESSION                                                                 
+              257796 PAGES REQUIRED WITH COMPRESSION                                                                    
+                  11 PERCENT OF THE DB2 DATA PAGES SAVED USING COMPRESSED DATA                                          
+                                                                                                                        
+ DSNU244I  *DA1R 289 23:33:22.81 DSNURWT - COMPRESSION REPORT FOR TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 9
+  
+             1142578 KB WITHOUT COMPRESSION                                                                             
+              995271 KB WITH COMPRESSION                                                                                
+                  12 PERCENT OF THE BYTES SAVED FROM COMPRESSED DATA ROWS                                               
+                                                                                                                        
+                  95 PERCENT OF THE LOADED ROWS WERE COMPRESSED                                                         
+                                                                                                                        
+                 119 BYTES FOR AVERAGE UNCOMPRESSED ROW LENGTH                                                          
+                 104 BYTES FOR AVERAGE COMPRESSED ROW LENGTH                                                            
+                                                                                                                        
+              292142 PAGES REQUIRED WITHOUT COMPRESSION                                                                 
+              255362 PAGES REQUIRED WITH COMPRESSION                                                                    
+                  12 PERCENT OF THE DB2 DATA PAGES SAVED USING COMPRESSED DATA                                          
+                                                                                                                        
+ DSNU244I  *DA1R 289 23:33:22.81 DSNURWT - COMPRESSION REPORT FOR TABLE SPACE DB4UTA1.TS4UTA1, PARTITION 10 
+  
+             1142578 KB WITHOUT COMPRESSION                                                                             
+              989894 KB WITH COMPRESSION                                                                                
+                  13 PERCENT OF THE BYTES SAVED FROM COMPRESSED DATA ROWS                                               
+                                                                                                                        
+                  96 PERCENT OF THE LOADED ROWS WERE COMPRESSED                                                         
+                                                                                                                        
+                 119 BYTES FOR AVERAGE UNCOMPRESSED ROW LENGTH                                                          
+                 104 BYTES FOR AVERAGE COMPRESSED ROW LENGTH                                                            
+                                                                                                                        
+              292142 PAGES REQUIRED WITHOUT COMPRESSION                                                                 
+              255362 PAGES REQUIRED WITH COMPRESSION                                                                    
+                  12 PERCENT OF THE DB2 DATA PAGES SAVED USING COMPRESSED DATA                                          
+                                                                                                                        
+ DSNU304I  *DA1R 289 23:33:22.87 DSNURWT - (RE)LOAD PHASE STATISTICS - NUMBER OF RECORDS=100000000 FOR TABLE
+ SYSADM.TABLE4UT
+ DSNU1147I *DA1R 289 23:33:22.87 DSNURWT - (RE)LOAD PHASE STATISTICS - TOTAL NUMBER OF RECORDS LOADED=100000000 FOR 
+ TABLESPACE DB4UTA1.TS4UTA1 
+ DSNU302I    289 23:33:22.87 DSNURILD - (RE)LOAD PHASE STATISTICS - NUMBER OF INPUT RECORDS PROCESSED=100000000 
+ DSNU300I    289 23:33:22.87 DSNURILD - (RE)LOAD PHASE COMPLETE, ELAPSED TIME=00:03:50
+ DSNU394I  *DA1R 289 23:33:49.17 DSNURBXA - SORTBLD PHASE STATISTICS - NUMBER OF KEYS=100000000 FOR INDEX SYSADM.XN4UTA1
+ DSNU394I  *DA1R 289 23:33:57.04 DSNURBXA - SORTBLD PHASE STATISTICS - NUMBER OF KEYS=100000000 FOR INDEX SYSADM.XN2UTA1
+ DSNU394I  *DA1R 289 23:33:58.07 DSNURBXA - SORTBLD PHASE STATISTICS - NUMBER OF KEYS=100000000 FOR INDEX SYSADM.XN5UTA1
+ DSNU394I  *DA1R 289 23:34:19.83 DSNURBXA - SORTBLD PHASE STATISTICS - NUMBER OF KEYS=100000000 FOR INDEX SYSADM.XPUTA1 
+ DSNU394I  *DA1R 289 23:34:39.84 DSNURBXA - SORTBLD PHASE STATISTICS - NUMBER OF KEYS=100000000 FOR INDEX SYSADM.XN3UTA1
+ DSNU394I  *DA1R 289 23:34:51.72 DSNURBXA - SORTBLD PHASE STATISTICS - NUMBER OF KEYS=100000000 FOR INDEX SYSADM.XN1UTA1
+ DSNU391I    289 23:34:51.81 DSNURPTB - SORTBLD PHASE STATISTICS. NUMBER OF INDEXES = 6 
+ DSNU392I    289 23:34:51.81 DSNURPTB - SORTBLD PHASE COMPLETE, ELAPSED TIME = 00:01:28 
+ DSNU1032I   289 23:34:51.82 DSNUGTDS - INVALID QUALIFIER .&DB. IN TEMPLATE SYSZPFC 
+ DSNU380I  *DA1R 289 23:34:51.83 DSNUGSRX - TABLESPACE DB4UTA1.TS4UTA1 PARTITION 1 IS IN COPY PENDING 
+ DSNU380I  *DA1R 289 23:34:51.83 DSNUGSRX - TABLESPACE DB4UTA1.TS4UTA1 PARTITION 2 IS IN COPY PENDING 
+ DSNU380I  *DA1R 289 23:34:51.83 DSNUGSRX - TABLESPACE DB4UTA1.TS4UTA1 PARTITION 3 IS IN COPY PENDING 
+ DSNU380I  *DA1R 289 23:34:51.83 DSNUGSRX - TABLESPACE DB4UTA1.TS4UTA1 PARTITION 4 IS IN COPY PENDING 
+ DSNU380I  *DA1R 289 23:34:51.83 DSNUGSRX - TABLESPACE DB4UTA1.TS4UTA1 PARTITION 5 IS IN COPY PENDING 
+ DSNU380I  *DA1R 289 23:34:51.83 DSNUGSRX - TABLESPACE DB4UTA1.TS4UTA1 PARTITION 6 IS IN COPY PENDING 
+ DSNU380I  *DA1R 289 23:34:51.83 DSNUGSRX - TABLESPACE DB4UTA1.TS4UTA1 PARTITION 7 IS IN COPY PENDING 
+ DSNU380I  *DA1R 289 23:34:51.83 DSNUGSRX - TABLESPACE DB4UTA1.TS4UTA1 PARTITION 8 IS IN COPY PENDING 
+ DSNU380I  *DA1R 289 23:34:51.83 DSNUGSRX - TABLESPACE DB4UTA1.TS4UTA1 PARTITION 9 IS IN COPY PENDING 
+ DSNU380I  *DA1R 289 23:34:51.83 DSNUGSRX - TABLESPACE DB4UTA1.TS4UTA1 PARTITION 10 IS IN COPY PENDING
+ DSNU568I  *DA1R 289 23:34:51.83 DSNUGSRX - INDEX SYSADM.XPUTA1 IS IN INFORMATIONAL COPY PENDING STATE
+ DSNU568I  *DA1R 289 23:34:51.83 DSNUGSRX - INDEX SYSADM.XN1UTA1 IS IN INFORMATIONAL COPY PENDING STATE 
+ DSNU568I  *DA1R 289 23:34:51.83 DSNUGSRX - INDEX SYSADM.XN2UTA1 IS IN INFORMATIONAL COPY PENDING STATE 
+ DSNU568I  *DA1R 289 23:34:51.83 DSNUGSRX - INDEX SYSADM.XN3UTA1 IS IN INFORMATIONAL COPY PENDING STATE 
+ DSNU568I  *DA1R 289 23:34:51.83 DSNUGSRX - INDEX SYSADM.XN4UTA1 IS IN INFORMATIONAL COPY PENDING STATE 
+ DSNU568I  *DA1R 289 23:34:51.83 DSNUGSRX - INDEX SYSADM.XN5UTA1 IS IN INFORMATIONAL COPY PENDING STATE 
+ -----------------------------------------------------------------------------------------------------------------------
+                                           U T I L I T Y   S T A T I S T I C S                      c                    
+                                                                                                                        
+ INTERVAL = UTILINIT               CPU (SEC)          = 0.002545                                                        
+    LEVEL = PHASE                  ELAPSED TIME (SEC) = 0.038                                                           
+                                                                                                                        
+   BUF POOL     GETPAGES     SYS SETW    SYNC READS    SYNC WRITE    SEQ PREFCH   LIST PREFCH    DYN PREFCH             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   BP0                30                          1                                         1                           
+   BP1                10           10                          10                                                       
+   BP32K               3            1                                                                                   
+   BP8K0               2                                                                                                
+                                                                                                                        
+   TOTAL              45           11             1            10                           1                           
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = RESET PAGESET          CPU (SEC)          = 0.000372                                                        
+    LEVEL = RELOAD SUBPROCESS      ELAPSED TIME (SEC) = 1.637                                                           
+                                                                                                                        
+   BUF POOL     GETPAGES     SYS SETW    SYNC READS    SYNC WRITE    SEQ PREFCH   LIST PREFCH    DYN PREFCH             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   BP0               180           16                                                                     1             
+   BP1                30           30                          10                                                       
+   BP2                 6            6                           1                                                       
+   BP3                30           30                           5                                                       
+                                                                                                                        
+   TOTAL             246           82                          16                                         1             
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = RELOAD                 CPU (SEC)          = 181.090617                                                      
+    LEVEL = PHASE                  ELAPSED TIME (SEC) = 230.936                                                         
+                                                                                                                        
+   BUF POOL     GETPAGES     SYS SETW    SYNC READS    SYNC WRITE    SEQ PREFCH   LIST PREFCH    DYN PREFCH             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   BP0              5814           40                                                                     1             
+   BP1           2606289      2606229            47          1270                                                       
+   BP2                 6            6                           1                                                       
+   BP3                30           30                           5                                                       
+   BP32K            2413         2409             1                                                                     
+                                                                                                                        
+   TOTAL         2614552      2608714            48          1276                                         1             
+                                                                                                                        
+   DDNAME        DS OPEN     DS CLOSE      READ I/O     WRITE I/O    I/O CHECKS      I/O WAIT    END OF VOL             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   SYSPRINT                                                   193           193                                         
+   INFILE              1            1        418430                      418412         3.488             1             
+   DFSPARM             1            1            20                           2                           1             
+   DFSPARM             1            1                           1             1                           1             
+                                                                                                                        
+   TOTAL               3            3        418450           194        418608         3.488             3             
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Build   subtask 05     CPU (SEC)          = 5.467177                                                        
+    LEVEL = SUBPHASE               ELAPSED TIME (SEC) = 255.387                                                         
+                                                                                                                        
+   BUF POOL     GETPAGES     SYS SETW    SYNC READS    SYNC WRITE    SEQ PREFCH   LIST PREFCH    DYN PREFCH             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   BP0               243            1                                                                                   
+   BP3            488239       638190            13             1                                                       
+                                                                                                                        
+   TOTAL          488482       638191            13             1                                                       
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Sort    subtask 05     CPU (SEC)          = 31.239044                                                       
+    LEVEL = SUBPHASE               ELAPSED TIME (SEC) = 255.465                                                         
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Sort    subtask 03     CPU (SEC)          = 32.038850                                                       
+    LEVEL = SUBPHASE               ELAPSED TIME (SEC) = 263.130                                                         
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Build   subtask 03     CPU (SEC)          = 5.355200                                                        
+    LEVEL = SUBPHASE               ELAPSED TIME (SEC) = 263.260                                                         
+                                                                                                                        
+   BUF POOL     GETPAGES     SYS SETW    SYNC READS    SYNC WRITE    SEQ PREFCH   LIST PREFCH    DYN PREFCH             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   BP0               381            1                                                                                   
+   BP3           1149088      1520789             6             1                                                       
+                                                                                                                        
+   TOTAL         1149469      1520790             6             1                                                       
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Build   subtask 06     CPU (SEC)          = 5.422177                                                        
+    LEVEL = SUBPHASE               ELAPSED TIME (SEC) = 264.289                                                         
+                                                                                                                        
+   BUF POOL     GETPAGES     SYS SETW    SYNC READS    SYNC WRITE    SEQ PREFCH   LIST PREFCH    DYN PREFCH             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   BP0               243            1                                                                                   
+   BP3            495483       645810            26             1                                                       
+                                                                                                                        
+   TOTAL          495726       645811            26             1                                                       
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Sort    subtask 06     CPU (SEC)          = 32.123432                                                       
+    LEVEL = SUBPHASE               ELAPSED TIME (SEC) = 264.631                                                         
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Build   subtask 01     CPU (SEC)          = 5.070803                                                        
+    LEVEL = SUBPHASE               ELAPSED TIME (SEC) = 286.045                                                         
+                                                                                                                        
+   BUF POOL     GETPAGES     SYS SETW    SYNC READS    SYNC WRITE    SEQ PREFCH   LIST PREFCH    DYN PREFCH             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   BP0               537            1                                                                                   
+   BP2           2223659      2946351             5             1                                                       
+                                                                                                                        
+   TOTAL         2224196      2946352             5             1                                                       
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Sort    subtask 01     CPU (SEC)          = 16.286674                                                       
+    LEVEL = SUBPHASE               ELAPSED TIME (SEC) = 286.068                                                         
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Sort    subtask 04     CPU (SEC)          = 36.041052                                                       
+    LEVEL = SUBPHASE               ELAPSED TIME (SEC) = 306.008                                                         
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Build   subtask 04     CPU (SEC)          = 5.404930                                                        
+    LEVEL = SUBPHASE               ELAPSED TIME (SEC) = 306.057                                                         
+                                                                                                                        
+   BUF POOL     GETPAGES     SYS SETW    SYNC READS    SYNC WRITE    SEQ PREFCH   LIST PREFCH    DYN PREFCH             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   BP0               579            1                                                                                   
+   BP3           2614747      3465233            46             1                                                       
+                                                                                                                        
+   TOTAL         2615326      3465234            46             1                                                       
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Build   subtask 02     CPU (SEC)          = 5.822627                                                        
+    LEVEL = SUBPHASE               ELAPSED TIME (SEC) = 317.941                                                         
+                                                                                                                        
+   BUF POOL     GETPAGES     SYS SETW    SYNC READS    SYNC WRITE    SEQ PREFCH   LIST PREFCH    DYN PREFCH             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   BP0               645            1                                                                                   
+   BP3           3210637      4255642            91             1                                                       
+                                                                                                                        
+   TOTAL         3211282      4255643            91             1                                                       
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Sort    subtask 02     CPU (SEC)          = 35.724954                                                       
+    LEVEL = SUBPHASE               ELAPSED TIME (SEC) = 318.031                                                         
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Pipe Statistics                                                                                             
+     TYPE = Sortin  key pipe01                                                                                          
+                                                                                                                        
+   Records in:                                 100,000,000                                                              
+   Records out:                                100,000,000                                                              
+   Waits on full pipe:                                   1                                                              
+   Waits on empty pipe:                              97560                                                              
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Pipe Statistics                                                                                             
+     TYPE = Sortout key pipe01                                                                                          
+                                                                                                                        
+   Records in:                                 100,000,000                                                              
+   Records out:                                100,000,000                                                              
+   Waits on full pipe:                               40193                                                              
+   Waits on empty pipe:                                580                                                              
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Pipe Statistics                                                                                             
+     TYPE = Sortin  key pipe02                                                                                          
+                                                                                                                        
+   Records in:                                 100,000,000                                                              
+   Records out:                                100,000,000                                                              
+   Waits on full pipe:                                3046                                                              
+   Waits on empty pipe:                             136531                                                              
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Pipe Statistics                                                                                             
+     TYPE = Sortout key pipe02                                                                                          
+                                                                                                                        
+   Records in:                                 100,000,000                                                              
+   Records out:                                100,000,000                                                              
+   Waits on full pipe:                               10397                                                              
+   Waits on empty pipe:                               7810                                                              
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Pipe Statistics                                                                                             
+     TYPE = Sortin  key pipe03                                                                                          
+                                                                                                                        
+   Records in:                                 100,000,000                                                              
+   Records out:                                100,000,000                                                              
+   Waits on full pipe:                                   0                                                              
+   Waits on empty pipe:                              54915                                                              
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Pipe Statistics                                                                                             
+     TYPE = Sortout key pipe03                                                                                          
+                                                                                                                        
+   Records in:                                 100,000,000                                                              
+   Records out:                                100,000,000                                                              
+   Waits on full pipe:                                2836                                                              
+   Waits on empty pipe:                               8927                                                              
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Pipe Statistics                                                                                             
+     TYPE = Sortin  key pipe04                                                                                          
+                                                                                                                        
+   Records in:                                 100,000,000                                                              
+   Records out:                                100,000,000                                                              
+   Waits on full pipe:                                2028                                                              
+   Waits on empty pipe:                             112727                                                              
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Pipe Statistics                                                                                             
+     TYPE = Sortout key pipe04                                                                                          
+                                                                                                                        
+   Records in:                                 100,000,000                                                              
+   Records out:                                100,000,000                                                              
+   Waits on full pipe:                                3533                                                              
+   Waits on empty pipe:                              35447                                                              
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Pipe Statistics                                                                                             
+     TYPE = Sortin  key pipe05                                                                                          
+                                                                                                                        
+   Records in:                                 100,000,000                                                              
+   Records out:                                100,000,000                                                              
+   Waits on full pipe:                                 544                                                              
+   Waits on empty pipe:                              64062                                                              
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Pipe Statistics                                                                                             
+     TYPE = Sortout key pipe05                                                                                          
+                                                                                                                        
+   Records in:                                 100,000,000                                                              
+   Records out:                                100,000,000                                                              
+   Waits on full pipe:                                5497                                                              
+   Waits on empty pipe:                              11634                                                              
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Pipe Statistics                                                                                             
+     TYPE = Sortin  key pipe06                                                                                          
+                                                                                                                        
+   Records in:                                 100,000,000                                                              
+   Records out:                                100,000,000                                                              
+   Waits on full pipe:                                1404                                                              
+   Waits on empty pipe:                              76276                                                              
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = Pipe Statistics                                                                                             
+     TYPE = Sortout key pipe06                                                                                          
+                                                                                                                        
+   Records in:                                 100,000,000                                                              
+   Records out:                                100,000,000                                                              
+   Waits on full pipe:                                6096                                                              
+   Waits on empty pipe:                              17328                                                              
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = SORTBLD                CPU (SEC)          = 0.001638                                                        
+    LEVEL = PHASE                  ELAPSED TIME (SEC) = 88.957                                                          
+                                                                                                                        
+   BUF POOL     GETPAGES     SYS SETW    SYNC READS    SYNC WRITE    SEQ PREFCH   LIST PREFCH    DYN PREFCH             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   BP0                 6                                                                                                
+   BP32K               6            3                                                                                   
+                                                                                                                        
+   TOTAL              12            3                                                                                   
+                                                                                                                        
+   DDNAME        DS OPEN     DS CLOSE      READ I/O     WRITE I/O    I/O CHECKS      I/O WAIT    END OF VOL             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   SYSPRINT                                                    11            11                                         
+                                                                                                                        
+   TOTAL                                                       11            11                                         
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = UTILTERM               CPU (SEC)          = 0.000760                                                        
+    LEVEL = PHASE                  ELAPSED TIME (SEC) = 0.002                                                           
+                                                                                                                        
+   BUF POOL     GETPAGES     SYS SETW    SYNC READS    SYNC WRITE    SEQ PREFCH   LIST PREFCH    DYN PREFCH             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   BP0                 4                                                                                                
+   BP32K               4            3                                                                                   
+                                                                                                                        
+   TOTAL               8            3                                                                                   
+                                                                                                                        
+   DDNAME        DS OPEN     DS CLOSE      READ I/O     WRITE I/O    I/O CHECKS      I/O WAIT    END OF VOL             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   SYSPRINT                                                    16            16                                         
+                                                                                                                        
+   TOTAL                                                       16            16                                         
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+ INTERVAL = LOAD                   CPU (SEC)          = 397.092518                                                      
+    LEVEL = UTILITY                ELAPSED TIME (SEC) = 319.935                                                         
+                                                                                                                        
+   BUF POOL     GETPAGES     SYS SETW    SYNC READS    SYNC WRITE    SEQ PREFCH   LIST PREFCH    DYN PREFCH             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   BP0              5854           40             1                                         1             1             
+   BP1           2606299      2606239            47          1280                                                       
+   BP2                 6            6                           1                                                       
+   BP3                30           30                           5                                                       
+   BP32K            2426         2416             1                                                                     
+   BP8K0               2                                                                                                
+                                                                                                                        
+   TOTAL         2614617      2608731            49          1286                           1             1             
+                                                                                                                        
+   DDNAME        DS OPEN     DS CLOSE      READ I/O     WRITE I/O    I/O CHECKS      I/O WAIT    END OF VOL             
+   --------   ----------   ----------    ----------    ----------    ----------   -----------    ----------             
+   SYSPRINT                                                   220           220                                         
+   INFILE              1            1        418430                      418412         3.488             1             
+   DFSPARM             1            1            20                           2                           1             
+   DFSPARM             1            1                           1             1                           1             
+                                                                                                                        
+   TOTAL               3            3        418450           221        418635         3.488             3             
+                                                                                                                        
+ -----------------------------------------------------------------------------------------------------------------------
+-DSNU016I    289 23:34:52.29 DSNUGBAC - UTILITY BATCH MEMORY EXECUTION ABENDED, REASON=X'00C4'
+1ICE200I 0 IDENTIFIER FROM CALLING PROGRAM IS 0001                                                                       
+ ICE201I H RECORD TYPE IS F - DATA STARTS IN POSITION 1                                                                  
+ ICE751I 0 C5-I12416 C6-K90026 C7-K94453 C8-K94453 E4-K58148 C9-BASE   E5-K80744 E7-I12416                               
+ ICE143I 0 BLOCKSET     SORT  TECHNIQUE SELECTED                                                                         
+ ICE250I 0 VISIT http://www.ibm.com/storage/dfsort FOR DFSORT PAPERS, EXAMPLES AND MORE                                  
+ ICE000I 0 - CONTROL STATEMENTS FOR 5694-A01, Z/OS DFSORT V1R12 - 23:29 ON THU OCT 16, 2014 -                            
+0            OPTION HIPRMAX=2000,MOSIZE=2000                                                                             
+ ICE140I 0 END OF PARAMETERS FROM DFSPARM  - SYSIN OR SW01CNTL/PARAMETER LIST CONTROL STATEMENTS FOLLOW                  
+           SORT FIELDS=(00012.0,00021.0,A,00001.0,00005.0,A),FORMAT=BI,FILSZ=U0000*                                      
+                          00050000000                                                                                    
+           RECORD TYPE=F,LENGTH=(00032,00032,00032)                                                                      
+           OPTION MSGPRT=ALL,MSGDDN=UTPRIN01,MAINSIZE=MAX,NOEQUALS,SORTDD=SW01                                           
+ ICE193I 0 ICEAM2 INVOCATION ENVIRONMENT IN EFFECT - ICEAM2 ENVIRONMENT SELECTED                                         
+ ICE089I 1 UTLLOADT.LOADUT  .        , INPUT LRECL = 32, TYPE = F                                                        
+ ICE093I 0 MAIN STORAGE = (MAX,15234689,15234689)                                                                        
+ ICE156I 0 MAIN STORAGE ABOVE 16MB = (15177329,15177329)                                                                 
+ ICE127I 0 OPTIONS: OVFLO=RC0 ,PAD=RC0 ,TRUNC=RC0 ,SPANINC=RC16,VLSCMP=N,SZERO=Y,RESET=Y,VSAMEMT=Y,DYNSPC=256            
+ ICE128I 0 OPTIONS: SIZE=15234689,MAXLIM=1048576,MINLIM=450560,EQUALS=N,LIST=Y,ERET=RC16 ,MSGDDN=UTPRIN01                
+ ICE129I 0 OPTIONS: VIO=N,RESDNT=ALL ,SMF=NO   ,WRKSEC=Y,OUTSEC=Y,VERIFY=N,CHALT=N,DYNALOC=N             ,ABCODE=MSG     
+ ICE130I 0 OPTIONS: RESALL=4096,RESINV=0,SVC=109 ,CHECK=Y,WRKREL=Y,OUTREL=Y,CKPT=N,COBEXIT=COB2                          
+ ICE131I 0 OPTIONS: TMAXLIM=6291456,ARESALL=0,ARESINV=0,OVERRGN=16384,CINV=Y,CFW=Y,DSA=229                               
+ ICE132I 0 OPTIONS: VLSHRT=N,ZDPRINT=Y,IEXIT=N,TEXIT=N,LISTX=N,EFS=NONE    ,EXITCK=S,PARMDDN=DFSPARM ,FSZEST=N           
+ ICE133I 0 OPTIONS: HIPRMAX=2000   ,DSPSIZE=MAX ,ODMAXBF=0,SOLRF=Y,VLLONG=N,VSAMIO=N,MOSIZE=2000                         
+ ICE235I 0 OPTIONS: NULLOUT=RC0                                                                                          
+ ICE236I 0 OPTIONS: DYNAPCT=10 ,MOWRK=Y                                                                                  
+ ICE750I 0 DC 0 TC 0 CS DSVVV KSZ 26 VSZ 26                                                                              
+ ICE752I 0 FSZ=50000000 RU  IGN=0 C  AVG=32 0  WSP=2078125 U  DYN=0 0                                                    
+ ICE256I 0 DFSORT CODE IS ELIGIBLE TO USE ZIIP FOR THIS DB2 UTILITY RUN                                                  
+ ICE751I 1 DE-K83743 D5-K91600 D3-K83080 D7-K58148 E8-I12416                                                             
+ ICE091I 0 OUTPUT LRECL = 32, TYPE = F                                                                                   
+ ICE055I 0 INSERT 100000000, DELETE 100000000                                                                            
+ ICE054I 0 RECORDS - IN: 0, OUT: 0                                                                                       
+ ICE134I 0 NUMBER OF BYTES SORTED: 3200000000                                                                            
+ ICE253I 0 RECORDS SORTED - PROCESSED: 100000000, EXPECTED: 50000000                                                     
+ ICE165I 0 TOTAL WORK DATA SET TRACKS ALLOCATED: 105000 , TRACKS USED: 22470                                             
+ ICE199I 0 MEMORY OBJECT USED AS MAIN STORAGE = 0M BYTES                                                                 
+ ICE299I 0 MEMORY OBJECT USED AS WORK STORAGE = 2000M BYTES                                                              
+ ICE180I 0 HIPERSPACE STORAGE USED = 0K BYTES                                                                            
+ ICE188I 0 DATA SPACE STORAGE USED = 0K BYTES                                                                            
+ ICE052I 0 END OF DFSORT                                                                                                 
+1ICE200I 0 IDENTIFIER FROM CALLING PROGRAM IS 0002                                                                       
+ ICE201I H RECORD TYPE IS F - DATA STARTS IN POSITION 1                                                                  
+ ICE751I 0 C5-I12416 C6-K90026 C7-K94453 C8-K94453 E4-K58148 C9-BASE   E5-K80744 E7-I12416                               
+ ICE143I 0 BLOCKSET     SORT  TECHNIQUE SELECTED                                                                         
+ ICE250I 0 VISIT http://www.ibm.com/storage/dfsort FOR DFSORT PAPERS, EXAMPLES AND MORE                                  
+ ICE000I 0 - CONTROL STATEMENTS FOR 5694-A01, Z/OS DFSORT V1R12 - 23:29 ON THU OCT 16, 2014 -                            
+0            OPTION HIPRMAX=2000,MOSIZE=2000                                                                             
+ ICE140I 0 END OF PARAMETERS FROM DFSPARM  - SYSIN OR SW02CNTL/PARAMETER LIST CONTROL STATEMENTS FOLLOW                  
+           SORT FIELDS=(00012.0,00034.0,A,00001.0,00005.0,A),FORMAT=BI,FILSZ=U0000*                                      
+                          00050000000                                                                                    
+           RECORD TYPE=F,LENGTH=(00045,00045,00045)                                                                      
+           OPTION MSGPRT=ALL,MSGDDN=UTPRIN02,MAINSIZE=MAX,NOEQUALS,SORTDD=SW02                                           
+ ICE193I 0 ICEAM2 INVOCATION ENVIRONMENT IN EFFECT - ICEAM2 ENVIRONMENT SELECTED                                         
+ ICE089I 1 UTLLOADT.LOADUT  .        , INPUT LRECL = 45, TYPE = F                                                        
+ ICE093I 0 MAIN STORAGE = (MAX,18658606,18658606)                                                                        
+ ICE156I 0 MAIN STORAGE ABOVE 16MB = (18601246,18601246)                                                                 
+ ICE127I 0 OPTIONS: OVFLO=RC0 ,PAD=RC0 ,TRUNC=RC0 ,SPANINC=RC16,VLSCMP=N,SZERO=Y,RESET=Y,VSAMEMT=Y,DYNSPC=256            
+ ICE128I 0 OPTIONS: SIZE=18658606,MAXLIM=1048576,MINLIM=450560,EQUALS=N,LIST=Y,ERET=RC16 ,MSGDDN=UTPRIN02                
+ ICE129I 0 OPTIONS: VIO=N,RESDNT=ALL ,SMF=NO   ,WRKSEC=Y,OUTSEC=Y,VERIFY=N,CHALT=N,DYNALOC=N             ,ABCODE=MSG     
+ ICE130I 0 OPTIONS: RESALL=4096,RESINV=0,SVC=109 ,CHECK=Y,WRKREL=Y,OUTREL=Y,CKPT=N,COBEXIT=COB2                          
+ ICE131I 0 OPTIONS: TMAXLIM=6291456,ARESALL=0,ARESINV=0,OVERRGN=16384,CINV=Y,CFW=Y,DSA=229                               
+ ICE132I 0 OPTIONS: VLSHRT=N,ZDPRINT=Y,IEXIT=N,TEXIT=N,LISTX=N,EFS=NONE    ,EXITCK=S,PARMDDN=DFSPARM ,FSZEST=N           
+ ICE133I 0 OPTIONS: HIPRMAX=2000   ,DSPSIZE=MAX ,ODMAXBF=0,SOLRF=Y,VLLONG=N,VSAMIO=N,MOSIZE=2000                         
+ ICE235I 0 OPTIONS: NULLOUT=RC0                                                                                          
+ ICE236I 0 OPTIONS: DYNAPCT=10 ,MOWRK=Y                                                                                  
+ ICE750I 0 DC 0 TC 0 CS DSVVV KSZ 39 VSZ 39                                                                              
+ ICE752I 0 FSZ=50000000 RU  IGN=0 C  AVG=48 0  WSP=3117187 U  DYN=0 0                                                    
+ ICE256I 0 DFSORT CODE IS ELIGIBLE TO USE ZIIP FOR THIS DB2 UTILITY RUN                                                  
+ ICE751I 1 DE-K83743 D5-K91600 D3-K83080 D7-K58148 E8-I12416                                                             
+ ICE091I 0 OUTPUT LRECL = 45, TYPE = F                                                                                   
+ ICE055I 0 INSERT 100000000, DELETE 100000000                                                                            
+ ICE054I 0 RECORDS - IN: 0, OUT: 0                                                                                       
+ ICE134I 0 NUMBER OF BYTES SORTED: 4500000000                                                                            
+ ICE253I 0 RECORDS SORTED - PROCESSED: 100000000, EXPECTED: 50000000                                                     
+ ICE165I 0 TOTAL WORK DATA SET TRACKS ALLOCATED: 105000 , TRACKS USED: 55665                                             
+ ICE199I 0 MEMORY OBJECT USED AS MAIN STORAGE = 0M BYTES                                                                 
+ ICE299I 0 MEMORY OBJECT USED AS WORK STORAGE = 2000M BYTES                                                              
+ ICE180I 0 HIPERSPACE STORAGE USED = 0K BYTES                                                                            
+ ICE188I 0 DATA SPACE STORAGE USED = 0K BYTES                                                                            
+ ICE052I 0 END OF DFSORT                                                                                                 
+1ICE200I 0 IDENTIFIER FROM CALLING PROGRAM IS 0003                                                                       
+ ICE201I H RECORD TYPE IS F - DATA STARTS IN POSITION 1                                                                  
+ ICE751I 0 C5-I12416 C6-K90026 C7-K94453 C8-K94453 E4-K58148 C9-BASE   E5-K80744 E7-I12416                               
+ ICE143I 0 BLOCKSET     SORT  TECHNIQUE SELECTED                                                                         
+ ICE250I 0 VISIT http://www.ibm.com/storage/dfsort FOR DFSORT PAPERS, EXAMPLES AND MORE                                  
+ ICE000I 0 - CONTROL STATEMENTS FOR 5694-A01, Z/OS DFSORT V1R12 - 23:29 ON THU OCT 16, 2014 -                            
+0            OPTION HIPRMAX=2000,MOSIZE=2000                                                                             
+ ICE140I 0 END OF PARAMETERS FROM DFSPARM  - SYSIN OR SW03CNTL/PARAMETER LIST CONTROL STATEMENTS FOLLOW                  
+           SORT FIELDS=(00012.0,00007.0,A,00001.0,00005.0,A),FORMAT=BI,FILSZ=U0000*                                      
+                          00050000000                                                                                    
+           RECORD TYPE=F,LENGTH=(00018,00018,00018)                                                                      
+           OPTION MSGPRT=ALL,MSGDDN=UTPRIN03,MAINSIZE=MAX,NOEQUALS,SORTDD=SW03                                           
+ ICE193I 0 ICEAM2 INVOCATION ENVIRONMENT IN EFFECT - ICEAM2 ENVIRONMENT SELECTED                                         
+ ICE089I 1 UTLLOADT.LOADUT  .        , INPUT LRECL = 18, TYPE = F                                                        
+ ICE093I 0 MAIN STORAGE = (MAX,12044078,12044078)                                                                        
+ ICE156I 0 MAIN STORAGE ABOVE 16MB = (11986718,11986718)                                                                 
+ ICE127I 0 OPTIONS: OVFLO=RC0 ,PAD=RC0 ,TRUNC=RC0 ,SPANINC=RC16,VLSCMP=N,SZERO=Y,RESET=Y,VSAMEMT=Y,DYNSPC=256            
+ ICE128I 0 OPTIONS: SIZE=12044078,MAXLIM=1048576,MINLIM=450560,EQUALS=N,LIST=Y,ERET=RC16 ,MSGDDN=UTPRIN03                
+ ICE129I 0 OPTIONS: VIO=N,RESDNT=ALL ,SMF=NO   ,WRKSEC=Y,OUTSEC=Y,VERIFY=N,CHALT=N,DYNALOC=N             ,ABCODE=MSG     
+ ICE130I 0 OPTIONS: RESALL=4096,RESINV=0,SVC=109 ,CHECK=Y,WRKREL=Y,OUTREL=Y,CKPT=N,COBEXIT=COB2                          
+ ICE131I 0 OPTIONS: TMAXLIM=6291456,ARESALL=0,ARESINV=0,OVERRGN=16384,CINV=Y,CFW=Y,DSA=229                               
+ ICE132I 0 OPTIONS: VLSHRT=N,ZDPRINT=Y,IEXIT=N,TEXIT=N,LISTX=N,EFS=NONE    ,EXITCK=S,PARMDDN=DFSPARM ,FSZEST=N           
+ ICE133I 0 OPTIONS: HIPRMAX=2000   ,DSPSIZE=MAX ,ODMAXBF=0,SOLRF=Y,VLLONG=N,VSAMIO=N,MOSIZE=2000                         
+ ICE235I 0 OPTIONS: NULLOUT=RC0                                                                                          
+ ICE236I 0 OPTIONS: DYNAPCT=10 ,MOWRK=Y                                                                                  
+ ICE750I 0 DC 0 TC 0 CS DSVVV KSZ 12 VSZ 12                                                                              
+ ICE752I 0 FSZ=50000000 RU  IGN=0 C  AVG=20 0  WSP=1298828 U  DYN=0 0                                                    
+ ICE256I 0 DFSORT CODE IS ELIGIBLE TO USE ZIIP FOR THIS DB2 UTILITY RUN                                                  
+ ICE751I 1 DE-K83743 D5-K91600 D3-K83080 D7-K58148 E8-I12416                                                             
+ ICE091I 0 OUTPUT LRECL = 18, TYPE = F                                                                                   
+ ICE055I 0 INSERT 100000000, DELETE 100000000                                                                            
+ ICE054I 0 RECORDS - IN: 0, OUT: 0                                                                                       
+ ICE134I 0 NUMBER OF BYTES SORTED: 1800000000                                                                            
+ ICE253I 0 RECORDS SORTED - PROCESSED: 100000000, EXPECTED: 50000000                                                     
+ ICE165I 0 TOTAL WORK DATA SET TRACKS ALLOCATED: 105000 , TRACKS USED: 0                                                 
+ ICE199I 0 MEMORY OBJECT USED AS MAIN STORAGE = 0M BYTES                                                                 
+ ICE299I 0 MEMORY OBJECT USED AS WORK STORAGE = 1924M BYTES                                                              
+ ICE180I 0 HIPERSPACE STORAGE USED = 0K BYTES                                                                            
+ ICE188I 0 DATA SPACE STORAGE USED = 0K BYTES                                                                            
+ ICE052I 0 END OF DFSORT                                                                                                 
+1ICE200I 0 IDENTIFIER FROM CALLING PROGRAM IS 0004                                                                       
+ ICE201I H RECORD TYPE IS F - DATA STARTS IN POSITION 1                                                                  
+ ICE751I 0 C5-I12416 C6-K90026 C7-K94453 C8-K94453 E4-K58148 C9-BASE   E5-K80744 E7-I12416                               
+ ICE143I 0 BLOCKSET     SORT  TECHNIQUE SELECTED                                                                         
+ ICE250I 0 VISIT http://www.ibm.com/storage/dfsort FOR DFSORT PAPERS, EXAMPLES AND MORE                                  
+ ICE000I 0 - CONTROL STATEMENTS FOR 5694-A01, Z/OS DFSORT V1R12 - 23:29 ON THU OCT 16, 2014 -                            
+0            OPTION HIPRMAX=2000,MOSIZE=2000                                                                             
+ ICE140I 0 END OF PARAMETERS FROM DFSPARM  - SYSIN OR SW04CNTL/PARAMETER LIST CONTROL STATEMENTS FOLLOW                  
+           SORT FIELDS=(00012.0,00026.0,A,00001.0,00005.0,A),FORMAT=BI,FILSZ=U0000*                                      
+                          00050000000                                                                                    
+           RECORD TYPE=F,LENGTH=(00037,00037,00037)                                                                      
+           OPTION MSGPRT=ALL,MSGDDN=UTPRIN04,MAINSIZE=MAX,NOEQUALS,SORTDD=SW04                                           
+ ICE193I 0 ICEAM2 INVOCATION ENVIRONMENT IN EFFECT - ICEAM2 ENVIRONMENT SELECTED                                         
+ ICE089I 1 UTLLOADT.LOADUT  .        , INPUT LRECL = 37, TYPE = F                                                        
+ ICE093I 0 MAIN STORAGE = (MAX,17032899,17032899)                                                                        
+ ICE156I 0 MAIN STORAGE ABOVE 16MB = (16975539,16975539)                                                                 
+ ICE127I 0 OPTIONS: OVFLO=RC0 ,PAD=RC0 ,TRUNC=RC0 ,SPANINC=RC16,VLSCMP=N,SZERO=Y,RESET=Y,VSAMEMT=Y,DYNSPC=256            
+ ICE128I 0 OPTIONS: SIZE=17032899,MAXLIM=1048576,MINLIM=450560,EQUALS=N,LIST=Y,ERET=RC16 ,MSGDDN=UTPRIN04                
+ ICE129I 0 OPTIONS: VIO=N,RESDNT=ALL ,SMF=NO   ,WRKSEC=Y,OUTSEC=Y,VERIFY=N,CHALT=N,DYNALOC=N             ,ABCODE=MSG     
+ ICE130I 0 OPTIONS: RESALL=4096,RESINV=0,SVC=109 ,CHECK=Y,WRKREL=Y,OUTREL=Y,CKPT=N,COBEXIT=COB2                          
+ ICE131I 0 OPTIONS: TMAXLIM=6291456,ARESALL=0,ARESINV=0,OVERRGN=16384,CINV=Y,CFW=Y,DSA=229                               
+ ICE132I 0 OPTIONS: VLSHRT=N,ZDPRINT=Y,IEXIT=N,TEXIT=N,LISTX=N,EFS=NONE    ,EXITCK=S,PARMDDN=DFSPARM ,FSZEST=N           
+ ICE133I 0 OPTIONS: HIPRMAX=2000   ,DSPSIZE=MAX ,ODMAXBF=0,SOLRF=Y,VLLONG=N,VSAMIO=N,MOSIZE=2000                         
+ ICE235I 0 OPTIONS: NULLOUT=RC0                                                                                          
+ ICE236I 0 OPTIONS: DYNAPCT=10 ,MOWRK=Y                                                                                  
+ ICE750I 0 DC 0 TC 0 CS DSVVV KSZ 31 VSZ 31                                                                              
+ ICE752I 0 FSZ=50000000 RU  IGN=0 C  AVG=40 0  WSP=2597656 U  DYN=0 0                                                    
+ ICE256I 0 DFSORT CODE IS ELIGIBLE TO USE ZIIP FOR THIS DB2 UTILITY RUN                                                  
+ ICE751I 1 DE-K83743 D5-K91600 D3-K83080 D7-K58148 E8-I12416                                                             
+ ICE091I 0 OUTPUT LRECL = 37, TYPE = F                                                                                   
+ ICE055I 0 INSERT 100000000, DELETE 100000000                                                                            
+ ICE054I 0 RECORDS - IN: 0, OUT: 0                                                                                       
+ ICE134I 0 NUMBER OF BYTES SORTED: 3700000000                                                                            
+ ICE253I 0 RECORDS SORTED - PROCESSED: 100000000, EXPECTED: 50000000                                                     
+ ICE165I 0 TOTAL WORK DATA SET TRACKS ALLOCATED: 105000 , TRACKS USED: 38880                                             
+ ICE199I 0 MEMORY OBJECT USED AS MAIN STORAGE = 0M BYTES                                                                 
+ ICE299I 0 MEMORY OBJECT USED AS WORK STORAGE = 2000M BYTES                                                              
+ ICE180I 0 HIPERSPACE STORAGE USED = 0K BYTES                                                                            
+ ICE188I 0 DATA SPACE STORAGE USED = 0K BYTES                                                                            
+ ICE052I 0 END OF DFSORT                                                                                                 
+1ICE200I 0 IDENTIFIER FROM CALLING PROGRAM IS 0005                                                                       
+ ICE201I H RECORD TYPE IS F - DATA STARTS IN POSITION 1                                                                  
+ ICE751I 0 C5-I12416 C6-K90026 C7-K94453 C8-K94453 E4-K58148 C9-BASE   E5-K80744 E7-I12416                               
+ ICE143I 0 BLOCKSET     SORT  TECHNIQUE SELECTED                                                                         
+ ICE250I 0 VISIT http://www.ibm.com/storage/dfsort FOR DFSORT PAPERS, EXAMPLES AND MORE                                  
+ ICE000I 0 - CONTROL STATEMENTS FOR 5694-A01, Z/OS DFSORT V1R12 - 23:29 ON THU OCT 16, 2014 -                            
+0            OPTION HIPRMAX=2000,MOSIZE=2000                                                                             
+ ICE140I 0 END OF PARAMETERS FROM DFSPARM  - SYSIN OR SW05CNTL/PARAMETER LIST CONTROL STATEMENTS FOLLOW                  
+           SORT FIELDS=(00012.0,00010.0,A,00001.0,00005.0,A),FORMAT=BI,FILSZ=U0000*                                      
+                          00050000000                                                                                    
+           RECORD TYPE=F,LENGTH=(00021,00021,00021)                                                                      
+           OPTION MSGPRT=ALL,MSGDDN=UTPRIN05,MAINSIZE=MAX,NOEQUALS,SORTDD=SW05                                           
+ ICE193I 0 ICEAM2 INVOCATION ENVIRONMENT IN EFFECT - ICEAM2 ENVIRONMENT SELECTED                                         
+ ICE089I 1 UTLLOADT.LOADUT  .        , INPUT LRECL = 21, TYPE = F                                                        
+ ICE093I 0 MAIN STORAGE = (MAX,13193628,13193628)                                                                        
+ ICE156I 0 MAIN STORAGE ABOVE 16MB = (13136268,13136268)                                                                 
+ ICE127I 0 OPTIONS: OVFLO=RC0 ,PAD=RC0 ,TRUNC=RC0 ,SPANINC=RC16,VLSCMP=N,SZERO=Y,RESET=Y,VSAMEMT=Y,DYNSPC=256            
+ ICE128I 0 OPTIONS: SIZE=13193628,MAXLIM=1048576,MINLIM=450560,EQUALS=N,LIST=Y,ERET=RC16 ,MSGDDN=UTPRIN05                
+ ICE129I 0 OPTIONS: VIO=N,RESDNT=ALL ,SMF=NO   ,WRKSEC=Y,OUTSEC=Y,VERIFY=N,CHALT=N,DYNALOC=N             ,ABCODE=MSG     
+ ICE130I 0 OPTIONS: RESALL=4096,RESINV=0,SVC=109 ,CHECK=Y,WRKREL=Y,OUTREL=Y,CKPT=N,COBEXIT=COB2                          
+ ICE131I 0 OPTIONS: TMAXLIM=6291456,ARESALL=0,ARESINV=0,OVERRGN=16384,CINV=Y,CFW=Y,DSA=229                               
+ ICE132I 0 OPTIONS: VLSHRT=N,ZDPRINT=Y,IEXIT=N,TEXIT=N,LISTX=N,EFS=NONE    ,EXITCK=S,PARMDDN=DFSPARM ,FSZEST=N           
+ ICE133I 0 OPTIONS: HIPRMAX=2000   ,DSPSIZE=MAX ,ODMAXBF=0,SOLRF=Y,VLLONG=N,VSAMIO=N,MOSIZE=2000                         
+ ICE235I 0 OPTIONS: NULLOUT=RC0                                                                                          
+ ICE236I 0 OPTIONS: DYNAPCT=10 ,MOWRK=Y                                                                                  
+ ICE750I 0 DC 0 TC 0 CS DSVVV KSZ 15 VSZ 15                                                                              
+ ICE752I 0 FSZ=50000000 RU  IGN=0 C  AVG=24 0  WSP=1558593 U  DYN=0 0                                                    
+ ICE256I 0 DFSORT CODE IS ELIGIBLE TO USE ZIIP FOR THIS DB2 UTILITY RUN                                                  
+ ICE751I 1 DE-K83743 D5-K91600 D3-K83080 D7-K58148 E8-I12416                                                             
+ ICE091I 0 OUTPUT LRECL = 21, TYPE = F                                                                                   
+ ICE055I 0 INSERT 100000000, DELETE 100000000                                                                            
+ ICE054I 0 RECORDS - IN: 0, OUT: 0                                                                                       
+ ICE134I 0 NUMBER OF BYTES SORTED: 2100000000                                                                            
+ ICE253I 0 RECORDS SORTED - PROCESSED: 100000000, EXPECTED: 50000000                                                     
+ ICE165I 0 TOTAL WORK DATA SET TRACKS ALLOCATED: 105000 , TRACKS USED: 6750                                              
+ ICE199I 0 MEMORY OBJECT USED AS MAIN STORAGE = 0M BYTES                                                                 
+ ICE299I 0 MEMORY OBJECT USED AS WORK STORAGE = 2000M BYTES                                                              
+ ICE180I 0 HIPERSPACE STORAGE USED = 0K BYTES                                                                            
+ ICE188I 0 DATA SPACE STORAGE USED = 0K BYTES                                                                            
+ ICE052I 0 END OF DFSORT                                                                                                 
+1ICE200I 0 IDENTIFIER FROM CALLING PROGRAM IS 0006                                                                       
+ ICE201I H RECORD TYPE IS F - DATA STARTS IN POSITION 1                                                                  
+ ICE751I 0 C5-I12416 C6-K90026 C7-K94453 C8-K94453 E4-K58148 C9-BASE   E5-K80744 E7-I12416                               
+ ICE143I 0 BLOCKSET     SORT  TECHNIQUE SELECTED                                                                         
+ ICE250I 0 VISIT http://www.ibm.com/storage/dfsort FOR DFSORT PAPERS, EXAMPLES AND MORE                                  
+ ICE000I 0 - CONTROL STATEMENTS FOR 5694-A01, Z/OS DFSORT V1R12 - 23:29 ON THU OCT 16, 2014 -                            
+0            OPTION HIPRMAX=2000,MOSIZE=2000                                                                             
+ ICE140I 0 END OF PARAMETERS FROM DFSPARM  - SYSIN OR SW06CNTL/PARAMETER LIST CONTROL STATEMENTS FOLLOW                  
+           SORT FIELDS=(00012.0,00014.0,A,00001.0,00005.0,A),FORMAT=BI,FILSZ=U0000*                                      
+                          00050000000                                                                                    
+           RECORD TYPE=F,LENGTH=(00025,00025,00025)                                                                      
+           OPTION MSGPRT=ALL,MSGDDN=UTPRIN06,MAINSIZE=MAX,NOEQUALS,SORTDD=SW06                                           
+ ICE193I 0 ICEAM2 INVOCATION ENVIRONMENT IN EFFECT - ICEAM2 ENVIRONMENT SELECTED                                         
+ ICE089I 1 UTLLOADT.LOADUT  .        , INPUT LRECL = 25, TYPE = F                                                        
+ ICE093I 0 MAIN STORAGE = (MAX,14250747,14250747)                                                                        
+ ICE156I 0 MAIN STORAGE ABOVE 16MB = (14193387,14193387)                                                                 
+ ICE127I 0 OPTIONS: OVFLO=RC0 ,PAD=RC0 ,TRUNC=RC0 ,SPANINC=RC16,VLSCMP=N,SZERO=Y,RESET=Y,VSAMEMT=Y,DYNSPC=256            
+ ICE128I 0 OPTIONS: SIZE=14250747,MAXLIM=1048576,MINLIM=450560,EQUALS=N,LIST=Y,ERET=RC16 ,MSGDDN=UTPRIN06                
+ ICE129I 0 OPTIONS: VIO=N,RESDNT=ALL ,SMF=NO   ,WRKSEC=Y,OUTSEC=Y,VERIFY=N,CHALT=N,DYNALOC=N             ,ABCODE=MSG     
+ ICE130I 0 OPTIONS: RESALL=4096,RESINV=0,SVC=109 ,CHECK=Y,WRKREL=Y,OUTREL=Y,CKPT=N,COBEXIT=COB2                          
+ ICE131I 0 OPTIONS: TMAXLIM=6291456,ARESALL=0,ARESINV=0,OVERRGN=16384,CINV=Y,CFW=Y,DSA=229                               
+ ICE132I 0 OPTIONS: VLSHRT=N,ZDPRINT=Y,IEXIT=N,TEXIT=N,LISTX=N,EFS=NONE    ,EXITCK=S,PARMDDN=DFSPARM ,FSZEST=N           
+ ICE133I 0 OPTIONS: HIPRMAX=2000   ,DSPSIZE=MAX ,ODMAXBF=0,SOLRF=Y,VLLONG=N,VSAMIO=N,MOSIZE=2000                         
+ ICE235I 0 OPTIONS: NULLOUT=RC0                                                                                          
+ ICE236I 0 OPTIONS: DYNAPCT=10 ,MOWRK=Y                                                                                  
+ ICE750I 0 DC 0 TC 0 CS DSVVV KSZ 19 VSZ 19                                                                              
+ ICE752I 0 FSZ=50000000 RU  IGN=0 C  AVG=28 0  WSP=1818360 U  DYN=0 0                                                    
+ ICE256I 0 DFSORT CODE IS ELIGIBLE TO USE ZIIP FOR THIS DB2 UTILITY RUN                                                  
+ ICE751I 1 DE-K83743 D5-K91600 D3-K83080 D7-K58148 E8-I12416                                                             
+ ICE091I 0 OUTPUT LRECL = 25, TYPE = F                                                                                   
+ ICE055I 0 INSERT 100000000, DELETE 100000000                                                                            
+ ICE054I 0 RECORDS - IN: 0, OUT: 0                                                                                       
+ ICE134I 0 NUMBER OF BYTES SORTED: 2500000000                                                                            
+ ICE253I 0 RECORDS SORTED - PROCESSED: 100000000, EXPECTED: 50000000                                                     
+ ICE165I 0 TOTAL WORK DATA SET TRACKS ALLOCATED: 105000 , TRACKS USED: 15000                                             
+ ICE199I 0 MEMORY OBJECT USED AS MAIN STORAGE = 0M BYTES                                                                 
+ ICE299I 0 MEMORY OBJECT USED AS WORK STORAGE = 2000M BYTES                                                              
+ ICE180I 0 HIPERSPACE STORAGE USED = 0K BYTES                                                                            
+ ICE188I 0 DATA SPACE STORAGE USED = 0K BYTES                                                                            
+ ICE052I 0 END OF DFSORT                                                                                                 

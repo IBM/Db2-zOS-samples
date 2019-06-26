@@ -1,0 +1,673 @@
+1   LOCATION: DBG1                     OMEGAMON XE FOR DB2 PERFORMANCE EXPERT (V5R2M0)                     PAGE: 1-1
+       GROUP: DSNTDBG1                             ACCOUNTING TRACE - LONG                       REQUESTED FROM: ALL      13:33:30.00
+      MEMBER: DSN2                                                                                           TO: DATES    13:35:30.00
+   SUBSYSTEM: DSN2                                                                                  ACTUAL FROM: 05/21/15 13:35:27.76
+ DB2 VERSION: V11
+
+ TOP FIELD: PROCESSING (CL.2) TIME SPENT IN DB2                          TOP NUMBER REQUESTED:   10
+
+ ---- IDENTIFICATION --------------------------------------------------------------------------------------------------------------
+ ACCT TSTAMP: 05/21/15 13:35:27.76    PLANNAME: CHCDTCA2        WLM SCL: 'BLANK'         CICS NET: N/A
+ BEGIN TIME : 05/21/15 13:33:31.45    PROD TYP: N/P                                      CICS LUN: N/A
+ END TIME   : 05/21/15 13:35:27.76    PROD VER: N/P             LUW NET: DDSHQ           CICS INS: N/A
+ REQUESTER  : DBG1                    CORRNAME: DSN2CHC         LUW LUN: DSN2
+ MAINPACK   : CHCDB2DL                CORRNMBR: 'BLANK'         LUW INS: CEFAC108A94E    ENDUSER : CHCDB2
+ PRIMAUTH   : CHCDB2                  CONNTYPE: DB2CALL         LUW SEQ:           36    TRANSACT: DSN2CHC
+ ORIGAUTH   : CHCDB2                  CONNECT : DB2CALL                                  WSNAME  : DB2CALL
+
+ MVS ACCOUNTING DATA   : 'BLANK'
+ ACCOUNTING TOKEN(CHAR): N/A
+ ACCOUNTING TOKEN(HEX) : N/A
+
+ ELAPSED TIME DISTRIBUTION                                           CLASS 2 TIME DISTRIBUTION
+ ----------------------------------------------------------------    ----------------------------------------------------------------
+ APPL   |=============================================> 91%          CPU    |=================> 35%
+ DB2    |=> 3%                                                       SECPU  |
+ SUSP   |===> 6%                                                     NOTACC |=> 3%
+                                                                     SUSP   |==============================> 61%
+
+1   LOCATION: DBG1                     OMEGAMON XE FOR DB2 PERFORMANCE EXPERT (V5R2M0)                     PAGE: 1-2
+       GROUP: DSNTDBG1                             ACCOUNTING TRACE - LONG                       REQUESTED FROM: ALL      13:33:30.00
+      MEMBER: DSN2                                                                                           TO: DATES    13:35:30.00
+   SUBSYSTEM: DSN2                                                                                  ACTUAL FROM: 05/21/15 13:35:27.76
+ DB2 VERSION: V11
+
+ TOP FIELD: PROCESSING (CL.2) TIME SPENT IN DB2                          TOP NUMBER REQUESTED:   10
+
+ ---- IDENTIFICATION --------------------------------------------------------------------------------------------------------------
+ ACCT TSTAMP: 05/21/15 13:35:27.76    PLANNAME: CHCDTCA2        WLM SCL: 'BLANK'         CICS NET: N/A
+ BEGIN TIME : 05/21/15 13:33:31.45    PROD TYP: N/P                                      CICS LUN: N/A
+ END TIME   : 05/21/15 13:35:27.76    PROD VER: N/P             LUW NET: DDSHQ           CICS INS: N/A
+ REQUESTER  : DBG1                    CORRNAME: DSN2CHC         LUW LUN: DSN2
+ MAINPACK   : CHCDB2DL                CORRNMBR: 'BLANK'         LUW INS: CEFAC108A94E    ENDUSER : CHCDB2
+ PRIMAUTH   : CHCDB2                  CONNTYPE: DB2CALL         LUW SEQ:           36    TRANSACT: DSN2CHC
+ ORIGAUTH   : CHCDB2                  CONNECT : DB2CALL                                  WSNAME  : DB2CALL
+
+ TIMES/EVENTS  APPL(CL.1)  DB2 (CL.2)  IFI (CL.5)    CLASS 3 SUSPENSIONS   ELAPSED TIME    EVENTS    HIGHLIGHTS
+ ------------  ----------  ----------  ----------    --------------------  ------------  --------    --------------------------
+ ELAPSED TIME  1:56.30370   10.449711         N/P    LOCK/LATCH(DB2+IRLM)      0.003458        75    THREAD TYPE   : ALLIED
+  NONNESTED    1:56.30370   10.449711         N/A     IRLM LOCK+LATCH          0.001606         2    TERM.CONDITION: NORMAL
+  STORED PROC    0.000000    0.000000         N/A     DB2 LATCH                0.001852        73    INVOKE REASON : DEALLOC
+  UDF            0.000000    0.000000         N/A    SYNCHRON. I/O             2.698356      4005    PARALLELISM   : N/A
+  TRIGGER        0.000000    0.000000         N/A     DATABASE I/O             2.698356      4005    PCA RUP COUNT :          0
+                                                      LOG WRITE I/O            0.000000         0    RUP AUTONOM.PR:          0
+ CP CPU TIME     4.278176    3.683509         N/P    OTHER READ I/O            0.185925       788    AUTONOMOUS PR :          0
+  AGENT          4.278176    3.683509         N/A    OTHER WRTE I/O            0.269842       306    QUANTITY      :          0
+   NONNESTED     4.278176    3.683509         N/P    SER.TASK SWTCH            0.479230        62    COMMITS       :         35
+   STORED PRC    0.000000    0.000000         N/A     UPDATE COMMIT            0.012833         6    ROLLBACK      :          0
+   UDF           0.000000    0.000000         N/A     OPEN/CLOSE               0.309262        18    SVPT REQUESTS :          0
+   TRIGGER       0.000000    0.000000         N/A     SYSLGRNG REC             0.056110         2    SVPT RELEASE  :          0
+  PAR.TASKS      0.000000    0.000000         N/A     EXT/DEL/DEF              0.084584        18    SVPT ROLLBACK :          0
+                                                      OTHER SERVICE            0.016440        18    INCREM.BINDS  :          0
+ SE CPU TIME     0.000000    0.000000         N/A    ARC.LOG(QUIES)            0.000000         0    UPDATE/COMMIT :     575.37
+  NONNESTED      0.000000    0.000000         N/A    LOG READ                  0.000000         0    SYNCH I/O AVG.:   0.000674
+  STORED PROC    0.000000    0.000000         N/A    DRAIN LOCK                0.076410        36    PROGRAMS      :          4
+  UDF            0.000000    0.000000         N/A    CLAIM RELEASE             0.000000         0    MAX CASCADE   :          0
+  TRIGGER        0.000000    0.000000         N/A    PAGE LATCH                0.000000         0
+                                                     NOTIFY MSGS               0.000000         0
+  PAR.TASKS      0.000000    0.000000         N/A    GLOBAL CONTENTION         2.701239       607
+                                                     COMMIT PH1 WRITE I/O      0.000000         0
+ SUSPEND TIME    0.000000    6.414461         N/A    ASYNCH CF REQUESTS        0.000000         0
+  AGENT               N/A    6.414461         N/A    TCP/IP LOB XML            0.000000         0
+  PAR.TASKS           N/A    0.000000         N/A    ACCELERATOR               0.000000         0
+  STORED PROC    0.000000         N/A         N/A    AUTONOMOUS PROCEDURE      0.000000         0
+  UDF            0.000000         N/A         N/A    PQ SYNCHRONIZATION        0.000000         0
+                                                     TOTAL CLASS 3             6.414461      5879
+ NOT ACCOUNT.         N/A    0.351741         N/A
+ DB2 ENT/EXIT         N/A       62534         N/A
+ EN/EX-STPROC         N/A           0         N/A
+ EN/EX-UDF            N/A           0         N/A
+ DCAPT.DESCR.         N/A         N/A         N/P
+ LOG EXTRACT.         N/A         N/A         N/P
+
+1   LOCATION: DBG1                     OMEGAMON XE FOR DB2 PERFORMANCE EXPERT (V5R2M0)                     PAGE: 1-3
+       GROUP: DSNTDBG1                             ACCOUNTING TRACE - LONG                       REQUESTED FROM: ALL      13:33:30.00
+      MEMBER: DSN2                                                                                           TO: DATES    13:35:30.00
+   SUBSYSTEM: DSN2                                                                                  ACTUAL FROM: 05/21/15 13:35:27.76
+ DB2 VERSION: V11
+
+ TOP FIELD: PROCESSING (CL.2) TIME SPENT IN DB2                          TOP NUMBER REQUESTED:   10
+
+ ---- IDENTIFICATION --------------------------------------------------------------------------------------------------------------
+ ACCT TSTAMP: 05/21/15 13:35:27.76    PLANNAME: CHCDTCA2        WLM SCL: 'BLANK'         CICS NET: N/A
+ BEGIN TIME : 05/21/15 13:33:31.45    PROD TYP: N/P                                      CICS LUN: N/A
+ END TIME   : 05/21/15 13:35:27.76    PROD VER: N/P             LUW NET: DDSHQ           CICS INS: N/A
+ REQUESTER  : DBG1                    CORRNAME: DSN2CHC         LUW LUN: DSN2
+ MAINPACK   : CHCDB2DL                CORRNMBR: 'BLANK'         LUW INS: CEFAC108A94E    ENDUSER : CHCDB2
+ PRIMAUTH   : CHCDB2                  CONNTYPE: DB2CALL         LUW SEQ:           36    TRANSACT: DSN2CHC
+ ORIGAUTH   : CHCDB2                  CONNECT : DB2CALL                                  WSNAME  : DB2CALL
+
+ SQL DML     TOTAL    SQL DCL       TOTAL    SQL DDL    CREATE   DROP  ALTER    DYNAMIC SQL STMT         TOTAL
+ -------- --------    ---------- --------    ---------- ------ ------ ------    --------------------  --------
+ SELECT      10680    LOCK TABLE        0    TABLE           0      0      0    REOPTIMIZATION               0
+ INSERT      10000    GRANT             0    CRT TTABLE      0    N/A    N/A    NOT FOUND IN CACHE           0
+  ROWS        9868    REVOKE            0    DCL TTABLE      0    N/A    N/A    FOUND IN CACHE               0
+ UPDATE        270    SET SQLID         0    AUX TABLE       0    N/A    N/A    IMPLICIT PREPARES            0
+  ROWS         270    SET H.VAR.        2    INDEX           0      0      0    PREPARES AVOIDED             0
+ MERGE           0    SET DEGREE        0    TABLESPACE      0      0      0    CACHE_LIMIT_EXCEEDED         0
+ DELETE       9868    SET RULES         0    DATABASE        0      0      0    PREP_STMT_PURGED             0
+  ROWS        9868    SET PATH          0    STOGROUP        0      0      0    CSWL - STMTS PARSED          0
+                      SET PREC.         0    SYNONYM         0      0    N/A    CSWL - LITS REPLACED         0
+ DESCRIBE        0    CONNECT 1         0    VIEW            0      0      0    CSWL - MATCHES FOUND         0
+ DESC.TBL        0    CONNECT 2         0    ALIAS           0      0    N/A    CSWL - DUPLS CREATED         0
+ PREPARE         0    SET CONNEC        0    PACKAGE       N/A      0    N/A
+ OPEN           83    RELEASE           0    PROCEDURE       0      0      0
+ FETCH         243    CALL              0    FUNCTION        0      0      0
+  ROWS        1194    ASSOC LOC.        0    TRIGGER         0      0    N/A
+ CLOSE          83    ALLOC CUR.        0    DIST TYPE       0      0    N/A
+                      HOLD LOC.         0    SEQUENCE        0      0      0
+ DML-ALL     31227    FREE LOC.         0    TRUST. CTX      0      0      0
+                      DCL-ALL           2    ROLE            0      0    N/A
+                                             JAR           N/A    N/A      0
+                                             MASK/PERM       0      0      0
+                                             VARIABLE        0      0    N/A
+
+                                             TOTAL           0      0      0
+                                             TRUNC TBL       0
+                                             RENAME TBL      0
+                                             RENAME IX       0
+                                             COMMENT ON      0
+                                             LABEL ON        0
+
+1   LOCATION: DBG1                     OMEGAMON XE FOR DB2 PERFORMANCE EXPERT (V5R2M0)                     PAGE: 1-4
+       GROUP: DSNTDBG1                             ACCOUNTING TRACE - LONG                       REQUESTED FROM: ALL      13:33:30.00
+      MEMBER: DSN2                                                                                           TO: DATES    13:35:30.00
+   SUBSYSTEM: DSN2                                                                                  ACTUAL FROM: 05/21/15 13:35:27.76
+ DB2 VERSION: V11
+
+ TOP FIELD: PROCESSING (CL.2) TIME SPENT IN DB2                          TOP NUMBER REQUESTED:   10
+
+ ---- IDENTIFICATION --------------------------------------------------------------------------------------------------------------
+ ACCT TSTAMP: 05/21/15 13:35:27.76    PLANNAME: CHCDTCA2        WLM SCL: 'BLANK'         CICS NET: N/A
+ BEGIN TIME : 05/21/15 13:33:31.45    PROD TYP: N/P                                      CICS LUN: N/A
+ END TIME   : 05/21/15 13:35:27.76    PROD VER: N/P             LUW NET: DDSHQ           CICS INS: N/A
+ REQUESTER  : DBG1                    CORRNAME: DSN2CHC         LUW LUN: DSN2
+ MAINPACK   : CHCDB2DL                CORRNMBR: 'BLANK'         LUW INS: CEFAC108A94E    ENDUSER : CHCDB2
+ PRIMAUTH   : CHCDB2                  CONNTYPE: DB2CALL         LUW SEQ:           36    TRANSACT: DSN2CHC
+ ORIGAUTH   : CHCDB2                  CONNECT : DB2CALL                                  WSNAME  : DB2CALL
+
+ MEASURED/ELIG TIMES  APPL (CL1)   DB2 (CL2)    RID LIST                   TOTAL    DATA CAPTURE     TOTAL    ROWID          TOTAL
+ -------------------  ----------  ----------    ----------------------  --------    ------------  --------    ----------  --------
+ ELAPSED TIME         1:56.30370   10.449711    USED                           0    IFI CALLS          N/P    DIR ACCESS         0
+  ELIGIBLE FOR ACCEL         N/A    0.000000                                        REC.CAPTURED       N/P    INDEX USED         0
+                                                FAIL-NO STORAGE                0    LOG REC.READ       N/P    TS SCAN            0
+ CP CPU TIME            4.278176    3.683509    FAIL-LIMIT EXC.                0    ROWS RETURN        N/P
+  ELIGIBLE FOR SECP     0.000000         N/A                                        RECORDS RET.       N/P
+  ELIGIBLE FOR ACCEL         N/A    0.000000    INTERRUPTED-NO STORAGE         0    DATA DES.RET       N/P
+                                                INTERRUPTED-LIMIT EXC.         0    TABLES RET.        N/P
+ SE CPU TIME            0.000000    0.000000                                        DESCRIBES          N/P
+  ELIGIBLE FOR ACCEL         N/A    0.000000    OVERFLOWED-NO STORAGE          0
+                                                OVERFLOWED-LIMIT EXC.          0
+
+                                                SKIPPED-INDEX KNOWN            0
+
+ GLOBAL       CONTENTION       L-LOCKS  ELAPSED TIME    EVENTS    GLOBAL       CONTENTION       P-LOCKS  ELAPSED TIME    EVENTS
+ -------------------------------------  ------------  --------    -------------------------------------  ------------  --------
+ L-LOCKS                                    2.648998       554    P-LOCKS                                    0.052241        53
+  PARENT (DB,TS,TAB,PART)                   2.558580       497     PAGESET/PARTITION                         0.042886        36
+  CHILD  (PAGE,ROW)                         0.000000         0     PAGE                                      0.000000         0
+  OTHER                                     0.090418        57     OTHER                                     0.009355        17
+
+1   LOCATION: DBG1                     OMEGAMON XE FOR DB2 PERFORMANCE EXPERT (V5R2M0)                     PAGE: 1-5
+       GROUP: DSNTDBG1                             ACCOUNTING TRACE - LONG                       REQUESTED FROM: ALL      13:33:30.00
+      MEMBER: DSN2                                                                                           TO: DATES    13:35:30.00
+   SUBSYSTEM: DSN2                                                                                  ACTUAL FROM: 05/21/15 13:35:27.76
+ DB2 VERSION: V11
+
+ TOP FIELD: PROCESSING (CL.2) TIME SPENT IN DB2                          TOP NUMBER REQUESTED:   10
+
+ ---- IDENTIFICATION --------------------------------------------------------------------------------------------------------------
+ ACCT TSTAMP: 05/21/15 13:35:27.76    PLANNAME: CHCDTCA2        WLM SCL: 'BLANK'         CICS NET: N/A
+ BEGIN TIME : 05/21/15 13:33:31.45    PROD TYP: N/P                                      CICS LUN: N/A
+ END TIME   : 05/21/15 13:35:27.76    PROD VER: N/P             LUW NET: DDSHQ           CICS INS: N/A
+ REQUESTER  : DBG1                    CORRNAME: DSN2CHC         LUW LUN: DSN2
+ MAINPACK   : CHCDB2DL                CORRNMBR: 'BLANK'         LUW INS: CEFAC108A94E    ENDUSER : CHCDB2
+ PRIMAUTH   : CHCDB2                  CONNTYPE: DB2CALL         LUW SEQ:           36    TRANSACT: DSN2CHC
+ ORIGAUTH   : CHCDB2                  CONNECT : DB2CALL                                  WSNAME  : DB2CALL
+
+ LOCKING                TOTAL    DATA SHARING    TOTAL    QUERY PARALLELISM             TOTAL    DRAIN/CLAIM      TOTAL
+ ------------------- --------    ------------ --------    -------------------------  --------    ------------  --------
+ TIMEOUTS                   0    GLOB CONT(%)     0.00    MAXIMUM DEGREE-ESTIMATED          0    DRAIN REQST          0
+ DEADLOCKS                  0    FALS CONT(%)     0.00    MAXIMUM DEGREE-PLANNED            0    DRAIN FAILED         0
+ ESCAL.(SHAR)               0    P/L-LOCKS(%)        2    MAXIMUM DEGREE-EXECUTED           0    CLAIM REQST        505
+ ESCAL.(EXCL)               0    P-LOCK REQ         72    MAXIMUM MEMBERS USED            N/P    CLAIM FAILED         0
+ MAX PG/ROW LCK HELD    10002    P-UNLOCK REQ        0    PARALLEL GROUPS EXECUTED          0
+ LOCK REQUEST           32005    P-CHANGE REQ       18     RAN AS PLANNED                   0
+ UNLOCK REQST             466    LOCK - XES        661     RAN REDUCED-STORAGE              0
+ QUERY REQST                0    UNLOCK-XES        402     RAN REDUCED-NEGOTIATION          0
+ CHANGE REQST              14    CHANGE-XES         21     SEQ-CURSOR                       0
+ OTHER REQST                0    SUSP - IRLM         0     SEQ-NO ESA SORT                  0
+ TOTAL SUSPENSIONS          2    SUSP - XES          0     SEQ-NO BUFFER                    0
+  LOCK SUSPENS              1    CONV - XES        643     SEQ-ENCLAVE SERVICES           N/A
+  IRLM LATCH SUSPENS        1    FALSE CONT          0     SEQ-AUTONOMOUS PROC              0
+  OTHER SUSPENS             0    INCOMP.LOCK         0     SEQ-NEGOTIATION                  0
+                                 NOTIFY SENT         2     ONE DB2-COORDINATOR = NO         0
+                                                           ONE DB2-ISOLATION LEVEL          0
+                                                           ONE DB2-DCL TTABLE               0
+                                                          MEMB SKIPPED(%)                   0
+                                                          DISABLED BY RLF            NO
+                                                          REFORM PARAL-CONFIG               0
+                                                          REFORM PARAL-NO BUF               0
+
+ STORED PROC.     TOTAL    UDF           TOTAL    TRIGGERS         TOTAL    LOGGING               TOTAL
+ ------------  --------    ---------  --------    ------------  --------    -----------------  --------
+ CALL STMTS           0    EXECUTED          0    STMT TRIGGER         0    LOG RECS WRITTEN     394338
+ ABENDED              0    ABENDED           0    ROW TRIGGER          0    TOT BYTES WRITTEN  94280587
+ TIMED OUT            0    TIMED OUT         0    SQL ERROR            0
+ REJECTED             0    REJECTED          0
+
+1   LOCATION: DBG1                     OMEGAMON XE FOR DB2 PERFORMANCE EXPERT (V5R2M0)                     PAGE: 1-6
+       GROUP: DSNTDBG1                             ACCOUNTING TRACE - LONG                       REQUESTED FROM: ALL      13:33:30.00
+      MEMBER: DSN2                                                                                           TO: DATES    13:35:30.00
+   SUBSYSTEM: DSN2                                                                                  ACTUAL FROM: 05/21/15 13:35:27.76
+ DB2 VERSION: V11
+
+ TOP FIELD: PROCESSING (CL.2) TIME SPENT IN DB2                          TOP NUMBER REQUESTED:   10
+
+ ---- IDENTIFICATION --------------------------------------------------------------------------------------------------------------
+ ACCT TSTAMP: 05/21/15 13:35:27.76    PLANNAME: CHCDTCA2        WLM SCL: 'BLANK'         CICS NET: N/A
+ BEGIN TIME : 05/21/15 13:33:31.45    PROD TYP: N/P                                      CICS LUN: N/A
+ END TIME   : 05/21/15 13:35:27.76    PROD VER: N/P             LUW NET: DDSHQ           CICS INS: N/A
+ REQUESTER  : DBG1                    CORRNAME: DSN2CHC         LUW LUN: DSN2
+ MAINPACK   : CHCDB2DL                CORRNMBR: 'BLANK'         LUW INS: CEFAC108A94E    ENDUSER : CHCDB2
+ PRIMAUTH   : CHCDB2                  CONNTYPE: DB2CALL         LUW SEQ:           36    TRANSACT: DSN2CHC
+ ORIGAUTH   : CHCDB2                  CONNECT : DB2CALL                                  WSNAME  : DB2CALL
+
+ TOTAL SU             CLASS 1         CLASS 2    MISCELLANEOUS            TOTAL
+ ------------  --------------  --------------    --------------------  --------
+ CP CPU                133954          115334    MAX STO LOB VAL (KB)         0
+  AGENT                133954          115334    MAX STO XML VAL (KB)         0
+   NONNESTED           133954          115334    ARRAY EXPANSIONS             0
+   STORED PRC               0               0    SPARSE IX DISABLED           0
+   UDF                      0               0    SPARSE IX BUILT WF           0
+   TRIGGER                  0               0
+  PAR.TASKS                 0               0
+
+  ELIG SECP                 0             N/A
+  ELIG ACCEL              N/A               0
+
+ SE CPU                     0               0
+  NONNESTED                 0               0
+  STORED PROC               0               0
+  UDF                       0               0
+  TRIGGER                   0               0
+
+  PAR.TASKS                 0               0
+
+  ELIG ACCEL              N/A               0
+
+ ---- RESOURCE LIMIT FACILITY --------------------------------------------------------------------------------------------------
+ TYPE: N/P                               TABLE ID: N/P    SERV.UNITS:      N/P    CPU SECONDS: 0.000000    MAX CPU SEC:      N/P
+
+ BP0    BPOOL ACTIVITY     TOTAL    BP1    BPOOL ACTIVITY     TOTAL    BP2    BPOOL ACTIVITY     TOTAL
+ ---------------------  --------    ---------------------  --------    ---------------------  --------
+ BPOOL HIT RATIO (%)          92    BPOOL HIT RATIO (%)          51    BPOOL HIT RATIO (%)          99
+ GETPAGES                   1475    GETPAGES                  29840    GETPAGES                 651465
+ BUFFER UPDATES                0    BUFFER UPDATES            34610    BUFFER UPDATES           352990
+ SYNCHRONOUS WRITE             0    SYNCHRONOUS WRITE             0    SYNCHRONOUS WRITE             0
+ SYNCHRONOUS READ             65    SYNCHRONOUS READ           1129    SYNCHRONOUS READ           2697
+ SEQ. PREFETCH REQS            0    SEQ. PREFETCH REQS            0    SEQ. PREFETCH REQS            0
+ LIST PREFETCH REQS            0    LIST PREFETCH REQS            0    LIST PREFETCH REQS            0
+ DYN. PREFETCH REQS            3    DYN. PREFETCH REQS         1704    DYN. PREFETCH REQS         1130
+ PAGES READ ASYNCHR.          50    PAGES READ ASYNCHR.       13519    PAGES READ ASYNCHR.        3854
+
+1   LOCATION: DBG1                     OMEGAMON XE FOR DB2 PERFORMANCE EXPERT (V5R2M0)                     PAGE: 1-7
+       GROUP: DSNTDBG1                             ACCOUNTING TRACE - LONG                       REQUESTED FROM: ALL      13:33:30.00
+      MEMBER: DSN2                                                                                           TO: DATES    13:35:30.00
+   SUBSYSTEM: DSN2                                                                                  ACTUAL FROM: 05/21/15 13:35:27.76
+ DB2 VERSION: V11
+
+ TOP FIELD: PROCESSING (CL.2) TIME SPENT IN DB2                          TOP NUMBER REQUESTED:   10
+
+ ---- IDENTIFICATION --------------------------------------------------------------------------------------------------------------
+ ACCT TSTAMP: 05/21/15 13:35:27.76    PLANNAME: CHCDTCA2        WLM SCL: 'BLANK'         CICS NET: N/A
+ BEGIN TIME : 05/21/15 13:33:31.45    PROD TYP: N/P                                      CICS LUN: N/A
+ END TIME   : 05/21/15 13:35:27.76    PROD VER: N/P             LUW NET: DDSHQ           CICS INS: N/A
+ REQUESTER  : DBG1                    CORRNAME: DSN2CHC         LUW LUN: DSN2
+ MAINPACK   : CHCDB2DL                CORRNMBR: 'BLANK'         LUW INS: CEFAC108A94E    ENDUSER : CHCDB2
+ PRIMAUTH   : CHCDB2                  CONNTYPE: DB2CALL         LUW SEQ:           36    TRANSACT: DSN2CHC
+ ORIGAUTH   : CHCDB2                  CONNECT : DB2CALL                                  WSNAME  : DB2CALL
+
+ BP7    BPOOL ACTIVITY     TOTAL    BP20   BPOOL ACTIVITY     TOTAL    BP21   BPOOL ACTIVITY     TOTAL
+ ---------------------  --------    ---------------------  --------    ---------------------  --------
+ BPOOL HIT RATIO (%)         100    BPOOL HIT RATIO (%)          90    BPOOL HIT RATIO (%)          83
+ GETPAGES                   2080    GETPAGES                    660    GETPAGES                    230
+ BUFFER UPDATES             1040    BUFFER UPDATES                6    BUFFER UPDATES                0
+ SYNCHRONOUS WRITE             0    SYNCHRONOUS WRITE             0    SYNCHRONOUS WRITE             0
+ SYNCHRONOUS READ              0    SYNCHRONOUS READ             49    SYNCHRONOUS READ             38
+ SEQ. PREFETCH REQS            0    SEQ. PREFETCH REQS            0    SEQ. PREFETCH REQS            0
+ LIST PREFETCH REQS            0    LIST PREFETCH REQS            0    LIST PREFETCH REQS            0
+ DYN. PREFETCH REQS            0    DYN. PREFETCH REQS            4    DYN. PREFETCH REQS            0
+ PAGES READ ASYNCHR.           0    PAGES READ ASYNCHR.          14    PAGES READ ASYNCHR.           0
+
+ BP32K  BPOOL ACTIVITY     TOTAL    BP8K   BPOOL ACTIVITY     TOTAL    TOT4K  BPOOL ACTIVITY     TOTAL
+ ---------------------  --------    ---------------------  --------    ---------------------  --------
+ BPOOL HIT RATIO (%)          25    BPOOL HIT RATIO (%)          35    BPOOL HIT RATIO (%)          97
+ GETPAGES                      4    GETPAGES                     37    GETPAGES                 685750
+ BUFFER UPDATES                0    BUFFER UPDATES                0    BUFFER UPDATES           388646
+ SYNCHRONOUS WRITE             0    SYNCHRONOUS WRITE             0    SYNCHRONOUS WRITE             0
+ SYNCHRONOUS READ              3    SYNCHRONOUS READ             24    SYNCHRONOUS READ           3978
+ SEQ. PREFETCH REQS            0    SEQ. PREFETCH REQS            0    SEQ. PREFETCH REQS            0
+ LIST PREFETCH REQS            0    LIST PREFETCH REQS            0    LIST PREFETCH REQS            0
+ DYN. PREFETCH REQS            0    DYN. PREFETCH REQS            1    DYN. PREFETCH REQS         2841
+ PAGES READ ASYNCHR.           0    PAGES READ ASYNCHR.           0    PAGES READ ASYNCHR.       17437
+
+ TOTAL  BPOOL ACTIVITY     TOTAL
+ ---------------------  --------
+ BPOOL HIT RATIO (%)          97
+ GETPAGES                 685791
+ BUFFER UPDATES           388646
+ SYNCHRONOUS WRITE             0
+ SYNCHRONOUS READ           4005
+ SEQ. PREFETCH REQS            0
+ LIST PREFETCH REQS            0
+ DYN. PREFETCH REQS         2842
+ PAGES READ ASYNCHR.       17437
+
+1   LOCATION: DBG1                     OMEGAMON XE FOR DB2 PERFORMANCE EXPERT (V5R2M0)                     PAGE: 1-8
+       GROUP: DSNTDBG1                             ACCOUNTING TRACE - LONG                       REQUESTED FROM: ALL      13:33:30.00
+      MEMBER: DSN2                                                                                           TO: DATES    13:35:30.00
+   SUBSYSTEM: DSN2                                                                                  ACTUAL FROM: 05/21/15 13:35:27.76
+ DB2 VERSION: V11
+
+ TOP FIELD: PROCESSING (CL.2) TIME SPENT IN DB2                          TOP NUMBER REQUESTED:   10
+
+ ---- IDENTIFICATION --------------------------------------------------------------------------------------------------------------
+ ACCT TSTAMP: 05/21/15 13:35:27.76    PLANNAME: CHCDTCA2        WLM SCL: 'BLANK'         CICS NET: N/A
+ BEGIN TIME : 05/21/15 13:33:31.45    PROD TYP: N/P                                      CICS LUN: N/A
+ END TIME   : 05/21/15 13:35:27.76    PROD VER: N/P             LUW NET: DDSHQ           CICS INS: N/A
+ REQUESTER  : DBG1                    CORRNAME: DSN2CHC         LUW LUN: DSN2
+ MAINPACK   : CHCDB2DL                CORRNMBR: 'BLANK'         LUW INS: CEFAC108A94E    ENDUSER : CHCDB2
+ PRIMAUTH   : CHCDB2                  CONNTYPE: DB2CALL         LUW SEQ:           36    TRANSACT: DSN2CHC
+ ORIGAUTH   : CHCDB2                  CONNECT : DB2CALL                                  WSNAME  : DB2CALL
+
+ GROUP BP2                 TOTAL    GROUP BP32K               TOTAL    GROUP TOTAL               TOTAL
+ ---------------------  --------    ---------------------  --------    ---------------------  --------
+ GBP-DEPEND GETPAGES           0    GBP-DEPEND GETPAGES           0    GBP-DEPEND GETPAGES           0
+ READ(XI)-DATA RETUR           0    READ(XI)-DATA RETUR           0    READ(XI)-DATA RETUR           0
+ READ(XI)-NO DATA RT           0    READ(XI)-NO DATA RT           0    READ(XI)-NO DATA RT           0
+ READ(NF)-DATA RETUR           0    READ(NF)-DATA RETUR           0    READ(NF)-DATA RETUR           0
+ READ(NF)-NO DATA RT           0    READ(NF)-NO DATA RT           0    READ(NF)-NO DATA RT           0
+ PREFETCH PAGES READ           0    PREFETCH PAGES READ           0    PREFETCH PAGES READ           0
+ CLEAN PAGES WRITTEN           0    CLEAN PAGES WRITTEN           0    CLEAN PAGES WRITTEN           0
+ UNREGISTER PAGE              53    UNREGISTER PAGE               3    UNREGISTER PAGE              56
+ ASYNCH GBP REQUESTS           0    ASYNCH GBP REQUESTS           0    ASYNCH GBP REQUESTS           0
+ EXPLICIT X-INVALID            0    EXPLICIT X-INVALID            0    EXPLICIT X-INVALID            0
+ ASYNCH SEC-GBP REQ            0    ASYNCH SEC-GBP REQ            0    ASYNCH SEC-GBP REQ            0
+ PG P-LOCK LOCK REQ            0    PG P-LOCK LOCK REQ            0    PG P-LOCK LOCK REQ            0
+  SPACE MAP PAGES              0     SPACE MAP PAGES              0     SPACE MAP PAGES              0
+  DATA PAGES                   0     DATA PAGES                   0     DATA PAGES                   0
+  INDEX LEAF PAGES             0     INDEX LEAF PAGES             0     INDEX LEAF PAGES             0
+ PG P-LOCK UNLOCK REQ          0    PG P-LOCK UNLOCK REQ          0    PG P-LOCK UNLOCK REQ          0
+ PG P-LOCK LOCK SUSP           0    PG P-LOCK LOCK SUSP           0    PG P-LOCK LOCK SUSP           0
+  SPACE MAP PAGES              0     SPACE MAP PAGES              0     SPACE MAP PAGES              0
+  DATA PAGES                   0     DATA PAGES                   0     DATA PAGES                   0
+  INDEX LEAF PAGES             0     INDEX LEAF PAGES             0     INDEX LEAF PAGES             0
+ WRITE AND REGISTER            0    WRITE AND REGISTER            0    WRITE AND REGISTER            0
+ WRITE & REGISTER MULT         0    WRITE & REGISTER MULT         0    WRITE & REGISTER MULT         0
+ CHANGED PAGES WRITTEN         0    CHANGED PAGES WRITTEN         0    CHANGED PAGES WRITTEN         0
+ COMPL CHECKS SUSPEND          0    COMPL CHECKS SUSPEND          0    COMPL CHECKS SUSPEND          0
+
+     -------------------------------------------------------------------------------
+     |PROGRAM NAME                    CLASS 7 ELAPSED TIME CONSUMERS               |
+     |CHCDB2DL            |> 1%                                                    |
+     |CHCTMDDL            |==========> 21%                                         |
+     |CHCCMUE             |=====================================> 74%              |
+     |CHCDTCMD            |==> 4%                                                  |
+     -------------------------------------------------------------------------------
+
+     -------------------------------------------------------------------------------
+     |PROGRAM NAME                    CLASS 7 CP CPU TIME CONSUMERS                |
+     |CHCDB2DL            |> 1%                                                    |
+     |CHCTMDDL            |=> 2%                                                   |
+     |CHCCMUE             |================================================> 97%   |
+     |CHCDTCMD            |                                                        |
+     -------------------------------------------------------------------------------
+
+1   LOCATION: DBG1                     OMEGAMON XE FOR DB2 PERFORMANCE EXPERT (V5R2M0)                     PAGE: 1-9
+       GROUP: DSNTDBG1                             ACCOUNTING TRACE - LONG                       REQUESTED FROM: ALL      13:33:30.00
+      MEMBER: DSN2                                                                                           TO: DATES    13:35:30.00
+   SUBSYSTEM: DSN2                                                                                  ACTUAL FROM: 05/21/15 13:35:27.76
+ DB2 VERSION: V11
+
+ TOP FIELD: PROCESSING (CL.2) TIME SPENT IN DB2                          TOP NUMBER REQUESTED:   10
+
+ ---- IDENTIFICATION --------------------------------------------------------------------------------------------------------------
+ ACCT TSTAMP: 05/21/15 13:35:27.76    PLANNAME: CHCDTCA2        WLM SCL: 'BLANK'         CICS NET: N/A
+ BEGIN TIME : 05/21/15 13:33:31.45    PROD TYP: N/P                                      CICS LUN: N/A
+ END TIME   : 05/21/15 13:35:27.76    PROD VER: N/P             LUW NET: DDSHQ           CICS INS: N/A
+ REQUESTER  : DBG1                    CORRNAME: DSN2CHC         LUW LUN: DSN2
+ MAINPACK   : CHCDB2DL                CORRNMBR: 'BLANK'         LUW INS: CEFAC108A94E    ENDUSER : CHCDB2
+ PRIMAUTH   : CHCDB2                  CONNTYPE: DB2CALL         LUW SEQ:           36    TRANSACT: DSN2CHC
+ ORIGAUTH   : CHCDB2                  CONNECT : DB2CALL                                  WSNAME  : DB2CALL
+
+ CHCDB2DL            VALUE                 CHCDB2DL                   TIMES    CHCDB2DL                    TIME  EVENTS    TIME/EVENT
+ ------------------  ------------------    ------------------  ------------    ------------------  ------------  ------  ------------
+ TYPE                PACKAGE               ELAPSED TIME - CL7      0.095211    LOCK/LATCH              0.000000       0           N/C
+ LOCATION            DBG1                  CP CPU TIME             0.021255     IRLM LOCK+LATCH        0.000000       0           N/C
+ COLLECTION ID       CHCPK2A2                AGENT                 0.021255     DB2 LATCH              0.000000       0           N/C
+ PROGRAM NAME        CHCDB2DL                PAR.TASKS             0.000000    SYNCHRONOUS I/O         0.065690      89      0.000738
+ CONSISTENCY TOKEN   19952DB41B020A84      SE CPU TIME             0.000000    OTHER READ I/O          0.000000       0           N/C
+ ACTIVITY TYPE       NONNESTED             SUSPENSION-CL8          0.071780    OTHER WRITE I/O         0.000000       0           N/C
+ ACTIVITY NAME       'BLANK'                 AGENT                 0.071780    SERV.TASK SWITCH        0.000000       0           N/C
+ SCHEMA NAME         'BLANK'                 PAR.TASKS             0.000000    ARCH.LOG(QUIESCE)       0.000000       0           N/C
+ SUCC AUTH CHECK     NO                    NOT ACCOUNTED           0.002176    ARCHIVE LOG READ        0.000000       0           N/C
+ NBR OF ALLOCATIONS                  29                                        DRAIN LOCK              0.000000       0           N/C
+ SQL STMT - AVERAGE              242.00    CP CPU SU                    666    CLAIM RELEASE           0.000000       0           N/C
+ SQL STMT - TOTAL                   242      AGENT                      666    PAGE LATCH              0.000000       0           N/C
+ NBR RLUP THREADS                     1      PAR.TASKS                    0    NOTIFY MESSAGES         0.000000       0           N/C
+                                           SE CPU SU                      0    GLOBAL CONTENTION       0.006090       4      0.001523
+                                                                               TCP/IP LOB XML          0.000000       0           N/C
+                                           DB2 ENTRY/EXIT               540    ACCELERATOR             0.000000       0           N/C
+                                                                               PQ SYNCHRONIZATION      0.000000       0           N/C
+                                                                               TOTAL CL8 SUSPENS.      0.071780      93      0.000772
+
+ CHCTMDDL            VALUE                 CHCTMDDL                   TIMES    CHCTMDDL                    TIME  EVENTS    TIME/EVENT
+ ------------------  ------------------    ------------------  ------------    ------------------  ------------  ------  ------------
+ TYPE                PACKAGE               ELAPSED TIME - CL7      2.240275    LOCK/LATCH              0.000351       2      0.000175
+ LOCATION            DBG1                  CP CPU TIME             0.082564     IRLM LOCK+LATCH        0.000348       1      0.000348
+ COLLECTION ID       CHCPK1A2                AGENT                 0.082564     DB2 LATCH              0.000003       1      0.000003
+ PROGRAM NAME        CHCTMDDL                PAR.TASKS             0.000000    SYNCHRONOUS I/O         0.021135      86      0.000246
+ CONSISTENCY TOKEN   198B6AAB04A9CCFA      SE CPU TIME             0.000000    OTHER READ I/O          0.000830       3      0.000277
+ ACTIVITY TYPE       NONNESTED             SUSPENSION-CL8          2.156785    OTHER WRITE I/O         0.000000       0           N/C
+ ACTIVITY NAME       'BLANK'                 AGENT                 2.156785    SERV.TASK SWITCH        0.000000       0           N/C
+ SCHEMA NAME         'BLANK'                 PAR.TASKS             0.000000    ARCH.LOG(QUIESCE)       0.000000       0           N/C
+ SUCC AUTH CHECK     NO                    NOT ACCOUNTED           0.000927    ARCHIVE LOG READ        0.000000       0           N/C
+ NBR OF ALLOCATIONS                  28                                        DRAIN LOCK              0.000000       0           N/C
+ SQL STMT - AVERAGE              717.00    CP CPU SU                   2585    CLAIM RELEASE           0.000000       0           N/C
+ SQL STMT - TOTAL                   717      AGENT                     2585    PAGE LATCH              0.000000       0           N/C
+ NBR RLUP THREADS                     1      PAR.TASKS                    0    NOTIFY MESSAGES         0.000000       0           N/C
+                                           SE CPU SU                      0    GLOBAL CONTENTION       2.134469     477      0.004475
+                                                                               TCP/IP LOB XML          0.000000       0           N/C
+                                           DB2 ENTRY/EXIT              1436    ACCELERATOR             0.000000       0           N/C
+                                                                               PQ SYNCHRONIZATION      0.000000       0           N/C
+                                                                               TOTAL CL8 SUSPENS.      2.156785     568      0.003797
+
+1   LOCATION: DBG1                     OMEGAMON XE FOR DB2 PERFORMANCE EXPERT (V5R2M0)                     PAGE: 1-10
+       GROUP: DSNTDBG1                             ACCOUNTING TRACE - LONG                       REQUESTED FROM: ALL      13:33:30.00
+      MEMBER: DSN2                                                                                           TO: DATES    13:35:30.00
+   SUBSYSTEM: DSN2                                                                                  ACTUAL FROM: 05/21/15 13:35:27.76
+ DB2 VERSION: V11
+
+ TOP FIELD: PROCESSING (CL.2) TIME SPENT IN DB2                          TOP NUMBER REQUESTED:   10
+
+ ---- IDENTIFICATION --------------------------------------------------------------------------------------------------------------
+ ACCT TSTAMP: 05/21/15 13:35:27.76    PLANNAME: CHCDTCA2        WLM SCL: 'BLANK'         CICS NET: N/A
+ BEGIN TIME : 05/21/15 13:33:31.45    PROD TYP: N/P                                      CICS LUN: N/A
+ END TIME   : 05/21/15 13:35:27.76    PROD VER: N/P             LUW NET: DDSHQ           CICS INS: N/A
+ REQUESTER  : DBG1                    CORRNAME: DSN2CHC         LUW LUN: DSN2
+ MAINPACK   : CHCDB2DL                CORRNMBR: 'BLANK'         LUW INS: CEFAC108A94E    ENDUSER : CHCDB2
+ PRIMAUTH   : CHCDB2                  CONNTYPE: DB2CALL         LUW SEQ:           36    TRANSACT: DSN2CHC
+ ORIGAUTH   : CHCDB2                  CONNECT : DB2CALL                                  WSNAME  : DB2CALL
+
+ CHCCMUE             VALUE                 CHCCMUE                    TIMES    CHCCMUE                     TIME  EVENTS    TIME/EVENT
+ ------------------  ------------------    ------------------  ------------    ------------------  ------------  ------  ------------
+ TYPE                PACKAGE               ELAPSED TIME - CL7      7.680708    LOCK/LATCH              0.003107      73      0.000043
+ LOCATION            DBG1                  CP CPU TIME             3.577574     IRLM LOCK+LATCH        0.001258       1      0.001258
+ COLLECTION ID       CHCDTCA2                AGENT                 3.577574     DB2 LATCH              0.001849      72      0.000026
+ PROGRAM NAME        CHCCMUE                 PAR.TASKS             0.000000    SYNCHRONOUS I/O         2.610417    3828      0.000682
+ CONSISTENCY TOKEN   19DCAD070245F2E1      SE CPU TIME             0.000000    OTHER READ I/O          0.185095     785      0.000236
+ ACTIVITY TYPE       NONNESTED             SUSPENSION-CL8          3.754831    OTHER WRITE I/O         0.269842     306      0.000882
+ ACTIVITY NAME       'BLANK'                 AGENT                 3.754831    SERV.TASK SWITCH        0.466397      56      0.008329
+ SCHEMA NAME         'BLANK'                 PAR.TASKS             0.000000    ARCH.LOG(QUIESCE)       0.000000       0           N/C
+ SUCC AUTH CHECK     NO                    NOT ACCOUNTED           0.348304    ARCHIVE LOG READ        0.000000       0           N/C
+ NBR OF ALLOCATIONS                   2                                        DRAIN LOCK              0.076410      36      0.002123
+ SQL STMT - AVERAGE            30264.00    CP CPU SU                 112018    CLAIM RELEASE           0.000000       0           N/C
+ SQL STMT - TOTAL                 30264      AGENT                   112018    PAGE LATCH              0.000000       0           N/C
+ NBR RLUP THREADS                     1      PAR.TASKS                    0    NOTIFY MESSAGES         0.000000       0           N/C
+                                           SE CPU SU                      0    GLOBAL CONTENTION       0.143562     114      0.001259
+                                                                               TCP/IP LOB XML          0.000000       0           N/C
+                                           DB2 ENTRY/EXIT             60528    ACCELERATOR             0.000000       0           N/C
+                                                                               PQ SYNCHRONIZATION      0.000000       0           N/C
+                                                                               TOTAL CL8 SUSPENS.      3.754831    5198      0.000722
+
+ CHCDTCMD            VALUE                 CHCDTCMD                   TIMES    CHCDTCMD                    TIME  EVENTS    TIME/EVENT
+ ------------------  ------------------    ------------------  ------------    ------------------  ------------  ------  ------------
+ TYPE                PACKAGE               ELAPSED TIME - CL7      0.433438    LOCK/LATCH              0.000000       0           N/C
+ LOCATION            DBG1                  CP CPU TIME             0.002039     IRLM LOCK+LATCH        0.000000       0           N/C
+ COLLECTION ID       CHCPK1A2                AGENT                 0.002039     DB2 LATCH              0.000000       0           N/C
+ PROGRAM NAME        CHCDTCMD                PAR.TASKS             0.000000    SYNCHRONOUS I/O         0.001114       2      0.000557
+ CONSISTENCY TOKEN   19881B4D05F161B6      SE CPU TIME             0.000000    OTHER READ I/O          0.000000       0           N/C
+ ACTIVITY TYPE       NONNESTED             SUSPENSION-CL8          0.431065    OTHER WRITE I/O         0.000000       0           N/C
+ ACTIVITY NAME       'BLANK'                 AGENT                 0.431065    SERV.TASK SWITCH        0.012833       6      0.002139
+ SCHEMA NAME         'BLANK'                 PAR.TASKS             0.000000    ARCH.LOG(QUIESCE)       0.000000       0           N/C
+ SUCC AUTH CHECK     NO                    NOT ACCOUNTED           0.000334    ARCHIVE LOG READ        0.000000       0           N/C
+ NBR OF ALLOCATIONS                   2                                        DRAIN LOCK              0.000000       0           N/C
+ SQL STMT - AVERAGE                6.00    CP CPU SU                     64    CLAIM RELEASE           0.000000       0           N/C
+ SQL STMT - TOTAL                     6      AGENT                       64    PAGE LATCH              0.000000       0           N/C
+ NBR RLUP THREADS                     1      PAR.TASKS                    0    NOTIFY MESSAGES         0.000000       0           N/C
+                                           SE CPU SU                      0    GLOBAL CONTENTION       0.417117      12      0.034760
+                                                                               TCP/IP LOB XML          0.000000       0           N/C
+                                           DB2 ENTRY/EXIT                28    ACCELERATOR             0.000000       0           N/C
+                                                                               PQ SYNCHRONIZATION      0.000000       0           N/C
+                                                                               TOTAL CL8 SUSPENS.      0.431065      20      0.021553
+
+1   LOCATION: DBG1                     OMEGAMON XE FOR DB2 PERFORMANCE EXPERT (V5R2M0)                     PAGE: 1-11
+       GROUP: DSNTDBG1                             ACCOUNTING TRACE - LONG                       REQUESTED FROM: ALL      13:33:30.00
+      MEMBER: DSN2                                                                                           TO: DATES    13:35:30.00
+   SUBSYSTEM: DSN2                                                                                  ACTUAL FROM: 05/21/15 13:35:27.76
+ DB2 VERSION: V11
+
+ TOP FIELD: PROCESSING (CL.2) TIME SPENT IN DB2                          TOP NUMBER REQUESTED:   10
+
+ ---- IDENTIFICATION --------------------------------------------------------------------------------------------------------------
+ ACCT TSTAMP: 05/21/15 13:35:27.76    PLANNAME: CHCDTCA2        WLM SCL: 'BLANK'         CICS NET: N/A
+ BEGIN TIME : 05/21/15 13:33:31.45    PROD TYP: N/P                                      CICS LUN: N/A
+ END TIME   : 05/21/15 13:35:27.76    PROD VER: N/P             LUW NET: DDSHQ           CICS INS: N/A
+ REQUESTER  : DBG1                    CORRNAME: DSN2CHC         LUW LUN: DSN2
+ MAINPACK   : CHCDB2DL                CORRNMBR: 'BLANK'         LUW INS: CEFAC108A94E    ENDUSER : CHCDB2
+ PRIMAUTH   : CHCDB2                  CONNTYPE: DB2CALL         LUW SEQ:           36    TRANSACT: DSN2CHC
+ ORIGAUTH   : CHCDB2                  CONNECT : DB2CALL                                  WSNAME  : DB2CALL
+
+ CHCDB2DL                   ELAPSED TIME    EVENTS    CHCDB2DL                   ELAPSED TIME    EVENTS
+ -------------------------  ------------  --------    -------------------------  ------------  --------
+ GLOBAL CONTENTION L-LOCKS      0.006090         4    GLOBAL CONTENTION P-LOCKS      0.000000         0
+  PARENT (DB,TS,TAB,PART)       0.001834         2     PAGESET/PARTITION             0.000000         0
+  CHILD  (PAGE,ROW)             0.000000         0     PAGE                          0.000000         0
+  OTHER                         0.004256         2     OTHER                         0.000000         0
+
+ CHCTMDDL                   ELAPSED TIME    EVENTS    CHCTMDDL                   ELAPSED TIME    EVENTS
+ -------------------------  ------------  --------    -------------------------  ------------  --------
+ GLOBAL CONTENTION L-LOCKS      2.134469       477    GLOBAL CONTENTION P-LOCKS      0.000000         0
+  PARENT (DB,TS,TAB,PART)       2.134469       477     PAGESET/PARTITION             0.000000         0
+  CHILD  (PAGE,ROW)             0.000000         0     PAGE                          0.000000         0
+  OTHER                         0.000000         0     OTHER                         0.000000         0
+
+ CHCCMUE                    ELAPSED TIME    EVENTS    CHCCMUE                    ELAPSED TIME    EVENTS
+ -------------------------  ------------  --------    -------------------------  ------------  --------
+ GLOBAL CONTENTION L-LOCKS      0.091321        61    GLOBAL CONTENTION P-LOCKS      0.052241        53
+  PARENT (DB,TS,TAB,PART)       0.005160         6     PAGESET/PARTITION             0.042886        36
+  CHILD  (PAGE,ROW)             0.000000         0     PAGE                          0.000000         0
+  OTHER                         0.086161        55     OTHER                         0.009355        17
+
+ CHCDTCMD                   ELAPSED TIME    EVENTS    CHCDTCMD                   ELAPSED TIME    EVENTS
+ -------------------------  ------------  --------    -------------------------  ------------  --------
+ GLOBAL CONTENTION L-LOCKS      0.417117        12    GLOBAL CONTENTION P-LOCKS      0.000000         0
+  PARENT (DB,TS,TAB,PART)       0.417117        12     PAGESET/PARTITION             0.000000         0
+  CHILD  (PAGE,ROW)             0.000000         0     PAGE                          0.000000         0
+  OTHER                         0.000000         0     OTHER                         0.000000         0
+
+ CHCDB2DL                  TOTAL    CHCTMDDL                  TOTAL    CHCCMUE                   TOTAL
+ ------------------     --------    ------------------     --------    ------------------     --------
+ SELECT                       27    SELECT                      521    SELECT                    10132
+ INSERT                        0    INSERT                        0    INSERT                    10000
+ UPDATE                        0    UPDATE                        0    UPDATE                      264
+ DELETE                        0    DELETE                        0    DELETE                     9868
+
+ DESCRIBE                      0    DESCRIBE                      0    DESCRIBE                      0
+ PREPARE                       0    PREPARE                       0    PREPARE                       0
+ OPEN                         27    OPEN                         56    OPEN                          0
+ FETCH                       159    FETCH                        84    FETCH                         0
+ CLOSE                        27    CLOSE                        56    CLOSE                         0
+
+ LOCK TABLE                    0    LOCK TABLE                    0    LOCK TABLE                    0
+ CALL                          0    CALL                          0    CALL                          0
+1   LOCATION: DBG1                     OMEGAMON XE FOR DB2 PERFORMANCE EXPERT (V5R2M0)                     PAGE: 1-12
+       GROUP: DSNTDBG1                             ACCOUNTING TRACE - LONG                       REQUESTED FROM: ALL      13:33:30.00
+      MEMBER: DSN2                                                                                           TO: DATES    13:35:30.00
+   SUBSYSTEM: DSN2                                                                                  ACTUAL FROM: 05/21/15 13:35:27.76
+ DB2 VERSION: V11
+
+ TOP FIELD: PROCESSING (CL.2) TIME SPENT IN DB2                          TOP NUMBER REQUESTED:   10
+
+ ---- IDENTIFICATION --------------------------------------------------------------------------------------------------------------
+ ACCT TSTAMP: 05/21/15 13:35:27.76    PLANNAME: CHCDTCA2        WLM SCL: 'BLANK'         CICS NET: N/A
+ BEGIN TIME : 05/21/15 13:33:31.45    PROD TYP: N/P                                      CICS LUN: N/A
+ END TIME   : 05/21/15 13:35:27.76    PROD VER: N/P             LUW NET: DDSHQ           CICS INS: N/A
+ REQUESTER  : DBG1                    CORRNAME: DSN2CHC         LUW LUN: DSN2
+ MAINPACK   : CHCDB2DL                CORRNMBR: 'BLANK'         LUW INS: CEFAC108A94E    ENDUSER : CHCDB2
+ PRIMAUTH   : CHCDB2                  CONNTYPE: DB2CALL         LUW SEQ:           36    TRANSACT: DSN2CHC
+ ORIGAUTH   : CHCDB2                  CONNECT : DB2CALL                                  WSNAME  : DB2CALL
+
+ CHCDTCMD                  TOTAL
+ ------------------     --------
+ SELECT                        0
+ INSERT                        0
+ UPDATE                        6
+ DELETE                        0
+
+ DESCRIBE                      0
+ PREPARE                       0
+ OPEN                          0
+ FETCH                         0
+ CLOSE                         0
+
+ LOCK TABLE                    0
+ CALL                          0
+
+ CHCDB2DL                  TOTAL    CHCTMDDL                  TOTAL    CHCCMUE                   TOTAL
+ -------------------    --------    -------------------    --------    -------------------    --------
+ BPOOL HIT RATIO (%)           0    BPOOL HIT RATIO (%)           0    BPOOL HIT RATIO (%)           0
+ GETPAGES                    446    GETPAGES                   4015    GETPAGES                 681312
+ BUFFER UPDATES                0    BUFFER UPDATES             1040    BUFFER UPDATES           387600
+ SYNCHRONOUS WRITE             0    SYNCHRONOUS WRITE             0    SYNCHRONOUS WRITE             0
+ SYNCHRONOUS READ             89    SYNCHRONOUS READ             86    SYNCHRONOUS READ           3828
+ SEQ. PREFETCH REQS            0    SEQ. PREFETCH REQS            0    SEQ. PREFETCH REQS            0
+ LIST PREFETCH REQS            0    LIST PREFETCH REQS            0    LIST PREFETCH REQS            0
+ DYN. PREFETCH REQS            1    DYN. PREFETCH REQS            7    DYN. PREFETCH REQS         2834
+ PAGES READ ASYNCHR.           0    PAGES READ ASYNCHR.          64    PAGES READ ASYNCHR.       17373
+
+ CHCDTCMD                  TOTAL
+ -------------------    --------
+ BPOOL HIT RATIO (%)           0
+ GETPAGES                     18
+ BUFFER UPDATES                6
+ SYNCHRONOUS WRITE             0
+ SYNCHRONOUS READ              2
+ SEQ. PREFETCH REQS            0
+ LIST PREFETCH REQS            0
+ DYN. PREFETCH REQS            0
+ PAGES READ ASYNCHR.           0
+
+1   LOCATION: DBG1                     OMEGAMON XE FOR DB2 PERFORMANCE EXPERT (V5R2M0)                     PAGE: 1-13
+       GROUP: DSNTDBG1                             ACCOUNTING TRACE - LONG                       REQUESTED FROM: ALL      13:33:30.00
+      MEMBER: DSN2                                                                                           TO: DATES    13:35:30.00
+   SUBSYSTEM: DSN2                                                                                  ACTUAL FROM: 05/21/15 13:35:27.76
+ DB2 VERSION: V11
+
+ TOP FIELD: PROCESSING (CL.2) TIME SPENT IN DB2                          TOP NUMBER REQUESTED:   10
+
+ ---- IDENTIFICATION --------------------------------------------------------------------------------------------------------------
+ ACCT TSTAMP: 05/21/15 13:35:27.76    PLANNAME: CHCDTCA2        WLM SCL: 'BLANK'         CICS NET: N/A
+ BEGIN TIME : 05/21/15 13:33:31.45    PROD TYP: N/P                                      CICS LUN: N/A
+ END TIME   : 05/21/15 13:35:27.76    PROD VER: N/P             LUW NET: DDSHQ           CICS INS: N/A
+ REQUESTER  : DBG1                    CORRNAME: DSN2CHC         LUW LUN: DSN2
+ MAINPACK   : CHCDB2DL                CORRNMBR: 'BLANK'         LUW INS: CEFAC108A94E    ENDUSER : CHCDB2
+ PRIMAUTH   : CHCDB2                  CONNTYPE: DB2CALL         LUW SEQ:           36    TRANSACT: DSN2CHC
+ ORIGAUTH   : CHCDB2                  CONNECT : DB2CALL                                  WSNAME  : DB2CALL
+
+ CHCDB2DL                  TOTAL    CHCTMDDL                  TOTAL    CHCCMUE                   TOTAL
+ ---------------------  --------    ---------------------  --------    ---------------------  --------
+ TIMEOUTS                      0    TIMEOUTS                      0    TIMEOUTS                      0
+ DEADLOCKS                     0    DEADLOCKS                     0    DEADLOCKS                     0
+ ESCAL.(SHARED)                0    ESCAL.(SHARED)                0    ESCAL.(SHARED)                0
+ ESCAL.(EXCLUS)                0    ESCAL.(EXCLUS)                0    ESCAL.(EXCLUS)                0
+ MAX PG/ROW LOCKS HELD         0    MAX PG/ROW LOCKS HELD         0    MAX PG/ROW LOCKS HELD     10002
+ LOCK REQUEST                  7    LOCK REQUEST               2101    LOCK REQUEST              29874
+ UNLOCK REQUEST              350    UNLOCK REQUEST                1    UNLOCK REQUEST              109
+ QUERY REQUEST                 0    QUERY REQUEST                 0    QUERY REQUEST                 0
+ CHANGE REQUEST                6    CHANGE REQUEST                0    CHANGE REQUEST                2
+ OTHER REQUEST                 0    OTHER REQUEST                 0    OTHER REQUEST                 0
+ TOTAL SUSPENSIONS             0    TOTAL SUSPENSIONS             1    TOTAL SUSPENSIONS             1
+  LOCK SUSPENS                 0     LOCK SUSPENS                 1     LOCK SUSPENS                 0
+  IRLM LATCH SUSPENS           0     IRLM LATCH SUSPENS           0     IRLM LATCH SUSPENS           1
+  OTHER SUSPENS                0     OTHER SUSPENS                0     OTHER SUSPENS                0
+
+ CHCDTCMD                  TOTAL
+ ---------------------  --------
+ TIMEOUTS                      0
+ DEADLOCKS                     0
+ ESCAL.(SHARED)                0
+ ESCAL.(EXCLUS)                0
+ MAX PG/ROW LOCKS HELD     10002
+ LOCK REQUEST                 22
+ UNLOCK REQUEST                6
+ QUERY REQUEST                 0
+ CHANGE REQUEST                6
+ OTHER REQUEST                 0
+ TOTAL SUSPENSIONS             0
+  LOCK SUSPENS                 0
+  IRLM LATCH SUSPENS           0
+  OTHER SUSPENS                0
+
+ ACCOUNTING TRACE COMPLETE

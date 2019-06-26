@@ -1,0 +1,2031 @@
+<html>
+   <head>
+      <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <style type="text/css">
+	td {
+		text-align: right;
+	}
+	span.high{
+		width: 100%;
+		background-color: red;
+	}
+	span.med{
+		width: 100%;
+		background-color: yellow;
+	}
+	span.good{
+		width: 100%;
+		background-color: lime;
+	}
+	span.best{
+		width: 100%;
+		background-color: green;
+	}
+	</style>
+   </head>
+   <body>
+      <table border="1">
+         <tr>
+            <th>Accounting Report</th>
+         </tr>
+         <tr>
+            <th>AVERAGE</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>CL1 ET</td><td>10:00.1962</td><td>10:00.1866</td><td>-0</td>
+         </tr>
+         <tr>
+            <td>CL2 ET</td><td>7:30.74625</td><td>7:30.65995</td><td>-0.02</td>
+         </tr>
+         <tr>
+            <td>CL1 CP</td><td>7:40.52876</td><td>7:40.98236</td><td>0.1</td>
+         </tr>
+         <tr>
+            <td>CL2 CP</td><td>5:12.37688</td><td>5:12.76945</td><td>0.13</td>
+         </tr>
+         <tr>
+            <td>SUSPEND TIME</td><td>2:16.92485</td><td>2:16.37383</td><td>-0.4</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNT</td><td>1.444523</td><td>1.516675</td><td>4.99</td>
+         </tr>
+         <tr>
+            <th>CLASS 3 SUSPENSIONS (EVENTS)</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH(DB2+IRLM)</td><td>1567.00</td><td>1522.00</td><td>-2.87</td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>157.00</td><td>153.00</td><td>-2.55</td>
+         </tr>
+         <tr>
+            <td>DB2 LATCH</td><td>1410.00</td><td>1369.00</td><td>-2.91</td>
+         </tr>
+         <tr>
+            <td>SYNCHRON. I/O</td><td>26044.00</td><td>26090.00</td><td>0.18</td>
+         </tr>
+         <tr>
+            <td>DATABASE I/O</td><td>847.00</td><td>851.00</td><td>0.47</td>
+         </tr>
+         <tr>
+            <td>READ CACHE HIT</td><td>846.00</td><td>850.00</td><td>0.47</td>
+         </tr>
+         <tr>
+            <td>LOG WRITE I/O</td><td>25198.00</td><td>25239.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>OTHER READ I/O</td><td>1.00</td><td>1.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>OTHER WRTE I/O</td><td>92.00</td><td>81.00</td><td><span class="best">-11.96</span></td>
+         </tr>
+         <tr>
+            <td>SER.TASK SWTCH</td><td>389.5K</td><td>390.3K</td><td>0.21</td>
+         </tr>
+         <tr>
+            <td>UPDATE COMMIT</td><td>388.7K</td><td>389.4K</td><td>0.18</td>
+         </tr>
+         <tr>
+            <td>OPEN/CLOSE</td><td>5.00</td><td>5.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SYSLGRNG REC</td><td>8.00</td><td>8.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>EXT/DEL/DEF</td><td>781.00</td><td>783.00</td><td>0.26</td>
+         </tr>
+         <tr>
+            <td>OTHER SERVICE</td><td>35.00</td><td>35.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>LOG READ</td><td>58.00</td><td>68.00</td><td><span class="high">17.24</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL CLASS 3</td><td>417.3K</td><td>418.0K</td><td>0.17</td>
+         </tr>
+         <tr>
+            <th>CLASS 3 SUSPENSIONS (TIME)</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH(DB2+IRLM)</td><td>0.009876</td><td>0.009594</td><td>-2.86</td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.009545</td><td>0.009286</td><td>-2.71</td>
+         </tr>
+         <tr>
+            <td>DB2 LATCH</td><td>0.000331</td><td>0.000308</td><td><span class="good">-6.95</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRON. I/O</td><td>5.033322</td><td>5.032221</td><td>-0.02</td>
+         </tr>
+         <tr>
+            <td>DATABASE I/O</td><td>0.129841</td><td>0.130057</td><td>0.17</td>
+         </tr>
+         <tr>
+            <td>READ CACHE HIT</td><td>0.129647</td><td>0.129878</td><td>0.18</td>
+         </tr>
+         <tr>
+            <td>LOG WRITE I/O</td><td>4.903481</td><td>4.902164</td><td>-0.03</td>
+         </tr>
+         <tr>
+            <td>OTHER READ I/O</td><td>0.000236</td><td>0.000239</td><td>1.27</td>
+         </tr>
+         <tr>
+            <td>OTHER WRTE I/O</td><td>0.099801</td><td>0.096993</td><td>-2.81</td>
+         </tr>
+         <tr>
+            <td>SER.TASK SWTCH</td><td>2:11.701948</td><td>2:11.148392</td><td>-0.42</td>
+         </tr>
+         <tr>
+            <td>UPDATE COMMIT</td><td>1:57.403638</td><td>1:57.383687</td><td>-0.02</td>
+         </tr>
+         <tr>
+            <td>OPEN/CLOSE</td><td>0.039248</td><td>0.038956</td><td>-0.74</td>
+         </tr>
+         <tr>
+            <td>SYSLGRNG REC</td><td>0.003382</td><td>0.003134</td><td><span class="good">-7.33</span></td>
+         </tr>
+         <tr>
+            <td>EXT/DEL/DEF</td><td>14.237623</td><td>13.704637</td><td>-3.74</td>
+         </tr>
+         <tr>
+            <td>OTHER SERVICE</td><td>0.018058</td><td>0.017977</td><td>-0.45</td>
+         </tr>
+         <tr>
+            <td>LOG READ</td><td>0.079666</td><td>0.086248</td><td><span class="med">8.26</span></td>
+         </tr>
+         <tr>
+            <td>TOTAL CLASS 3</td><td>2:16.924848</td><td>2:16.373827</td><td>-0.4</td>
+         </tr>
+         <tr>
+            <th>HIGHLIGHTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>#OCCURRENCES    :</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>#ALLIEDS        :</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>#NORMAL TERMINAT:</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>#INCREMENT. BIND:</td><td>107487</td><td>107939</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>#COMMITS        :</td><td>335061</td><td>335845</td><td>0.23</td>
+         </tr>
+         <tr>
+            <td>#ROLLBACKS      :</td><td>53685</td><td>53638</td><td>-0.09</td>
+         </tr>
+         <tr>
+            <td>MAX SQL CASC LVL:</td><td>2</td><td>2</td><td>0</td>
+         </tr>
+         <tr>
+            <td>UPDATE/COMMIT   :</td><td>7.48</td><td>7.50</td><td>0.27</td>
+         </tr>
+         <tr>
+            <td>SYNCH I/O AVG.  :</td><td>0.000193</td><td>0.000193</td><td>0</td>
+         </tr>
+         <tr>
+            <td>MAX WFILE BLKS  :</td><td>3648</td><td>3648</td><td>0</td>
+         </tr>
+         <tr>
+            <th>GLOBAL CONTENTION L-LOCKS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>GLOBAL CONTENTION P-LOCKS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>SQL DML</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SELECT</td><td>6335.8K</td><td>6355.9K</td><td>0.32</td>
+         </tr>
+         <tr>
+            <td>INSERT</td><td>2264.6K</td><td>2273.4K</td><td>0.39</td>
+         </tr>
+         <tr>
+            <td>ROWS</td><td>3494.9K</td><td>3509.5K</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>UPDATE</td><td>639.0K</td><td>640.7K</td><td>0.27</td>
+         </tr>
+         <tr>
+            <td>ROWS(UPDATE)</td><td>579.7K</td><td>581.9K</td><td>0.38</td>
+         </tr>
+         <tr>
+            <td>DELETE</td><td>5311.00</td><td>5441.00</td><td>2.45</td>
+         </tr>
+         <tr>
+            <td>ROWS(DELETE)</td><td>5310.00</td><td>5440.00</td><td>2.45</td>
+         </tr>
+         <tr>
+            <td>DESCRIBE</td><td>47.00</td><td>47.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>PREPARE</td><td>64446.00</td><td>64551.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>OPEN</td><td>72576.00</td><td>72922.00</td><td>0.48</td>
+         </tr>
+         <tr>
+            <td>FETCH</td><td>55008.8K</td><td>55571.5K</td><td>1.02</td>
+         </tr>
+         <tr>
+            <td>ROWS(FETCH)</td><td>54949.9K</td><td>55512.0K</td><td>1.02</td>
+         </tr>
+         <tr>
+            <td>CLOSE</td><td>45708.00</td><td>45941.00</td><td>0.51</td>
+         </tr>
+         <tr>
+            <td>DML-ALL</td><td>64436.2K</td><td>65030.5K</td><td>0.92</td>
+         </tr>
+         <tr>
+            <th>SQL DCL</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SET HOST VAR.</td><td>523165</td><td>524393</td><td>0.23</td>
+         </tr>
+         <tr>
+            <td>CALL</td><td>2802470</td><td>2810988</td><td>0.3</td>
+         </tr>
+         <tr>
+            <td>DCL-ALL</td><td>3325635</td><td>3335381</td><td>0.29</td>
+         </tr>
+         <tr>
+            <th>SQL DDL</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>DCL TTABLE</td><td>26868</td><td>26981</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>TOTAL</td><td>26868</td><td>26981</td><td>0.42</td>
+         </tr>
+         <tr>
+            <th>LOCKING</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>MAX PG/ROW LOCKS HELD</td><td>148.00</td><td>140.00</td><td><span class="good">-5.41</span></td>
+         </tr>
+         <tr>
+            <td>LOCK REQUEST</td><td>8222.9K</td><td>8241.0K</td><td>0.22</td>
+         </tr>
+         <tr>
+            <td>UNLOCK REQUEST</td><td>1138.2K</td><td>1141.1K</td><td>0.25</td>
+         </tr>
+         <tr>
+            <td>CHANGE REQUEST</td><td>1005.0K</td><td>1008.3K</td><td>0.33</td>
+         </tr>
+         <tr>
+            <td>TOTAL SUSPENSIONS</td><td>186.00</td><td>182.00</td><td>-2.15</td>
+         </tr>
+         <tr>
+            <td>IRLM LATCH SUSPENS.</td><td>186.00</td><td>182.00</td><td>-2.15</td>
+         </tr>
+         <tr>
+            <th>DATA CAPTURE</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>DATA SHARING</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>QUERY PARALLELISM</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>STORED PROCEDURES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>CALL STATEMENTS</td><td>2802.5K</td><td>2811.0K</td><td>0.3</td>
+         </tr>
+         <tr>
+            <th>USER DEFINED FUNCTIONS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>TRIGGERS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ROW TRIGGER</td><td>252.7K</td><td>253.3K</td><td>0.24</td>
+         </tr>
+         <tr>
+            <th>ROW ID</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>RID LIST</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>USED</td><td>146.4K</td><td>146.8K</td><td>0.27</td>
+         </tr>
+         <tr>
+            <td>FAIL-LIMIT EXCEEDED</td><td>6840.00</td><td>6788.00</td><td>-0.76</td>
+         </tr>
+         <tr>
+            <td>SKIPPED-INDEX KNOWN</td><td>103.00</td><td>92.00</td><td><span class="best">-10.68</span></td>
+         </tr>
+         <tr>
+            <th>AVERAGE SU</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>CP CPU</td><td>39615376.00</td><td>39654395.00</td><td>0.1</td>
+         </tr>
+         <tr>
+            <td>AGENT</td><td>39615376.00</td><td>39654395.00</td><td>0.1</td>
+         </tr>
+         <tr>
+            <td>NONNESTED</td><td>14809380.00</td><td>14819349.00</td><td>0.07</td>
+         </tr>
+         <tr>
+            <td>STORED PRC</td><td>24374315.00</td><td>24401946.00</td><td>0.11</td>
+         </tr>
+         <tr>
+            <td>TRIGGER</td><td>431681.00</td><td>433100.00</td><td>0.33</td>
+         </tr>
+         <tr>
+            <td>TOTAL SU CPU(CP CPU + SE CPU)</td><td>39615376.00</td><td>39654395.00</td><td>0.1</td>
+         </tr>
+         <tr>
+            <th>LOGGING</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOG RECORDS WRITTEN</td><td>23676.6K</td><td>23767.8K</td><td>0.39</td>
+         </tr>
+         <tr>
+            <td>TOT BYTES WRITTEN</td><td>4046.1M</td><td>4060.7M</td><td>0.36</td>
+         </tr>
+         <tr>
+            <td>LOG RECORD SIZE</td><td>170.89</td><td>170.85</td><td>-0.02</td>
+         </tr>
+         <tr>
+            <th>DYNAMIC SQL STMT</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>NOT FOUND IN CACHE</td><td>49.00</td><td>49.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>FOUND IN CACHE</td><td>64398.00</td><td>64503.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <th>BP0  BPOOL ACTIVITY</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>4531.8K</td><td>4550.0K</td><td>0.4</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>1365.9K</td><td>1371.8K</td><td>0.43</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQS</td><td>21.00</td><td>21.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>26882.00</td><td>26995.00</td><td>0.42</td>
+         </tr>
+         <tr>
+            <th>BP15  BPOOL ACTIVITY</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>35908.9K</td><td>36251.6K</td><td>0.95</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>2967.2K</td><td>2978.8K</td><td>0.39</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS WRITE</td><td>1.00</td><td>1.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td>15.00</td><td>15.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQS</td><td>379.6K</td><td>391.6K</td><td>3.16</td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>5348.00</td><td>5293.00</td><td>-1.03</td>
+         </tr>
+         <tr>
+            <td>PAGES READ ASYNCHR.</td><td>177.00</td><td>142.00</td><td><span class="best">-19.77</span></td>
+         </tr>
+         <tr>
+            <th>BP16  BPOOL ACTIVITY</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>99.99</td><td>99.99</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>22434.5K</td><td>22493.9K</td><td>0.26</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>6958.3K</td><td>6985.9K</td><td>0.4</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td>784.00</td><td>786.00</td><td>0.26</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQS</td><td>81727.00</td><td>81682.00</td><td>-0.06</td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>140.8K</td><td>129.5K</td><td><span class="good">-8.03</span></td>
+         </tr>
+         <tr>
+            <td>PAGES READ ASYNCHR.</td><td>734.00</td><td>794.00</td><td><span class="med">8.17</span></td>
+         </tr>
+         <tr>
+            <th>TOTAL  BPOOL ACTIVITY</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>64675.7K</td><td>65103.5K</td><td>0.66</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>19754.8K</td><td>19835.6K</td><td>0.41</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS WRITE</td><td>1.00</td><td>1.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td>846.00</td><td>850.00</td><td>0.47</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQS</td><td>461.3K</td><td>473.4K</td><td>2.62</td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>199.9K</td><td>188.8K</td><td><span class="good">-5.55</span></td>
+         </tr>
+         <tr>
+            <td>PAGES READ ASYNCHR.</td><td>914.00</td><td>940.00</td><td>2.84</td>
+         </tr>
+         <tr>
+            <th>BP8K BPOOL ACTIVITY</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>26923.00</td><td>27036.00</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>4.00</td><td>4.00</td><td>0</td>
+         </tr>
+         <tr>
+            <th>BP16K BPOOL ACTIVITY</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>26897.00</td><td>27010.00</td><td>0.42</td>
+         </tr>
+         <tr>
+            <th>BP32K BPOOL ACTIVITY</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>1746.6K</td><td>1753.9K</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>8463.4K</td><td>8499.0K</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td>47.00</td><td>49.00</td><td>4.26</td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>26870.00</td><td>26984.00</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>PAGES READ ASYNCHR.</td><td>3.00</td><td>4.00</td><td><span class="high">33.33</span></td>
+         </tr>
+         <tr>
+            <th>TOT4K BPOOL ACTIVITY</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>BPOOL HIT RATIO (%)</td><td>100.00</td><td>100.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>GETPAGES</td><td>62875.3K</td><td>63295.5K</td><td>0.67</td>
+         </tr>
+         <tr>
+            <td>BUFFER UPDATES</td><td>11291.4K</td><td>11336.5K</td><td>0.4</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS WRITE</td><td>1.00</td><td>1.00</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS READ</td><td>799.00</td><td>801.00</td><td>0.25</td>
+         </tr>
+         <tr>
+            <td>LIST PREFETCH REQS</td><td>461.3K</td><td>473.4K</td><td>2.62</td>
+         </tr>
+         <tr>
+            <td>DYN. PREFETCH REQS</td><td>173.1K</td><td>161.8K</td><td><span class="good">-6.53</span></td>
+         </tr>
+         <tr>
+            <td>PAGES READ ASYNCHR.</td><td>911.00</td><td>936.00</td><td>2.74</td>
+         </tr>
+         <tr>
+            <th>PKG DSNREXX: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>2:16.577574</td><td>2:16.674375</td><td>0.07</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>24.007037</td><td>24.061892</td><td>0.23</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>24.007037</td><td>24.061892</td><td>0.23</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>1:52.713765</td><td>1:52.754470</td><td>0.04</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>2065121.00</td><td>2069840.00</td><td>0.23</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>2065121.00</td><td>2069840.00</td><td>0.23</td>
+         </tr>
+         <tr>
+            <th>PKG DSNREXX: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>751227.00</td><td>752499.00</td><td>0.17</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>751227</td><td>752499</td><td>0.17</td>
+         </tr>
+         <tr>
+            <th>PKG DSNREXX: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.002697</td><td>0.002068</td><td><span class="best">-23.32</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.002683</td><td>0.002065</td><td><span class="best">-23.03</span></td>
+         </tr>
+         <tr>
+            <td>DB2 LATCH</td><td>0.000014</td><td>0.000003</td><td><span class="best">-78.57</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.018983</td><td>0.023693</td><td><span class="high">24.81</span></td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>1:52.692085</td><td>1:52.728708</td><td>0.03</td>
+         </tr>
+         <tr>
+            <th>PKG GLWJEMP1: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>2.338586</td><td>2.339879</td><td>0.06</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>2.302886</td><td>2.314893</td><td>0.52</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>2.302886</td><td>2.314893</td><td>0.52</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.015814</td><td>0.004413</td><td><span class="best">-72.09</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.019886</td><td>0.020573</td><td>3.45</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>198097.00</td><td>199130.00</td><td>0.52</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>198097.00</td><td>199130.00</td><td>0.52</td>
+         </tr>
+         <tr>
+            <th>PKG GLWJEMP1: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>134369.00</td><td>134587.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>134369</td><td>134587</td><td>0.16</td>
+         </tr>
+         <tr>
+            <th>PKG GLWJEMP1: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000165</td><td>0.000093</td><td><span class="best">-43.64</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000165</td><td>0.000093</td><td><span class="best">-43.64</span></td>
+         </tr>
+         <tr>
+            <td>OTHER WRITE I/O</td><td>0.014087</td><td>0.002696</td><td><span class="best">-80.86</span></td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>0.001562</td><td>0.001624</td><td>3.97</td>
+         </tr>
+         <tr>
+            <th>PKG GLWJEMP2: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.044522</td><td>0.045232</td><td>1.59</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.044271</td><td>0.045023</td><td>1.7</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.044271</td><td>0.045023</td><td>1.7</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.000252</td><td>0.000209</td><td><span class="best">-17.06</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>3808.00</td><td>3872.00</td><td>1.68</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>3808.00</td><td>3872.00</td><td>1.68</td>
+         </tr>
+         <tr>
+            <th>PKG GLWJEMP2: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>2643.00</td><td>2699.00</td><td>2.12</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>2643</td><td>2699</td><td>2.12</td>
+         </tr>
+         <tr>
+            <th>PKG GLWJEMP2: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>PKG GLWJEMP3: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>2.173362</td><td>2.180632</td><td>0.33</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>2.136480</td><td>2.145825</td><td>0.44</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>2.136480</td><td>2.145825</td><td>0.44</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.018651</td><td>0.018264</td><td>-2.07</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.018231</td><td>0.016543</td><td><span class="good">-9.26</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>183783.00</td><td>184587.00</td><td>0.44</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>183783.00</td><td>184587.00</td><td>0.44</td>
+         </tr>
+         <tr>
+            <th>PKG GLWJEMP3: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>231338.00</td><td>232104.00</td><td>0.33</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>231338</td><td>232104</td><td>0.33</td>
+         </tr>
+         <tr>
+            <th>PKG GLWJEMP3: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000159</td><td>0.000233</td><td><span class="high">46.54</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000159</td><td>0.000233</td><td><span class="high">46.54</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.000456</td><td>0.000425</td><td><span class="good">-6.8</span></td>
+         </tr>
+         <tr>
+            <td>OTHER WRITE I/O</td><td>0.000245</td><td>0.000000</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>0.017790</td><td>0.017606</td><td>-1.03</td>
+         </tr>
+         <tr>
+            <th>PKG DPTADD: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.864957</td><td>0.934045</td><td><span class="med">7.99</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.782886</td><td>0.788079</td><td>0.66</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.782886</td><td>0.788079</td><td>0.66</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.076859</td><td>0.140502</td><td><span class="high">82.8</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.005212</td><td>0.005464</td><td>4.83</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>67345.00</td><td>67791.00</td><td>0.66</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>67345.00</td><td>67791.00</td><td>0.66</td>
+         </tr>
+         <tr>
+            <th>PKG DPTADD: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>92953.00</td><td>93660.00</td><td>0.76</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>92953</td><td>93660</td><td>0.76</td>
+         </tr>
+         <tr>
+            <th>PKG DPTADD: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000120</td><td>0.000000</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000120</td><td>0.000000</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.001710</td><td>0.002506</td><td><span class="high">46.55</span></td>
+         </tr>
+         <tr>
+            <td>OTHER WRITE I/O</td><td>0.000842</td><td>0.000563</td><td><span class="best">-33.14</span></td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>0.074187</td><td>0.137432</td><td><span class="high">85.25</span></td>
+         </tr>
+         <tr>
+            <th>PKG DPTANO: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.179307</td><td>0.181108</td><td>1</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.070376</td><td>0.070960</td><td>0.83</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.070376</td><td>0.070960</td><td>0.83</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.108953</td><td>0.110102</td><td>1.05</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>6053.00</td><td>6104.00</td><td>0.84</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>6053.00</td><td>6104.00</td><td>0.84</td>
+         </tr>
+         <tr>
+            <th>PKG DPTANO: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>26558.00</td><td>26760.00</td><td>0.76</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>26558</td><td>26760</td><td>0.76</td>
+         </tr>
+         <tr>
+            <th>PKG DPTANO: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.108953</td><td>0.110102</td><td>1.05</td>
+         </tr>
+         <tr>
+            <th>PKG DPTBAL: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>3.510436</td><td>3.671598</td><td>4.59</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>3.406278</td><td>3.548736</td><td>4.18</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>3.406278</td><td>3.548736</td><td>4.18</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.080148</td><td>0.097795</td><td><span class="high">22.02</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.024009</td><td>0.025068</td><td>4.41</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>293013.00</td><td>305267.00</td><td>4.18</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>293013.00</td><td>305267.00</td><td>4.18</td>
+         </tr>
+         <tr>
+            <th>PKG DPTBAL: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>300209.00</td><td>299240.00</td><td>-0.32</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>300209</td><td>299240</td><td>-0.32</td>
+         </tr>
+         <tr>
+            <th>PKG DPTBAL: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000430</td><td>0.000400</td><td><span class="good">-6.98</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000300</td><td>0.000295</td><td>-1.67</td>
+         </tr>
+         <tr>
+            <td>DB2 LATCH</td><td>0.000130</td><td>0.000105</td><td><span class="best">-19.23</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.001786</td><td>0.002233</td><td><span class="high">25.03</span></td>
+         </tr>
+         <tr>
+            <td>OTHER WRITE I/O</td><td>0.007767</td><td>0.006735</td><td><span class="best">-13.29</span></td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>0.070165</td><td>0.088427</td><td><span class="high">26.03</span></td>
+         </tr>
+         <tr>
+            <th>PKG DPTDEL: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.300250</td><td>0.322644</td><td><span class="med">7.46</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.282911</td><td>0.290478</td><td>2.67</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.282911</td><td>0.290478</td><td>2.67</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.015467</td><td>0.030262</td><td><span class="high">95.66</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.001872</td><td>0.001904</td><td>1.71</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>24336.00</td><td>24987.00</td><td>2.68</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>24336.00</td><td>24987.00</td><td>2.68</td>
+         </tr>
+         <tr>
+            <th>PKG DPTDEL: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>24003.00</td><td>24669.00</td><td>2.77</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>24003</td><td>24669</td><td>2.77</td>
+         </tr>
+         <tr>
+            <th>PKG DPTDEL: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.001463</td><td>0.001661</td><td><span class="high">13.53</span></td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>0.014004</td><td>0.028602</td><td><span class="high">104.24</span></td>
+         </tr>
+         <tr>
+            <th>PKG DPTMGR: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>6.678242</td><td>6.541452</td><td>-2.05</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>1.342863</td><td>1.360325</td><td>1.3</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>1.342863</td><td>1.360325</td><td>1.3</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>5.337830</td><td>5.183256</td><td>-2.9</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>115515.00</td><td>117017.00</td><td>1.3</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>115515.00</td><td>117017.00</td><td>1.3</td>
+         </tr>
+         <tr>
+            <th>PKG DPTMGR: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>132664.00</td><td>135210.00</td><td>1.92</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>132664</td><td>135210</td><td>1.92</td>
+         </tr>
+         <tr>
+            <th>PKG DPTMGR: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000262</td><td>0.000074</td><td><span class="best">-71.76</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000262</td><td>0.000074</td><td><span class="best">-71.76</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.004034</td><td>0.004436</td><td><span class="med">9.97</span></td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>5.333535</td><td>5.176407</td><td>-2.95</td>
+         </tr>
+         <tr>
+            <th>PKG DPTSEL: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>19.152650</td><td>19.227955</td><td>0.39</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>19.050995</td><td>19.125336</td><td>0.39</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>19.050995</td><td>19.125336</td><td>0.39</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.001596</td><td>0.002014</td><td><span class="high">26.19</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.100059</td><td>0.100604</td><td>0.54</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>1638795.00</td><td>1645190.00</td><td>0.39</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>1638795.00</td><td>1645190.00</td><td>0.39</td>
+         </tr>
+         <tr>
+            <th>PKG DPTSEL: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>857144.00</td><td>859694.00</td><td>0.3</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>857144</td><td>859694</td><td>0.3</td>
+         </tr>
+         <tr>
+            <th>PKG DPTSEL: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000470</td><td>0.000886</td><td><span class="high">88.51</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000385</td><td>0.000795</td><td><span class="high">106.49</span></td>
+         </tr>
+         <tr>
+            <td>DB2 LATCH</td><td>0.000086</td><td>0.000091</td><td><span class="med">5.81</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.001126</td><td>0.001128</td><td>0.18</td>
+         </tr>
+         <tr>
+            <th>PKG DPTUPD: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.654225</td><td>0.606831</td><td><span class="good">-7.24</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.605829</td><td>0.599231</td><td>-1.09</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.605829</td><td>0.599231</td><td>-1.09</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.044232</td><td>0.003829</td><td><span class="best">-91.34</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.004164</td><td>0.003772</td><td><span class="good">-9.41</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>52114.00</td><td>51546.00</td><td>-1.09</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>52114.00</td><td>51546.00</td><td>-1.09</td>
+         </tr>
+         <tr>
+            <th>PKG DPTUPD: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>81251.00</td><td>80346.00</td><td>-1.11</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>81251</td><td>80346</td><td>-1.11</td>
+         </tr>
+         <tr>
+            <th>PKG DPTUPD: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000145</td><td>0.000125</td><td><span class="best">-13.79</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000145</td><td>0.000125</td><td><span class="best">-13.79</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.001527</td><td>0.001142</td><td><span class="best">-25.21</span></td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>0.042560</td><td>0.000577</td><td><span class="best">-98.64</span></td>
+         </tr>
+         <tr>
+            <th>PKG DPTUPR: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>1.100040</td><td>1.067056</td><td>-3</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>1.017079</td><td>1.026981</td><td>0.97</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>1.017079</td><td>1.026981</td><td>0.97</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.074522</td><td>0.031608</td><td><span class="best">-57.59</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.008439</td><td>0.008467</td><td>0.33</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>87490.00</td><td>88342.00</td><td>0.97</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>87490.00</td><td>88342.00</td><td>0.97</td>
+         </tr>
+         <tr>
+            <th>PKG DPTUPR: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>118503.00</td><td>119439.00</td><td>0.79</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>118503</td><td>119439</td><td>0.79</td>
+         </tr>
+         <tr>
+            <th>PKG DPTUPR: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000217</td><td>0.000147</td><td><span class="best">-32.26</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000217</td><td>0.000147</td><td><span class="best">-32.26</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.002049</td><td>0.001412</td><td><span class="best">-31.09</span></td>
+         </tr>
+         <tr>
+            <td>OTHER READ I/O</td><td>0.000236</td><td>0.000239</td><td>1.27</td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>0.072020</td><td>0.028000</td><td><span class="best">-61.12</span></td>
+         </tr>
+         <tr>
+            <th>PKG EMPADD: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>15.395704</td><td>15.325679</td><td>-0.45</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>12.672503</td><td>12.729650</td><td>0.45</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>12.672503</td><td>12.729650</td><td>0.45</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>2.606278</td><td>2.472068</td><td><span class="good">-5.15</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.116923</td><td>0.123961</td><td><span class="med">6.02</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>1090107.00</td><td>1095023.00</td><td>0.45</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>1090107.00</td><td>1095023.00</td><td>0.45</td>
+         </tr>
+         <tr>
+            <th>PKG EMPADD: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>1343690.00</td><td>1345870.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>1343690</td><td>1345870</td><td>0.16</td>
+         </tr>
+         <tr>
+            <th>PKG EMPADD: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.001424</td><td>0.001038</td><td><span class="best">-27.11</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.001424</td><td>0.001037</td><td><span class="best">-27.18</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.022015</td><td>0.022413</td><td>1.81</td>
+         </tr>
+         <tr>
+            <td>OTHER WRITE I/O</td><td>0.015221</td><td>0.031018</td><td><span class="high">103.78</span></td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>2.567618</td><td>2.417600</td><td><span class="good">-5.84</span></td>
+         </tr>
+         <tr>
+            <th>PKG EMPADX: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>9.561981</td><td>9.530928</td><td>-0.32</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>8.590175</td><td>8.555701</td><td>-0.4</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>8.590175</td><td>8.555701</td><td>-0.4</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.902126</td><td>0.906284</td><td>0.46</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.069680</td><td>0.068943</td><td>-1.06</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>738939.00</td><td>735974.00</td><td>-0.4</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>738939.00</td><td>735974.00</td><td>-0.4</td>
+         </tr>
+         <tr>
+            <th>PKG EMPADX: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>483165.00</td><td>482742.00</td><td>-0.09</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>483165</td><td>482742</td><td>-0.09</td>
+         </tr>
+         <tr>
+            <th>PKG EMPADX: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000409</td><td>0.000867</td><td><span class="high">111.98</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000409</td><td>0.000867</td><td><span class="high">111.98</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.821635</td><td>0.818612</td><td>-0.37</td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>0.000416</td><td>0.000417</td><td>0.24</td>
+         </tr>
+         <tr>
+            <th>PKG EMPANO: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>1.798045</td><td>1.794362</td><td>-0.2</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.698756</td><td>0.697956</td><td>-0.11</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.698756</td><td>0.697956</td><td>-0.11</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>1.099812</td><td>1.096149</td><td>-0.33</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>60108.00</td><td>60039.00</td><td>-0.11</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>60108.00</td><td>60039.00</td><td>-0.11</td>
+         </tr>
+         <tr>
+            <th>PKG EMPANO: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>268738.00</td><td>269174.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>268738</td><td>269174</td><td>0.16</td>
+         </tr>
+         <tr>
+            <th>PKG EMPANO: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000064</td><td>0.000000</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000064</td><td>0.000000</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>1.099748</td><td>1.096149</td><td>-0.33</td>
+         </tr>
+         <tr>
+            <th>PKG EMPDEL: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.207248</td><td>0.211953</td><td>2.27</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.204994</td><td>0.209251</td><td>2.08</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.204994</td><td>0.209251</td><td>2.08</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.000226</td><td>0.000644</td><td><span class="high">184.96</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.002028</td><td>0.002058</td><td>1.48</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>17633.00</td><td>18000.00</td><td>2.08</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>17633.00</td><td>18000.00</td><td>2.08</td>
+         </tr>
+         <tr>
+            <th>PKG EMPDEL: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>15858.00</td><td>16194.00</td><td>2.12</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>15858</td><td>16194</td><td>2.12</td>
+         </tr>
+         <tr>
+            <th>PKG EMPDEL: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.000226</td><td>0.000644</td><td><span class="high">184.96</span></td>
+         </tr>
+         <tr>
+            <th>PKG EMPFND: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>43.957323</td><td>45.345800</td><td>3.16</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>43.711158</td><td>45.133858</td><td>3.25</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>43.711158</td><td>45.133858</td><td>3.25</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.054334</td><td>0.000045</td><td><span class="best">-99.92</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.191831</td><td>0.211898</td><td><span class="high">10.46</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>3760099.00</td><td>3882482.00</td><td>3.25</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>3760099.00</td><td>3882482.00</td><td>3.25</td>
+         </tr>
+         <tr>
+            <th>PKG EMPFND: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>21376032.00</td><td>22292825.00</td><td>4.29</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>21376032</td><td>22292825</td><td>4.29</td>
+         </tr>
+         <tr>
+            <th>PKG EMPFND: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000188</td><td>0.000045</td><td><span class="best">-76.06</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000150</td><td>0.000013</td><td><span class="best">-91.33</span></td>
+         </tr>
+         <tr>
+            <td>DB2 LATCH</td><td>0.000038</td><td>0.000031</td><td><span class="best">-18.42</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.000146</td><td>0.000000</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>0.054000</td><td>0.000000</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <th>PKG EMPQR2: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>1:08.035913</td><td>1:06.318044</td><td>-2.52</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>1:07.657556</td><td>1:06.017113</td><td>-2.42</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>67.657000</td><td>66.017000</td><td>-2.42</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.094642</td><td>0.014435</td><td><span class="best">-84.75</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.283716</td><td>0.286496</td><td>0.98</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>5820004.00</td><td>5678891.00</td><td>-2.42</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>5820004.00</td><td>5678891.00</td><td>-2.42</td>
+         </tr>
+         <tr>
+            <th>PKG EMPQR2: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>33087164.00</td><td>32731180.00</td><td>-1.08</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>33087164</td><td>32731180</td><td>-1.08</td>
+         </tr>
+         <tr>
+            <th>PKG EMPQR2: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000022</td><td>0.000076</td><td><span class="high">245.45</span></td>
+         </tr>
+         <tr>
+            <td>DB2 LATCH</td><td>0.000022</td><td>0.000030</td><td><span class="high">36.36</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.000149</td><td>0.000137</td><td><span class="good">-8.05</span></td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>0.094470</td><td>0.014222</td><td><span class="best">-84.95</span></td>
+         </tr>
+         <tr>
+            <th>PKG EMPSEL: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>17.020586</td><td>16.862894</td><td>-0.93</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>16.879054</td><td>16.711226</td><td>-0.99</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>16.879054</td><td>16.711226</td><td>-0.99</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.000064</td><td>0.000063</td><td>-1.56</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.141468</td><td>0.151605</td><td><span class="med">7.17</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>1451961.00</td><td>1437524.00</td><td>-0.99</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>1451961.00</td><td>1437524.00</td><td>-0.99</td>
+         </tr>
+         <tr>
+            <th>PKG EMPSEL: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>5352460.00</td><td>5375280.00</td><td>0.43</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>5352460</td><td>5375280</td><td>0.43</td>
+         </tr>
+         <tr>
+            <th>PKG EMPSEL: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000064</td><td>0.000063</td><td>-1.56</td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000064</td><td>0.000063</td><td>-1.56</td>
+         </tr>
+         <tr>
+            <th>PKG EMPUPD: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.207739</td><td>0.208241</td><td>0.24</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.192850</td><td>0.192844</td><td>-0</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.192850</td><td>0.192844</td><td>-0</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.013991</td><td>0.014299</td><td>2.2</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.000898</td><td>0.001099</td><td><span class="high">22.38</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>16589.00</td><td>16588.00</td><td>-0.01</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>16589.00</td><td>16588.00</td><td>-0.01</td>
+         </tr>
+         <tr>
+            <th>PKG EMPUPD: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>32064.00</td><td>32004.00</td><td>-0.19</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>32064</td><td>32004</td><td>-0.19</td>
+         </tr>
+         <tr>
+            <th>PKG EMPUPD: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000079</td><td>0.000000</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000079</td><td>0.000000</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.000139</td><td>0.000142</td><td>2.16</td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>0.013773</td><td>0.014157</td><td>2.79</td>
+         </tr>
+         <tr>
+            <th>PKG EMPUPR: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.328821</td><td>0.368358</td><td><span class="high">12.02</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.326850</td><td>0.321339</td><td>-1.69</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.326850</td><td>0.321339</td><td>-1.69</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.000074</td><td>0.045168</td><td><span class="high">60937.84</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.001896</td><td>0.001851</td><td>-2.37</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>28116.00</td><td>27642.00</td><td>-1.69</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>28116.00</td><td>27642.00</td><td>-1.69</td>
+         </tr>
+         <tr>
+            <th>PKG EMPUPR: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>31782.00</td><td>31704.00</td><td>-0.25</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>31782</td><td>31704</td><td>-0.25</td>
+         </tr>
+         <tr>
+            <th>PKG EMPUPR: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000074</td><td>0.000140</td><td><span class="high">89.19</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000074</td><td>0.000140</td><td><span class="high">89.19</span></td>
+         </tr>
+         <tr>
+            <th>PKG JBSSEL: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>3.191223</td><td>3.211109</td><td>0.62</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>3.174633</td><td>3.194735</td><td>0.63</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>3.174633</td><td>3.194735</td><td>0.63</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.016590</td><td>0.016155</td><td>-2.62</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>273086.00</td><td>274815.00</td><td>0.63</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>273086.00</td><td>274815.00</td><td>0.63</td>
+         </tr>
+         <tr>
+            <th>PKG JBSSEL: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>418998.00</td><td>419613.00</td><td>0.15</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>418998</td><td>419613</td><td>0.15</td>
+         </tr>
+         <tr>
+            <th>PKG JBSSEL: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>PKG LCNSEL: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.669989</td><td>0.673061</td><td>0.46</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.659177</td><td>0.662758</td><td>0.54</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.659177</td><td>0.662758</td><td>0.54</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.010812</td><td>0.010303</td><td>-4.71</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>56703.00</td><td>57011.00</td><td>0.54</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>56703.00</td><td>57011.00</td><td>0.54</td>
+         </tr>
+         <tr>
+            <th>PKG LCNSEL: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>111633.00</td><td>112017.00</td><td>0.34</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>111633</td><td>112017</td><td>0.34</td>
+         </tr>
+         <tr>
+            <th>PKG LCNSEL: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>PKG PRJADD: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>1:37.265048</td><td>1:37.558689</td><td>0.3</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>1:26.016140</td><td>1:26.460970</td><td>0.52</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>86.016000</td><td>86.460000</td><td>0.52</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>10.761173</td><td>10.587444</td><td>-1.61</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.487734</td><td>0.510275</td><td>4.62</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>7399237.00</td><td>7437502.00</td><td>0.52</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>7399237.00</td><td>7437502.00</td><td>0.52</td>
+         </tr>
+         <tr>
+            <th>PKG PRJADD: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>3966580.00</td><td>3983746.00</td><td>0.43</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>3966580</td><td>3983746</td><td>0.43</td>
+         </tr>
+         <tr>
+            <th>PKG PRJADD: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.002549</td><td>0.002725</td><td><span class="med">6.9</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.002508</td><td>0.002677</td><td><span class="med">6.74</span></td>
+         </tr>
+         <tr>
+            <td>DB2 LATCH</td><td>0.000041</td><td>0.000048</td><td><span class="high">17.07</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.085232</td><td>0.085276</td><td>0.05</td>
+         </tr>
+         <tr>
+            <td>OTHER WRITE I/O</td><td>0.061637</td><td>0.049411</td><td><span class="best">-19.84</span></td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>10.611755</td><td>10.450032</td><td>-1.52</td>
+         </tr>
+         <tr>
+            <th>PKG PRJANO: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.371186</td><td>0.378618</td><td>2</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.152817</td><td>0.155134</td><td>1.52</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.152817</td><td>0.155134</td><td>1.52</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.218056</td><td>0.223188</td><td>2.35</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.000313</td><td>0.000296</td><td><span class="good">-5.43</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>13145.00</td><td>13344.00</td><td>1.51</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>13145.00</td><td>13344.00</td><td>1.51</td>
+         </tr>
+         <tr>
+            <th>PKG PRJANO: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>53736.00</td><td>53962.00</td><td>0.42</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>53736</td><td>53962</td><td>0.42</td>
+         </tr>
+         <tr>
+            <th>PKG PRJANO: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.218056</td><td>0.223188</td><td>2.35</td>
+         </tr>
+         <tr>
+            <th>PKG PRJSEL: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.370378</td><td>0.367616</td><td>-0.75</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.368818</td><td>0.366189</td><td>-0.71</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.368818</td><td>0.366189</td><td>-0.71</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.001560</td><td>0.001427</td><td><span class="good">-8.53</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>31726.00</td><td>31500.00</td><td>-0.71</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>31726.00</td><td>31500.00</td><td>-0.71</td>
+         </tr>
+         <tr>
+            <th>PKG PRJSEL: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>53516.00</td><td>53200.00</td><td>-0.59</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>53516</td><td>53200</td><td>-0.59</td>
+         </tr>
+         <tr>
+            <th>PKG PRJSEL: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>PKG PRJUPD: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.666178</td><td>0.621400</td><td><span class="good">-6.72</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.615380</td><td>0.612492</td><td>-0.47</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.615380</td><td>0.612492</td><td>-0.47</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.042598</td><td>0.000437</td><td><span class="best">-98.97</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.008200</td><td>0.008472</td><td>3.32</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>52935.00</td><td>52687.00</td><td>-0.47</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>52935.00</td><td>52687.00</td><td>-0.47</td>
+         </tr>
+         <tr>
+            <th>PKG PRJUPD: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>66895.00</td><td>66500.00</td><td>-0.59</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>66895</td><td>66500</td><td>-0.59</td>
+         </tr>
+         <tr>
+            <th>PKG PRJUPD: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.000591</td><td>0.000000</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>0.042007</td><td>0.000000</td><td><span class="best">-100</span></td>
+         </tr>
+         <tr>
+            <th>PKG SFNSEL: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>5.015692</td><td>5.001673</td><td>-0.28</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>4.975735</td><td>4.962349</td><td>-0.27</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>4.975735</td><td>4.962349</td><td>-0.27</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>0.000338</td><td>0.000318</td><td><span class="good">-5.92</span></td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.039620</td><td>0.039006</td><td>-1.55</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>428020.00</td><td>426868.00</td><td>-0.27</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>428020.00</td><td>426868.00</td><td>-0.27</td>
+         </tr>
+         <tr>
+            <th>PKG SFNSEL: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>671845.00</td><td>672935.00</td><td>0.16</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>671845</td><td>672935</td><td>0.16</td>
+         </tr>
+         <tr>
+            <th>PKG SFNSEL: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000338</td><td>0.000318</td><td><span class="good">-5.92</span></td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000337</td><td>0.000318</td><td><span class="good">-5.64</span></td>
+         </tr>
+         <tr>
+            <th>PKG SPLANO: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>4.634615</td><td>4.631404</td><td>-0.07</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>1.991349</td><td>1.993187</td><td>0.09</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>1.991349</td><td>1.993187</td><td>0.09</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>2.643299</td><td>2.636552</td><td>-0.26</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>171298.00</td><td>171456.00</td><td>0.09</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>171298.00</td><td>171456.00</td><td>0.09</td>
+         </tr>
+         <tr>
+            <th>PKG SPLANO: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>643562.00</td><td>644928.00</td><td>0.21</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>643562</td><td>644928</td><td>0.21</td>
+         </tr>
+         <tr>
+            <th>PKG SPLANO: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>2.643299</td><td>2.636474</td><td>-0.26</td>
+         </tr>
+         <tr>
+            <th>PKG STRSEL: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.932527</td><td>0.928056</td><td>-0.48</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.926465</td><td>0.922689</td><td>-0.41</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.926465</td><td>0.922689</td><td>-0.41</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.006063</td><td>0.005367</td><td><span class="best">-11.48</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>79695.00</td><td>79371.00</td><td>-0.41</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>79695.00</td><td>79371.00</td><td>-0.41</td>
+         </tr>
+         <tr>
+            <th>PKG STRSEL: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>161055.00</td><td>160914.00</td><td>-0.09</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>161055</td><td>160914</td><td>-0.09</td>
+         </tr>
+         <tr>
+            <th>PKG STRSEL: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>PKG TWNSEL: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>0.944260</td><td>0.937992</td><td>-0.66</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>0.939412</td><td>0.931907</td><td>-0.8</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>0.939412</td><td>0.931907</td><td>-0.8</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.004849</td><td>0.006085</td><td><span class="high">25.49</span></td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>80809.00</td><td>80164.00</td><td>-0.8</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>80809.00</td><td>80164.00</td><td>-0.8</td>
+         </tr>
+         <tr>
+            <th>PKG TWNSEL: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>1</td><td>1</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>161055.00</td><td>160914.00</td><td>-0.09</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>161055</td><td>160914</td><td>-0.09</td>
+         </tr>
+         <tr>
+            <th>PKG TWNSEL: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <th>PKG ALL: TIMES</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>ELAP-CL7 TIME-AVG</td><td>14.327374</td><td>14.324796</td><td>-0.02</td>
+         </tr>
+         <tr>
+            <td>CP CPU TIME</td><td>9.864636</td><td>9.877713</td><td>0.13</td>
+         </tr>
+         <tr>
+            <td>TOTAL(CP+SE) CPU TIMES</td><td>9.864636</td><td>9.877713</td><td>0.13</td>
+         </tr>
+         <tr>
+            <td>SUSPENSION-CL8</td><td>4.416931</td><td>4.399156</td><td>-0.4</td>
+         </tr>
+         <tr>
+            <td>NOT ACCOUNTED</td><td>0.045808</td><td>0.047928</td><td>4.63</td>
+         </tr>
+         <tr>
+            <td>CP CPU SU</td><td>848570.32</td><td>849695.29</td><td>0.13</td>
+         </tr>
+         <tr>
+            <td>TOTAL (CP+SE) CPU SU TIMES</td><td>848570.32</td><td>849695.29</td><td>0.13</td>
+         </tr>
+         <tr>
+            <th>PKG ALL: COUNTS</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>OCCURRENCES</td><td>31</td><td>31</td><td>0</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - AVERAGE</td><td>2292022.26</td><td>2311826.10</td><td>0.86</td>
+         </tr>
+         <tr>
+            <td>SQL STMT - TOTAL</td><td>71052690</td><td>71666609</td><td>0.86</td>
+         </tr>
+         <tr>
+            <th>PKG ALL: AVERAGE TIME</th><th>Run A</th><th>Run B</th><th>DELTA (%)</th>
+         </tr>
+         <tr>
+            <td>LOCK/LATCH</td><td>0.000319</td><td>0.000309</td><td>-3.13</td>
+         </tr>
+         <tr>
+            <td>IRLM LOCK+LATCH</td><td>0.000308</td><td>0.000300</td><td>-2.6</td>
+         </tr>
+         <tr>
+            <td>DB2 LATCH</td><td>0.000011</td><td>0.000010</td><td><span class="good">-9.09</span></td>
+         </tr>
+         <tr>
+            <td>SYNCHRONOUS I/O</td><td>0.162365</td><td>0.162330</td><td>-0.02</td>
+         </tr>
+         <tr>
+            <td>OTHER READ I/O</td><td>0.000008</td><td>0.000008</td><td>0</td>
+         </tr>
+         <tr>
+            <td>OTHER WRITE I/O</td><td>0.003219</td><td>0.003129</td><td>-2.8</td>
+         </tr>
+         <tr>
+            <td>SERV.TASK SWITCH</td><td>4.248450</td><td>4.230593</td><td>-0.42</td>
+         </tr>
+      </table>
+   </body>
+</html>

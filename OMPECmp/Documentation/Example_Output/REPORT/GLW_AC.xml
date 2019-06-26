@@ -1,0 +1,2946 @@
+<?xml version="1.0" encoding="UTF-8"?><root>
+   <transaction id="Accounting Report">
+      <section id="AVERAGE">
+         <row id="CL1 ET">
+            <col id="Run A">10:00.1962</col>
+            <col id="Run B">10:00.1866</col>
+            <col id="DELTA (%)" warning="normal">-0</col>
+         </row>
+         <row id="CL2 ET">
+            <col id="Run A">7:30.74625</col>
+            <col id="Run B">7:30.65995</col>
+            <col id="DELTA (%)" warning="normal">-0.02</col>
+         </row>
+         <row id="CL1 CP">
+            <col id="Run A">7:40.52876</col>
+            <col id="Run B">7:40.98236</col>
+            <col id="DELTA (%)" warning="normal">0.1</col>
+         </row>
+         <row id="CL2 CP">
+            <col id="Run A">5:12.37688</col>
+            <col id="Run B">5:12.76945</col>
+            <col id="DELTA (%)" warning="normal">0.13</col>
+         </row>
+         <row id="SUSPEND TIME">
+            <col id="Run A">2:16.92485</col>
+            <col id="Run B">2:16.37383</col>
+            <col id="DELTA (%)" warning="normal">-0.4</col>
+         </row>
+         <row id="NOT ACCOUNT">
+            <col id="Run A">1.444523</col>
+            <col id="Run B">1.516675</col>
+            <col id="DELTA (%)" warning="normal">4.99</col>
+         </row>
+      </section>
+      <section id="CLASS 3 SUSPENSIONS (EVENTS)">
+         <row id="LOCK/LATCH(DB2+IRLM)">
+            <col id="Run A">1567.00</col>
+            <col id="Run B">1522.00</col>
+            <col id="DELTA (%)" warning="normal">-2.87</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">157.00</col>
+            <col id="Run B">153.00</col>
+            <col id="DELTA (%)" warning="normal">-2.55</col>
+         </row>
+         <row id="DB2 LATCH">
+            <col id="Run A">1410.00</col>
+            <col id="Run B">1369.00</col>
+            <col id="DELTA (%)" warning="normal">-2.91</col>
+         </row>
+         <row id="SYNCHRON. I/O">
+            <col id="Run A">26044.00</col>
+            <col id="Run B">26090.00</col>
+            <col id="DELTA (%)" warning="normal">0.18</col>
+         </row>
+         <row id="DATABASE I/O">
+            <col id="Run A">847.00</col>
+            <col id="Run B">851.00</col>
+            <col id="DELTA (%)" warning="normal">0.47</col>
+         </row>
+         <row id="READ CACHE HIT">
+            <col id="Run A">846.00</col>
+            <col id="Run B">850.00</col>
+            <col id="DELTA (%)" warning="normal">0.47</col>
+         </row>
+         <row id="LOG WRITE I/O">
+            <col id="Run A">25198.00</col>
+            <col id="Run B">25239.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="OTHER READ I/O">
+            <col id="Run A">1.00</col>
+            <col id="Run B">1.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="OTHER WRTE I/O">
+            <col id="Run A">92.00</col>
+            <col id="Run B">81.00</col>
+            <col id="DELTA (%)" warning="best">-11.96</col>
+         </row>
+         <row id="SER.TASK SWTCH">
+            <col id="Run A">389.5K</col>
+            <col id="Run B">390.3K</col>
+            <col id="DELTA (%)" warning="normal">0.21</col>
+         </row>
+         <row id="UPDATE COMMIT">
+            <col id="Run A">388.7K</col>
+            <col id="Run B">389.4K</col>
+            <col id="DELTA (%)" warning="normal">0.18</col>
+         </row>
+         <row id="OPEN/CLOSE">
+            <col id="Run A">5.00</col>
+            <col id="Run B">5.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SYSLGRNG REC">
+            <col id="Run A">8.00</col>
+            <col id="Run B">8.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="EXT/DEL/DEF">
+            <col id="Run A">781.00</col>
+            <col id="Run B">783.00</col>
+            <col id="DELTA (%)" warning="normal">0.26</col>
+         </row>
+         <row id="OTHER SERVICE">
+            <col id="Run A">35.00</col>
+            <col id="Run B">35.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="LOG READ">
+            <col id="Run A">58.00</col>
+            <col id="Run B">68.00</col>
+            <col id="DELTA (%)" warning="high">17.24</col>
+         </row>
+         <row id="TOTAL CLASS 3">
+            <col id="Run A">417.3K</col>
+            <col id="Run B">418.0K</col>
+            <col id="DELTA (%)" warning="normal">0.17</col>
+         </row>
+      </section>
+      <section id="CLASS 3 SUSPENSIONS (TIME)">
+         <row id="LOCK/LATCH(DB2+IRLM)">
+            <col id="Run A">0.009876</col>
+            <col id="Run B">0.009594</col>
+            <col id="DELTA (%)" warning="normal">-2.86</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.009545</col>
+            <col id="Run B">0.009286</col>
+            <col id="DELTA (%)" warning="normal">-2.71</col>
+         </row>
+         <row id="DB2 LATCH">
+            <col id="Run A">0.000331</col>
+            <col id="Run B">0.000308</col>
+            <col id="DELTA (%)" warning="good">-6.95</col>
+         </row>
+         <row id="SYNCHRON. I/O">
+            <col id="Run A">5.033322</col>
+            <col id="Run B">5.032221</col>
+            <col id="DELTA (%)" warning="normal">-0.02</col>
+         </row>
+         <row id="DATABASE I/O">
+            <col id="Run A">0.129841</col>
+            <col id="Run B">0.130057</col>
+            <col id="DELTA (%)" warning="normal">0.17</col>
+         </row>
+         <row id="READ CACHE HIT">
+            <col id="Run A">0.129647</col>
+            <col id="Run B">0.129878</col>
+            <col id="DELTA (%)" warning="normal">0.18</col>
+         </row>
+         <row id="LOG WRITE I/O">
+            <col id="Run A">4.903481</col>
+            <col id="Run B">4.902164</col>
+            <col id="DELTA (%)" warning="normal">-0.03</col>
+         </row>
+         <row id="OTHER READ I/O">
+            <col id="Run A">0.000236</col>
+            <col id="Run B">0.000239</col>
+            <col id="DELTA (%)" warning="normal">1.27</col>
+         </row>
+         <row id="OTHER WRTE I/O">
+            <col id="Run A">0.099801</col>
+            <col id="Run B">0.096993</col>
+            <col id="DELTA (%)" warning="normal">-2.81</col>
+         </row>
+         <row id="SER.TASK SWTCH">
+            <col id="Run A">2:11.701948</col>
+            <col id="Run B">2:11.148392</col>
+            <col id="DELTA (%)" warning="normal">-0.42</col>
+         </row>
+         <row id="UPDATE COMMIT">
+            <col id="Run A">1:57.403638</col>
+            <col id="Run B">1:57.383687</col>
+            <col id="DELTA (%)" warning="normal">-0.02</col>
+         </row>
+         <row id="OPEN/CLOSE">
+            <col id="Run A">0.039248</col>
+            <col id="Run B">0.038956</col>
+            <col id="DELTA (%)" warning="normal">-0.74</col>
+         </row>
+         <row id="SYSLGRNG REC">
+            <col id="Run A">0.003382</col>
+            <col id="Run B">0.003134</col>
+            <col id="DELTA (%)" warning="good">-7.33</col>
+         </row>
+         <row id="EXT/DEL/DEF">
+            <col id="Run A">14.237623</col>
+            <col id="Run B">13.704637</col>
+            <col id="DELTA (%)" warning="normal">-3.74</col>
+         </row>
+         <row id="OTHER SERVICE">
+            <col id="Run A">0.018058</col>
+            <col id="Run B">0.017977</col>
+            <col id="DELTA (%)" warning="normal">-0.45</col>
+         </row>
+         <row id="LOG READ">
+            <col id="Run A">0.079666</col>
+            <col id="Run B">0.086248</col>
+            <col id="DELTA (%)" warning="medium">8.26</col>
+         </row>
+         <row id="TOTAL CLASS 3">
+            <col id="Run A">2:16.924848</col>
+            <col id="Run B">2:16.373827</col>
+            <col id="DELTA (%)" warning="normal">-0.4</col>
+         </row>
+      </section>
+      <section id="HIGHLIGHTS">
+         <row id="#OCCURRENCES    :">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="#ALLIEDS        :">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="#NORMAL TERMINAT:">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="#INCREMENT. BIND:">
+            <col id="Run A">107487</col>
+            <col id="Run B">107939</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="#COMMITS        :">
+            <col id="Run A">335061</col>
+            <col id="Run B">335845</col>
+            <col id="DELTA (%)" warning="normal">0.23</col>
+         </row>
+         <row id="#ROLLBACKS      :">
+            <col id="Run A">53685</col>
+            <col id="Run B">53638</col>
+            <col id="DELTA (%)" warning="normal">-0.09</col>
+         </row>
+         <row id="MAX SQL CASC LVL:">
+            <col id="Run A">2</col>
+            <col id="Run B">2</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="UPDATE/COMMIT   :">
+            <col id="Run A">7.48</col>
+            <col id="Run B">7.50</col>
+            <col id="DELTA (%)" warning="normal">0.27</col>
+         </row>
+         <row id="SYNCH I/O AVG.  :">
+            <col id="Run A">0.000193</col>
+            <col id="Run B">0.000193</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="MAX WFILE BLKS  :">
+            <col id="Run A">3648</col>
+            <col id="Run B">3648</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="GLOBAL CONTENTION L-LOCKS"/>
+      <section id="GLOBAL CONTENTION P-LOCKS"/>
+      <section id="SQL DML">
+         <row id="SELECT">
+            <col id="Run A">6335.8K</col>
+            <col id="Run B">6355.9K</col>
+            <col id="DELTA (%)" warning="normal">0.32</col>
+         </row>
+         <row id="INSERT">
+            <col id="Run A">2264.6K</col>
+            <col id="Run B">2273.4K</col>
+            <col id="DELTA (%)" warning="normal">0.39</col>
+         </row>
+         <row id="ROWS">
+            <col id="Run A">3494.9K</col>
+            <col id="Run B">3509.5K</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="UPDATE">
+            <col id="Run A">639.0K</col>
+            <col id="Run B">640.7K</col>
+            <col id="DELTA (%)" warning="normal">0.27</col>
+         </row>
+         <row id="ROWS(UPDATE)">
+            <col id="Run A">579.7K</col>
+            <col id="Run B">581.9K</col>
+            <col id="DELTA (%)" warning="normal">0.38</col>
+         </row>
+         <row id="DELETE">
+            <col id="Run A">5311.00</col>
+            <col id="Run B">5441.00</col>
+            <col id="DELTA (%)" warning="normal">2.45</col>
+         </row>
+         <row id="ROWS(DELETE)">
+            <col id="Run A">5310.00</col>
+            <col id="Run B">5440.00</col>
+            <col id="DELTA (%)" warning="normal">2.45</col>
+         </row>
+         <row id="DESCRIBE">
+            <col id="Run A">47.00</col>
+            <col id="Run B">47.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="PREPARE">
+            <col id="Run A">64446.00</col>
+            <col id="Run B">64551.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="OPEN">
+            <col id="Run A">72576.00</col>
+            <col id="Run B">72922.00</col>
+            <col id="DELTA (%)" warning="normal">0.48</col>
+         </row>
+         <row id="FETCH">
+            <col id="Run A">55008.8K</col>
+            <col id="Run B">55571.5K</col>
+            <col id="DELTA (%)" warning="normal">1.02</col>
+         </row>
+         <row id="ROWS(FETCH)">
+            <col id="Run A">54949.9K</col>
+            <col id="Run B">55512.0K</col>
+            <col id="DELTA (%)" warning="normal">1.02</col>
+         </row>
+         <row id="CLOSE">
+            <col id="Run A">45708.00</col>
+            <col id="Run B">45941.00</col>
+            <col id="DELTA (%)" warning="normal">0.51</col>
+         </row>
+         <row id="DML-ALL">
+            <col id="Run A">64436.2K</col>
+            <col id="Run B">65030.5K</col>
+            <col id="DELTA (%)" warning="normal">0.92</col>
+         </row>
+      </section>
+      <section id="SQL DCL">
+         <row id="SET HOST VAR.">
+            <col id="Run A">523165</col>
+            <col id="Run B">524393</col>
+            <col id="DELTA (%)" warning="normal">0.23</col>
+         </row>
+         <row id="CALL">
+            <col id="Run A">2802470</col>
+            <col id="Run B">2810988</col>
+            <col id="DELTA (%)" warning="normal">0.3</col>
+         </row>
+         <row id="DCL-ALL">
+            <col id="Run A">3325635</col>
+            <col id="Run B">3335381</col>
+            <col id="DELTA (%)" warning="normal">0.29</col>
+         </row>
+      </section>
+      <section id="SQL DDL">
+         <row id="DCL TTABLE">
+            <col id="Run A">26868</col>
+            <col id="Run B">26981</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="TOTAL">
+            <col id="Run A">26868</col>
+            <col id="Run B">26981</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+      </section>
+      <section id="LOCKING">
+         <row id="MAX PG/ROW LOCKS HELD">
+            <col id="Run A">148.00</col>
+            <col id="Run B">140.00</col>
+            <col id="DELTA (%)" warning="good">-5.41</col>
+         </row>
+         <row id="LOCK REQUEST">
+            <col id="Run A">8222.9K</col>
+            <col id="Run B">8241.0K</col>
+            <col id="DELTA (%)" warning="normal">0.22</col>
+         </row>
+         <row id="UNLOCK REQUEST">
+            <col id="Run A">1138.2K</col>
+            <col id="Run B">1141.1K</col>
+            <col id="DELTA (%)" warning="normal">0.25</col>
+         </row>
+         <row id="CHANGE REQUEST">
+            <col id="Run A">1005.0K</col>
+            <col id="Run B">1008.3K</col>
+            <col id="DELTA (%)" warning="normal">0.33</col>
+         </row>
+         <row id="TOTAL SUSPENSIONS">
+            <col id="Run A">186.00</col>
+            <col id="Run B">182.00</col>
+            <col id="DELTA (%)" warning="normal">-2.15</col>
+         </row>
+         <row id="IRLM LATCH SUSPENS.">
+            <col id="Run A">186.00</col>
+            <col id="Run B">182.00</col>
+            <col id="DELTA (%)" warning="normal">-2.15</col>
+         </row>
+      </section>
+      <section id="DATA CAPTURE"/>
+      <section id="DATA SHARING"/>
+      <section id="QUERY PARALLELISM"/>
+      <section id="STORED PROCEDURES">
+         <row id="CALL STATEMENTS">
+            <col id="Run A">2802.5K</col>
+            <col id="Run B">2811.0K</col>
+            <col id="DELTA (%)" warning="normal">0.3</col>
+         </row>
+      </section>
+      <section id="USER DEFINED FUNCTIONS"/>
+      <section id="TRIGGERS">
+         <row id="ROW TRIGGER">
+            <col id="Run A">252.7K</col>
+            <col id="Run B">253.3K</col>
+            <col id="DELTA (%)" warning="normal">0.24</col>
+         </row>
+      </section>
+      <section id="ROW ID"/>
+      <section id="RID LIST">
+         <row id="USED">
+            <col id="Run A">146.4K</col>
+            <col id="Run B">146.8K</col>
+            <col id="DELTA (%)" warning="normal">0.27</col>
+         </row>
+         <row id="FAIL-LIMIT EXCEEDED">
+            <col id="Run A">6840.00</col>
+            <col id="Run B">6788.00</col>
+            <col id="DELTA (%)" warning="normal">-0.76</col>
+         </row>
+         <row id="SKIPPED-INDEX KNOWN">
+            <col id="Run A">103.00</col>
+            <col id="Run B">92.00</col>
+            <col id="DELTA (%)" warning="best">-10.68</col>
+         </row>
+      </section>
+      <section id="AVERAGE SU">
+         <row id="CP CPU">
+            <col id="Run A">39615376.00</col>
+            <col id="Run B">39654395.00</col>
+            <col id="DELTA (%)" warning="normal">0.1</col>
+         </row>
+         <row id="AGENT">
+            <col id="Run A">39615376.00</col>
+            <col id="Run B">39654395.00</col>
+            <col id="DELTA (%)" warning="normal">0.1</col>
+         </row>
+         <row id="NONNESTED">
+            <col id="Run A">14809380.00</col>
+            <col id="Run B">14819349.00</col>
+            <col id="DELTA (%)" warning="normal">0.07</col>
+         </row>
+         <row id="STORED PRC">
+            <col id="Run A">24374315.00</col>
+            <col id="Run B">24401946.00</col>
+            <col id="DELTA (%)" warning="normal">0.11</col>
+         </row>
+         <row id="TRIGGER">
+            <col id="Run A">431681.00</col>
+            <col id="Run B">433100.00</col>
+            <col id="DELTA (%)" warning="normal">0.33</col>
+         </row>
+         <row id="TOTAL SU CPU(CP CPU + SE CPU)">
+            <col id="Run A">39615376.00</col>
+            <col id="Run B">39654395.00</col>
+            <col id="DELTA (%)" warning="normal">0.1</col>
+         </row>
+      </section>
+      <section id="LOGGING">
+         <row id="LOG RECORDS WRITTEN">
+            <col id="Run A">23676.6K</col>
+            <col id="Run B">23767.8K</col>
+            <col id="DELTA (%)" warning="normal">0.39</col>
+         </row>
+         <row id="TOT BYTES WRITTEN">
+            <col id="Run A">4046.1M</col>
+            <col id="Run B">4060.7M</col>
+            <col id="DELTA (%)" warning="normal">0.36</col>
+         </row>
+         <row id="LOG RECORD SIZE">
+            <col id="Run A">170.89</col>
+            <col id="Run B">170.85</col>
+            <col id="DELTA (%)" warning="normal">-0.02</col>
+         </row>
+      </section>
+      <section id="DYNAMIC SQL STMT">
+         <row id="NOT FOUND IN CACHE">
+            <col id="Run A">49.00</col>
+            <col id="Run B">49.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="FOUND IN CACHE">
+            <col id="Run A">64398.00</col>
+            <col id="Run B">64503.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+      </section>
+      <section id="BP0  BPOOL ACTIVITY">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGES">
+            <col id="Run A">4531.8K</col>
+            <col id="Run B">4550.0K</col>
+            <col id="DELTA (%)" warning="normal">0.4</col>
+         </row>
+         <row id="BUFFER UPDATES">
+            <col id="Run A">1365.9K</col>
+            <col id="Run B">1371.8K</col>
+            <col id="DELTA (%)" warning="normal">0.43</col>
+         </row>
+         <row id="LIST PREFETCH REQS">
+            <col id="Run A">21.00</col>
+            <col id="Run B">21.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="DYN. PREFETCH REQS">
+            <col id="Run A">26882.00</col>
+            <col id="Run B">26995.00</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+      </section>
+      <section id="BP15  BPOOL ACTIVITY">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGES">
+            <col id="Run A">35908.9K</col>
+            <col id="Run B">36251.6K</col>
+            <col id="DELTA (%)" warning="normal">0.95</col>
+         </row>
+         <row id="BUFFER UPDATES">
+            <col id="Run A">2967.2K</col>
+            <col id="Run B">2978.8K</col>
+            <col id="DELTA (%)" warning="normal">0.39</col>
+         </row>
+         <row id="SYNCHRONOUS WRITE">
+            <col id="Run A">1.00</col>
+            <col id="Run B">1.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SYNCHRONOUS READ">
+            <col id="Run A">15.00</col>
+            <col id="Run B">15.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="LIST PREFETCH REQS">
+            <col id="Run A">379.6K</col>
+            <col id="Run B">391.6K</col>
+            <col id="DELTA (%)" warning="normal">3.16</col>
+         </row>
+         <row id="DYN. PREFETCH REQS">
+            <col id="Run A">5348.00</col>
+            <col id="Run B">5293.00</col>
+            <col id="DELTA (%)" warning="normal">-1.03</col>
+         </row>
+         <row id="PAGES READ ASYNCHR.">
+            <col id="Run A">177.00</col>
+            <col id="Run B">142.00</col>
+            <col id="DELTA (%)" warning="best">-19.77</col>
+         </row>
+      </section>
+      <section id="BP16  BPOOL ACTIVITY">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">99.99</col>
+            <col id="Run B">99.99</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGES">
+            <col id="Run A">22434.5K</col>
+            <col id="Run B">22493.9K</col>
+            <col id="DELTA (%)" warning="normal">0.26</col>
+         </row>
+         <row id="BUFFER UPDATES">
+            <col id="Run A">6958.3K</col>
+            <col id="Run B">6985.9K</col>
+            <col id="DELTA (%)" warning="normal">0.4</col>
+         </row>
+         <row id="SYNCHRONOUS READ">
+            <col id="Run A">784.00</col>
+            <col id="Run B">786.00</col>
+            <col id="DELTA (%)" warning="normal">0.26</col>
+         </row>
+         <row id="LIST PREFETCH REQS">
+            <col id="Run A">81727.00</col>
+            <col id="Run B">81682.00</col>
+            <col id="DELTA (%)" warning="normal">-0.06</col>
+         </row>
+         <row id="DYN. PREFETCH REQS">
+            <col id="Run A">140.8K</col>
+            <col id="Run B">129.5K</col>
+            <col id="DELTA (%)" warning="good">-8.03</col>
+         </row>
+         <row id="PAGES READ ASYNCHR.">
+            <col id="Run A">734.00</col>
+            <col id="Run B">794.00</col>
+            <col id="DELTA (%)" warning="medium">8.17</col>
+         </row>
+      </section>
+      <section id="TOTAL  BPOOL ACTIVITY">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGES">
+            <col id="Run A">64675.7K</col>
+            <col id="Run B">65103.5K</col>
+            <col id="DELTA (%)" warning="normal">0.66</col>
+         </row>
+         <row id="BUFFER UPDATES">
+            <col id="Run A">19754.8K</col>
+            <col id="Run B">19835.6K</col>
+            <col id="DELTA (%)" warning="normal">0.41</col>
+         </row>
+         <row id="SYNCHRONOUS WRITE">
+            <col id="Run A">1.00</col>
+            <col id="Run B">1.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SYNCHRONOUS READ">
+            <col id="Run A">846.00</col>
+            <col id="Run B">850.00</col>
+            <col id="DELTA (%)" warning="normal">0.47</col>
+         </row>
+         <row id="LIST PREFETCH REQS">
+            <col id="Run A">461.3K</col>
+            <col id="Run B">473.4K</col>
+            <col id="DELTA (%)" warning="normal">2.62</col>
+         </row>
+         <row id="DYN. PREFETCH REQS">
+            <col id="Run A">199.9K</col>
+            <col id="Run B">188.8K</col>
+            <col id="DELTA (%)" warning="good">-5.55</col>
+         </row>
+         <row id="PAGES READ ASYNCHR.">
+            <col id="Run A">914.00</col>
+            <col id="Run B">940.00</col>
+            <col id="DELTA (%)" warning="normal">2.84</col>
+         </row>
+      </section>
+      <section id="BP8K BPOOL ACTIVITY">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGES">
+            <col id="Run A">26923.00</col>
+            <col id="Run B">27036.00</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="DYN. PREFETCH REQS">
+            <col id="Run A">4.00</col>
+            <col id="Run B">4.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+      </section>
+      <section id="BP16K BPOOL ACTIVITY">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGES">
+            <col id="Run A">26897.00</col>
+            <col id="Run B">27010.00</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+      </section>
+      <section id="BP32K BPOOL ACTIVITY">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGES">
+            <col id="Run A">1746.6K</col>
+            <col id="Run B">1753.9K</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="BUFFER UPDATES">
+            <col id="Run A">8463.4K</col>
+            <col id="Run B">8499.0K</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="SYNCHRONOUS READ">
+            <col id="Run A">47.00</col>
+            <col id="Run B">49.00</col>
+            <col id="DELTA (%)" warning="normal">4.26</col>
+         </row>
+         <row id="DYN. PREFETCH REQS">
+            <col id="Run A">26870.00</col>
+            <col id="Run B">26984.00</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="PAGES READ ASYNCHR.">
+            <col id="Run A">3.00</col>
+            <col id="Run B">4.00</col>
+            <col id="DELTA (%)" warning="high">33.33</col>
+         </row>
+      </section>
+      <section id="TOT4K BPOOL ACTIVITY">
+         <row id="BPOOL HIT RATIO (%)">
+            <col id="Run A">100.00</col>
+            <col id="Run B">100.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="GETPAGES">
+            <col id="Run A">62875.3K</col>
+            <col id="Run B">63295.5K</col>
+            <col id="DELTA (%)" warning="normal">0.67</col>
+         </row>
+         <row id="BUFFER UPDATES">
+            <col id="Run A">11291.4K</col>
+            <col id="Run B">11336.5K</col>
+            <col id="DELTA (%)" warning="normal">0.4</col>
+         </row>
+         <row id="SYNCHRONOUS WRITE">
+            <col id="Run A">1.00</col>
+            <col id="Run B">1.00</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SYNCHRONOUS READ">
+            <col id="Run A">799.00</col>
+            <col id="Run B">801.00</col>
+            <col id="DELTA (%)" warning="normal">0.25</col>
+         </row>
+         <row id="LIST PREFETCH REQS">
+            <col id="Run A">461.3K</col>
+            <col id="Run B">473.4K</col>
+            <col id="DELTA (%)" warning="normal">2.62</col>
+         </row>
+         <row id="DYN. PREFETCH REQS">
+            <col id="Run A">173.1K</col>
+            <col id="Run B">161.8K</col>
+            <col id="DELTA (%)" warning="good">-6.53</col>
+         </row>
+         <row id="PAGES READ ASYNCHR.">
+            <col id="Run A">911.00</col>
+            <col id="Run B">936.00</col>
+            <col id="DELTA (%)" warning="normal">2.74</col>
+         </row>
+      </section>
+      <section id="PKG DSNREXX: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">2:16.577574</col>
+            <col id="Run B">2:16.674375</col>
+            <col id="DELTA (%)" warning="normal">0.07</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">24.007037</col>
+            <col id="Run B">24.061892</col>
+            <col id="DELTA (%)" warning="normal">0.23</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">24.007037</col>
+            <col id="Run B">24.061892</col>
+            <col id="DELTA (%)" warning="normal">0.23</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">1:52.713765</col>
+            <col id="Run B">1:52.754470</col>
+            <col id="DELTA (%)" warning="normal">0.04</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">2065121.00</col>
+            <col id="Run B">2069840.00</col>
+            <col id="DELTA (%)" warning="normal">0.23</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">2065121.00</col>
+            <col id="Run B">2069840.00</col>
+            <col id="DELTA (%)" warning="normal">0.23</col>
+         </row>
+      </section>
+      <section id="PKG DSNREXX: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">751227.00</col>
+            <col id="Run B">752499.00</col>
+            <col id="DELTA (%)" warning="normal">0.17</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">751227</col>
+            <col id="Run B">752499</col>
+            <col id="DELTA (%)" warning="normal">0.17</col>
+         </row>
+      </section>
+      <section id="PKG DSNREXX: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.002697</col>
+            <col id="Run B">0.002068</col>
+            <col id="DELTA (%)" warning="best">-23.32</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.002683</col>
+            <col id="Run B">0.002065</col>
+            <col id="DELTA (%)" warning="best">-23.03</col>
+         </row>
+         <row id="DB2 LATCH">
+            <col id="Run A">0.000014</col>
+            <col id="Run B">0.000003</col>
+            <col id="DELTA (%)" warning="best">-78.57</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.018983</col>
+            <col id="Run B">0.023693</col>
+            <col id="DELTA (%)" warning="high">24.81</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">1:52.692085</col>
+            <col id="Run B">1:52.728708</col>
+            <col id="DELTA (%)" warning="normal">0.03</col>
+         </row>
+      </section>
+      <section id="PKG GLWJEMP1: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">2.338586</col>
+            <col id="Run B">2.339879</col>
+            <col id="DELTA (%)" warning="normal">0.06</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">2.302886</col>
+            <col id="Run B">2.314893</col>
+            <col id="DELTA (%)" warning="normal">0.52</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">2.302886</col>
+            <col id="Run B">2.314893</col>
+            <col id="DELTA (%)" warning="normal">0.52</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.015814</col>
+            <col id="Run B">0.004413</col>
+            <col id="DELTA (%)" warning="best">-72.09</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.019886</col>
+            <col id="Run B">0.020573</col>
+            <col id="DELTA (%)" warning="normal">3.45</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">198097.00</col>
+            <col id="Run B">199130.00</col>
+            <col id="DELTA (%)" warning="normal">0.52</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">198097.00</col>
+            <col id="Run B">199130.00</col>
+            <col id="DELTA (%)" warning="normal">0.52</col>
+         </row>
+      </section>
+      <section id="PKG GLWJEMP1: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">134369.00</col>
+            <col id="Run B">134587.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">134369</col>
+            <col id="Run B">134587</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+      </section>
+      <section id="PKG GLWJEMP1: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000165</col>
+            <col id="Run B">0.000093</col>
+            <col id="DELTA (%)" warning="best">-43.64</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000165</col>
+            <col id="Run B">0.000093</col>
+            <col id="DELTA (%)" warning="best">-43.64</col>
+         </row>
+         <row id="OTHER WRITE I/O">
+            <col id="Run A">0.014087</col>
+            <col id="Run B">0.002696</col>
+            <col id="DELTA (%)" warning="best">-80.86</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">0.001562</col>
+            <col id="Run B">0.001624</col>
+            <col id="DELTA (%)" warning="normal">3.97</col>
+         </row>
+      </section>
+      <section id="PKG GLWJEMP2: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.044522</col>
+            <col id="Run B">0.045232</col>
+            <col id="DELTA (%)" warning="normal">1.59</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.044271</col>
+            <col id="Run B">0.045023</col>
+            <col id="DELTA (%)" warning="normal">1.7</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.044271</col>
+            <col id="Run B">0.045023</col>
+            <col id="DELTA (%)" warning="normal">1.7</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.000252</col>
+            <col id="Run B">0.000209</col>
+            <col id="DELTA (%)" warning="best">-17.06</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">3808.00</col>
+            <col id="Run B">3872.00</col>
+            <col id="DELTA (%)" warning="normal">1.68</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">3808.00</col>
+            <col id="Run B">3872.00</col>
+            <col id="DELTA (%)" warning="normal">1.68</col>
+         </row>
+      </section>
+      <section id="PKG GLWJEMP2: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">2643.00</col>
+            <col id="Run B">2699.00</col>
+            <col id="DELTA (%)" warning="normal">2.12</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">2643</col>
+            <col id="Run B">2699</col>
+            <col id="DELTA (%)" warning="normal">2.12</col>
+         </row>
+      </section>
+      <section id="PKG GLWJEMP2: AVERAGE TIME"/>
+      <section id="PKG GLWJEMP3: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">2.173362</col>
+            <col id="Run B">2.180632</col>
+            <col id="DELTA (%)" warning="normal">0.33</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">2.136480</col>
+            <col id="Run B">2.145825</col>
+            <col id="DELTA (%)" warning="normal">0.44</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">2.136480</col>
+            <col id="Run B">2.145825</col>
+            <col id="DELTA (%)" warning="normal">0.44</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.018651</col>
+            <col id="Run B">0.018264</col>
+            <col id="DELTA (%)" warning="normal">-2.07</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.018231</col>
+            <col id="Run B">0.016543</col>
+            <col id="DELTA (%)" warning="good">-9.26</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">183783.00</col>
+            <col id="Run B">184587.00</col>
+            <col id="DELTA (%)" warning="normal">0.44</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">183783.00</col>
+            <col id="Run B">184587.00</col>
+            <col id="DELTA (%)" warning="normal">0.44</col>
+         </row>
+      </section>
+      <section id="PKG GLWJEMP3: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">231338.00</col>
+            <col id="Run B">232104.00</col>
+            <col id="DELTA (%)" warning="normal">0.33</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">231338</col>
+            <col id="Run B">232104</col>
+            <col id="DELTA (%)" warning="normal">0.33</col>
+         </row>
+      </section>
+      <section id="PKG GLWJEMP3: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000159</col>
+            <col id="Run B">0.000233</col>
+            <col id="DELTA (%)" warning="high">46.54</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000159</col>
+            <col id="Run B">0.000233</col>
+            <col id="DELTA (%)" warning="high">46.54</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.000456</col>
+            <col id="Run B">0.000425</col>
+            <col id="DELTA (%)" warning="good">-6.8</col>
+         </row>
+         <row id="OTHER WRITE I/O">
+            <col id="Run A">0.000245</col>
+            <col id="Run B">0.000000</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">0.017790</col>
+            <col id="Run B">0.017606</col>
+            <col id="DELTA (%)" warning="normal">-1.03</col>
+         </row>
+      </section>
+      <section id="PKG DPTADD: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.864957</col>
+            <col id="Run B">0.934045</col>
+            <col id="DELTA (%)" warning="medium">7.99</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.782886</col>
+            <col id="Run B">0.788079</col>
+            <col id="DELTA (%)" warning="normal">0.66</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.782886</col>
+            <col id="Run B">0.788079</col>
+            <col id="DELTA (%)" warning="normal">0.66</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.076859</col>
+            <col id="Run B">0.140502</col>
+            <col id="DELTA (%)" warning="high">82.8</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.005212</col>
+            <col id="Run B">0.005464</col>
+            <col id="DELTA (%)" warning="normal">4.83</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">67345.00</col>
+            <col id="Run B">67791.00</col>
+            <col id="DELTA (%)" warning="normal">0.66</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">67345.00</col>
+            <col id="Run B">67791.00</col>
+            <col id="DELTA (%)" warning="normal">0.66</col>
+         </row>
+      </section>
+      <section id="PKG DPTADD: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">92953.00</col>
+            <col id="Run B">93660.00</col>
+            <col id="DELTA (%)" warning="normal">0.76</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">92953</col>
+            <col id="Run B">93660</col>
+            <col id="DELTA (%)" warning="normal">0.76</col>
+         </row>
+      </section>
+      <section id="PKG DPTADD: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000120</col>
+            <col id="Run B">0.000000</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000120</col>
+            <col id="Run B">0.000000</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.001710</col>
+            <col id="Run B">0.002506</col>
+            <col id="DELTA (%)" warning="high">46.55</col>
+         </row>
+         <row id="OTHER WRITE I/O">
+            <col id="Run A">0.000842</col>
+            <col id="Run B">0.000563</col>
+            <col id="DELTA (%)" warning="best">-33.14</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">0.074187</col>
+            <col id="Run B">0.137432</col>
+            <col id="DELTA (%)" warning="high">85.25</col>
+         </row>
+      </section>
+      <section id="PKG DPTANO: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.179307</col>
+            <col id="Run B">0.181108</col>
+            <col id="DELTA (%)" warning="normal">1</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.070376</col>
+            <col id="Run B">0.070960</col>
+            <col id="DELTA (%)" warning="normal">0.83</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.070376</col>
+            <col id="Run B">0.070960</col>
+            <col id="DELTA (%)" warning="normal">0.83</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.108953</col>
+            <col id="Run B">0.110102</col>
+            <col id="DELTA (%)" warning="normal">1.05</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">6053.00</col>
+            <col id="Run B">6104.00</col>
+            <col id="DELTA (%)" warning="normal">0.84</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">6053.00</col>
+            <col id="Run B">6104.00</col>
+            <col id="DELTA (%)" warning="normal">0.84</col>
+         </row>
+      </section>
+      <section id="PKG DPTANO: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">26558.00</col>
+            <col id="Run B">26760.00</col>
+            <col id="DELTA (%)" warning="normal">0.76</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">26558</col>
+            <col id="Run B">26760</col>
+            <col id="DELTA (%)" warning="normal">0.76</col>
+         </row>
+      </section>
+      <section id="PKG DPTANO: AVERAGE TIME">
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.108953</col>
+            <col id="Run B">0.110102</col>
+            <col id="DELTA (%)" warning="normal">1.05</col>
+         </row>
+      </section>
+      <section id="PKG DPTBAL: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">3.510436</col>
+            <col id="Run B">3.671598</col>
+            <col id="DELTA (%)" warning="normal">4.59</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">3.406278</col>
+            <col id="Run B">3.548736</col>
+            <col id="DELTA (%)" warning="normal">4.18</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">3.406278</col>
+            <col id="Run B">3.548736</col>
+            <col id="DELTA (%)" warning="normal">4.18</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.080148</col>
+            <col id="Run B">0.097795</col>
+            <col id="DELTA (%)" warning="high">22.02</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.024009</col>
+            <col id="Run B">0.025068</col>
+            <col id="DELTA (%)" warning="normal">4.41</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">293013.00</col>
+            <col id="Run B">305267.00</col>
+            <col id="DELTA (%)" warning="normal">4.18</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">293013.00</col>
+            <col id="Run B">305267.00</col>
+            <col id="DELTA (%)" warning="normal">4.18</col>
+         </row>
+      </section>
+      <section id="PKG DPTBAL: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">300209.00</col>
+            <col id="Run B">299240.00</col>
+            <col id="DELTA (%)" warning="normal">-0.32</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">300209</col>
+            <col id="Run B">299240</col>
+            <col id="DELTA (%)" warning="normal">-0.32</col>
+         </row>
+      </section>
+      <section id="PKG DPTBAL: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000430</col>
+            <col id="Run B">0.000400</col>
+            <col id="DELTA (%)" warning="good">-6.98</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000300</col>
+            <col id="Run B">0.000295</col>
+            <col id="DELTA (%)" warning="normal">-1.67</col>
+         </row>
+         <row id="DB2 LATCH">
+            <col id="Run A">0.000130</col>
+            <col id="Run B">0.000105</col>
+            <col id="DELTA (%)" warning="best">-19.23</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.001786</col>
+            <col id="Run B">0.002233</col>
+            <col id="DELTA (%)" warning="high">25.03</col>
+         </row>
+         <row id="OTHER WRITE I/O">
+            <col id="Run A">0.007767</col>
+            <col id="Run B">0.006735</col>
+            <col id="DELTA (%)" warning="best">-13.29</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">0.070165</col>
+            <col id="Run B">0.088427</col>
+            <col id="DELTA (%)" warning="high">26.03</col>
+         </row>
+      </section>
+      <section id="PKG DPTDEL: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.300250</col>
+            <col id="Run B">0.322644</col>
+            <col id="DELTA (%)" warning="medium">7.46</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.282911</col>
+            <col id="Run B">0.290478</col>
+            <col id="DELTA (%)" warning="normal">2.67</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.282911</col>
+            <col id="Run B">0.290478</col>
+            <col id="DELTA (%)" warning="normal">2.67</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.015467</col>
+            <col id="Run B">0.030262</col>
+            <col id="DELTA (%)" warning="high">95.66</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.001872</col>
+            <col id="Run B">0.001904</col>
+            <col id="DELTA (%)" warning="normal">1.71</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">24336.00</col>
+            <col id="Run B">24987.00</col>
+            <col id="DELTA (%)" warning="normal">2.68</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">24336.00</col>
+            <col id="Run B">24987.00</col>
+            <col id="DELTA (%)" warning="normal">2.68</col>
+         </row>
+      </section>
+      <section id="PKG DPTDEL: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">24003.00</col>
+            <col id="Run B">24669.00</col>
+            <col id="DELTA (%)" warning="normal">2.77</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">24003</col>
+            <col id="Run B">24669</col>
+            <col id="DELTA (%)" warning="normal">2.77</col>
+         </row>
+      </section>
+      <section id="PKG DPTDEL: AVERAGE TIME">
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.001463</col>
+            <col id="Run B">0.001661</col>
+            <col id="DELTA (%)" warning="high">13.53</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">0.014004</col>
+            <col id="Run B">0.028602</col>
+            <col id="DELTA (%)" warning="high">104.24</col>
+         </row>
+      </section>
+      <section id="PKG DPTMGR: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">6.678242</col>
+            <col id="Run B">6.541452</col>
+            <col id="DELTA (%)" warning="normal">-2.05</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">1.342863</col>
+            <col id="Run B">1.360325</col>
+            <col id="DELTA (%)" warning="normal">1.3</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">1.342863</col>
+            <col id="Run B">1.360325</col>
+            <col id="DELTA (%)" warning="normal">1.3</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">5.337830</col>
+            <col id="Run B">5.183256</col>
+            <col id="DELTA (%)" warning="normal">-2.9</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">115515.00</col>
+            <col id="Run B">117017.00</col>
+            <col id="DELTA (%)" warning="normal">1.3</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">115515.00</col>
+            <col id="Run B">117017.00</col>
+            <col id="DELTA (%)" warning="normal">1.3</col>
+         </row>
+      </section>
+      <section id="PKG DPTMGR: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">132664.00</col>
+            <col id="Run B">135210.00</col>
+            <col id="DELTA (%)" warning="normal">1.92</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">132664</col>
+            <col id="Run B">135210</col>
+            <col id="DELTA (%)" warning="normal">1.92</col>
+         </row>
+      </section>
+      <section id="PKG DPTMGR: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000262</col>
+            <col id="Run B">0.000074</col>
+            <col id="DELTA (%)" warning="best">-71.76</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000262</col>
+            <col id="Run B">0.000074</col>
+            <col id="DELTA (%)" warning="best">-71.76</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.004034</col>
+            <col id="Run B">0.004436</col>
+            <col id="DELTA (%)" warning="medium">9.97</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">5.333535</col>
+            <col id="Run B">5.176407</col>
+            <col id="DELTA (%)" warning="normal">-2.95</col>
+         </row>
+      </section>
+      <section id="PKG DPTSEL: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">19.152650</col>
+            <col id="Run B">19.227955</col>
+            <col id="DELTA (%)" warning="normal">0.39</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">19.050995</col>
+            <col id="Run B">19.125336</col>
+            <col id="DELTA (%)" warning="normal">0.39</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">19.050995</col>
+            <col id="Run B">19.125336</col>
+            <col id="DELTA (%)" warning="normal">0.39</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.001596</col>
+            <col id="Run B">0.002014</col>
+            <col id="DELTA (%)" warning="high">26.19</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.100059</col>
+            <col id="Run B">0.100604</col>
+            <col id="DELTA (%)" warning="normal">0.54</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">1638795.00</col>
+            <col id="Run B">1645190.00</col>
+            <col id="DELTA (%)" warning="normal">0.39</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">1638795.00</col>
+            <col id="Run B">1645190.00</col>
+            <col id="DELTA (%)" warning="normal">0.39</col>
+         </row>
+      </section>
+      <section id="PKG DPTSEL: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">857144.00</col>
+            <col id="Run B">859694.00</col>
+            <col id="DELTA (%)" warning="normal">0.3</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">857144</col>
+            <col id="Run B">859694</col>
+            <col id="DELTA (%)" warning="normal">0.3</col>
+         </row>
+      </section>
+      <section id="PKG DPTSEL: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000470</col>
+            <col id="Run B">0.000886</col>
+            <col id="DELTA (%)" warning="high">88.51</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000385</col>
+            <col id="Run B">0.000795</col>
+            <col id="DELTA (%)" warning="high">106.49</col>
+         </row>
+         <row id="DB2 LATCH">
+            <col id="Run A">0.000086</col>
+            <col id="Run B">0.000091</col>
+            <col id="DELTA (%)" warning="medium">5.81</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.001126</col>
+            <col id="Run B">0.001128</col>
+            <col id="DELTA (%)" warning="normal">0.18</col>
+         </row>
+      </section>
+      <section id="PKG DPTUPD: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.654225</col>
+            <col id="Run B">0.606831</col>
+            <col id="DELTA (%)" warning="good">-7.24</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.605829</col>
+            <col id="Run B">0.599231</col>
+            <col id="DELTA (%)" warning="normal">-1.09</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.605829</col>
+            <col id="Run B">0.599231</col>
+            <col id="DELTA (%)" warning="normal">-1.09</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.044232</col>
+            <col id="Run B">0.003829</col>
+            <col id="DELTA (%)" warning="best">-91.34</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.004164</col>
+            <col id="Run B">0.003772</col>
+            <col id="DELTA (%)" warning="good">-9.41</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">52114.00</col>
+            <col id="Run B">51546.00</col>
+            <col id="DELTA (%)" warning="normal">-1.09</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">52114.00</col>
+            <col id="Run B">51546.00</col>
+            <col id="DELTA (%)" warning="normal">-1.09</col>
+         </row>
+      </section>
+      <section id="PKG DPTUPD: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">81251.00</col>
+            <col id="Run B">80346.00</col>
+            <col id="DELTA (%)" warning="normal">-1.11</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">81251</col>
+            <col id="Run B">80346</col>
+            <col id="DELTA (%)" warning="normal">-1.11</col>
+         </row>
+      </section>
+      <section id="PKG DPTUPD: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000145</col>
+            <col id="Run B">0.000125</col>
+            <col id="DELTA (%)" warning="best">-13.79</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000145</col>
+            <col id="Run B">0.000125</col>
+            <col id="DELTA (%)" warning="best">-13.79</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.001527</col>
+            <col id="Run B">0.001142</col>
+            <col id="DELTA (%)" warning="best">-25.21</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">0.042560</col>
+            <col id="Run B">0.000577</col>
+            <col id="DELTA (%)" warning="best">-98.64</col>
+         </row>
+      </section>
+      <section id="PKG DPTUPR: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">1.100040</col>
+            <col id="Run B">1.067056</col>
+            <col id="DELTA (%)" warning="normal">-3</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">1.017079</col>
+            <col id="Run B">1.026981</col>
+            <col id="DELTA (%)" warning="normal">0.97</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">1.017079</col>
+            <col id="Run B">1.026981</col>
+            <col id="DELTA (%)" warning="normal">0.97</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.074522</col>
+            <col id="Run B">0.031608</col>
+            <col id="DELTA (%)" warning="best">-57.59</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.008439</col>
+            <col id="Run B">0.008467</col>
+            <col id="DELTA (%)" warning="normal">0.33</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">87490.00</col>
+            <col id="Run B">88342.00</col>
+            <col id="DELTA (%)" warning="normal">0.97</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">87490.00</col>
+            <col id="Run B">88342.00</col>
+            <col id="DELTA (%)" warning="normal">0.97</col>
+         </row>
+      </section>
+      <section id="PKG DPTUPR: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">118503.00</col>
+            <col id="Run B">119439.00</col>
+            <col id="DELTA (%)" warning="normal">0.79</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">118503</col>
+            <col id="Run B">119439</col>
+            <col id="DELTA (%)" warning="normal">0.79</col>
+         </row>
+      </section>
+      <section id="PKG DPTUPR: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000217</col>
+            <col id="Run B">0.000147</col>
+            <col id="DELTA (%)" warning="best">-32.26</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000217</col>
+            <col id="Run B">0.000147</col>
+            <col id="DELTA (%)" warning="best">-32.26</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.002049</col>
+            <col id="Run B">0.001412</col>
+            <col id="DELTA (%)" warning="best">-31.09</col>
+         </row>
+         <row id="OTHER READ I/O">
+            <col id="Run A">0.000236</col>
+            <col id="Run B">0.000239</col>
+            <col id="DELTA (%)" warning="normal">1.27</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">0.072020</col>
+            <col id="Run B">0.028000</col>
+            <col id="DELTA (%)" warning="best">-61.12</col>
+         </row>
+      </section>
+      <section id="PKG EMPADD: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">15.395704</col>
+            <col id="Run B">15.325679</col>
+            <col id="DELTA (%)" warning="normal">-0.45</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">12.672503</col>
+            <col id="Run B">12.729650</col>
+            <col id="DELTA (%)" warning="normal">0.45</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">12.672503</col>
+            <col id="Run B">12.729650</col>
+            <col id="DELTA (%)" warning="normal">0.45</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">2.606278</col>
+            <col id="Run B">2.472068</col>
+            <col id="DELTA (%)" warning="good">-5.15</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.116923</col>
+            <col id="Run B">0.123961</col>
+            <col id="DELTA (%)" warning="medium">6.02</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">1090107.00</col>
+            <col id="Run B">1095023.00</col>
+            <col id="DELTA (%)" warning="normal">0.45</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">1090107.00</col>
+            <col id="Run B">1095023.00</col>
+            <col id="DELTA (%)" warning="normal">0.45</col>
+         </row>
+      </section>
+      <section id="PKG EMPADD: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">1343690.00</col>
+            <col id="Run B">1345870.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">1343690</col>
+            <col id="Run B">1345870</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+      </section>
+      <section id="PKG EMPADD: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.001424</col>
+            <col id="Run B">0.001038</col>
+            <col id="DELTA (%)" warning="best">-27.11</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.001424</col>
+            <col id="Run B">0.001037</col>
+            <col id="DELTA (%)" warning="best">-27.18</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.022015</col>
+            <col id="Run B">0.022413</col>
+            <col id="DELTA (%)" warning="normal">1.81</col>
+         </row>
+         <row id="OTHER WRITE I/O">
+            <col id="Run A">0.015221</col>
+            <col id="Run B">0.031018</col>
+            <col id="DELTA (%)" warning="high">103.78</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">2.567618</col>
+            <col id="Run B">2.417600</col>
+            <col id="DELTA (%)" warning="good">-5.84</col>
+         </row>
+      </section>
+      <section id="PKG EMPADX: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">9.561981</col>
+            <col id="Run B">9.530928</col>
+            <col id="DELTA (%)" warning="normal">-0.32</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">8.590175</col>
+            <col id="Run B">8.555701</col>
+            <col id="DELTA (%)" warning="normal">-0.4</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">8.590175</col>
+            <col id="Run B">8.555701</col>
+            <col id="DELTA (%)" warning="normal">-0.4</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.902126</col>
+            <col id="Run B">0.906284</col>
+            <col id="DELTA (%)" warning="normal">0.46</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.069680</col>
+            <col id="Run B">0.068943</col>
+            <col id="DELTA (%)" warning="normal">-1.06</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">738939.00</col>
+            <col id="Run B">735974.00</col>
+            <col id="DELTA (%)" warning="normal">-0.4</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">738939.00</col>
+            <col id="Run B">735974.00</col>
+            <col id="DELTA (%)" warning="normal">-0.4</col>
+         </row>
+      </section>
+      <section id="PKG EMPADX: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">483165.00</col>
+            <col id="Run B">482742.00</col>
+            <col id="DELTA (%)" warning="normal">-0.09</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">483165</col>
+            <col id="Run B">482742</col>
+            <col id="DELTA (%)" warning="normal">-0.09</col>
+         </row>
+      </section>
+      <section id="PKG EMPADX: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000409</col>
+            <col id="Run B">0.000867</col>
+            <col id="DELTA (%)" warning="high">111.98</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000409</col>
+            <col id="Run B">0.000867</col>
+            <col id="DELTA (%)" warning="high">111.98</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.821635</col>
+            <col id="Run B">0.818612</col>
+            <col id="DELTA (%)" warning="normal">-0.37</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">0.000416</col>
+            <col id="Run B">0.000417</col>
+            <col id="DELTA (%)" warning="normal">0.24</col>
+         </row>
+      </section>
+      <section id="PKG EMPANO: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">1.798045</col>
+            <col id="Run B">1.794362</col>
+            <col id="DELTA (%)" warning="normal">-0.2</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.698756</col>
+            <col id="Run B">0.697956</col>
+            <col id="DELTA (%)" warning="normal">-0.11</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.698756</col>
+            <col id="Run B">0.697956</col>
+            <col id="DELTA (%)" warning="normal">-0.11</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">1.099812</col>
+            <col id="Run B">1.096149</col>
+            <col id="DELTA (%)" warning="normal">-0.33</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">60108.00</col>
+            <col id="Run B">60039.00</col>
+            <col id="DELTA (%)" warning="normal">-0.11</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">60108.00</col>
+            <col id="Run B">60039.00</col>
+            <col id="DELTA (%)" warning="normal">-0.11</col>
+         </row>
+      </section>
+      <section id="PKG EMPANO: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">268738.00</col>
+            <col id="Run B">269174.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">268738</col>
+            <col id="Run B">269174</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+      </section>
+      <section id="PKG EMPANO: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000064</col>
+            <col id="Run B">0.000000</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000064</col>
+            <col id="Run B">0.000000</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">1.099748</col>
+            <col id="Run B">1.096149</col>
+            <col id="DELTA (%)" warning="normal">-0.33</col>
+         </row>
+      </section>
+      <section id="PKG EMPDEL: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.207248</col>
+            <col id="Run B">0.211953</col>
+            <col id="DELTA (%)" warning="normal">2.27</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.204994</col>
+            <col id="Run B">0.209251</col>
+            <col id="DELTA (%)" warning="normal">2.08</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.204994</col>
+            <col id="Run B">0.209251</col>
+            <col id="DELTA (%)" warning="normal">2.08</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.000226</col>
+            <col id="Run B">0.000644</col>
+            <col id="DELTA (%)" warning="high">184.96</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.002028</col>
+            <col id="Run B">0.002058</col>
+            <col id="DELTA (%)" warning="normal">1.48</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">17633.00</col>
+            <col id="Run B">18000.00</col>
+            <col id="DELTA (%)" warning="normal">2.08</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">17633.00</col>
+            <col id="Run B">18000.00</col>
+            <col id="DELTA (%)" warning="normal">2.08</col>
+         </row>
+      </section>
+      <section id="PKG EMPDEL: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">15858.00</col>
+            <col id="Run B">16194.00</col>
+            <col id="DELTA (%)" warning="normal">2.12</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">15858</col>
+            <col id="Run B">16194</col>
+            <col id="DELTA (%)" warning="normal">2.12</col>
+         </row>
+      </section>
+      <section id="PKG EMPDEL: AVERAGE TIME">
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.000226</col>
+            <col id="Run B">0.000644</col>
+            <col id="DELTA (%)" warning="high">184.96</col>
+         </row>
+      </section>
+      <section id="PKG EMPFND: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">43.957323</col>
+            <col id="Run B">45.345800</col>
+            <col id="DELTA (%)" warning="normal">3.16</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">43.711158</col>
+            <col id="Run B">45.133858</col>
+            <col id="DELTA (%)" warning="normal">3.25</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">43.711158</col>
+            <col id="Run B">45.133858</col>
+            <col id="DELTA (%)" warning="normal">3.25</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.054334</col>
+            <col id="Run B">0.000045</col>
+            <col id="DELTA (%)" warning="best">-99.92</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.191831</col>
+            <col id="Run B">0.211898</col>
+            <col id="DELTA (%)" warning="high">10.46</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">3760099.00</col>
+            <col id="Run B">3882482.00</col>
+            <col id="DELTA (%)" warning="normal">3.25</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">3760099.00</col>
+            <col id="Run B">3882482.00</col>
+            <col id="DELTA (%)" warning="normal">3.25</col>
+         </row>
+      </section>
+      <section id="PKG EMPFND: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">21376032.00</col>
+            <col id="Run B">22292825.00</col>
+            <col id="DELTA (%)" warning="normal">4.29</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">21376032</col>
+            <col id="Run B">22292825</col>
+            <col id="DELTA (%)" warning="normal">4.29</col>
+         </row>
+      </section>
+      <section id="PKG EMPFND: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000188</col>
+            <col id="Run B">0.000045</col>
+            <col id="DELTA (%)" warning="best">-76.06</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000150</col>
+            <col id="Run B">0.000013</col>
+            <col id="DELTA (%)" warning="best">-91.33</col>
+         </row>
+         <row id="DB2 LATCH">
+            <col id="Run A">0.000038</col>
+            <col id="Run B">0.000031</col>
+            <col id="DELTA (%)" warning="best">-18.42</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.000146</col>
+            <col id="Run B">0.000000</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">0.054000</col>
+            <col id="Run B">0.000000</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+      </section>
+      <section id="PKG EMPQR2: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">1:08.035913</col>
+            <col id="Run B">1:06.318044</col>
+            <col id="DELTA (%)" warning="normal">-2.52</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">1:07.657556</col>
+            <col id="Run B">1:06.017113</col>
+            <col id="DELTA (%)" warning="normal">-2.42</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">67.657000</col>
+            <col id="Run B">66.017000</col>
+            <col id="DELTA (%)" warning="normal">-2.42</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.094642</col>
+            <col id="Run B">0.014435</col>
+            <col id="DELTA (%)" warning="best">-84.75</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.283716</col>
+            <col id="Run B">0.286496</col>
+            <col id="DELTA (%)" warning="normal">0.98</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">5820004.00</col>
+            <col id="Run B">5678891.00</col>
+            <col id="DELTA (%)" warning="normal">-2.42</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">5820004.00</col>
+            <col id="Run B">5678891.00</col>
+            <col id="DELTA (%)" warning="normal">-2.42</col>
+         </row>
+      </section>
+      <section id="PKG EMPQR2: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">33087164.00</col>
+            <col id="Run B">32731180.00</col>
+            <col id="DELTA (%)" warning="normal">-1.08</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">33087164</col>
+            <col id="Run B">32731180</col>
+            <col id="DELTA (%)" warning="normal">-1.08</col>
+         </row>
+      </section>
+      <section id="PKG EMPQR2: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000022</col>
+            <col id="Run B">0.000076</col>
+            <col id="DELTA (%)" warning="high">245.45</col>
+         </row>
+         <row id="DB2 LATCH">
+            <col id="Run A">0.000022</col>
+            <col id="Run B">0.000030</col>
+            <col id="DELTA (%)" warning="high">36.36</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.000149</col>
+            <col id="Run B">0.000137</col>
+            <col id="DELTA (%)" warning="good">-8.05</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">0.094470</col>
+            <col id="Run B">0.014222</col>
+            <col id="DELTA (%)" warning="best">-84.95</col>
+         </row>
+      </section>
+      <section id="PKG EMPSEL: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">17.020586</col>
+            <col id="Run B">16.862894</col>
+            <col id="DELTA (%)" warning="normal">-0.93</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">16.879054</col>
+            <col id="Run B">16.711226</col>
+            <col id="DELTA (%)" warning="normal">-0.99</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">16.879054</col>
+            <col id="Run B">16.711226</col>
+            <col id="DELTA (%)" warning="normal">-0.99</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.000064</col>
+            <col id="Run B">0.000063</col>
+            <col id="DELTA (%)" warning="normal">-1.56</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.141468</col>
+            <col id="Run B">0.151605</col>
+            <col id="DELTA (%)" warning="medium">7.17</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">1451961.00</col>
+            <col id="Run B">1437524.00</col>
+            <col id="DELTA (%)" warning="normal">-0.99</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">1451961.00</col>
+            <col id="Run B">1437524.00</col>
+            <col id="DELTA (%)" warning="normal">-0.99</col>
+         </row>
+      </section>
+      <section id="PKG EMPSEL: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">5352460.00</col>
+            <col id="Run B">5375280.00</col>
+            <col id="DELTA (%)" warning="normal">0.43</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">5352460</col>
+            <col id="Run B">5375280</col>
+            <col id="DELTA (%)" warning="normal">0.43</col>
+         </row>
+      </section>
+      <section id="PKG EMPSEL: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000064</col>
+            <col id="Run B">0.000063</col>
+            <col id="DELTA (%)" warning="normal">-1.56</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000064</col>
+            <col id="Run B">0.000063</col>
+            <col id="DELTA (%)" warning="normal">-1.56</col>
+         </row>
+      </section>
+      <section id="PKG EMPUPD: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.207739</col>
+            <col id="Run B">0.208241</col>
+            <col id="DELTA (%)" warning="normal">0.24</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.192850</col>
+            <col id="Run B">0.192844</col>
+            <col id="DELTA (%)" warning="normal">-0</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.192850</col>
+            <col id="Run B">0.192844</col>
+            <col id="DELTA (%)" warning="normal">-0</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.013991</col>
+            <col id="Run B">0.014299</col>
+            <col id="DELTA (%)" warning="normal">2.2</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.000898</col>
+            <col id="Run B">0.001099</col>
+            <col id="DELTA (%)" warning="high">22.38</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">16589.00</col>
+            <col id="Run B">16588.00</col>
+            <col id="DELTA (%)" warning="normal">-0.01</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">16589.00</col>
+            <col id="Run B">16588.00</col>
+            <col id="DELTA (%)" warning="normal">-0.01</col>
+         </row>
+      </section>
+      <section id="PKG EMPUPD: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">32064.00</col>
+            <col id="Run B">32004.00</col>
+            <col id="DELTA (%)" warning="normal">-0.19</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">32064</col>
+            <col id="Run B">32004</col>
+            <col id="DELTA (%)" warning="normal">-0.19</col>
+         </row>
+      </section>
+      <section id="PKG EMPUPD: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000079</col>
+            <col id="Run B">0.000000</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000079</col>
+            <col id="Run B">0.000000</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.000139</col>
+            <col id="Run B">0.000142</col>
+            <col id="DELTA (%)" warning="normal">2.16</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">0.013773</col>
+            <col id="Run B">0.014157</col>
+            <col id="DELTA (%)" warning="normal">2.79</col>
+         </row>
+      </section>
+      <section id="PKG EMPUPR: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.328821</col>
+            <col id="Run B">0.368358</col>
+            <col id="DELTA (%)" warning="high">12.02</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.326850</col>
+            <col id="Run B">0.321339</col>
+            <col id="DELTA (%)" warning="normal">-1.69</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.326850</col>
+            <col id="Run B">0.321339</col>
+            <col id="DELTA (%)" warning="normal">-1.69</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.000074</col>
+            <col id="Run B">0.045168</col>
+            <col id="DELTA (%)" warning="high">60937.84</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.001896</col>
+            <col id="Run B">0.001851</col>
+            <col id="DELTA (%)" warning="normal">-2.37</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">28116.00</col>
+            <col id="Run B">27642.00</col>
+            <col id="DELTA (%)" warning="normal">-1.69</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">28116.00</col>
+            <col id="Run B">27642.00</col>
+            <col id="DELTA (%)" warning="normal">-1.69</col>
+         </row>
+      </section>
+      <section id="PKG EMPUPR: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">31782.00</col>
+            <col id="Run B">31704.00</col>
+            <col id="DELTA (%)" warning="normal">-0.25</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">31782</col>
+            <col id="Run B">31704</col>
+            <col id="DELTA (%)" warning="normal">-0.25</col>
+         </row>
+      </section>
+      <section id="PKG EMPUPR: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000074</col>
+            <col id="Run B">0.000140</col>
+            <col id="DELTA (%)" warning="high">89.19</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000074</col>
+            <col id="Run B">0.000140</col>
+            <col id="DELTA (%)" warning="high">89.19</col>
+         </row>
+      </section>
+      <section id="PKG JBSSEL: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">3.191223</col>
+            <col id="Run B">3.211109</col>
+            <col id="DELTA (%)" warning="normal">0.62</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">3.174633</col>
+            <col id="Run B">3.194735</col>
+            <col id="DELTA (%)" warning="normal">0.63</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">3.174633</col>
+            <col id="Run B">3.194735</col>
+            <col id="DELTA (%)" warning="normal">0.63</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.016590</col>
+            <col id="Run B">0.016155</col>
+            <col id="DELTA (%)" warning="normal">-2.62</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">273086.00</col>
+            <col id="Run B">274815.00</col>
+            <col id="DELTA (%)" warning="normal">0.63</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">273086.00</col>
+            <col id="Run B">274815.00</col>
+            <col id="DELTA (%)" warning="normal">0.63</col>
+         </row>
+      </section>
+      <section id="PKG JBSSEL: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">418998.00</col>
+            <col id="Run B">419613.00</col>
+            <col id="DELTA (%)" warning="normal">0.15</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">418998</col>
+            <col id="Run B">419613</col>
+            <col id="DELTA (%)" warning="normal">0.15</col>
+         </row>
+      </section>
+      <section id="PKG JBSSEL: AVERAGE TIME"/>
+      <section id="PKG LCNSEL: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.669989</col>
+            <col id="Run B">0.673061</col>
+            <col id="DELTA (%)" warning="normal">0.46</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.659177</col>
+            <col id="Run B">0.662758</col>
+            <col id="DELTA (%)" warning="normal">0.54</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.659177</col>
+            <col id="Run B">0.662758</col>
+            <col id="DELTA (%)" warning="normal">0.54</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.010812</col>
+            <col id="Run B">0.010303</col>
+            <col id="DELTA (%)" warning="normal">-4.71</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">56703.00</col>
+            <col id="Run B">57011.00</col>
+            <col id="DELTA (%)" warning="normal">0.54</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">56703.00</col>
+            <col id="Run B">57011.00</col>
+            <col id="DELTA (%)" warning="normal">0.54</col>
+         </row>
+      </section>
+      <section id="PKG LCNSEL: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">111633.00</col>
+            <col id="Run B">112017.00</col>
+            <col id="DELTA (%)" warning="normal">0.34</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">111633</col>
+            <col id="Run B">112017</col>
+            <col id="DELTA (%)" warning="normal">0.34</col>
+         </row>
+      </section>
+      <section id="PKG LCNSEL: AVERAGE TIME"/>
+      <section id="PKG PRJADD: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">1:37.265048</col>
+            <col id="Run B">1:37.558689</col>
+            <col id="DELTA (%)" warning="normal">0.3</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">1:26.016140</col>
+            <col id="Run B">1:26.460970</col>
+            <col id="DELTA (%)" warning="normal">0.52</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">86.016000</col>
+            <col id="Run B">86.460000</col>
+            <col id="DELTA (%)" warning="normal">0.52</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">10.761173</col>
+            <col id="Run B">10.587444</col>
+            <col id="DELTA (%)" warning="normal">-1.61</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.487734</col>
+            <col id="Run B">0.510275</col>
+            <col id="DELTA (%)" warning="normal">4.62</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">7399237.00</col>
+            <col id="Run B">7437502.00</col>
+            <col id="DELTA (%)" warning="normal">0.52</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">7399237.00</col>
+            <col id="Run B">7437502.00</col>
+            <col id="DELTA (%)" warning="normal">0.52</col>
+         </row>
+      </section>
+      <section id="PKG PRJADD: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">3966580.00</col>
+            <col id="Run B">3983746.00</col>
+            <col id="DELTA (%)" warning="normal">0.43</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">3966580</col>
+            <col id="Run B">3983746</col>
+            <col id="DELTA (%)" warning="normal">0.43</col>
+         </row>
+      </section>
+      <section id="PKG PRJADD: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.002549</col>
+            <col id="Run B">0.002725</col>
+            <col id="DELTA (%)" warning="medium">6.9</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.002508</col>
+            <col id="Run B">0.002677</col>
+            <col id="DELTA (%)" warning="medium">6.74</col>
+         </row>
+         <row id="DB2 LATCH">
+            <col id="Run A">0.000041</col>
+            <col id="Run B">0.000048</col>
+            <col id="DELTA (%)" warning="high">17.07</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.085232</col>
+            <col id="Run B">0.085276</col>
+            <col id="DELTA (%)" warning="normal">0.05</col>
+         </row>
+         <row id="OTHER WRITE I/O">
+            <col id="Run A">0.061637</col>
+            <col id="Run B">0.049411</col>
+            <col id="DELTA (%)" warning="best">-19.84</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">10.611755</col>
+            <col id="Run B">10.450032</col>
+            <col id="DELTA (%)" warning="normal">-1.52</col>
+         </row>
+      </section>
+      <section id="PKG PRJANO: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.371186</col>
+            <col id="Run B">0.378618</col>
+            <col id="DELTA (%)" warning="normal">2</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.152817</col>
+            <col id="Run B">0.155134</col>
+            <col id="DELTA (%)" warning="normal">1.52</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.152817</col>
+            <col id="Run B">0.155134</col>
+            <col id="DELTA (%)" warning="normal">1.52</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.218056</col>
+            <col id="Run B">0.223188</col>
+            <col id="DELTA (%)" warning="normal">2.35</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.000313</col>
+            <col id="Run B">0.000296</col>
+            <col id="DELTA (%)" warning="good">-5.43</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">13145.00</col>
+            <col id="Run B">13344.00</col>
+            <col id="DELTA (%)" warning="normal">1.51</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">13145.00</col>
+            <col id="Run B">13344.00</col>
+            <col id="DELTA (%)" warning="normal">1.51</col>
+         </row>
+      </section>
+      <section id="PKG PRJANO: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">53736.00</col>
+            <col id="Run B">53962.00</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">53736</col>
+            <col id="Run B">53962</col>
+            <col id="DELTA (%)" warning="normal">0.42</col>
+         </row>
+      </section>
+      <section id="PKG PRJANO: AVERAGE TIME">
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.218056</col>
+            <col id="Run B">0.223188</col>
+            <col id="DELTA (%)" warning="normal">2.35</col>
+         </row>
+      </section>
+      <section id="PKG PRJSEL: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.370378</col>
+            <col id="Run B">0.367616</col>
+            <col id="DELTA (%)" warning="normal">-0.75</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.368818</col>
+            <col id="Run B">0.366189</col>
+            <col id="DELTA (%)" warning="normal">-0.71</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.368818</col>
+            <col id="Run B">0.366189</col>
+            <col id="DELTA (%)" warning="normal">-0.71</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.001560</col>
+            <col id="Run B">0.001427</col>
+            <col id="DELTA (%)" warning="good">-8.53</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">31726.00</col>
+            <col id="Run B">31500.00</col>
+            <col id="DELTA (%)" warning="normal">-0.71</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">31726.00</col>
+            <col id="Run B">31500.00</col>
+            <col id="DELTA (%)" warning="normal">-0.71</col>
+         </row>
+      </section>
+      <section id="PKG PRJSEL: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">53516.00</col>
+            <col id="Run B">53200.00</col>
+            <col id="DELTA (%)" warning="normal">-0.59</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">53516</col>
+            <col id="Run B">53200</col>
+            <col id="DELTA (%)" warning="normal">-0.59</col>
+         </row>
+      </section>
+      <section id="PKG PRJSEL: AVERAGE TIME"/>
+      <section id="PKG PRJUPD: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.666178</col>
+            <col id="Run B">0.621400</col>
+            <col id="DELTA (%)" warning="good">-6.72</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.615380</col>
+            <col id="Run B">0.612492</col>
+            <col id="DELTA (%)" warning="normal">-0.47</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.615380</col>
+            <col id="Run B">0.612492</col>
+            <col id="DELTA (%)" warning="normal">-0.47</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.042598</col>
+            <col id="Run B">0.000437</col>
+            <col id="DELTA (%)" warning="best">-98.97</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.008200</col>
+            <col id="Run B">0.008472</col>
+            <col id="DELTA (%)" warning="normal">3.32</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">52935.00</col>
+            <col id="Run B">52687.00</col>
+            <col id="DELTA (%)" warning="normal">-0.47</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">52935.00</col>
+            <col id="Run B">52687.00</col>
+            <col id="DELTA (%)" warning="normal">-0.47</col>
+         </row>
+      </section>
+      <section id="PKG PRJUPD: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">66895.00</col>
+            <col id="Run B">66500.00</col>
+            <col id="DELTA (%)" warning="normal">-0.59</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">66895</col>
+            <col id="Run B">66500</col>
+            <col id="DELTA (%)" warning="normal">-0.59</col>
+         </row>
+      </section>
+      <section id="PKG PRJUPD: AVERAGE TIME">
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.000591</col>
+            <col id="Run B">0.000000</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">0.042007</col>
+            <col id="Run B">0.000000</col>
+            <col id="DELTA (%)" warning="best">-100</col>
+         </row>
+      </section>
+      <section id="PKG SFNSEL: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">5.015692</col>
+            <col id="Run B">5.001673</col>
+            <col id="DELTA (%)" warning="normal">-0.28</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">4.975735</col>
+            <col id="Run B">4.962349</col>
+            <col id="DELTA (%)" warning="normal">-0.27</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">4.975735</col>
+            <col id="Run B">4.962349</col>
+            <col id="DELTA (%)" warning="normal">-0.27</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">0.000338</col>
+            <col id="Run B">0.000318</col>
+            <col id="DELTA (%)" warning="good">-5.92</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.039620</col>
+            <col id="Run B">0.039006</col>
+            <col id="DELTA (%)" warning="normal">-1.55</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">428020.00</col>
+            <col id="Run B">426868.00</col>
+            <col id="DELTA (%)" warning="normal">-0.27</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">428020.00</col>
+            <col id="Run B">426868.00</col>
+            <col id="DELTA (%)" warning="normal">-0.27</col>
+         </row>
+      </section>
+      <section id="PKG SFNSEL: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">671845.00</col>
+            <col id="Run B">672935.00</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">671845</col>
+            <col id="Run B">672935</col>
+            <col id="DELTA (%)" warning="normal">0.16</col>
+         </row>
+      </section>
+      <section id="PKG SFNSEL: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000338</col>
+            <col id="Run B">0.000318</col>
+            <col id="DELTA (%)" warning="good">-5.92</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000337</col>
+            <col id="Run B">0.000318</col>
+            <col id="DELTA (%)" warning="good">-5.64</col>
+         </row>
+      </section>
+      <section id="PKG SPLANO: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">4.634615</col>
+            <col id="Run B">4.631404</col>
+            <col id="DELTA (%)" warning="normal">-0.07</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">1.991349</col>
+            <col id="Run B">1.993187</col>
+            <col id="DELTA (%)" warning="normal">0.09</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">1.991349</col>
+            <col id="Run B">1.993187</col>
+            <col id="DELTA (%)" warning="normal">0.09</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">2.643299</col>
+            <col id="Run B">2.636552</col>
+            <col id="DELTA (%)" warning="normal">-0.26</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">171298.00</col>
+            <col id="Run B">171456.00</col>
+            <col id="DELTA (%)" warning="normal">0.09</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">171298.00</col>
+            <col id="Run B">171456.00</col>
+            <col id="DELTA (%)" warning="normal">0.09</col>
+         </row>
+      </section>
+      <section id="PKG SPLANO: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">643562.00</col>
+            <col id="Run B">644928.00</col>
+            <col id="DELTA (%)" warning="normal">0.21</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">643562</col>
+            <col id="Run B">644928</col>
+            <col id="DELTA (%)" warning="normal">0.21</col>
+         </row>
+      </section>
+      <section id="PKG SPLANO: AVERAGE TIME">
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">2.643299</col>
+            <col id="Run B">2.636474</col>
+            <col id="DELTA (%)" warning="normal">-0.26</col>
+         </row>
+      </section>
+      <section id="PKG STRSEL: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.932527</col>
+            <col id="Run B">0.928056</col>
+            <col id="DELTA (%)" warning="normal">-0.48</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.926465</col>
+            <col id="Run B">0.922689</col>
+            <col id="DELTA (%)" warning="normal">-0.41</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.926465</col>
+            <col id="Run B">0.922689</col>
+            <col id="DELTA (%)" warning="normal">-0.41</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.006063</col>
+            <col id="Run B">0.005367</col>
+            <col id="DELTA (%)" warning="best">-11.48</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">79695.00</col>
+            <col id="Run B">79371.00</col>
+            <col id="DELTA (%)" warning="normal">-0.41</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">79695.00</col>
+            <col id="Run B">79371.00</col>
+            <col id="DELTA (%)" warning="normal">-0.41</col>
+         </row>
+      </section>
+      <section id="PKG STRSEL: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">161055.00</col>
+            <col id="Run B">160914.00</col>
+            <col id="DELTA (%)" warning="normal">-0.09</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">161055</col>
+            <col id="Run B">160914</col>
+            <col id="DELTA (%)" warning="normal">-0.09</col>
+         </row>
+      </section>
+      <section id="PKG STRSEL: AVERAGE TIME"/>
+      <section id="PKG TWNSEL: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">0.944260</col>
+            <col id="Run B">0.937992</col>
+            <col id="DELTA (%)" warning="normal">-0.66</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">0.939412</col>
+            <col id="Run B">0.931907</col>
+            <col id="DELTA (%)" warning="normal">-0.8</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">0.939412</col>
+            <col id="Run B">0.931907</col>
+            <col id="DELTA (%)" warning="normal">-0.8</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.004849</col>
+            <col id="Run B">0.006085</col>
+            <col id="DELTA (%)" warning="high">25.49</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">80809.00</col>
+            <col id="Run B">80164.00</col>
+            <col id="DELTA (%)" warning="normal">-0.8</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">80809.00</col>
+            <col id="Run B">80164.00</col>
+            <col id="DELTA (%)" warning="normal">-0.8</col>
+         </row>
+      </section>
+      <section id="PKG TWNSEL: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">1</col>
+            <col id="Run B">1</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">161055.00</col>
+            <col id="Run B">160914.00</col>
+            <col id="DELTA (%)" warning="normal">-0.09</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">161055</col>
+            <col id="Run B">160914</col>
+            <col id="DELTA (%)" warning="normal">-0.09</col>
+         </row>
+      </section>
+      <section id="PKG TWNSEL: AVERAGE TIME"/>
+      <section id="PKG ALL: TIMES">
+         <row id="ELAP-CL7 TIME-AVG">
+            <col id="Run A">14.327374</col>
+            <col id="Run B">14.324796</col>
+            <col id="DELTA (%)" warning="normal">-0.02</col>
+         </row>
+         <row id="CP CPU TIME">
+            <col id="Run A">9.864636</col>
+            <col id="Run B">9.877713</col>
+            <col id="DELTA (%)" warning="normal">0.13</col>
+         </row>
+         <row id="TOTAL(CP+SE) CPU TIMES">
+            <col id="Run A">9.864636</col>
+            <col id="Run B">9.877713</col>
+            <col id="DELTA (%)" warning="normal">0.13</col>
+         </row>
+         <row id="SUSPENSION-CL8">
+            <col id="Run A">4.416931</col>
+            <col id="Run B">4.399156</col>
+            <col id="DELTA (%)" warning="normal">-0.4</col>
+         </row>
+         <row id="NOT ACCOUNTED">
+            <col id="Run A">0.045808</col>
+            <col id="Run B">0.047928</col>
+            <col id="DELTA (%)" warning="normal">4.63</col>
+         </row>
+         <row id="CP CPU SU">
+            <col id="Run A">848570.32</col>
+            <col id="Run B">849695.29</col>
+            <col id="DELTA (%)" warning="normal">0.13</col>
+         </row>
+         <row id="TOTAL (CP+SE) CPU SU TIMES">
+            <col id="Run A">848570.32</col>
+            <col id="Run B">849695.29</col>
+            <col id="DELTA (%)" warning="normal">0.13</col>
+         </row>
+      </section>
+      <section id="PKG ALL: COUNTS">
+         <row id="OCCURRENCES">
+            <col id="Run A">31</col>
+            <col id="Run B">31</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="SQL STMT - AVERAGE">
+            <col id="Run A">2292022.26</col>
+            <col id="Run B">2311826.10</col>
+            <col id="DELTA (%)" warning="normal">0.86</col>
+         </row>
+         <row id="SQL STMT - TOTAL">
+            <col id="Run A">71052690</col>
+            <col id="Run B">71666609</col>
+            <col id="DELTA (%)" warning="normal">0.86</col>
+         </row>
+      </section>
+      <section id="PKG ALL: AVERAGE TIME">
+         <row id="LOCK/LATCH">
+            <col id="Run A">0.000319</col>
+            <col id="Run B">0.000309</col>
+            <col id="DELTA (%)" warning="normal">-3.13</col>
+         </row>
+         <row id="IRLM LOCK+LATCH">
+            <col id="Run A">0.000308</col>
+            <col id="Run B">0.000300</col>
+            <col id="DELTA (%)" warning="normal">-2.6</col>
+         </row>
+         <row id="DB2 LATCH">
+            <col id="Run A">0.000011</col>
+            <col id="Run B">0.000010</col>
+            <col id="DELTA (%)" warning="good">-9.09</col>
+         </row>
+         <row id="SYNCHRONOUS I/O">
+            <col id="Run A">0.162365</col>
+            <col id="Run B">0.162330</col>
+            <col id="DELTA (%)" warning="normal">-0.02</col>
+         </row>
+         <row id="OTHER READ I/O">
+            <col id="Run A">0.000008</col>
+            <col id="Run B">0.000008</col>
+            <col id="DELTA (%)" warning="normal">0</col>
+         </row>
+         <row id="OTHER WRITE I/O">
+            <col id="Run A">0.003219</col>
+            <col id="Run B">0.003129</col>
+            <col id="DELTA (%)" warning="normal">-2.8</col>
+         </row>
+         <row id="SERV.TASK SWITCH">
+            <col id="Run A">4.248450</col>
+            <col id="Run B">4.230593</col>
+            <col id="DELTA (%)" warning="normal">-0.42</col>
+         </row>
+      </section>
+   </transaction>
+</root>
