@@ -75,7 +75,7 @@ Here are steps to install this workload onto your LPAR:
 	
 	1. By default, the workload uses schema GLWSAMP, so if you plan to use a different schema then please replace GLWSAMP by your new schema name for:
 
-		* SGLWCFG/SGLSAMP: members GLWBUILD, GLWDDL, GLWDROP, GLWLDALL, GLWPARM0, and GLWRUN.
+		* SGLWCFG/SGLWSAMP: members GLWBUILD, GLWDDL, GLWDROP, GLWLDALL, GLWPARM0, and GLWRUN.
 	
 		* All members in GLW.SGLWSRCC, GLW.SGLWSRCN, and GLW.SGLWTABD.	 
 	
