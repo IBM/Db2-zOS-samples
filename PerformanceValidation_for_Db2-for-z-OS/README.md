@@ -33,7 +33,7 @@ Here are steps to install this workload onto your LPAR:
 	
 1. ### Verifying the installation
 
-	After getting and unpacking files onto your LPAR, besides the XMIT and TRS datasets, you should have the following datasets:
+	After getting and unpacking files onto your LPAR, you should have the following datasets:
 
 		[HLQ].GLW.SGLWDBRM
 
@@ -85,10 +85,10 @@ Here are steps to install this workload onto your LPAR:
 
 	1. #### Build database
 	
-		After customizing the common parameters in SGLWCFG(GLWPARM0) and SGLWCFG(GLWDDL), you can customize JCL SGLWCFG(CRTST) to create a storage group, and SGLWCFG(GLWSETUP) to build database for the GLW workload on your environment. The original authors documented the parameters very well in the SGLWSAMP/SGLWCFG(README).
+		After customizing the common parameters in SGLWCFG(GLWPARM0), you can customize SGLWCFG(GLWSETUP) to build database for the GLW workload on your environment. The original authors documented the parameters very well in the SGLWSAMP/SGLWCFG(README).
 		
 		The original README file and SGLWEXEC(GLWRUN) are good source to understand all parameters and variables to customize the GLW workload.
-		You need to correct STEPLIB, SYSEXEC, GLWPARM, DB2SSID, SCHEMA, DBASENME , and SQLID before submitting GLWBUILD job. You should see message "Database was successfully built" if there is no error.
+		You need to correct STEPLIB, SYSEXEC, GLWPARM, DB2SSID, SCHEMA, DBASENME , and SQLID before submitting the GLWSETUP job to execute GLWRUN with ACTION(BUILD). By default, the job is using member GLWSAMP in [HLQ].SGLWCFG as the DDL to define all the objects. There is also a sample member GLWSAMP in [HLQ].SGLWSAMP you can reference. Please do check the joblog after the BUILD option to make sure everything is OK.
 
 		You could modify and use sample JCL SGLWCFG(GLWTBSEL) to get the row count of major tables of the GLW to validate the BUILD procedures. If row count is 0, then tables have not been loaded. This could be the SYSPROC.DSNUTILU has not been set up correctly or your environment does not have SYSPROC.DSNUTILU set up. In this case, you could customize JCL SGLWCFG(GLWLDALL) and SGLWCFG(GLWRSTAT) to load data then perform RUNSTATS.
 		
